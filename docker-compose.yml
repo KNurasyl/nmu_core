@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 
 networks:
   app-net:
@@ -12,7 +12,7 @@ services:
     image: mongo:8
     container_name: mongodb
     ports:
-      - "27017:27017"
+      - '27017:27017'
     volumes:
       - db-data:/data/db
     environment:
@@ -26,13 +26,13 @@ services:
     build: ./nmu_app
     container_name: nmu_app
     ports:
-      - "5000:5000"
+      - '5000:5000'
     environment:
       PORT: 5000
       SERVER_PORT: 5000
       MONGODB_URI: mongodb://root:123456@mongodb:27017/nmu_v2?authSource=admin
       JWT_SECRET: secret
-      CORS_ORIGIN: "http://0.0.0.0"
+      CORS_ORIGIN: 'http://0.0.0.0'
     depends_on:
       - mongodb
     networks:
@@ -45,7 +45,7 @@ services:
         NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
     container_name: nmu_client
     ports:
-      - "3000:3000"
+      - '3000:3000'
     environment:
       PORT: 3000
       NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
@@ -61,7 +61,7 @@ services:
         NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
     container_name: nmu_admin
     ports:
-      - "4000:4000"
+      - '4000:4000'
     environment:
       PORT: 4000
       NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
@@ -74,7 +74,7 @@ services:
     image: nginx:1.25
     container_name: nginx
     ports:
-      - "80:80"
+      - '80:80'
     depends_on:
       - nmu_app
       - nmu_client
