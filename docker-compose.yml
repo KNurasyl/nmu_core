@@ -80,6 +80,6 @@ services:
       - nmu_client
       - nmu_admin
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/custom.conf:ro
     networks:
       - app-net
