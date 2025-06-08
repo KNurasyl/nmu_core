@@ -1,85 +1,70 @@
-version: '3.9'
-
-networks:
-  app-net:
-    driver: bridge
-
-volumes:
-  db-data:
+version: "3.8"
 
 services:
-  mongodb:
-    image: mongo:8
-    container_name: mongodb
-    ports:
-      - '27017:27017'
-    volumes:
-      - db-data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: 123456
-    networks:
-      - app-net
-    restart: always
+    client:
+        build:
+            context: ./nmu_client
+        container_name: nmu_client
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        networks:
+            - app-network
 
-  nmu_app:
-    build: ./nmu_app
-    container_name: nmu_app
-    ports:
-      - '5000:5000'
-    environment:
-      PORT: 5000
-      SERVER_PORT: 5000
-      MONGODB_URI: mongodb://root:123456@mongodb:27017/nmu_v2?authSource=admin
-      JWT_SECRET: secret
-      CORS_ORIGIN: 'http://0.0.0.0'
-    depends_on:
-      - mongodb
-    networks:
-      - app-net
+    admin:
+        build:
+            context: ./nmu_admin
+        container_name: nmu_admin
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        networks:
+            - app-network
 
-  nmu_client:
-    build:
-      context: ./nmu_client
-      args:
-        NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    container_name: nmu_client
-    ports:
-      - '3000:3000'
-    environment:
-      PORT: 3000
-      NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    depends_on:
-      - nmu_app
-    networks:
-      - app-net
+    backend:
+        build:
+            context: ./nmu_app
+        container_name: nmu_backend
+        expose:
+            - "5000"
+        env_file:
+            - .env
+        depends_on:
+            - db
+        networks:
+            - app-network
 
-  nmu_admin:
-    build:
-      context: ./nmu_admin
-      args:
-        NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    container_name: nmu_admin
-    ports:
-      - '4000:4000'
-    environment:
-      PORT: 4000
-      NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    depends_on:
-      - nmu_app
-    networks:
-      - app-net
+    db:
+        image: mongo:latest
+        container_name: nmu_mongo
+        ports:
+            - "27017:27017"
+        volumes:
+            - db-data:/data/db
+        networks:
+            - app-network
 
-  nginx:
-    image: nginx:1.25
-    container_name: nginx
-    ports:
-      - '80:80'
-    depends_on:
-      - nmu_app
-      - nmu_client
-      - nmu_admin
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/custom.conf:ro
-    networks:
-      - app-net
+    nginx:
+        build:
+            context: ./nginx
+        container_name: nmu_nginx
+        ports:
+            - "443:443"
+            - "80:80"
+        volumes:
+            - ./nginx/ssl:/etc/nginx/ssl
+        depends_on:
+            - client
+            - admin
+            - backend
+        networks:
+            - app-network
+
+volumes:
+    db-data:
+
+networks:
+    app-network:
+        driver: bridge

@@ -1,20 +1,17 @@
-FROM node:24-alpine AS builder
+FROM node:20-alpine
 
 WORKDIR /app
 
+RUN wget https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz \
+  && tar -C /usr/local/bin -xzf dockerize-linux-amd64-v0.6.1.tar.gz \
+  && rm dockerize-linux-amd64-v0.6.1.tar.gz
+
 COPY package*.json ./
-RUN npm install --frozen-lockfile
+RUN npm install
+
 COPY . .
 RUN npm run build
 
-FROM node:24-alpine
-
-WORKDIR /app
-
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
 EXPOSE 5000
 
-CMD ["node", "dist/main"]
+CMD ["sh", "-c", "dockerize -wait tcp://db:27017 -timeout 20s && npm run start:prod"]
