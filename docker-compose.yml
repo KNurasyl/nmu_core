@@ -3,34 +3,52 @@ version: "3.8"
 services:
     client:
         build:
-            context: ./nmu_client
+        context: ./nmu_client
         container_name: nmu_client
         expose:
             - "3000"
-        env_file:
-            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
         networks:
             - app-network
 
     admin:
         build:
-            context: ./nmu_admin
+        context: ./nmu_admin
         container_name: nmu_admin
         expose:
             - "3000"
-        env_file:
-            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
         networks:
             - app-network
 
     backend:
         build:
-            context: ./nmu_app
+        context: ./nmu_app
         container_name: nmu_backend
         expose:
             - "5000"
-        env_file:
-            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
         depends_on:
             - db
         networks:
@@ -48,31 +66,33 @@ services:
 
     nginx:
         build:
-            context: ./nginx
+        context: .
+        dockerfile: ./nginx/Dockerfile
         container_name: nmu_nginx
         ports:
-            - "443:443"
             - "80:80"
+            - "443:443"
         volumes:
-            - ./nginx/ssl:/etc/nginx/ssl
+            - ./data/certbot/www:/var/www/certbot
+            - ./data/certbot/conf:/etc/letsencrypt
         depends_on:
             - client
             - admin
             - backend
         networks:
             - app-network
+
     certbot:
         image: certbot/certbot
         container_name: nmu_certbot
         volumes:
-            - ./nginx/ssl:/etc/letsencrypt/live/nmacademy.kz
-            - ./nginx/certbot/www:/var/www/certbot
+            - ./data/certbot/www:/var/www/certbot
+            - ./data/certbot/conf:/etc/letsencrypt
         entrypoint: >
-            sh -c "certbot certonly --webroot -w /var/www/certbot
-            --email you@example.com --agree-tos --no-eff-email
-            -d nmacademy.kz &&
-            cp /etc/letsencrypt/live/nmacademy.kz/fullchain.pem /etc/letsencrypt/live/nmacademy.kz/../fullchain.pem &&
-            cp /etc/letsencrypt/live/nmacademy.kz/privkey.pem /etc/letsencrypt/live/nmacademy.kz/../privkey.pem"
+            sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
+            --email your@email.com --agree-tos --no-eff-email
+            -d nmacademy.kz"
+
 volumes:
     db-data:
 
