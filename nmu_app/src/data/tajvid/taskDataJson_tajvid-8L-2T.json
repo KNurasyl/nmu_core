@@ -1,0 +1,324 @@
+[
+  {
+    "type": "tajvid-8l-2t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-8",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+            "audioFileName": "8L-2T-1-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+            "audioFileName": "8L-2T-1-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+            "audioFileName": "8L-2T-1-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+            "audioFileName": "8L-2T-2-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+            "audioFileName": "8L-2T-2-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+            "audioFileName": "8L-2T-2-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+            "audioFileName": "8L-2T-3-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+            "audioFileName": "8L-2T-3-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+            "audioFileName": "8L-2T-3-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+            "audioFileName": "8L-2T-4-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+            "audioFileName": "8L-2T-4-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+            "audioFileName": "8L-2T-4-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "سَيَذَّكَّرُ مَن يَخْشَى",
+            "audioFileName": "8L-2T-5-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "سَيَذَّكَّرُ مَن يَخْشَى",
+            "audioFileName": "8L-2T-5-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "سَيَذَّكَّرُ مَن يَخْشَى",
+            "audioFileName": "8L-2T-5-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "سَيَذَّكَّرُ مَن يَخْشَى",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+            "audioFileName": "8L-2T-6-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+            "audioFileName": "8L-2T-6-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+            "audioFileName": "8L-2T-6-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+            "audioFileName": "8L-2T-7-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+            "audioFileName": "8L-2T-7-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+            "audioFileName": "8L-2T-7-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+            "audioFileName": "8L-2T-8-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+            "audioFileName": "8L-2T-8-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+            "audioFileName": "8L-2T-8-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "عَبْدًا إِذَا صَلَّى",
+            "audioFileName": "8L-2T-9-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "عَبْدًا إِذَا صَلَّى",
+            "audioFileName": "8L-2T-9-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "عَبْدًا إِذَا صَلَّى",
+            "audioFileName": "8L-2T-9-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "عَبْدًا إِذَا صَلَّى",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+            "audioFileName": "8L-2T-10-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+            "audioFileName": "8L-2T-10-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+            "audioFileName": "8L-2T-10-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+            "audioFileName": "8L-2T-11-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+            "audioFileName": "8L-2T-11-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+            "audioFileName": "8L-2T-11-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+            "audioFileName": "8L-2T-12-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+            "audioFileName": "8L-2T-12-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+            "audioFileName": "8L-2T-12-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+            "audioFileName": "8L-2T-13-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+            "audioFileName": "8L-2T-13-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+            "audioFileName": "8L-2T-13-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+            "audioFileName": "8L-2T-14-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+            "audioFileName": "8L-2T-14-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+            "audioFileName": "8L-2T-14-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+            "audioFileName": "8L-2T-15-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+            "audioFileName": "8L-2T-15-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+            "audioFileName": "8L-2T-15-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+        "description": "Выберите правильное произношение правила изгар или идгам."
+      }
+    ]
+  }
+]

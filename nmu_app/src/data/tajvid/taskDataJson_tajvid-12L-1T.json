@@ -1,0 +1,310 @@
+[
+  {
+    "type": "tajvid-12l-1t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-12",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "ٱلَّذِی یُوَسۡوِسُ",
+          "audioFileName": "12L-1T-1.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "فَكَانَتۡ",
+          "audioFileName": "12L-1T-2.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "لَمَجۡمُوعُونَ",
+          "audioFileName": "12L-1T-3.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "ءَامَنَ",
+          "audioFileName": "12L-1T-4.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "إِيمَانٌ",
+          "audioFileName": "12L-1T-5.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "أُوتُوا",
+          "audioFileName": "12L-1T-6.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": true
+          }
+        ],
+        "question": {
+          "item": "أَوْتَادًا",
+          "audioFileName": "12L-1T-7.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": true
+          }
+        ],
+        "question": {
+          "item": "أَزْوَاجًا",
+          "audioFileName": "12L-1T-8.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": true
+          }
+        ],
+        "question": {
+          "item": "سُبَاتًا",
+          "audioFileName": "12L-1T-9.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "إِنَّ هَـٰذِهِۦ تَذْكِرَةٌ",
+          "audioFileName": "12L-1T-10.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "فَهُمۡ لَهُۥ مُنكِرُونَ",
+          "audioFileName": "12L-1T-11.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "وَإِنَّ هَـٰذِهِۦۤ أُمَّتُكُمۡ",
+          "audioFileName": "12L-1T-12.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      },
+      {
+        "variants": [
+          {
+            "item": "Мәд сыйлә",
+            "isCorrect": true
+          },
+          {
+            "item": "Мәд бәдәл",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд ғиуад",
+            "isCorrect": false
+          },
+          {
+            "item": "Мәд табиғи",
+            "isCorrect": false
+          }
+        ],
+        "question": {
+          "item": "وَأُمَّهُۥۤ ءَایَةً",
+          "audioFileName": "12L-1T-13.mp3"
+        },
+        "description": "Прослушайте аят и выберите правильное правило мадда."
+      }
+    ]
+  }
+]

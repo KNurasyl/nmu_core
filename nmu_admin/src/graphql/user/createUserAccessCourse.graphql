@@ -1,0 +1,9 @@
+mutation CreateUserCourseAccess($input: CreateUserCourseAccessInput!) {
+	createUserCourseAccess(createUserCourseAccessInput: $input) {
+		_id
+		accessStartDate
+		accessEndDate
+		active
+		comment
+	}
+}

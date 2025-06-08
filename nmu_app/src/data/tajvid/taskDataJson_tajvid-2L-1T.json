@@ -1,0 +1,294 @@
+[
+  {
+    "type": "tajvid-2l-1t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-2",
+    "data": [
+      {
+        "correctAnswer": "مَالٌ",
+        "variants": [
+          {
+            "item": "مَالٍ",
+            "audioFileName": "2L-1T-1-1.mp3"
+          },
+          {
+            "item": "مَالًا",
+            "audioFileName": "2L-1T-1-2.mp3"
+          },
+          {
+            "item": "مَالٌ",
+            "audioFileName": "2L-1T-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-1.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "قَلَمٌ",
+        "variants": [
+          {
+            "item": "قَلَمٍ",
+            "audioFileName": "2L-1T-2-1.mp3"
+          },
+          {
+            "item": "قَلَمٌ",
+            "audioFileName": "2L-1T-2.mp3"
+          },
+          {
+            "item": "قَلَمًا",
+            "audioFileName": "2L-1T-2-2.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-2.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "كُتُبٌ",
+        "variants": [
+          {
+            "item": "كُتُبٍ",
+            "audioFileName": "2L-1T-3-1.mp3"
+          },
+          {
+            "item": "كُتُبًا",
+            "audioFileName": "2L-1T-3-2.mp3"
+          },
+          {
+            "item": "كُتُبٌ",
+            "audioFileName": "2L-1T-3.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-3.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "حَافِظٌ",
+        "variants": [
+          {
+            "item": "حَافِظٌ",
+            "audioFileName": "2L-1T-4.mp3"
+          },
+          {
+            "item": "حَافِظٍ",
+            "audioFileName": "2L-1T-4-2.mp3"
+          },
+          {
+            "item": "حَافِظًا",
+            "audioFileName": "2L-1T-4-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-4.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "أَرْضٌ",
+        "variants": [
+          {
+            "item": "أَرْضٍ",
+            "audioFileName": "2L-1T-5-1.mp3"
+          },
+          {
+            "item": "أَرْضًا",
+            "audioFileName": "2L-1T-5-2.mp3"
+          },
+          {
+            "item": "أَرْضٌ",
+            "audioFileName": "2L-1T-5.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-5.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "مَالٍ",
+        "variants": [
+          {
+            "item": "مَالٍ",
+            "audioFileName": "2L-1T-6.mp3"
+          },
+          {
+            "item": "مَالًا",
+            "audioFileName": "2L-1T-6-2.mp3"
+          },
+          {
+            "item": "مَالٌ",
+            "audioFileName": "2L-1T-6-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-6.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "وَلَدٍ",
+        "variants": [
+          {
+            "item": "وَلَدٍ",
+            "audioFileName": "2L-1T-7.mp3"
+          },
+          {
+            "item": "وَلَدًا",
+            "audioFileName": "2L-1T-7-2.mp3"
+          },
+          {
+            "item": "وَلَدٌ",
+            "audioFileName": "2L-1T-7-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-7.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "عِلْمٍ",
+        "variants": [
+          {
+            "item": "عِلْمٍ",
+            "audioFileName": "2L-1T-8.mp3"
+          },
+          {
+            "item": "عِلْمٌ",
+            "audioFileName": "2L-1T-8-2.mp3"
+          },
+          {
+            "item": "عِلْمًا",
+            "audioFileName": "2L-1T-8-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-8.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "رِزْقٍ",
+        "variants": [
+          {
+            "item": "رِزْقٍ",
+            "audioFileName": "2L-1T-9.mp3"
+          },
+          {
+            "item": "رِزْقًا",
+            "audioFileName": "2L-1T-9-2.mp3"
+          },
+          {
+            "item": "رِزْقٌ",
+            "audioFileName": "2L-1T-9-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-9.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "وَسَطٍ",
+        "variants": [
+          {
+            "item": "وَسَطٍ",
+            "audioFileName": "2L-1T-10.mp3"
+          },
+          {
+            "item": "وَسَطًا",
+            "audioFileName": "2L-1T-10-2.mp3"
+          },
+          {
+            "item": "وَسَطٌ",
+            "audioFileName": "2L-1T-10-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-10.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "مَالًا",
+        "variants": [
+          {
+            "item": "مَالًا",
+            "audioFileName": "2L-1T-11.mp3"
+          },
+          {
+            "item": "مَالٌ",
+            "audioFileName": "2L-1T-11-2.mp3"
+          },
+          {
+            "item": "مَالٍ",
+            "audioFileName": "2L-1T-11-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-11.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "ثَمَنًا",
+        "variants": [
+          {
+            "item": "ثَمَنًا",
+            "audioFileName": "2L-1T-12.mp3"
+          },
+          {
+            "item": "ثَمَنٍ",
+            "audioFileName": "2L-1T-12-2.mp3"
+          },
+          {
+            "item": "ثَمَنٌ",
+            "audioFileName": "2L-1T-12-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-12.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "جَمْعًا",
+        "variants": [
+          {
+            "item": "جَمْعًا",
+            "audioFileName": "2L-1T-13.mp3"
+          },
+          {
+            "item": "جَمْعٌ",
+            "audioFileName": "2L-1T-13-2.mp3"
+          },
+          {
+            "item": "جَمْعٍ",
+            "audioFileName": "2L-1T-13-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-13.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "خَلْقًا",
+        "variants": [
+          {
+            "item": "خَلْقًا",
+            "audioFileName": "2L-1T-14.mp3"
+          },
+          {
+            "item": "خَلْقٌ",
+            "audioFileName": "2L-1T-14-2.mp3"
+          },
+          {
+            "item": "خَلْقٍ",
+            "audioFileName": "2L-1T-14-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-14.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      },
+      {
+        "correctAnswer": "أَرْضًا",
+        "variants": [
+          {
+            "item": "أَرْضًا",
+            "audioFileName": "2L-1T-15.mp3"
+          },
+          {
+            "item": "أَرْضٍ",
+            "audioFileName": "2L-1T-15-2.mp3"
+          },
+          {
+            "item": "أَرْضٌ",
+            "audioFileName": "2L-1T-15-1.mp3"
+          }
+        ],
+        "audioFileName": "2L-1T-15.mp3",
+        "description": "Прослушайте аудио и выберите правильный вариант."
+      }
+    ]
+  }
+]

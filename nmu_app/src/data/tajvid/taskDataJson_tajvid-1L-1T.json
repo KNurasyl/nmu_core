@@ -1,0 +1,219 @@
+[
+  {
+    "type": "tajvid-1l-1t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-1",
+    "data": [
+      {
+        "question": "نِظَامُ",
+        "audioFileName": "1L-1T-1.mp3",
+        "correctVariant": "ا",
+        "variants": ["ن", "ا", "و"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "تُرَابُ",
+        "audioFileName": "1L-1T-2.mp3",
+        "correctVariant": "ا",
+        "variants": ["ا", "م", "و"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "حِسَابُ",
+        "audioFileName": "1L-1T-3.mp3",
+        "correctVariant": "ا",
+        "variants": ["ء", "ا", "ى"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "سَلَامُ",
+        "audioFileName": "1L-1T-4.mp3",
+        "correctVariant": "ا",
+        "variants": ["م", "ن", "ا"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "كِتَابُ",
+        "audioFileName": "1L-1T-5.mp3",
+        "correctVariant": "ا",
+        "variants": ["م", "ة", "ا"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "قَالَ",
+        "audioFileName": "1L-1T-6.mp3",
+        "correctVariant": "ا",
+        "variants": ["ا", "ء", "ر"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "زَادَ",
+        "audioFileName": "1L-1T-7.mp3",
+        "correctVariant": "ا",
+        "variants": ["م", "ا", "ى"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "نَامَ",
+        "audioFileName": "1L-1T-8.mp3",
+        "correctVariant": "ا",
+        "variants": ["ر", "ا", "ي"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "تَابَ",
+        "audioFileName": "1L-1T-9.mp3",
+        "correctVariant": "ا",
+        "variants": ["ي", "ا", "ل"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "كَانَ",
+        "audioFileName": "1L-1T-10.mp3",
+        "correctVariant": "ا",
+        "variants": ["م", "ء", "ا"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "رَحِيمُ",
+        "audioFileName": "1L-1T-11.mp3",
+        "correctVariant": "ي",
+        "variants": ["ر", "ي", "ة"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "عَزِيزُ",
+        "audioFileName": "1L-1T-12.mp3",
+        "correctVariant": "ي",
+        "variants": ["ل", "ي", "ء"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "عَلِيمُ",
+        "audioFileName": "1L-1T-13.mp3",
+        "correctVariant": "ي",
+        "variants": ["ة", "ى", "ي"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "بَصِيرُ",
+        "audioFileName": "1L-1T-14.mp3",
+        "correctVariant": "ي",
+        "variants": ["ي", "ر", "ل"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "سَمِيعُ",
+        "audioFileName": "1L-1T-15.mp3",
+        "correctVariant": "ي",
+        "variants": ["م", "ي", "ر"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "كَرِيمُ",
+        "audioFileName": "1L-1T-16.mp3",
+        "correctVariant": "ي",
+        "variants": ["م", "ل", "ي"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "قِيلَ",
+        "audioFileName": "1L-1T-17.mp3",
+        "correctVariant": "ي",
+        "variants": ["ن", "ر", "ي"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "شِينُ",
+        "audioFileName": "1L-1T-18.mp3",
+        "correctVariant": "ي",
+        "variants": ["ن", "ي", "ة"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "حِينَ",
+        "audioFileName": "1L-1T-19.mp3",
+        "correctVariant": "ي",
+        "variants": ["ى", "و", "ي"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "فِيلُ",
+        "audioFileName": "1L-1T-20.mp3",
+        "correctVariant": "ي",
+        "variants": ["ي", "ى", "ا"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "يَقُولُونَ",
+        "audioFileName": "1L-1T-21.mp3",
+        "correctVariant": "و",
+        "variants": ["و", "ي", "ا"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "تَصُومُ",
+        "audioFileName": "1L-1T-22.mp3",
+        "correctVariant": "و",
+        "variants": ["ء", "و", "ى"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "يَزُورُ",
+        "audioFileName": "1L-1T-23.mp3",
+        "correctVariant": "و",
+        "variants": ["ى", "ء", "و"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "تَقُولُ",
+        "audioFileName": "1L-1T-24.mp3",
+        "correctVariant": "و",
+        "variants": ["ة", "ل", "و"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "يَكُونُ",
+        "audioFileName": "1L-1T-25.mp3",
+        "correctVariant": "و",
+        "variants": ["م", "و", "ا"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "يَتُوبُ",
+        "audioFileName": "1L-1T-26.mp3",
+        "correctVariant": "و",
+        "variants": ["ر", "ل", "و"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "اَعُوذُ",
+        "audioFileName": "1L-1T-27.mp3",
+        "correctVariant": "و",
+        "variants": ["ل", "و", "ء"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "نُورُ",
+        "audioFileName": "1L-1T-28.mp3",
+        "correctVariant": "و",
+        "variants": ["و", "ن", "ر"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "رُوحُ",
+        "audioFileName": "1L-1T-29.mp3",
+        "correctVariant": "و",
+        "variants": ["م", "و", "ن"],
+        "description": "Какой мад используется в этом слове?"
+      },
+      {
+        "question": "دُونَ",
+        "audioFileName": "1L-1T-30.mp3",
+        "correctVariant": "و",
+        "variants": ["و", "ل", "ن"],
+        "description": "Какой мад используется в этом слове?"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+query GetUsersPaginated($args: UserListArgs!) {
+	getUsersPaginated(args: $args) {
+		total
+		users {
+			_id
+			phoneNumber
+			userName
+			userRole
+		}
+	}
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "type": "f",
+    "order": 1,
+    "lessonCode": "lesson-12",
+    "data": [
+      {
+        "letter": "شـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـشـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـش",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "سـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـسـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـس",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "ثـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـثـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـث",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "صـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـصـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـص",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "طـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـطـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـط",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "جـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـجـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـج",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "خـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـخـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـخ",
+        "types": ["wordEnd"]
+      }
+    ]
+  },
+  {
+    "type": "f",
+    "order": 2,
+    "lessonCode": "lesson-11",
+    "data": [
+      {
+        "letter": "بـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـبـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـب",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "كـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـكـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـك",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "لـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـلـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـل",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "و",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـو",
+        "types": ["wordMiddle", "wordEnd"]
+      },
+      {
+        "letter": "هـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـهـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـه",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "فـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـفـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـف",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "قـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـقـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـق",
+        "types": ["wordEnd"]
+      }
+    ]
+  },
+  {
+    "type": "f",
+    "order": 3,
+    "lessonCode": "lesson-10",
+    "data": [
+      {
+        "letter": "ا",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـا",
+        "types": ["wordMiddle", "wordEnd"]
+      },
+      {
+        "letter": "ر",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـر",
+        "types": ["wordMiddle", "wordEnd"]
+      },
+      {
+        "letter": "ز",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـز",
+        "types": ["wordMiddle", "wordEnd"]
+      },
+      {
+        "letter": "مـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـمـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـم",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "تـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـتـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـت",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "نـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـنـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـن",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "يـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـيـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـي",
+        "types": ["wordEnd"]
+      }
+    ]
+  },
+  {
+    "type": "f",
+    "order": 4,
+    "lessonCode": "lesson-13",
+    "data": [
+      {
+        "letter": "حـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـحـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـح",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "غـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـغـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـغ",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "عـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـعـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـع",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "د",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـد",
+        "types": ["wordMiddle", "wordEnd"]
+      },
+      {
+        "letter": "ضـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـضـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـض",
+        "types": ["wordEnd"]
+      },
+      {
+        "letter": "ذ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـذ",
+        "types": ["wordMiddle", "wordEnd"]
+      },
+      {
+        "letter": "ظـ",
+        "types": ["wordStart"]
+      },
+      {
+        "letter": "ـظـ",
+        "types": ["wordMiddle"]
+      },
+      {
+        "letter": "ـظ",
+        "types": ["wordEnd"]
+      }
+    ]
+  }
+]

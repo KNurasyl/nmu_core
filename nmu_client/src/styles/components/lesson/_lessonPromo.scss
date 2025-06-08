@@ -1,0 +1,97 @@
+.lesson_promo {
+	position: relative;
+	margin-top: -10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	min-height: 320px;
+	overflow: hidden;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+	margin-bottom: 32px;
+	display: flex;
+	align-items: flex-end;
+	background: #111;
+
+	&__overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.75) 0%,
+			rgba(0, 0, 0, 0.35) 70%
+		);
+		z-index: 2;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		padding: 32px 48px;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+	}
+
+	&__title {
+		font-size: 2rem !important;
+		font-weight: 800;
+		color: #fff;
+		letter-spacing: 0.02em;
+		margin: 0;
+		text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+	}
+
+	&__desc {
+		color: #eee;
+		font-size: 1.16rem !important;
+		font-weight: 400;
+		max-width: 45vw;
+		line-height: 1.5;
+	}
+
+	.lesson_promo__progress-circle {
+		.ant-progress-inner {
+			background: rgba(255, 255, 255, 0.08);
+			box-shadow: 0 2px 6px rgba(25, 195, 125, 0.1);
+		}
+		.ant-progress-text {
+			font-size: 1.05rem;
+			color: #fff;
+			font-weight: 700;
+		}
+	}
+	.lesson_promo__progress-bar {
+		margin-top: 10px;
+		.ant-progress-outer {
+			width: 100% !important;
+			border-radius: 8px;
+			background: #fff4;
+			height: 10px;
+		}
+		.ant-progress-bg {
+			height: 10px !important;
+			border-radius: 8px;
+			background: linear-gradient(90deg, #19c37d 40%, #1e90ff 100%);
+		}
+	}
+
+	@media (max-width: 800px) {
+		&__content {
+			padding: 24px 14px;
+		}
+		&__desc {
+			max-width: 90vw;
+			font-size: 1rem;
+		}
+		&__title {
+			font-size: 1.3rem;
+		}
+	}
+}

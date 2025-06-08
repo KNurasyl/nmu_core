@@ -1,0 +1,492 @@
+[
+  {
+    "type": "e",
+    "order": 1,
+    "lessonCode": "lesson-11",
+    "quiz": [
+      {
+        "position": "start",
+        "correctVariants": [
+          {
+            "letter": "بـ"
+          },
+          {
+            "letter": "كـ"
+          },
+          {
+            "letter": "لـ"
+          },
+          {
+            "letter": "و"
+          },
+          {
+            "letter": "هـ"
+          },
+          {
+            "letter": "فـ"
+          },
+          {
+            "letter": "قـ"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ـبـ"
+          },
+          {
+            "letter": "ـو"
+          }
+        ]
+      },
+      {
+        "position": "middle",
+        "correctVariants": [
+          {
+            "letter": "ـبـ"
+          },
+          {
+            "letter": "ـكـ"
+          },
+          {
+            "letter": "ـلـ"
+          },
+          {
+            "letter": "ـو"
+          },
+          {
+            "letter": "ـهـ"
+          },
+          {
+            "letter": "ـفـ"
+          },
+          {
+            "letter": "ـقـ"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "هـ"
+          },
+          {
+            "letter": "ـف"
+          }
+        ]
+      },
+      {
+        "position": "end",
+        "correctVariants": [
+          {
+            "letter": "ـب"
+          },
+          {
+            "letter": "ـك"
+          },
+          {
+            "letter": "ـل"
+          },
+          {
+            "letter": "ـو"
+          },
+          {
+            "letter": "ـه"
+          },
+          {
+            "letter": "ـف"
+          },
+          {
+            "letter": "ـق"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "هـ"
+          },
+          {
+            "letter": "ـهـ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "e",
+    "order": 2,
+    "lessonCode": "lesson-12",
+    "quiz": [
+      {
+        "position": "start",
+        "correctVariants": [
+          {
+            "letter": "شـ"
+          },
+          {
+            "letter": "سـ"
+          },
+          {
+            "letter": "ثـ"
+          },
+          {
+            "letter": "صـ"
+          },
+          {
+            "letter": "طـ"
+          },
+          {
+            "letter": "جـ"
+          },
+          {
+            "letter": "خـ"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ـشـ"
+          },
+          {
+            "letter": "ـطـ"
+          }
+        ]
+      },
+      {
+        "position": "middle",
+        "correctVariants": [
+          {
+            "letter": "ـشـ"
+          },
+          {
+            "letter": "ـسـ"
+          },
+          {
+            "letter": "ـثـ"
+          },
+          {
+            "letter": "ـصـ"
+          },
+          {
+            "letter": "ـطـ"
+          },
+          {
+            "letter": "ـجـ"
+          },
+          {
+            "letter": "ـخـ"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "طـ"
+          },
+          {
+            "letter": "ـث"
+          }
+        ]
+      },
+      {
+        "position": "end",
+        "correctVariants": [
+          {
+            "letter": "ـش"
+          },
+          {
+            "letter": "ـس"
+          },
+          {
+            "letter": "ـث"
+          },
+          {
+            "letter": "ـص"
+          },
+          {
+            "letter": "ـط"
+          },
+          {
+            "letter": "ـج"
+          },
+          {
+            "letter": "ـخ"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "طـ"
+          },
+          {
+            "letter": "ـجـ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "e",
+    "order": 3,
+    "lessonCode": "lesson-10",
+    "quiz": [
+      {
+        "position": "start",
+        "correctVariants": [
+          {
+            "letter": "ا",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ر",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ز",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "مـ",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "تـ",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "نـ",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "يـ",
+            "lesson": "lesson-10"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ـا",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـر",
+            "lesson": "lesson-10"
+          }
+        ]
+      },
+      {
+        "position": "middle",
+        "correctVariants": [
+          {
+            "letter": "ـا",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـر",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـز",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـمـ",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـتـ",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـنـ",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـيـ",
+            "lesson": "lesson-10"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ا",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـت",
+            "lesson": "lesson-10"
+          }
+        ]
+      },
+      {
+        "position": "end",
+        "correctVariants": [
+          {
+            "letter": "ـا",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـر",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـز",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـم",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـت",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـن",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ـي",
+            "lesson": "lesson-10"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ا",
+            "lesson": "lesson-10"
+          },
+          {
+            "letter": "ر",
+            "lesson": "lesson-10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "e",
+    "order": 4,
+    "lessonCode": "lesson-13",
+    "quiz": [
+      {
+        "position": "start",
+        "correctVariants": [
+          {
+            "letter": "حـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "غـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "عـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "د",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ضـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ذ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ظـ",
+            "lesson": "lesson-13"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ـحـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـظـ",
+            "lesson": "lesson-13"
+          }
+        ]
+      },
+      {
+        "position": "middle",
+        "correctVariants": [
+          {
+            "letter": "ـحـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـغـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـعـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـد",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـضـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـذ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـظـ",
+            "lesson": "lesson-13"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ـح",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـض",
+            "lesson": "lesson-13"
+          }
+        ]
+      },
+      {
+        "position": "end",
+        "correctVariants": [
+          {
+            "letter": "ـح",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـغ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـع",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـد",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـض",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـذ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـظ",
+            "lesson": "lesson-13"
+          }
+        ],
+        "inCorrectVariants": [
+          {
+            "letter": "ضـ",
+            "lesson": "lesson-13"
+          },
+          {
+            "letter": "ـعـ",
+            "lesson": "lesson-13"
+          }
+        ]
+      }
+    ]
+  }
+]

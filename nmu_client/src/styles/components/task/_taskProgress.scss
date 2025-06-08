@@ -1,0 +1,16 @@
+.task_progress {
+	margin-bottom: 15px;
+	flex-direction: row;
+	width: 100%;
+	height: fit-content;
+
+	.ant-progress-inner {
+		background-color: rgba(145, 145, 145, 0.2);
+	}
+
+	.ant-progress-text {
+		font-weight: 600;
+		color: #ffffff;
+		font-family: Arial, sans-serif !important;
+	}
+}

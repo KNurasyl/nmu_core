@@ -1,0 +1,8 @@
+query GetCourses {
+    getCourses {
+        _id
+        courseName
+        description
+        lang
+    }
+}

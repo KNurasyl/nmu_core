@@ -1,0 +1,163 @@
+[
+  {
+    "type": "tajvid-8l-1t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-8",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "مَنْ أَعْطَى",
+            "audioFileName": "8L-1T-1-1.mp3"
+          },
+          {
+            "item": "لِمَنْ يَشَاءُ",
+            "audioFileName": "8L-1T-1-2.mp3"
+          }
+        ],
+        "correctVariant": "مَنْ أَعْطَى",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِنْ مَاءٍ دَافِقٍ",
+            "audioFileName": "8L-1T-2-1.mp3"
+          },
+          {
+            "item": "سَلَامٌ هِيَ",
+            "audioFileName": "8L-1T-2-2.mp3"
+          }
+        ],
+        "correctVariant": "سَلَامٌ هِيَ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَلَنْ نُّؤْمِنَ",
+            "audioFileName": "8L-1T-3-1.mp3"
+          },
+          {
+            "item": "مَنْ حَادَّ اللهَ",
+            "audioFileName": "8L-1T-3-2.mp3"
+          }
+        ],
+        "correctVariant": "مَنْ حَادَّ اللهَ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "حَفِيظٌ عَلِيمٌ",
+            "audioFileName": "8L-1T-4-1.mp3"
+          },
+          {
+            "item": "وَلِسَانًا وَشَفَتَيْنِ",
+            "audioFileName": "8L-1T-4-2.mp3"
+          }
+        ],
+        "correctVariant": "حَفِيظٌ عَلِيمٌ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَلَمْ يَكُنْ لَهُ",
+            "audioFileName": "8L-1T-5-1.mp3"
+          },
+          {
+            "item": "حَفِيظٌ عَلِيمٌ",
+            "audioFileName": "8L-1T-5-2.mp3"
+          }
+        ],
+        "correctVariant": "حَفِيظٌ عَلِيمٌ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "مَنْ أَعْطَى",
+            "audioFileName": "8L-1T-7-1.mp3"
+          },
+          {
+            "item": "لِمَنْ يَشَاءُ",
+            "audioFileName": "8L-1T-7-2.mp3"
+          }
+        ],
+        "correctVariant": "لِمَنْ يَشَاءُ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "رَسُولٌ مِّنَ اللّٰهِ",
+            "audioFileName": "8L-1T-8-1.mp3"
+          },
+          {
+            "item": "سَلَامٌ هِيَ",
+            "audioFileName": "8L-1T-8-2.mp3"
+          }
+        ],
+        "correctVariant": "رَسُولٌ مِّنَ اللّٰهِ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَلَنْ نُّؤْمِنَ",
+            "audioFileName": "8L-1T-9-1.mp3"
+          },
+          {
+            "item": "مَنْ حَادَّ اللهَ",
+            "audioFileName": "8L-1T-9-2.mp3"
+          }
+        ],
+        "correctVariant": "وَلَنْ نُّؤْمِنَ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "حَفِيظٌ عَلِيمٌ",
+            "audioFileName": "8L-1T-10-1.mp3"
+          },
+          {
+            "item": "وَلِسَانًا وَشَفَتَيْنِ",
+            "audioFileName": "8L-1T-10-2.mp3"
+          }
+        ],
+        "correctVariant": "وَلِسَانًا وَشَفَتَيْنِ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَلَمْ يَكُنْ لَهُ",
+            "audioFileName": "8L-1T-11-1.mp3"
+          },
+          {
+            "item": "حَفِيظٌ عَلِيمٌ",
+            "audioFileName": "8L-1T-11-2.mp3"
+          }
+        ],
+        "correctVariant": "وَلَمْ يَكُنْ لَهُ",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      },
+      {
+        "variants": [
+          {
+            "item": "ثَمَرَةٍ رِزْقًا",
+            "audioFileName": "8L-1T-12-1.mp3"
+          },
+          {
+            "item": "رَبٌّ غَفُورٌ",
+            "audioFileName": "8L-1T-12-2.mp3"
+          }
+        ],
+        "correctVariant": "ثَمَرَةٍ رِزْقًا",
+        "description": "Выберите аят, соответствующий правилу изгар или идгам."
+      }
+    ]
+  }
+]

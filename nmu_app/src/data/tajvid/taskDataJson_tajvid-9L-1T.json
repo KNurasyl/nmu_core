@@ -1,0 +1,234 @@
+[
+  {
+    "type": "tajvid-9l-1t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-9",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "فَغَرْتَ فَانْصَبْ",
+            "audioFileName": "9L-1T-1-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "فَمَنْ يَعْمَلْ",
+            "audioFileName": "9L-1T-1-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَلَنْ نُّؤْمِنَ",
+            "audioFileName": "9L-1T-2-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَوَضَعْنَا عَنكَ",
+            "audioFileName": "9L-1T-2-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِنْ لَدُنْهُ",
+            "audioFileName": "9L-1T-3-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فَمَن شَاءَ",
+            "audioFileName": "9L-1T-3-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "فَأَمَّا مَن طَغَىٰ",
+            "audioFileName": "9L-1T-4-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "أَنْ رَبَطْنَا",
+            "audioFileName": "9L-1T-4-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "أَنْ لَمْ يَرَهُ",
+            "audioFileName": "9L-1T-5-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَ مَن ضَلّ",
+            "audioFileName": "9L-1T-5-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "الَّذِى أَنقَضَ",
+            "audioFileName": "9L-1T-6-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "حَفِيظٌ عَلِيمٌ",
+            "audioFileName": "9L-1T-6-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "رَبٌّ غَفُورٌ",
+            "audioFileName": "9L-1T-7-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "كَالْعِهْنِ الْمَنفُوشِ",
+            "audioFileName": "9L-1T-7-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "لَقَدْ خَلَقْنَا الْإِنسَانَ",
+            "audioFileName": "9L-1T-8-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "مِنْ وَرَاءِهِمْ",
+            "audioFileName": "9L-1T-8-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِنْ نِّعْمَةِ",
+            "audioFileName": "9L-1T-9-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مِن دَارِهِم",
+            "audioFileName": "9L-1T-9-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِنْ بَعْدِ",
+            "audioFileName": "9L-1T-10-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "أَأَنذَرْتَهُمْ  تُنذِرْهُم",
+            "audioFileName": "9L-1T-10-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "مُنْفَطِرٌ بِهِ",
+            "audioFileName": "9L-1T-11-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "مِنْ آيَاتِ اللهِ",
+            "audioFileName": "9L-1T-11-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "كِتَابُ اللهِ",
+            "audioFileName": "9L-1T-12-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "لَيُنْبَذَنَّ",
+            "audioFileName": "9L-1T-12-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَمَنْ بَلَغَ",
+            "audioFileName": "9L-1T-13-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "خَيْرُ الْبَرِيَّةُ",
+            "audioFileName": "9L-1T-13-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "نَارٌ حَامِیَةُ",
+            "audioFileName": "9L-1T-14-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "أَنْبِئْهُمْ",
+            "audioFileName": "9L-1T-14-2.mp3",
+            "isCorrect": true
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "مَشَّاءٍ بِنَعِيمٍ",
+            "audioFileName": "9L-1T-15-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "عَلَیۡهِمۡ نَارٌ مُّؤۡصَدَةٌ",
+            "audioFileName": "9L-1T-15-2.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Выберите аят, в котором правильно реализовано правило Ихфа или Иклаб."
+      }
+    ]
+  }
+]

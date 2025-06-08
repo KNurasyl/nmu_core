@@ -1,0 +1,15 @@
+@use 'base/reset';
+@use 'components/forms/auth';
+@use 'components/layouts/mainLayout';
+@use 'components/cards/courseCard';
+@use 'components/cards/lessonCard';
+@use 'components/cards/taskCard';
+@use 'components/course/courseList';
+@use 'components/lesson/lessonList';
+@use 'components/lesson/lessonPromo';
+@use 'components/lesson/lessonPage';
+@use 'components/videoPlayer/lessonVideoPlayer';
+@use 'components/task/taskPage';
+@use 'components/task/taskProgress';
+@use 'components/task/taskDesc';
+@use 'components/task/types/taskA';

@@ -1,0 +1,289 @@
+[
+  {
+    "type": "tajvid-2l-2t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-2",
+    "data": [
+      {
+        "question": "وَلَمْ يَكُنْ لَّهُ كُفُو…ا أَحَدٌ",
+        "correctAnswer": "وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ",
+        "variants": [
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          },
+          {
+            "variant": "фатха",
+            "isCorrect": true
+          }
+        ],
+        "audioFileName": "2L-2T-1.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "فَإِنَّ مَعَ العُسْرِ يُسْر…ا",
+        "correctAnswer": "فَإِنَّ مَعَ العُسْرِ يُسْرًا",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": true
+          },
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-2.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "عَبْد…ا إِذَا صَلَّى",
+        "correctAnswer": "عَبْدًا إِذَا صَلَّى",
+        "variants": [
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          },
+          {
+            "variant": "фатха",
+            "isCorrect": true
+          }
+        ],
+        "audioFileName": "2L-2T-3.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "وَلِسَان…ا وَشَفَتَيْنِ",
+        "correctAnswer": "وَلِسَانًا وَشَفَتَيْنِ",
+        "variants": [
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "фатха",
+            "isCorrect": true
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-4.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "وَتُحِبُّونَ الْمَالَ حُبّ…ا جَمًّا",
+        "correctAnswer": "وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": true
+          },
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-5.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "وَمِن شَرِّ غَاسِق... إِذَا وَقَبَ",
+        "correctAnswer": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": true
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-6.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "تَبَّتۡ یَدَاۤ أَبِی لَهَب... وَتَبَّ",
+        "correctAnswer": "تَبَّتۡ یَدَاۤ أَبِی لَهَبٍ وَتَبَّ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": true
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-7.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "…لِإيلَفِ قُرَيْش",
+        "correctAnswer": "لِإِیلَـٰفِ قُرَیۡشٍ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": true
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-8.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "فَجَعَلَهُمۡ كَعَصۡف... مَّأۡكُولِۭ",
+        "correctAnswer": "فَجَعَلَهُمۡ كَعَصۡفٍ مَّأۡكُولِ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": true
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-9.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "ثُمَّ لَتُسۡـَٔلُنَّ یَوۡمَىِٕذ... عَنِ ٱلنَّعِیمِ",
+        "correctAnswer": "ثُمَّ لَتُسۡـَٔلُنَّ یَوۡمَىِٕذٍ عَنِ ٱلنَّعِیمِ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": true
+          },
+          {
+            "variant": "домма",
+            "isCorrect": false
+          }
+        ],
+        "audioFileName": "2L-2T-10.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "نَار... حَامِیَةُۢ",
+        "correctAnswer": "نَارٌ حَامِیَةُ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": true
+          }
+        ],
+        "audioFileName": "2L-2T-11.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "وَأَنتَ حِلّ... بِهَـٰذَا ٱلۡبَلَدِ",
+        "correctAnswer": "وَأَنتَ حِلٌّ بِهَـٰذَا ٱلۡبَلَدِ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": true
+          }
+        ],
+        "audioFileName": "2L-2T-13.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "فِیهَا عَیۡن... جَارِیَةٌ",
+        "correctAnswer": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": true
+          }
+        ],
+        "audioFileName": "2L-2T-14.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      },
+      {
+        "question": "فِیهَا سُرُر... مَّرۡفُوعَةٌ",
+        "correctAnswer": "فِیهَا سُرُرٌ مَّرۡفُوعَةٌ",
+        "variants": [
+          {
+            "variant": "фатха",
+            "isCorrect": false
+          },
+          {
+            "variant": "касра",
+            "isCorrect": false
+          },
+          {
+            "variant": "домма",
+            "isCorrect": true
+          }
+        ],
+        "audioFileName": "2L-2T-15.mp3",
+        "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+      }
+    ]
+  }
+]

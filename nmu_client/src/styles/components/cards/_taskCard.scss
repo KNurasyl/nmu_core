@@ -1,0 +1,27 @@
+.task_card {
+	border-radius: 10px;
+	background-color: #ffffff;
+	transition: 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__description {
+		margin-top: 8px;
+		font-size: 14px;
+		color: #555;
+	}
+
+	&--completed {
+		background-color: #f6ffed; // зелёный фон
+		border: 1px solid #b7eb8f;
+	}
+}

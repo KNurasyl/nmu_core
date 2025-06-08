@@ -1,0 +1,129 @@
+[
+  {
+    "type": "tajvid-1l-2t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-1",
+    "data": [
+      {
+        "question": "قُلْ أَعُ…ذُ بِرَبِّ الْفَلَقِ",
+        "correctAnswer": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "و",
+        "audioFileName": "1L-2T-1.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "لَمْ يَلِدْ وَلَمْ يُ…لَدْ",
+        "correctAnswer": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "و",
+        "audioFileName": "1L-2T-2.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "وَيَمْنَعُ…نَ الْمَاعُونَ",
+        "correctAnswer": "وَيَمْنَعُونَ الْمَاعُونَ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "و",
+        "audioFileName": "1L-2T-3.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "وَطُ…رِ سِينِينَ",
+        "correctAnswer": "وَطُورِ سِينِينَ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "و",
+        "audioFileName": "1L-2T-4.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "وَلَا أَنتُمْ عَابِدُ…نَ مَا أَعْبُدُ",
+        "correctAnswer": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "و",
+        "audioFileName": "1L-2T-5.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "مِن شَرِّ مَ… خَلَقَ",
+        "correctAnswer": "مِن شَرِّ مَا خَلَقَ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ا",
+        "audioFileName": "1L-2T-6.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "إِنَّ شَ…نِئَكَ هُوَ الْأَبْتَرُ",
+        "correctAnswer": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ا",
+        "audioFileName": "1L-2T-7.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "نَ…رُ اللَّهِ الْمُوقَدَةُ",
+        "correctAnswer": "نَارُ اللَّهِ الْمُوقَدَة",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ا",
+        "audioFileName": "1L-2T-8.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "مَا الْقَ…رِعَةُ",
+        "correctAnswer": "مَا الْقَارِعَةُ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ا",
+        "audioFileName": "1L-2T-9.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "إِنَّهَ… عَلَيهِم مُّؤْصَدَةٌ",
+        "correctAnswer": "إِنَّهَا عَلَيهِم مُّؤْصَدَةٌ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ا",
+        "audioFileName": "1L-2T-10.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "الَّذِ…نَ هُمْ يُرَاءُونَ",
+        "correctAnswer": "الَّذِينَ هُمْ يُرَاءُونَ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ي",
+        "audioFileName": "1L-2T-11.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "لِإِ…لَافِ قُرَيْشٍ",
+        "correctAnswer": "لِإِيلَافِ قُرَيْشٍ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ي",
+        "audioFileName": "1L-2T-12.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "وَالتِّ…نِ وَالزَّيْتُونِ",
+        "correctAnswer": "وَالتِّينِ وَالزَّيْتُونِ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ي",
+        "audioFileName": "1L-2T-13.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "فِي جِ…دِهَا حَبْلٌ مِّن مَّسَدٍ",
+        "correctAnswer": "فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ي",
+        "audioFileName": "1L-2T-14.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      },
+      {
+        "question": "تَرْمِ…هِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+        "correctAnswer": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+        "variants": ["ي", "ا", "و"],
+        "correctVariant": "ي",
+        "audioFileName": "1L-2T-15.mp3",
+        "description": "Выберите правильную букву для вставки в предложение."
+      }
+    ]
+  }
+]

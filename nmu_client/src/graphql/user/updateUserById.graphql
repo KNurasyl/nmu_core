@@ -1,0 +1,8 @@
+mutation UpdateUserById($input: UpdateUserInput!) {
+  updateUserById(updateUserInput: $input) {
+    _id
+    phoneNumber
+    userName
+    userRole
+  }
+}

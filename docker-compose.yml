@@ -1,0 +1,69 @@
+version: "3.9"
+
+networks:
+  app-net:                # <-- одна общая сеть
+    driver: bridge
+
+volumes:
+  db-data:
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: mongodb
+    ports: ["27017:27017"]
+    volumes: [db-data:/data/db]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+    networks: [app-net]
+    restart: always
+
+  nmu_app:
+    build: ./nmu_app
+    container_name: nmu_app
+    ports: ["5000:5000"]
+    environment:
+      PORT: 5000               # <-- явное
+      SERVER_PORT: 5000
+      MONGODB_URI: mongodb://root:123456@mongodb:27017/nmu_v2?authSource=admin
+      JWT_SECRET: secret
+      CORS_ORIGIN: "http://client.localhost,http://admin.localhost"
+    depends_on: [mongodb]
+    networks: [app-net]
+
+  nmu_client:
+    build:
+      context: ./nmu_client
+      args:
+        NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
+    container_name: nmu_client
+    ports: ["3000:3000"]
+    environment:
+      PORT: 3000               # <-- важно для Next
+      NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
+    depends_on: [nmu_app]
+    networks: [app-net]
+
+  nmu_admin:
+    build:
+      context: ./nmu_admin
+      args:
+        NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
+    container_name: nmu_admin
+    ports: ["4000:4000"]
+    environment:
+      PORT: 4000               # <-- важно
+      NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
+    depends_on: [nmu_app]
+    networks: [app-net]
+
+  nginx:
+    image: nginx:1.25
+    container_name: nginx
+    ports: ["80:80"]
+    depends_on: [nmu_app, nmu_client, nmu_admin]
+    volumes:
+      # целый каталог с тремя конфигами
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+    networks: [app-net]

@@ -1,0 +1,324 @@
+[
+  {
+    "type": "tajvid-12l-2t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-12",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "وَرَأَیۡتَ ٱلنَّاسَ",
+            "audioFileName": "12L-2T-1-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَرَأَیۡتَ ٱلنَّاسَ",
+            "audioFileName": "12L-2T-1-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَرَأَیۡتَ ٱلنَّاسَ",
+            "audioFileName": "12L-2T-1-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَرَأَیۡتَ ٱلنَّاسَ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "لَكُمۡ دِینُكُمۡ",
+            "audioFileName": "12L-2T-2-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "لَكُمۡ دِینُكُمۡ",
+            "audioFileName": "12L-2T-2-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "لَكُمۡ دِینُكُمۡ",
+            "audioFileName": "12L-2T-2-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "لَكُمۡ دِینُكُمۡ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "قُلۡ أَعُوذُ",
+            "audioFileName": "12L-2T-3-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "قُلۡ أَعُوذُ",
+            "audioFileName": "12L-2T-3-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "قُلۡ أَعُوذُ",
+            "audioFileName": "12L-2T-3-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "قُلۡ أَعُوذُ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+            "audioFileName": "12L-2T-4-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+            "audioFileName": "12L-2T-4-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+            "audioFileName": "12L-2T-4-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+            "audioFileName": "12L-2T-5-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+            "audioFileName": "12L-2T-5-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+            "audioFileName": "12L-2T-5-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِمَّاۤ أُوتُوا۟",
+            "audioFileName": "12L-2T-6-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مِمَّاۤ أُوتُوا۟",
+            "audioFileName": "12L-2T-6-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مِمَّاۤ أُوتُوا۟",
+            "audioFileName": "12L-2T-6-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "مِمَّاۤ أُوتُوا۟",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَٱلۡجِبَالَ أَوۡتَادًا",
+            "audioFileName": "12L-2T-7-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَٱلۡجِبَالَ أَوۡتَادًا",
+            "audioFileName": "12L-2T-7-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَٱلۡجِبَالَ أَوۡتَادًا",
+            "audioFileName": "12L-2T-7-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَٱلۡجِبَالَ أَوۡتَادًا",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+            "audioFileName": "12L-2T-8-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+            "audioFileName": "12L-2T-8-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+            "audioFileName": "12L-2T-8-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+            "audioFileName": "12L-2T-9-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+            "audioFileName": "12L-2T-9-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+            "audioFileName": "12L-2T-9-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِلَی طَعَامِهِے أَنَّا",
+            "audioFileName": "12L-2T-10-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِلَی طَعَامِهِے أَنَّا",
+            "audioFileName": "12L-2T-10-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "إِلَی طَعَامِهِے أَنَّا",
+            "audioFileName": "12L-2T-10-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "إِلَی طَعَامِهِے أَنَّا",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "مَالَەُوٓ أَخْلَدَە",
+            "audioFileName": "12L-2T-11-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مَالَەُوٓ أَخْلَدَە",
+            "audioFileName": "12L-2T-11-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مَالَەُوٓ أَخْلَدَە",
+            "audioFileName": "12L-2T-11-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "مَالَەُوٓ أَخْلَدَە",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "أَنْزَلَهُ إِلَيْكُمْ",
+            "audioFileName": "12L-2T-12-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "أَنْزَلَهُ إِلَيْكُمْ",
+            "audioFileName": "12L-2T-12-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "أَنْزَلَهُ إِلَيْكُمْ",
+            "audioFileName": "12L-2T-12-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "أَنْزَلَهُ إِلَيْكُمْ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "فَإِنَّهُ يَسْلُكُ",
+            "audioFileName": "12L-2T-13-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فَإِنَّهُ يَسْلُكُ",
+            "audioFileName": "12L-2T-13-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "فَإِنَّهُ يَسْلُكُ",
+            "audioFileName": "12L-2T-13-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "فَإِنَّهُ يَسْلُكُ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِلَى رَبِّهِ سَبِيلًا",
+            "audioFileName": "12L-2T-14-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِلَى رَبِّهِ سَبِيلًا",
+            "audioFileName": "12L-2T-14-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "إِلَى رَبِّهِ سَبِيلًا",
+            "audioFileName": "12L-2T-14-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "إِلَى رَبِّهِ سَبِيلًا",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+            "audioFileName": "12L-2T-15-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+            "audioFileName": "12L-2T-15-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+            "audioFileName": "12L-2T-15-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+        "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+      }
+    ]
+  }
+]

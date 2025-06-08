@@ -1,0 +1,1458 @@
+[
+  {
+    "type": "c",
+    "order": 1,
+    "correctLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "ش",
+      "audioFileName": "shin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 2,
+    "correctLetter": {
+      "arabicLetter": "ش",
+      "audioFileName": "shin.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 3,
+    "correctLetter": {
+      "arabicLetter": "ص",
+      "audioFileName": "sod.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 4,
+    "correctLetter": {
+      "arabicLetter": "ض",
+      "audioFileName": "dod.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 5,
+    "correctLetter": {
+      "arabicLetter": "ي",
+      "audioFileName": "ya.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 6,
+    "correctLetter": {
+      "arabicLetter": "ط",
+      "audioFileName": "to.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 7,
+    "correctLetter": {
+      "arabicLetter": "ظ",
+      "audioFileName": "zo.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 8,
+    "correctLetter": {
+      "arabicLetter": "ي",
+      "audioFileName": "ya.mp3",
+      "lessonCode": "lesson-3"
+    },
+    "similarLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-3"
+    }
+  },
+  {
+    "type": "c",
+    "order": 9,
+    "correctLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "م",
+      "audioFileName": "mim.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 10,
+    "correctLetter": {
+      "arabicLetter": "م",
+      "audioFileName": "mim.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 11,
+    "correctLetter": {
+      "arabicLetter": "ك",
+      "audioFileName": "kaf.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 12,
+    "correctLetter": {
+      "arabicLetter": "ا",
+      "audioFileName": "alif.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 13,
+    "correctLetter": {
+      "arabicLetter": "د",
+      "audioFileName": "dal.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 14,
+    "correctLetter": {
+      "arabicLetter": "ذ",
+      "audioFileName": "zal.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 15,
+    "correctLetter": {
+      "arabicLetter": "ر",
+      "audioFileName": "ro.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 16,
+    "correctLetter": {
+      "arabicLetter": "ز",
+      "audioFileName": "za.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 17,
+    "correctLetter": {
+      "arabicLetter": "و",
+      "audioFileName": "uau.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 18,
+    "correctLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "be.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 19,
+    "correctLetter": {
+      "arabicLetter": "ت",
+      "audioFileName": "te.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 20,
+    "correctLetter": {
+      "arabicLetter": "ث",
+      "audioFileName": "sa.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 21,
+    "correctLetter": {
+      "arabicLetter": "ن",
+      "audioFileName": "nun.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 22,
+    "correctLetter": {
+      "arabicLetter": "ف",
+      "audioFileName": "fa.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 23,
+    "correctLetter": {
+      "arabicLetter": "ق",
+      "audioFileName": "qof.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 24,
+    "correctLetter": {
+      "arabicLetter": "س",
+      "audioFileName": "sin.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 25,
+    "correctLetter": {
+      "arabicLetter": "ش",
+      "audioFileName": "shin.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 26,
+    "correctLetter": {
+      "arabicLetter": "ص",
+      "audioFileName": "sod.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 27,
+    "correctLetter": {
+      "arabicLetter": "ض",
+      "audioFileName": "dod.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 28,
+    "correctLetter": {
+      "arabicLetter": "ط",
+      "audioFileName": "to.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 29,
+    "correctLetter": {
+      "arabicLetter": "ظ",
+      "audioFileName": "zo.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 30,
+    "correctLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 31,
+    "correctLetter": {
+      "arabicLetter": "ع",
+      "audioFileName": "ain.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 32,
+    "correctLetter": {
+      "arabicLetter": "خ",
+      "audioFileName": "ho.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 33,
+    "correctLetter": {
+      "arabicLetter": "ح",
+      "audioFileName": "ha.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 34,
+    "correctLetter": {
+      "arabicLetter": "غ",
+      "audioFileName": "goin.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 35,
+    "correctLetter": {
+      "arabicLetter": "ه",
+      "audioFileName": "he.mp3",
+      "lessonCode": "lesson-5"
+    },
+    "similarLetter": {
+      "arabicLetter": "ل",
+      "audioFileName": "lam.mp3",
+      "lessonCode": "lesson-5"
+    }
+  },
+  {
+    "type": "c",
+    "order": 36,
+    "correctLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-4"
+    },
+    "similarLetter": {
+      "arabicLetter": "ع",
+      "audioFileName": "ain.mp3",
+      "lessonCode": "lesson-4"
+    }
+  },
+  {
+    "type": "c",
+    "order": 37,
+    "correctLetter": {
+      "arabicLetter": "ع",
+      "audioFileName": "ain.mp3",
+      "lessonCode": "lesson-4"
+    },
+    "similarLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-4"
+    }
+  },
+  {
+    "type": "c",
+    "order": 38,
+    "correctLetter": {
+      "arabicLetter": "خ",
+      "audioFileName": "ho.mp3",
+      "lessonCode": "lesson-4"
+    },
+    "similarLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-4"
+    }
+  },
+  {
+    "type": "c",
+    "order": 39,
+    "correctLetter": {
+      "arabicLetter": "ح",
+      "audioFileName": "ha.mp3",
+      "lessonCode": "lesson-4"
+    },
+    "similarLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-4"
+    }
+  },
+  {
+    "type": "c",
+    "order": 40,
+    "correctLetter": {
+      "arabicLetter": "غ",
+      "audioFileName": "goin.mp3",
+      "lessonCode": "lesson-4"
+    },
+    "similarLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-4"
+    }
+  },
+  {
+    "type": "c",
+    "order": 41,
+    "correctLetter": {
+      "arabicLetter": "ه",
+      "audioFileName": "haa.mp3",
+      "lessonCode": "lesson-4"
+    },
+    "similarLetter": {
+      "arabicLetter": "ج",
+      "audioFileName": "jim.mp3",
+      "lessonCode": "lesson-4"
+    }
+  },
+  {
+    "type": "c",
+    "order": 42,
+    "correctLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "ضِ",
+      "audioFileName": "di.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 43,
+    "correctLetter": {
+      "arabicLetter": "ضِ",
+      "audioFileName": "di.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 44,
+    "correctLetter": {
+      "arabicLetter": "زِ",
+      "audioFileName": "zzi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 45,
+    "correctLetter": {
+      "arabicLetter": "رِ",
+      "audioFileName": "ri.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 46,
+    "correctLetter": {
+      "arabicLetter": "ظِ",
+      "audioFileName": "zii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 47,
+    "correctLetter": {
+      "arabicLetter": "وِ",
+      "audioFileName": "ui.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 48,
+    "correctLetter": {
+      "arabicLetter": "بِ",
+      "audioFileName": "bi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 49,
+    "correctLetter": {
+      "arabicLetter": "تِ",
+      "audioFileName": "ti.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 50,
+    "correctLetter": {
+      "arabicLetter": "ثِ",
+      "audioFileName": "ssi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 51,
+    "correctLetter": {
+      "arabicLetter": "نِ",
+      "audioFileName": "ni.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 52,
+    "correctLetter": {
+      "arabicLetter": "يِ",
+      "audioFileName": "ii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 53,
+    "correctLetter": {
+      "arabicLetter": "فِ",
+      "audioFileName": "fi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 54,
+    "correctLetter": {
+      "arabicLetter": "قِ",
+      "audioFileName": "qi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 55,
+    "correctLetter": {
+      "arabicLetter": "سِ",
+      "audioFileName": "si.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 56,
+    "correctLetter": {
+      "arabicLetter": "شِ",
+      "audioFileName": "shi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 57,
+    "correctLetter": {
+      "arabicLetter": "صِ",
+      "audioFileName": "sii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 58,
+    "correctLetter": {
+      "arabicLetter": "دِ",
+      "audioFileName": "dii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 59,
+    "correctLetter": {
+      "arabicLetter": "طِ",
+      "audioFileName": "tii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 60,
+    "correctLetter": {
+      "arabicLetter": "ظِ",
+      "audioFileName": "zii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 61,
+    "correctLetter": {
+      "arabicLetter": "جِ",
+      "audioFileName": "ji.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 62,
+    "correctLetter": {
+      "arabicLetter": "حِ",
+      "audioFileName": "hi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 63,
+    "correctLetter": {
+      "arabicLetter": "خِ",
+      "audioFileName": "hii.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 64,
+    "correctLetter": {
+      "arabicLetter": "عِ",
+      "audioFileName": "yi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 65,
+    "correctLetter": {
+      "arabicLetter": "غِ",
+      "audioFileName": "gi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 66,
+    "correctLetter": {
+      "arabicLetter": "هـِ",
+      "audioFileName": "hhi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 67,
+    "correctLetter": {
+      "arabicLetter": "كِ",
+      "audioFileName": "ki.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 68,
+    "correctLetter": {
+      "arabicLetter": "لِ",
+      "audioFileName": "li.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 69,
+    "correctLetter": {
+      "arabicLetter": "مِ",
+      "audioFileName": "mi.mp3",
+      "lessonCode": "lesson-7"
+    },
+    "similarLetter": {
+      "arabicLetter": "اِ",
+      "audioFileName": "i.mp3",
+      "lessonCode": "lesson-7"
+    }
+  },
+  {
+    "type": "c",
+    "order": 70,
+    "correctLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "دُ",
+      "audioFileName": "du.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 71,
+    "correctLetter": {
+      "arabicLetter": "دُ",
+      "audioFileName": "du.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 72,
+    "correctLetter": {
+      "arabicLetter": "ذُ",
+      "audioFileName": "zuu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 73,
+    "correctLetter": {
+      "arabicLetter": "رُ",
+      "audioFileName": "ru.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 74,
+    "correctLetter": {
+      "arabicLetter": "زُ",
+      "audioFileName": "zu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 75,
+    "correctLetter": {
+      "arabicLetter": "وُ",
+      "audioFileName": "uu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 76,
+    "correctLetter": {
+      "arabicLetter": "بُ",
+      "audioFileName": "bu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 77,
+    "correctLetter": {
+      "arabicLetter": "تُ",
+      "audioFileName": "tu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 78,
+    "correctLetter": {
+      "arabicLetter": "ثُ",
+      "audioFileName": "suu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 79,
+    "correctLetter": {
+      "arabicLetter": "نُ",
+      "audioFileName": "nu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 80,
+    "correctLetter": {
+      "arabicLetter": "يُ",
+      "audioFileName": "iu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 81,
+    "correctLetter": {
+      "arabicLetter": "فُ",
+      "audioFileName": "fu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 82,
+    "correctLetter": {
+      "arabicLetter": "قُ",
+      "audioFileName": "qu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 83,
+    "correctLetter": {
+      "arabicLetter": "سُ",
+      "audioFileName": "su.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 84,
+    "correctLetter": {
+      "arabicLetter": "شُ",
+      "audioFileName": "shu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 85,
+    "correctLetter": {
+      "arabicLetter": "صُ",
+      "audioFileName": "shuu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 86,
+    "correctLetter": {
+      "arabicLetter": "ضُ",
+      "audioFileName": "duu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 87,
+    "correctLetter": {
+      "arabicLetter": "طُ",
+      "audioFileName": "tuu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 88,
+    "correctLetter": {
+      "arabicLetter": "ظُ",
+      "audioFileName": "zzu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 89,
+    "correctLetter": {
+      "arabicLetter": "جُ",
+      "audioFileName": "ju.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 90,
+    "correctLetter": {
+      "arabicLetter": "حُ",
+      "audioFileName": "hu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 91,
+    "correctLetter": {
+      "arabicLetter": "خُ",
+      "audioFileName": "hhu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 92,
+    "correctLetter": {
+      "arabicLetter": "عُ",
+      "audioFileName": "yu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 93,
+    "correctLetter": {
+      "arabicLetter": "غُ",
+      "audioFileName": "gu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 94,
+    "correctLetter": {
+      "arabicLetter": "هـُ",
+      "audioFileName": "huu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 95,
+    "correctLetter": {
+      "arabicLetter": "كُ",
+      "audioFileName": "ku.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 96,
+    "correctLetter": {
+      "arabicLetter": "لُ",
+      "audioFileName": "lu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 97,
+    "correctLetter": {
+      "arabicLetter": "مُ",
+      "audioFileName": "mu.mp3",
+      "lessonCode": "lesson-8"
+    },
+    "similarLetter": {
+      "arabicLetter": "اُ",
+      "audioFileName": "u.mp3",
+      "lessonCode": "lesson-8"
+    }
+  },
+  {
+    "type": "c",
+    "order": 98,
+    "correctLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ي",
+      "audioFileName": "ia.mp3",
+      "lessonCode": "lesson-2"
+    }
+  },
+  {
+    "type": "c",
+    "order": 99,
+    "correctLetter": {
+      "arabicLetter": "ي",
+      "audioFileName": "ia.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    }
+  },
+  {
+    "type": "c",
+    "order": 100,
+    "correctLetter": {
+      "arabicLetter": "ت",
+      "audioFileName": "ta.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    }
+  },
+  {
+    "type": "c",
+    "order": 101,
+    "correctLetter": {
+      "arabicLetter": "ث",
+      "audioFileName": "sa.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    }
+  },
+  {
+    "type": "c",
+    "order": 102,
+    "correctLetter": {
+      "arabicLetter": "ن",
+      "audioFileName": "nun.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    }
+  },
+  {
+    "type": "c",
+    "order": 103,
+    "correctLetter": {
+      "arabicLetter": "ف",
+      "audioFileName": "fa.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    }
+  },
+  {
+    "type": "c",
+    "order": 104,
+    "correctLetter": {
+      "arabicLetter": "ق",
+      "audioFileName": "kof.mp3",
+      "lessonCode": "lesson-2"
+    },
+    "similarLetter": {
+      "arabicLetter": "ب",
+      "audioFileName": "ba.mp3",
+      "lessonCode": "lesson-2"
+    }
+  }
+]

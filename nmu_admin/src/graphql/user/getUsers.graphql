@@ -1,0 +1,8 @@
+query GetUsers {
+	getUsers {
+		_id
+		phoneNumber
+		userName
+		userRole
+	}
+}

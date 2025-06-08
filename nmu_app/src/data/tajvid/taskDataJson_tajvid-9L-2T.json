@@ -1,0 +1,303 @@
+[
+  {
+    "type": "tajvid-9l-2t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-9",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "فَمَن يُؤْمِن بِرَبِّهِ",
+            "audioFileName": "9L-2T-1-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "فَمَن يُؤْمِن بِرَبِّهِ",
+            "audioFileName": "9L-2T-1-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فَمَن يُؤْمِن بِرَبِّهِ",
+            "audioFileName": "9L-2T-1-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "فَمَن يُؤْمِن بِرَبِّهِ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "صُمٌّ بُكْمٌ عُمْيٌ",
+            "audioFileName": "9L-2T-2-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "صُمٌّ بُكْمٌ عُمْيٌ",
+            "audioFileName": "9L-2T-2-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "صُمٌّ بُكْمٌ عُمْيٌ",
+            "audioFileName": "9L-2T-2-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "صُمٌّ بُكْمٌ عُمْيٌ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+            "audioFileName": "9L-2T-3-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+            "audioFileName": "9L-2T-3-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+            "audioFileName": "9L-2T-3-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+            "audioFileName": "9L-2T-4-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+            "audioFileName": "9L-2T-4-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+            "audioFileName": "9L-2T-4-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "كِرَامٍ بَرَرَةٍ",
+            "audioFileName": "9L-2T-5-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "كِرَامٍ بَرَرَةٍ",
+            "audioFileName": "9L-2T-5-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "كِرَامٍ بَرَرَةٍ",
+            "audioFileName": "9L-2T-5-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "كِرَامٍ بَرَرَةٍ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+            "audioFileName": "9L-2T-6-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+            "audioFileName": "9L-2T-6-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+            "audioFileName": "9L-2T-6-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+            "audioFileName": "9L-2T-7-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+            "audioFileName": "9L-2T-7-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+            "audioFileName": "9L-2T-7-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "مِن شَرِّ مَا خَلَقَ",
+            "audioFileName": "9L-2T-8-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "مِن شَرِّ مَا خَلَقَ",
+            "audioFileName": "9L-2T-8-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "مِن شَرِّ مَا خَلَقَ",
+            "audioFileName": "9L-2T-8-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "مِن شَرِّ مَا خَلَقَ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+            "audioFileName": "9L-2T-9-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+            "audioFileName": "9L-2T-9-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+            "audioFileName": "9L-2T-9-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+            "audioFileName": "9L-2T-10-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+            "audioFileName": "9L-2T-10-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+            "audioFileName": "9L-2T-10-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+            "audioFileName": "9L-2T-11-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+            "audioFileName": "9L-2T-11-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+            "audioFileName": "9L-2T-11-3.mp3",
+            "isCorrect": true
+          }
+        ],
+        "question": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+            "audioFileName": "9L-2T-12-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+            "audioFileName": "9L-2T-12-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+            "audioFileName": "9L-2T-12-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+            "audioFileName": "9L-2T-13-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+            "audioFileName": "9L-2T-13-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+            "audioFileName": "9L-2T-13-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      },
+      {
+        "variants": [
+          {
+            "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+            "audioFileName": "9L-2T-14-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+            "audioFileName": "9L-2T-14-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+            "audioFileName": "9L-2T-14-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "question": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+        "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+      }
+    ]
+  }
+]
