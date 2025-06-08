@@ -61,7 +61,18 @@ services:
             - backend
         networks:
             - app-network
-
+    certbot:
+        image: certbot/certbot
+        container_name: nmu_certbot
+        volumes:
+            - ./nginx/ssl:/etc/letsencrypt/live/nmacademy.kz
+            - ./nginx/certbot/www:/var/www/certbot
+        entrypoint: >
+            sh -c "certbot certonly --webroot -w /var/www/certbot
+            --email you@example.com --agree-tos --no-eff-email
+            -d nmacademy.kz &&
+            cp /etc/letsencrypt/live/nmacademy.kz/fullchain.pem /etc/letsencrypt/live/nmacademy.kz/../fullchain.pem &&
+            cp /etc/letsencrypt/live/nmacademy.kz/privkey.pem /etc/letsencrypt/live/nmacademy.kz/../privkey.pem"
 volumes:
     db-data:
 
