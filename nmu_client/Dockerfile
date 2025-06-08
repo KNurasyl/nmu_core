@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Копируем package.json и lock-файлы
 COPY package*.json ./
-COPY .env ./.env
+# COPY .env ./.env
 COPY . .
 
 RUN npm install --frozen-lockfile
