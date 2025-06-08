@@ -62,8 +62,7 @@ services:
             - app-network
 
     nginx:
-        build:
-        dockerfile: ./nginx/Dockerfile
+        build: ./data/nginx
         container_name: nmu_nginx
         ports:
             - "80:80"
