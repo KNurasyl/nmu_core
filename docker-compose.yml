@@ -2,53 +2,50 @@ version: "3.8"
 
 services:
     client:
-        build:
-        context: ./nmu_client
+        build: ./nmu_client
         container_name: nmu_client
         expose:
             - "3000"
         environment:
-            SERVER_PORT: ${SERVER_PORT}
-            MONGODB_URI: ${MONGODB_URI}
-            MONGODB_DB: ${MONGODB_DB}
-            JWT_SECRET: ${JWT_SECRET}
-            NODE_ENV: ${NODE_ENV}
-            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
-            PORT: ${PORT}
+            SERVER_PORT: SERVER_PORT
+            MONGODB_URI: MONGODB_URI
+            MONGODB_DB: MONGODB_DB
+            JWT_SECRET: JWT_SECRET
+            NODE_ENV: NODE_ENV
+            NEXT_PUBLIC_GRAPHQL_API: NEXT_PUBLIC_GRAPHQL_API
+            PORT: PORT
         networks:
             - app-network
 
     admin:
-        build:
-        context: ./nmu_admin
+        build: ./nmu_admin
         container_name: nmu_admin
         expose:
             - "3000"
         environment:
-            SERVER_PORT: ${SERVER_PORT}
-            MONGODB_URI: ${MONGODB_URI}
-            MONGODB_DB: ${MONGODB_DB}
-            JWT_SECRET: ${JWT_SECRET}
-            NODE_ENV: ${NODE_ENV}
-            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
-            PORT: ${PORT}
+            SERVER_PORT: SERVER_PORT
+            MONGODB_URI: MONGODB_URI
+            MONGODB_DB: MONGODB_DB
+            JWT_SECRET: JWT_SECRET
+            NODE_ENV: NODE_ENV
+            NEXT_PUBLIC_GRAPHQL_API: NEXT_PUBLIC_GRAPHQL_API
+            PORT: PORT
         networks:
             - app-network
 
     backend:
-        build:
-        context: ./nmu_app
+        build: ./nmu_app
         container_name: nmu_backend
         expose:
             - "5000"
         environment:
-            SERVER_PORT: ${SERVER_PORT}
-            MONGODB_URI: ${MONGODB_URI}
-            MONGODB_DB: ${MONGODB_DB}
-            JWT_SECRET: ${JWT_SECRET}
-            NODE_ENV: ${NODE_ENV}
-            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
-            PORT: ${PORT}
+            SERVER_PORT: SERVER_PORT
+            MONGODB_URI: MONGODB_URI
+            MONGODB_DB: MONGODB_DB
+            JWT_SECRET: JWT_SECRET
+            NODE_ENV: NODE_ENV
+            NEXT_PUBLIC_GRAPHQL_API: NEXT_PUBLIC_GRAPHQL_API
+            PORT: PORT
         depends_on:
             - db
         networks:
@@ -66,7 +63,6 @@ services:
 
     nginx:
         build:
-        context: .
         dockerfile: ./nginx/Dockerfile
         container_name: nmu_nginx
         ports:
