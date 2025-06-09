@@ -89,8 +89,8 @@ services:
             - ./data/certbot/conf:/etc/letsencrypt
         entrypoint: >
             sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
-            --email your@email.com --agree-tos --no-eff-email
-            -d admin-nmuacademy.kz"
+                --email you@example.com --agree-tos --no-eff-email
+                -d admin-nmuacademy.kz"
 
 volumes:
     db-data:
