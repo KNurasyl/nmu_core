@@ -1,0 +1,133 @@
+.task_result {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	background: #f6fbfe;
+	padding: 24px 0 32px 0;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 768px) {
+		justify-content: center;
+		padding: 32px 0;
+	}
+
+	.bravo_block {
+		width: 92vw;
+		max-width: 420px;
+		min-width: 260px;
+		background: #47d58c1a;
+		border-radius: 20px;
+		padding: 24px 20px 16px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+		margin-bottom: 18px;
+		box-shadow: 0 2px 14px rgba(60, 190, 120, 0.06);
+
+		@media (min-width: 540px) {
+			max-width: 420px;
+		}
+		@media (max-width: 480px) {
+			padding: 16px 8px 10px 8px;
+			gap: 6px;
+		}
+	}
+
+	.text_block {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		flex: 1;
+
+		.ant-typography {
+			font-size: 1.12rem;
+			font-weight: 500;
+			color: #14b25e;
+			line-height: 1.2;
+
+			&:first-child {
+				font-size: 1.3rem;
+				font-weight: 700;
+				margin-bottom: 5px;
+			}
+			&:nth-child(2) {
+				color: #36454f;
+				font-weight: 600;
+			}
+			&:nth-child(3) {
+				color: #1bca7b;
+				font-weight: 600;
+			}
+			&:nth-child(4) {
+				color: #eb4e3d;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.lesson_promo__progress-circle {
+		margin-left: 8px;
+		.ant-progress-inner {
+			background: #e4f6ec;
+		}
+		.ant-progress-text {
+			font-size: 1.09rem;
+			font-weight: 700;
+			color: #17b26a;
+		}
+	}
+
+	.timeout_block {
+		width: 92vw;
+		max-width: 420px;
+		min-width: 260px;
+		background: #f6fafd;
+		border-radius: 16px;
+		margin: 0 auto 18px auto;
+		padding: 12px 0 14px 0;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		.ant-typography {
+			font-size: 1.08rem;
+			color: #989faf;
+			font-weight: 500;
+
+			&:last-child {
+				font-size: 2.25rem;
+				font-weight: 800;
+				color: #323742;
+				margin-top: 4px;
+			}
+		}
+	}
+
+	.ant-btn {
+		width: 92vw;
+		max-width: 420px;
+		min-width: 260px;
+		height: 54px;
+		font-size: 1.17rem;
+		font-weight: 700;
+		color: #fff;
+		background: #4087f9;
+		border-radius: 16px;
+		border: none;
+		margin-top: 14px;
+		box-shadow: 0 2px 16px rgba(51, 107, 255, 0.09);
+		transition: background 0.22s;
+		letter-spacing: 0.01em;
+		position: fixed;
+		bottom: 25px;
+
+		&:hover,
+		&:active {
+			background: #2567c6;
+			color: #fff;
+		}
+	}
+}

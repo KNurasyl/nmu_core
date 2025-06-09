@@ -35,11 +35,11 @@ export const AuthPage = () => {
 		<LoginForm
 			title={t('welcome')}
 			subtitle={t('lets_start')}
-			reqPhoneMsg={'reqPhoneMsg'}
-			reqPassMsg={'reqPassMsg'}
-			phonePlaceholder={'phonePlaceholder'}
-			passPlaceholder={'passPlaceholder'}
-			submitText={'submitText'}
+			reqPhoneMsg={t('reqPhoneMsg')}
+			reqPassMsg={t('reqPassMsg')}
+			phonePlaceholder={t('phonePlaceholder')}
+			passPlaceholder={t('passPlaceholder')}
+			submitText={t('submitText')}
 			loading={loading}
 			onFinish={onFinish}
 		/>

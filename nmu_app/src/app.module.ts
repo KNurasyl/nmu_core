@@ -1,22 +1,22 @@
-import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo'
-import { Module } from '@nestjs/common'
-import { ConfigModule, ConfigService } from '@nestjs/config'
-import { EventEmitterModule } from '@nestjs/event-emitter'
-import { GraphQLModule } from '@nestjs/graphql'
-import { JwtService } from '@nestjs/jwt'
-import { MongooseModule } from '@nestjs/mongoose'
-import { join } from 'path'
-import { AuthModule } from './auth/auth.module'
-import { JwtPayload } from './common/types/jwt-payload'
-import { CourseModule } from './course/course.module'
-import { LessonModule } from './lesson/lesson.module'
-import { TaskModule } from './task/task.module'
-import { UploadContentModule } from './upload-content/upload-content.module'
-import { UserCourseAccessModule } from './user-course-access/user-course-access.module'
-import { UserCourseProgressModule } from './user-course-progress/user-course-progress.module'
-import { UserLessonProgressModule } from './user-lesson-progress/user-lesson-progress.module'
-import { UserTaskProgressModule } from './user-task-progress/user-task-progress.module'
-import { UserModule } from './user/user.module'
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { EventEmitterModule } from '@nestjs/event-emitter';
+import { GraphQLModule } from '@nestjs/graphql';
+import { JwtService } from '@nestjs/jwt';
+import { MongooseModule } from '@nestjs/mongoose';
+import { join } from 'path';
+import { AuthModule } from './auth/auth.module';
+import { JwtPayload } from './common/types/jwt-payload';
+import { CourseModule } from './course/course.module';
+import { LessonModule } from './lesson/lesson.module';
+import { TaskModule } from './task/task.module';
+import { UploadContentModule } from './upload-content/upload-content.module';
+import { UserCourseAccessModule } from './user-course-access/user-course-access.module';
+import { UserCourseProgressModule } from './user-course-progress/user-course-progress.module';
+import { UserLessonProgressModule } from './user-lesson-progress/user-lesson-progress.module';
+import { UserTaskProgressModule } from './user-task-progress/user-task-progress.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [

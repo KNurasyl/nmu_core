@@ -1,41 +1,87 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import TaskDesc from '@/components/task/TaskDesc'
 import TaskProgress from '@/components/task/TaskProgress'
 import TaskRenderer from '@/components/task/TaskRenderer'
 import { GetTaskByIdQuery } from '@/graphql/generated/graphql'
-import { GET_TASK_BY_ID } from '@/graphql/task'
-import { useQuery } from '@apollo/client'
+import { CREATE_USER_TASK_PROGRESS, GET_TASK_BY_ID } from '@/graphql/task'
+import { prepareTasks } from '@/lib/utils/prepareTasks'
+import { useAuthStore } from '@/stores/auth.store'
+import { useTaskStore } from '@/stores/task.store'
+import { useMutation, useQuery } from '@apollo/client'
 import { Row, Spin } from 'antd'
-// import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { toast } from 'react-toastify'
 
 interface IProps {
 	taskId: string
 }
 
 const TaskPage = ({ taskId }: IProps) => {
+	const router = useRouter()
+	const { i18n } = useTranslation('common')
+	const { user } = useAuthStore(state => state)
+	const {
+		setAllTasks,
+		setCurrentTask,
+		progress,
+		currentCourseId,
+		currentLessonId,
+		score,
+	} = useTaskStore(state => state)
+
 	const { data, loading } = useQuery<GetTaskByIdQuery>(GET_TASK_BY_ID, {
 		variables: {
 			id: taskId,
 		},
 	})
 
-	const tasks = data?.getTaskById?.data || []
+	const [createUserTaskProgress, { loading: progressLoad }] = useMutation(
+		CREATE_USER_TASK_PROGRESS,
+		{
+			variables: {
+				input: {
+					completed: true,
+					completedAt: new Date(),
+					courseId: currentCourseId,
+					lessonId: currentLessonId,
+					score: score,
+					taskId: taskId,
+					userId: user?._id || '',
+				},
+			},
+			onCompleted() {
+				router.push(`/lesson/${currentLessonId}`)
+			},
+			onError() {
+				toast.error('Ошибка при завершений')
+			},
+		}
+	)
 
-	// const [currentIndex, setCurrentIndex] = useState(0)
-	// const [answers, setAnswers] = useState<Record<string, any>>({})
+	const task = data?.getTaskById
+	const localizedData = task?.data?.[i18n.language] || task?.data?.ru || []
 
-	// const currentTask = tasks[currentIndex]
+	useEffect(() => {
+		if (localizedData && localizedData.length) {
+			const tasks = prepareTasks(localizedData)
+			setAllTasks(tasks)
+			setCurrentTask(tasks[0] || null)
+		}
+	}, [localizedData, setAllTasks, setCurrentTask])
 
-	console.log(tasks)
+	const onFinishedHandler = () => {
+		createUserTaskProgress()
+	}
 
 	return (
-		<Spin spinning={loading}>
+		<Spin spinning={loading || progressLoad}>
 			<Row className='task_page'>
-				<TaskProgress percent={0} />
+				<TaskProgress percent={progress} />
 				<TaskDesc description='Описание задание' />
-				<TaskRenderer type={'a'} data={[]} value={''} onChange={() => {}} />
+				<TaskRenderer type={task?.type} onFinished={onFinishedHandler} />
 			</Row>
 		</Spin>
 	)

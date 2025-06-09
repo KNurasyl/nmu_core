@@ -1,18 +1,16 @@
 import { taskRegistry } from './types/taskRegistry'
 
 interface IProps {
-	type: string
-	data: unknown
-	value: unknown
-	onChange: (value: unknown) => void
+	type?: string
+	onFinished: VoidFunction
 }
 
-const TaskRenderer = ({ type, data, value, onChange }: IProps) => {
-	const Component = taskRegistry[type]
+const TaskRenderer = ({ type, onFinished }: IProps) => {
+	const Component = taskRegistry[type || '']
 
 	if (!Component) return <div>Неизвестный тип задачи: {type}</div>
 
-	return <Component data={data} value={value} onChange={onChange} />
+	return <Component onFinished={onFinished}/>
 }
 
 export default TaskRenderer

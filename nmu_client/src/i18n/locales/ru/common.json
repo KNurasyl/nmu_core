@@ -11,5 +11,19 @@
 	"completed": "Завершено",
 	"noDesc": "Нет описания",
 	"task": "задание",
-	"check": "Проверить"
+	"check": "Проверить",
+	"reqPhoneMsg": "Введите телефон номер",
+	"reqPassMsg": "Введите пароль",
+	"phonePlaceholder": "Телефон номер",
+	"passPlaceholder": "Пароль",
+	"submitText": "Войти",
+	"successMsg": "Правильно!",
+	"errorMsg": "Неправильно!",
+	"nextBtnText": "Следующий",
+	"bravoTxt": "Молодец!",
+	"totalAttemptTxt": "всего",
+	"correctAttemptTxt": "правильно",
+	"inCorrectAttemptTxt": "неправильно",
+	"timeTxt": "Общее время",
+	"finishBtnTxt": "Завершить"
 }

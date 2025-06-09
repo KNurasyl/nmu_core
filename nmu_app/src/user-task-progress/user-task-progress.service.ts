@@ -1,4 +1,4 @@
-import { BadRequestException, Inject, Injectable, NotFoundException } from '@nestjs/common';
+import { Inject, Injectable, NotFoundException } from '@nestjs/common';
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
@@ -27,24 +27,28 @@ export class UserTaskProgressService {
     const user = await this.userService.findOne(userId);
     const task = await this.taskService.findOne(taskId);
 
-    // 🔍 Проверка: уже есть такая запись
+    // Проверка: уже есть такая запись
     const existing = await this.userTaskProgressModel.findOne({
       user: user._id,
       task: task._id,
     });
 
+    let saved: UserTaskProgressDocument;
     if (existing) {
-      throw new BadRequestException('Вы уже выполнили эту задачу.');
+      // Просто обновляем старую запись
+      Object.assign(existing, input);
+      saved = await existing.save();
+    } else {
+      // Создаём новую запись
+      const created = new this.userTaskProgressModel({
+        task,
+        user,
+        ...input,
+      });
+      saved = await created.save();
     }
 
-    const created = new this.userTaskProgressModel({
-      task,
-      user,
-      ...input,
-    });
-    const saved = await created.save();
-
-    // ✅ Эмитим событие
+    // Эмитим событие (по желанию — только если completed изменился)
     this.eventEmitter.emit('task.completed', {
       userId,
       lessonId,

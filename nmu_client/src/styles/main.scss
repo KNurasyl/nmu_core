@@ -12,4 +12,6 @@
 @use 'components/task/taskPage';
 @use 'components/task/taskProgress';
 @use 'components/task/taskDesc';
+@use 'components/task/taskStatusAlert';
+@use 'components/task/taskResult';
 @use 'components/task/types/taskA';

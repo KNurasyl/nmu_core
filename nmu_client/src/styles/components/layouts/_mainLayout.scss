@@ -21,7 +21,10 @@
 
 	.main_content {
 		padding: 10px 15px;
-		// height: calc(100vh - 64px);
+
+		@media (max-width: 768px) {
+			height: calc(100vh - 64px);
+		}
 	}
 
 	.footer_mobile {

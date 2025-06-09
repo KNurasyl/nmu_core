@@ -88,7 +88,7 @@ export class UploadContentService {
         lessonCode,
         description: 'Импортировано через uploadTasksByType',
         data: {
-          kz: tasks,
+          kk: tasks,
         },
       };
 

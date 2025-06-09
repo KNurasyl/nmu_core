@@ -4,6 +4,7 @@ import TaskCard from '@/components/cards/TaskCard'
 import LessonVideoPlayer from '@/components/player/LessonVideoPlayer'
 import { GetLessonByIdQuery } from '@/graphql/generated/graphql'
 import { GET_LESSON_BY_ID } from '@/graphql/lesson'
+import { useTaskStore } from '@/stores/task.store'
 import { useQuery } from '@apollo/client'
 import { Row, Spin } from 'antd'
 import { useRouter } from 'next/navigation'
@@ -14,12 +15,18 @@ interface IProps {
 }
 
 const LessonPage = ({ lessonId }: IProps) => {
-	const { t } = useTranslation('common')
 	const router = useRouter()
+	const { t } = useTranslation('common')
+	const { setCurrenLessontId } = useTaskStore(state => state)
 
 	const { data, loading } = useQuery<GetLessonByIdQuery>(GET_LESSON_BY_ID, {
 		variables: { id: lessonId },
 	})
+
+	const onClickHandler = (id?: string) => {
+		router.push(`/task/${id}`)
+		setCurrenLessontId(lessonId)
+	}
 
 	return (
 		<Spin spinning={loading}>
@@ -36,7 +43,7 @@ const LessonPage = ({ lessonId }: IProps) => {
 							completedText={t('completed')}
 							inProgressText={t('inProgress')}
 							noDescText={t('noDesc')}
-							onClick={() => router.push(`/task/${task?._id}`)}
+							onClick={() => onClickHandler(task?._id)}
 						/>
 					))}
 				</Row>

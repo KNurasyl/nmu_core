@@ -1,17 +1,15 @@
-import { ValidationPipe } from '@nestjs/common'
-import { NestFactory } from '@nestjs/core'
-import * as cookieParser from 'cookie-parser'
-import { AppModule } from './app.module'
+import { ValidationPipe } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
+import * as cookieParser from 'cookie-parser';
+import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-const allowedOrigins = process?.env?.CORS_ORIGIN?.split(',')?.map((o) => o.trim())
-
-app.enableCors({
-  origin: allowedOrigins,
-  credentials: true,
-});
+  app.enableCors({
+    origin: 'http://localhost:3000',
+    credentials: true,
+  });
 
   app.use(cookieParser());
 
@@ -25,7 +23,6 @@ app.enableCors({
 
   const port = process.env.SERVER_PORT || 3000;
   await app.listen(port);
-  console.log(`CORS:${allowedOrigins}`);
   console.log(`🚀 App running on http://localhost:${port}`);
 }
 bootstrap();

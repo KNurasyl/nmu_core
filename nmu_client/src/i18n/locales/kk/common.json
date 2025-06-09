@@ -11,5 +11,19 @@
 	"completed": "Аяқталды",
 	"noDesc": "Сипаттама жоқ",
 	"task": "тапсырма",
-	"check": "Тексеру"
+	"check": "Тексеру",
+	"reqPhoneMsg": "Телефон нөмерді дұрыс енгізіңіз",
+	"reqPassMsg": "Құпия сөзді енгізіңіз",
+	"phonePlaceholder": "Телефон нөмер",
+	"passPlaceholder": "Құпия сөз",
+	"submitText": "Кіру",
+	"successMsg": "Дұрыс!",
+	"errorMsg": "Дұрыс емес!",
+	"nextBtnText": "Келесі",
+	"bravoTxt": "Жарайсың!",
+	"totalAttemptTxt": "барлығы",
+	"correctAttemptTxt": "дұрыс",
+	"inCorrectAttemptTxt": "қате",
+	"timeTxt": "Жалпы уақыт",
+	"finishBtnTxt": "Аяқтау"
 }
