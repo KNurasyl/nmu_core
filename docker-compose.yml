@@ -1,19 +1,19 @@
-version: "3.8"
-
 services:
     client:
         build: ./nmu_client
         container_name: nmu_client
         expose:
             - "3000"
+        env_file:
+            - .env
         environment:
-            SERVER_PORT: SERVER_PORT
-            MONGODB_URI: MONGODB_URI
-            MONGODB_DB: MONGODB_DB
-            JWT_SECRET: JWT_SECRET
-            NODE_ENV: NODE_ENV
-            NEXT_PUBLIC_GRAPHQL_API: NEXT_PUBLIC_GRAPHQL_API
-            PORT: PORT
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
         networks:
             - app-network
 
@@ -22,14 +22,16 @@ services:
         container_name: nmu_admin
         expose:
             - "3000"
+        env_file:
+            - .env
         environment:
-            SERVER_PORT: SERVER_PORT
-            MONGODB_URI: MONGODB_URI
-            MONGODB_DB: MONGODB_DB
-            JWT_SECRET: JWT_SECRET
-            NODE_ENV: NODE_ENV
-            NEXT_PUBLIC_GRAPHQL_API: NEXT_PUBLIC_GRAPHQL_API
-            PORT: PORT
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
         networks:
             - app-network
 
@@ -38,14 +40,16 @@ services:
         container_name: nmu_backend
         expose:
             - "5000"
+        env_file:
+            - .env
         environment:
-            SERVER_PORT: SERVER_PORT
-            MONGODB_URI: MONGODB_URI
-            MONGODB_DB: MONGODB_DB
-            JWT_SECRET: JWT_SECRET
-            NODE_ENV: NODE_ENV
-            NEXT_PUBLIC_GRAPHQL_API: NEXT_PUBLIC_GRAPHQL_API
-            PORT: PORT
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
         depends_on:
             - db
         networks:
@@ -86,7 +90,7 @@ services:
         entrypoint: >
             sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
             --email your@email.com --agree-tos --no-eff-email
-            -d nmacademy.kz"
+            -d admin-nmuacademy.kz"
 
 volumes:
     db-data:
