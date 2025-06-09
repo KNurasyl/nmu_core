@@ -1,14 +1,10 @@
-# syntax=docker/dockerfile:1
 FROM node:20-alpine
 
 WORKDIR /app
 
-RUN wget https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz \
-  && tar -C /usr/local/bin -xzf dockerize-linux-amd64-v0.6.1.tar.gz \
-  && rm dockerize-linux-amd64-v0.6.1.tar.gz
-
 COPY package*.json ./
 RUN npm ci --omit=dev
+RUN npm install -g @nestjs/cli
 
 COPY . .
 
