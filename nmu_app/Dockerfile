@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM node:20-alpine
 
 WORKDIR /app
@@ -7,11 +8,11 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize
   && rm dockerize-linux-amd64-v0.6.1.tar.gz
 
 COPY package*.json ./
-RUN npm install
+RUN npm ci --omit=dev
 
 COPY . .
+
 RUN npm run build
 
 EXPOSE 5000
-
 CMD ["sh", "-c", "dockerize -wait tcp://db:27017 -timeout 20s && npm run start:prod"]

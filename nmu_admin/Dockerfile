@@ -1,13 +1,13 @@
 # syntax=docker/dockerfile:1
-ARG NODE_VERSION=20.18.0
-
-FROM node:${NODE_VERSION}-alpine
+FROM node:20-alpine
 
 WORKDIR /app
+
 COPY package*.json ./
-RUN npm install
+RUN npm ci --omit=dev
 
 COPY . .
+
 RUN npm run build
 
 EXPOSE 3000
