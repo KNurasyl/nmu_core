@@ -1,85 +1,100 @@
-version: '3.9'
+services:
+    client:
+        build: ./nmu_client
+        container_name: nmu_client
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
+        networks:
+            - app-network
 
-networks:
-  app-net:
-    driver: bridge
+    admin:
+        build: ./nmu_admin
+        container_name: nmu_admin
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
+        networks:
+            - app-network
+
+    backend:
+        build: ./nmu_app
+        container_name: nmu_backend
+        expose:
+            - "5000"
+        env_file:
+            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
+        depends_on:
+            - db
+        networks:
+            - app-network
+
+    db:
+        image: mongo:latest
+        container_name: nmu_mongo
+        ports:
+            - "27017:27017"
+        volumes:
+            - db-data:/data/db
+        networks:
+            - app-network
+
+    nginx:
+        build: ./data/nginx
+        container_name: nmu_nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./data/certbot/www:/var/www/certbot
+            - ./data/certbot/conf:/etc/letsencrypt
+        depends_on:
+            - client
+            - admin
+            - backend
+        networks:
+            - app-network
+
+    certbot:
+        image: certbot/certbot
+        container_name: nmu_certbot
+        volumes:
+            - ./data/certbot/www:/var/www/certbot
+            - ./data/certbot/conf:/etc/letsencrypt
+        entrypoint: >
+            sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
+                --email you@example.com --agree-tos --no-eff-email
+                -d admin-nmuacademy.kz"
 
 volumes:
-  db-data:
+    db-data:
 
-services:
-  mongodb:
-    image: mongo:8
-    container_name: mongodb
-    ports:
-      - '27017:27017'
-    volumes:
-      - db-data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: 123456
-    networks:
-      - app-net
-    restart: always
-
-  nmu_app:
-    build: ./nmu_app
-    container_name: nmu_app
-    ports:
-      - '5000:5000'
-    environment:
-      PORT: 5000
-      SERVER_PORT: 5000
-      MONGODB_URI: mongodb://root:123456@mongodb:27017/nmu_v2?authSource=admin
-      JWT_SECRET: secret
-      CORS_ORIGIN: 'http://0.0.0.0'
-    depends_on:
-      - mongodb
-    networks:
-      - app-net
-
-  nmu_client:
-    build:
-      context: ./nmu_client
-      args:
-        NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    container_name: nmu_client
-    ports:
-      - '3000:3000'
-    environment:
-      PORT: 3000
-      NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    depends_on:
-      - nmu_app
-    networks:
-      - app-net
-
-  nmu_admin:
-    build:
-      context: ./nmu_admin
-      args:
-        NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    container_name: nmu_admin
-    ports:
-      - '4000:4000'
-    environment:
-      PORT: 4000
-      NEXT_PUBLIC_API_URL: http://nmu_app:5000/graphql
-    depends_on:
-      - nmu_app
-    networks:
-      - app-net
-
-  nginx:
-    image: nginx:1.25
-    container_name: nginx
-    ports:
-      - '80:80'
-    depends_on:
-      - nmu_app
-      - nmu_client
-      - nmu_admin
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/custom.conf:ro
-    networks:
-      - app-net
+networks:
+    app-network:
+        driver: bridge
