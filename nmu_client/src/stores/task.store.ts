@@ -5,8 +5,8 @@ import { devtools } from 'zustand/middleware'
 interface TaskState {
   allTasks: unknown[]
   currentTask: unknown
-  currentLessonId: unknown
-  currentCourseId: unknown
+  currentLessonId: string
+  currentCourseId: string
   progress: number
   correctCount: number
   wrongCount: number
