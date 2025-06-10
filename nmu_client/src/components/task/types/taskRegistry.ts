@@ -1,6 +1,6 @@
 import TaskA from './taskA/TaskA'
 import TaskB from './taskB/TaskB'
-import { TaskC } from './TaskC'
+import TaskC from './taskC/TaskC'
 import TaskE from './TaskE'
 import TaskF from './TaskF'
 import TaskG from './TaskG'
