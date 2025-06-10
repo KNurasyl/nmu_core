@@ -1,4 +1,4 @@
-export interface ITaskA {
+export interface ITaskAB {
   order: number
   type: 'a'
   correctAnswer: {
