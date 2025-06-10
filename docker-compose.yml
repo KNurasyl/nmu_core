@@ -1,100 +1,100 @@
 services:
-  client:
-    build: ./nmu_client
-    container_name: nmu_client
-    expose:
-      - '3000'
-    env_file:
-      - .env
-    environment:
-      SERVER_PORT: ${SERVER_PORT}
-      MONGODB_URI: ${MONGODB_URI}
-      MONGODB_DB: ${MONGODB_DB}
-      JWT_SECRET: ${JWT_SECRET}
-      NODE_ENV: ${NODE_ENV}
-      NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
-      PORT: ${PORT}
-    networks:
-      - app-network
+    client:
+        build: ./nmu_client
+        container_name: nmu_client
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
+        networks:
+            - app-network
 
-  admin:
-    build: ./nmu_admin
-    container_name: nmu_admin
-    expose:
-      - '3000'
-    env_file:
-      - .env
-    environment:
-      SERVER_PORT: ${SERVER_PORT}
-      MONGODB_URI: ${MONGODB_URI}
-      MONGODB_DB: ${MONGODB_DB}
-      JWT_SECRET: ${JWT_SECRET}
-      NODE_ENV: ${NODE_ENV}
-      NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
-      PORT: ${PORT}
-    networks:
-      - app-network
+    admin:
+        build: ./nmu_admin
+        container_name: nmu_admin
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
+        networks:
+            - app-network
 
-  backend:
-    build: ./nmu_app
-    container_name: nmu_backend
-    expose:
-      - '5000'
-    env_file:
-      - .env
-    environment:
-      SERVER_PORT: ${SERVER_PORT}
-      MONGODB_URI: ${MONGODB_URI}
-      MONGODB_DB: ${MONGODB_DB}
-      JWT_SECRET: ${JWT_SECRET}
-      NODE_ENV: ${NODE_ENV}
-      NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
-      PORT: ${PORT}
-    depends_on:
-      - db
-    networks:
-      - app-network
+    backend:
+        build: ./nmu_app
+        container_name: nmu_backend
+        expose:
+            - "5000"
+        env_file:
+            - .env
+        environment:
+            SERVER_PORT: ${SERVER_PORT}
+            MONGODB_URI: ${MONGODB_URI}
+            MONGODB_DB: ${MONGODB_DB}
+            JWT_SECRET: ${JWT_SECRET}
+            NODE_ENV: ${NODE_ENV}
+            NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+            PORT: ${PORT}
+        depends_on:
+            - db
+        networks:
+            - app-network
 
-  db:
-    image: mongo:8
-    container_name: nmu_mongo
-    ports:
-      - '27017:27017'
-    volumes:
-      - db-data:/data/db
-    networks:
-      - app-network
+    db:
+        image: mongo:8
+        container_name: nmu_mongo
+        ports:
+            - "27017:27017"
+        volumes:
+            - db-data:/data/db
+        networks:
+            - app-network
 
-  nginx:
-    build: ./data/nginx
-    container_name: nmu_nginx
-    ports:
-      - '80:80'
-      - '443:443'
-    volumes:
-      - ./data/certbot/www:/var/www/certbot
-      - ./data/certbot/conf:/etc/letsencrypt
-    depends_on:
-      - client
-      - admin
-      - backend
-    networks:
-      - app-network
+    nginx:
+        build: ./data/nginx
+        container_name: nmu_nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./data/certbot/www:/var/www/certbot
+            - ./data/certbot/conf:/etc/letsencrypt
+        depends_on:
+            - client
+            - admin
+            - backend
+        networks:
+            - app-network
 
-  certbot:
-    image: certbot/certbot
-    container_name: nmu_certbot
-    volumes:
-      - ./data/certbot/www:/var/www/certbot
-      - ./data/certbot/conf:/etc/letsencrypt
-    entrypoint: >
-      sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
-          --email you@example.com --agree-tos --no-eff-email
-          -d admin-nmuacademy.kz"
+    certbot:
+        image: certbot/certbot
+        container_name: nmu_certbot
+        volumes:
+            - ./data/certbot/www:/var/www/certbot
+            - ./data/certbot/conf:/etc/letsencrypt
+        entrypoint: >
+            sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
+                --email you@example.com --agree-tos --no-eff-email
+                -d admin.admin-nmuacademy.kz"
 
 volumes:
-  db-data:
+    db-data:
 
 networks:
-  app-network:
-    driver: bridge
+    app-network:
+        driver: bridge
