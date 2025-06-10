@@ -7,6 +7,8 @@ import {
 	LogoutOutlined,
 	SettingOutlined,
 	UserOutlined,
+	VerticalAlignBottomOutlined,
+	VerticalAlignTopOutlined,
 } from '@ant-design/icons'
 import { Dropdown, MenuProps } from 'antd'
 import { Footer } from 'antd/es/layout/layout'
@@ -46,10 +48,8 @@ const FooterPagination = () => {
 			const currentY = window.scrollY
 
 			if (currentY > lastScrollY.current && currentY > 40) {
-				// скроллим вниз — прячем
 				setHide(true)
 			} else if (currentY < lastScrollY.current) {
-				// скроллим вверх — показываем
 				setHide(false)
 			}
 			lastScrollY.current = currentY
@@ -95,6 +95,24 @@ const FooterPagination = () => {
 
 	return (
 		<Footer className={`footer_mobile${hide ? ' footer--hidden' : ''}`}>
+			<button
+				className={`footer-flag${hide ? ' footer-flag--only' : ''}`}
+				onClick={() => setHide(h => !h)}
+				aria-label={hide ? 'Показать меню' : 'Скрыть меню'}
+			>
+				<span
+					style={{
+						fontSize: 22,
+						display: 'block',
+					}}
+				>
+					{!hide ? (
+						<VerticalAlignBottomOutlined />
+					) : (
+						<VerticalAlignTopOutlined />
+					)}
+				</span>
+			</button>
 			{navItems.map(item =>
 				item.type === 'link' ? (
 					<Link
