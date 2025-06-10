@@ -3,20 +3,20 @@ import { create } from 'zustand'
 import { devtools } from 'zustand/middleware'
 
 interface TaskState {
-  allTasks: any[]
-  currentTask: any
-  currentLessonId: any
-  currentCourseId: any
+  allTasks: unknown[]
+  currentTask: unknown
+  currentLessonId: unknown
+  currentCourseId: unknown
   progress: number
   correctCount: number
   wrongCount: number
   score: number
   status: 'inProgress' | 'success' | 'error' | 'finished'
-  setAllTasks: (tasks: any[]) => void
-  setCurrentTask: (task: any) => void
+  setAllTasks: (tasks: unknown[]) => void
+  setCurrentTask: (task: unknown) => void
   setStatus: (status: TaskState['status']) => void
   nextTask: () => void
-  addErrorTask: (task: any) => void
+  addErrorTask: (task: unknown) => void
   markCorrect: () => void
   markWrong: () => void
   setCurrenLessontId: (lessonId?: string) => void

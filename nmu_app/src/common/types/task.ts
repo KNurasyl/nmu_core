@@ -54,5 +54,5 @@ export interface ITaskTajvid {
   type: string;
   order: number;
   lessonCode: string;
-  data: any[];
+  data: unknown[];
 }
