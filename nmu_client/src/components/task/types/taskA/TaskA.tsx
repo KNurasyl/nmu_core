@@ -2,7 +2,7 @@
 
 import { getRandomItems } from '@/lib/utils/getRandomItems'
 import { useTaskStore } from '@/stores/task.store'
-import { ITaskA } from '@/types/tasks'
+import { ITaskAB } from '@/types/tasks'
 import { Row } from 'antd'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -32,7 +32,7 @@ const TaskA = ({ onFinished }: IProps) => {
 		wrongCount,
 	} = useTaskStore(state => state)
 
-	const task = currentTask as ITaskA
+	const task = currentTask as ITaskAB
 
 	const audioRef = useRef<HTMLAudioElement>(null)
 	const [isPlaying, setIsPlaying] = useState(false)

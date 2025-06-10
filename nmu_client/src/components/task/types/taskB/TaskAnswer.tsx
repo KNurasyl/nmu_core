@@ -1,9 +1,15 @@
-import { Row } from 'antd'
+import { Row, Typography } from 'antd'
 
-const TaskAnswer = () => {
+interface IProps {
+	arabicLetter: string
+}
+
+const TaskAnswer = ({ arabicLetter }: IProps) => {
 	return (
 		<Row className='task_b__answer'>
-			
+			<Row className='letter_block'>
+				<Typography className='letter'>{arabicLetter}</Typography>
+			</Row>
 		</Row>
 	)
 }
