@@ -11,5 +11,5 @@ export function getVariantsWithCorrect(
 	if (!variants) return []
 	const filtered = variants?.filter(v => v?.arabicLetter !== correct)
 	const randoms = getRandomItems(filtered, 3)
-	return [...randoms, variants?.find(v => v?.arabicLetter === correct)!]
+	return [...randoms, variants.find(v => v.arabicLetter === correct)!]
 }
