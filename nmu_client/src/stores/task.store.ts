@@ -39,7 +39,7 @@ export const useTaskStore = create<TaskState>()(
         set({
           allTasks: tasks,
           progress: 0,
-          currentTask: (tasks as any[])[0] || null,
+          currentTask: (tasks as unknown[])[0] || null,
           correctCount: 0,
           wrongCount: 0,
           score: 0,
