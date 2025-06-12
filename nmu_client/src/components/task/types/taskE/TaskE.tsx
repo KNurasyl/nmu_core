@@ -41,7 +41,7 @@ const TaskE = ({ onFinished }: IProps) => {
 	}, [task])
 
 	const checkHandle = () => {
-		if (!selected) return
+		if (!selected.length) return
 		const correctLetters = task.correctVariants.map(v => v.letter)
 
 		const isCorrect =

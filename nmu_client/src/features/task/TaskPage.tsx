@@ -70,7 +70,7 @@ const TaskPage = ({ taskId }: IProps) => {
 				const tasks = localizedData[0]?.quiz
 				setAllTasks(tasks)
 				setCurrentTask(tasks[0] || null)
-			} else if (task?.type === 'f') {
+			} else if (task?.type === 'f' || task?.type === 'g') {
 				const tasks = prepareTasks(localizedData[0].data)
 				setAllTasks(tasks)
 				setCurrentTask(tasks[0] || null)

@@ -1,0 +1,269 @@
+.task_g {
+	width: 100%;
+	justify-content: center;
+
+	@media (max-width: 768px) {
+		height: 96%;
+		align-content: flex-start;
+	}
+
+	.task-letter-buttons {
+		width: 100%;
+		max-width: 700px;
+		margin: 32px auto 0 auto;
+		padding: 8px;
+
+		& .audio_blog {
+			width: 100%;
+			height: 65px;
+
+			& div {
+				width: 100%;
+			}
+
+			.audio_container {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.wave {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 120px;
+					height: 120px;
+					transform: translate(-50%, -50%);
+					border-radius: 50%;
+					background-color: rgba(68, 76, 231, 0.3);
+					opacity: 0;
+					pointer-events: none;
+					z-index: 1;
+				}
+
+				.audio_button {
+					position: relative;
+					z-index: 2;
+					width: 100%;
+					height: 100%;
+					border-radius: 20px;
+					background-color: #444ce7;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					box-shadow: 0 4px 12px rgba(68, 76, 231, 0.3);
+					cursor: pointer;
+
+					& .volume_icon {
+						width: 70px;
+						height: 70px;
+
+						@media (max-width: 768px) {
+							width: 36px;
+							height: 36px;
+						}
+					}
+				}
+			}
+
+			.playing {
+				.wave1 {
+					animation: pulseWave 1.8s infinite;
+					animation-delay: 0s;
+				}
+				.wave2 {
+					animation: pulseWave 1.8s infinite;
+					animation-delay: 0.4s;
+				}
+				.wave3 {
+					animation: pulseWave 1.8s infinite;
+					animation-delay: 0.8s;
+				}
+			}
+		}
+	}
+
+	.letter-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 3rem;
+		width: 100px;
+		height: 100px;
+		background: #f6f6ff;
+		border-radius: 16px;
+		box-shadow: 0 2px 12px rgba(80, 84, 255, 0.05);
+		border: 1.5px solid #e3e8ff;
+		cursor: pointer;
+		user-select: none;
+		transition: all 0.16s;
+		font-weight: 600;
+		color: #2a2a2a;
+	}
+
+	.task-letters-display {
+		width: 100%;
+		min-height: 150px !important;
+		padding: 12px 0;
+		background: #5560ff11;
+		border-radius: 18px;
+		position: relative;
+
+		& .clear_btn {
+			position: absolute;
+			bottom: -10px;
+			right: -5px;
+			height: 40px;
+			width: 40px;
+			font-size: 20px;
+		}
+	}
+
+	.display-letter {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.6rem;
+		font-weight: 700;
+		color: #2a2a2a;
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 1px 4px rgba(80, 84, 255, 0.07);
+		padding: 10px 20px;
+		margin: 0 3px;
+		cursor: pointer;
+		border: 2px solid #e3e8ff;
+		transition: 0.18s;
+		user-select: none;
+	}
+
+	@media (max-width: 786px) {
+		.task-letter-buttons {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 10% !important;
+		}
+		.letter-btn {
+			width: 75px;
+			height: 75px;
+			font-size: 2rem;
+			border-radius: 12px;
+		}
+
+		.task-letters-display {
+			border-radius: 10px;
+			padding: 8px 0;
+			margin-bottom: 10%;
+			width: 100%;
+		}
+		.display-letter {
+			font-size: 1.3rem;
+			padding: 6px 10px;
+			border-radius: 6px;
+		}
+	}
+
+	& .task_a__check {
+		margin-top: 3%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 10% !important;
+
+		@media (max-width: 768px) {
+			align-items: end;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__check-btn {
+		background-color: #444ce7;
+		color: #fff;
+		padding: 14px 40px;
+		font-size: 20px;
+		border: none;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: all 0.25s ease;
+		box-shadow: 0 4px 12px rgba(68, 76, 231, 0.25);
+		position: relative;
+		overflow: hidden;
+		width: 250px;
+		height: 50px;
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+
+		&:hover {
+			background-color: #5c66f5;
+			box-shadow: 0 6px 18px rgba(68, 76, 231, 0.35);
+			transform: translateY(-2px);
+		}
+
+		&:active {
+			transform: scale(0.98);
+			box-shadow: 0 2px 8px rgba(68, 76, 231, 0.2);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			border-radius: inherit;
+			animation: buttonPulse 2.5s infinite;
+			background: radial-gradient(
+				circle,
+				rgba(255, 255, 255, 0.08) 10%,
+				transparent 70%
+			);
+			opacity: 0.4;
+			z-index: 0;
+		}
+
+		position: relative;
+		z-index: 1;
+	}
+}
+
+@keyframes pulseWave {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(2.2);
+		opacity: 0;
+	}
+}
+
+@keyframes selectPop {
+	0% {
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	50% {
+		transform: scale(1.07);
+		opacity: 1;
+		box-shadow: 0 0 25px rgba(68, 76, 231, 0.35);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes buttonPulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.4;
+	}
+	50% {
+		transform: scale(1.05);
+		opacity: 0.6;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.4;
+	}
+}

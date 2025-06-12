@@ -1,0 +1,5579 @@
+[
+  {
+    "type": "g",
+    "order": 1,
+    "data": [
+      {
+        "correctLetter": "اَلْ",
+        "variants": [
+          "اَ",
+          "ذِ",
+          "سُ",
+          "لْ",
+          "ضِ",
+          "مَ"
+        ],
+        "audioFileName": "al.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "بَلْ",
+        "variants": [
+          "شِ",
+          "طْ",
+          "بَ",
+          "يَ",
+          "لْ",
+          "هَ"
+        ],
+        "audioFileName": "bal.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "لَمْ",
+        "variants": [
+          "نْ",
+          "مْ",
+          "يَ",
+          "لَ",
+          "ذْ",
+          "رِ"
+        ],
+        "audioFileName": "lam.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "لَنْ",
+        "variants": [
+          "ثَ",
+          "لَ",
+          "دْ",
+          "سُ",
+          "نْ",
+          "طِ"
+        ],
+        "audioFileName": "lan.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "لِنْ",
+        "variants": [
+          "زِ",
+          "ذَ",
+          "لِ",
+          "مْ",
+          "يُ",
+          "نْ"
+        ],
+        "audioFileName": "lin.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "كِلْ",
+        "variants": [
+          "لْ",
+          "سْ",
+          "صِ",
+          "كِ",
+          "خِ",
+          "حَ"
+        ],
+        "audioFileName": "kil.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "نَزَلَ",
+        "variants": [
+          "نَ",
+          "بِ",
+          "لَ",
+          "غُ",
+          "زَ",
+          "فُ"
+        ],
+        "audioFileName": "nazala.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "لَزِمَ",
+        "variants": [
+          "قُ",
+          "مَ",
+          "يِ",
+          "زِ",
+          "وُ",
+          "لَ"
+        ],
+        "audioFileName": "lazima.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "كَمُلَ",
+        "variants": [
+          "مُ",
+          "يَ",
+          "سَ",
+          "كَ",
+          "ضُ",
+          "لَ"
+        ],
+        "audioFileName": "kamula.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَلْزَمَ",
+        "variants": [
+          "زَ",
+          "مَ",
+          "لْ",
+          "أَ",
+          "صِ",
+          "وَ"
+        ],
+        "audioFileName": "alzama.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَكْمَلَ",
+        "variants": [
+          "مَ",
+          "كْ",
+          "لَ",
+          "أَ",
+          "فِ",
+          "يَ"
+        ],
+        "audioFileName": "akmala.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَكَلَتْ",
+        "variants": [
+          "أَ",
+          "كَ",
+          "لَ",
+          "تْ",
+          "ضُ",
+          "سُ"
+        ],
+        "audioFileName": "akalat.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَكَلْنَ",
+        "variants": [
+          "أَ",
+          "لْ",
+          "كَ",
+          "نَ",
+          "يُ",
+          "سِ"
+        ],
+        "audioFileName": "akalna.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَنْزَلَ",
+        "variants": [
+          "لَ",
+          "زَ",
+          "نْ",
+          "أَ",
+          "يَ",
+          "وَ"
+        ],
+        "audioFileName": "anzala.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَكَلْتَ",
+        "variants": [
+          "تَ",
+          "كَ",
+          "لْ",
+          "أَ",
+          "ثَ",
+          "ذْ"
+        ],
+        "audioFileName": "akalta.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَكَلْتُ",
+        "variants": [
+          "أَ",
+          "لْ",
+          "تُ",
+          "كَ",
+          "يَ",
+          "عُ"
+        ],
+        "audioFileName": "akaltu.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "أَكَلْتُمْ",
+        "variants": [
+          "تُ",
+          "أَ",
+          "كَ",
+          "لْ",
+          "مْ",
+          "قُ"
+        ],
+        "audioFileName": "akaltum.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "يَلَمْلَمُ",
+        "variants": [
+          "مُ",
+          "لَ",
+          "يَ",
+          "لَ",
+          "مْ",
+          "خِ"
+        ],
+        "audioFileName": "ialamlamu.mp3",
+        "lessonCode": "lesson-21"
+      },
+      {
+        "correctLetter": "تَزَلْزَلَ",
+        "variants": [
+          "زَ",
+          "تَ",
+          "لْ",
+          "لَ",
+          "كِ",
+          "زَ"
+        ],
+        "audioFileName": "tazalzala.mp3",
+        "lessonCode": "lesson-21"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 2,
+    "data": [
+      {
+        "correctLetter": "طَلْ",
+        "variants": [
+          "طَ",
+          "تِ",
+          "نْ",
+          "لْ",
+          "دَ",
+          "رُ"
+        ],
+        "audioFileName": "tola.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "طَيْ",
+        "variants": [
+          "دُ",
+          "طَ",
+          "زَ",
+          "يْ",
+          "خُ",
+          "يِ"
+        ],
+        "audioFileName": "toi.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "شَطْ",
+        "variants": [
+          "طْ",
+          "مُ",
+          "وَ",
+          "رَ",
+          "شَ",
+          "ذِ"
+        ],
+        "audioFileName": "shat.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "بَطْ",
+        "variants": [
+          "وِ",
+          "بَ",
+          "ذَ",
+          "طْ",
+          "ضْ",
+          "سِ"
+        ],
+        "audioFileName": "bat.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "فَقَطْ",
+        "variants": [
+          "قَ",
+          "حَ",
+          "رُ",
+          "فَ",
+          "خَ",
+          "طْ"
+        ],
+        "audioFileName": "faqot.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "وَطَنُ",
+        "variants": [
+          "يَ",
+          "وَ",
+          "سِ",
+          "طَ",
+          "كُ",
+          "نُ"
+        ],
+        "audioFileName": "uatonu.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "طَلَبُ",
+        "variants": [
+          "بُ",
+          "شَ",
+          "لَ",
+          "بَ",
+          "طَ",
+          "زُ"
+        ],
+        "audioFileName": "tolabu.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "طَرَفُ",
+        "variants": [
+          "غُ",
+          "رَ",
+          "عَ",
+          "طَ",
+          "فُ",
+          "دُ"
+        ],
+        "audioFileName": "torofu.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "طُهْرُ",
+        "variants": [
+          "نَ",
+          "طُ",
+          "جِ",
+          "هْ",
+          "هُ",
+          "رُ"
+        ],
+        "audioFileName": "tuhru.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "طِفْلُ",
+        "variants": [
+          "بَ",
+          "طِ",
+          "ذِ",
+          "فْ",
+          "لُ",
+          "ضُ"
+        ],
+        "audioFileName": "tiflu.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "مَطَرُ",
+        "variants": [
+          "طَ",
+          "مَ",
+          "سِ",
+          "خُ",
+          "رُ",
+          "أَ"
+        ],
+        "audioFileName": "matoru.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "إِصْطَبَرَ",
+        "variants": [
+          "إِ",
+          "طَ",
+          "بَ",
+          "صْ",
+          "رَ",
+          "ظُ"
+        ],
+        "audioFileName": "istobaro.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "يَصْطَبِرُ",
+        "variants": [
+          "طَ",
+          "بِ",
+          "رُ",
+          "صْ",
+          "يَ",
+          "تِ"
+        ],
+        "audioFileName": "iastobiru.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "إِسْتَوْطَنَ",
+        "variants": [
+          "إِ",
+          "تَ",
+          "نَ",
+          "وْ",
+          "طَ",
+          "سْ"
+        ],
+        "audioFileName": "istautona.mp3",
+        "lessonCode": "lesson-30"
+      },
+      {
+        "correctLetter": "يَسْتَوْطِنُ",
+        "variants": [
+          "سْ",
+          "يَ",
+          "تَ",
+          "وْ",
+          "طِ",
+          "نُ"
+        ],
+        "audioFileName": "iastautinu.mp3",
+        "lessonCode": "lesson-30"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 3,
+    "data": [
+      {
+        "correctLetter": "إِذْ",
+        "variants": [
+          "سِ",
+          "إِ",
+          "رَ",
+          "نُ",
+          "ذْ",
+          "لَ"
+        ],
+        "audioFileName": "iz.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "عُذْ",
+        "variants": [
+          "كْ",
+          "عُ",
+          "فُ",
+          "ذْ",
+          "عَ",
+          "جَ"
+        ],
+        "audioFileName": "uuz.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "ذُبْ",
+        "variants": [
+          "هَ",
+          "بْ",
+          "وُ",
+          "ظَ",
+          "ذُ",
+          "حْ"
+        ],
+        "audioFileName": "zub.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "ذَرْ",
+        "variants": [
+          "ذَ",
+          "وِ",
+          "سُ",
+          "رْ",
+          "هْ",
+          "خَ"
+        ],
+        "audioFileName": "zar.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "إِذْنُ",
+        "variants": [
+          "زِ",
+          "إِ",
+          "وَ",
+          "ذْ",
+          "مَ",
+          "نُ"
+        ],
+        "audioFileName": "iznu.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "ذِكْرُ",
+        "variants": [
+          "قُ",
+          "رُ",
+          "شَ",
+          "كْ",
+          "رَ",
+          "ذِ"
+        ],
+        "audioFileName": "zikru.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "ذِهْنُ",
+        "variants": [
+          "نُ",
+          "ذِ",
+          "رَ",
+          "نْ",
+          "هْ",
+          "حَ"
+        ],
+        "audioFileName": "zihnu.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "ذَهَبَ",
+        "variants": [
+          "خِ",
+          "بَ",
+          "هُ",
+          "ذَ",
+          "وَ",
+          "هَ"
+        ],
+        "audioFileName": "zahaba.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "مَذْهَبُ",
+        "variants": [
+          "مَ",
+          "ذْ",
+          "هَ",
+          "بُ",
+          "وَ",
+          "رِ"
+        ],
+        "audioFileName": "mazhabu.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "ذَهَلَ",
+        "variants": [
+          "ذَ",
+          "هَ",
+          "لَ",
+          "رُ",
+          "عِ",
+          "طَ"
+        ],
+        "audioFileName": "zahala.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "يَذْهَلُ",
+        "variants": [
+          "يَ",
+          "هَ",
+          "لُ",
+          "ذْ",
+          "خَ",
+          "دَ"
+        ],
+        "audioFileName": "iazhalu.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "بَذَلَ",
+        "variants": [
+          "بَ",
+          "ذَ",
+          "لَ",
+          "نَ",
+          "رَ",
+          "زَ"
+        ],
+        "audioFileName": "bazala.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "يَبْذُلُ",
+        "variants": [
+          "يَ",
+          "بْ",
+          "ذُ",
+          "لُ",
+          "بَ",
+          "مَِ"
+        ],
+        "audioFileName": "iabzulu.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "أَذْهَبَ",
+        "variants": [
+          "أَ",
+          "ذْ",
+          "هَ",
+          "بَ",
+          "ضَ",
+          "رُ"
+        ],
+        "audioFileName": "azhaba.mp3",
+        "lessonCode": "lesson-38"
+      },
+      {
+        "correctLetter": "يُذْهِبُ",
+        "variants": [
+          "يُ",
+          "ذْ",
+          "هِ",
+          "بُ",
+          "زَ",
+          "لَ"
+        ],
+        "audioFileName": "uzhibu.mp3",
+        "lessonCode": "lesson-38"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 4,
+    "data": [
+      {
+        "correctLetter": "اَنْ",
+        "variants": [
+          "اَ",
+          "رَ",
+          "نْ",
+          "تْ",
+          "اِ",
+          "مْ"
+        ],
+        "audioFileName": "an.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "اِنْ",
+        "variants": [
+          "تَ",
+          "اَ",
+          "نْ",
+          "رْ",
+          "اِ",
+          "زَ"
+        ],
+        "audioFileName": "in.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "زِنْ",
+        "variants": [
+          "زَ",
+          "نَ",
+          "زِ",
+          "مَ",
+          "اِ",
+          "نْ"
+        ],
+        "audioFileName": "zin.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "مَنْ",
+        "variants": [
+          "رَ",
+          "نْ",
+          "مَ",
+          "زْ",
+          "نَ",
+          "تَ"
+        ],
+        "audioFileName": "man.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "مِنْ",
+        "variants": [
+          "تْ",
+          "نَ",
+          "نْ",
+          "اَ",
+          "رِ",
+          "مِ"
+        ],
+        "audioFileName": "min.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "اَنْتَ",
+        "variants": [
+          "زَ",
+          "اِ",
+          "نْ",
+          "رَ",
+          "اَ",
+          "تَ"
+        ],
+        "audioFileName": "anta.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "نِمْتَ",
+        "variants": [
+          "رْ",
+          "تَ",
+          "نِ",
+          "اَ",
+          "مْ",
+          "زِ"
+        ],
+        "audioFileName": "nimta.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "اُمِرْنَ",
+        "variants": [
+          "تْ",
+          "اُ",
+          "رْ",
+          "زْ",
+          "مِ",
+          "نَ"
+        ],
+        "audioFileName": "umirna.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "اَنْتُمْ",
+        "variants": [
+          "تُ",
+          "زَ",
+          "مْ",
+          "نْ",
+          "رَ",
+          "اَ"
+        ],
+        "audioFileName": "antum.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "نِمْتُمْ",
+        "variants": [
+          "اَ",
+          "نِ",
+          "زَ",
+          "مْ",
+          "تُ",
+          "مْ"
+        ],
+        "audioFileName": "nimtum.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "نَزِرُ",
+        "variants": [
+          "نَ",
+          "تْ",
+          "زِ",
+          "اَ",
+          "رُ",
+          "مْ"
+        ],
+        "audioFileName": "naziru.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "نَزِنُ",
+        "variants": [
+          "رِ",
+          "نَ",
+          "مْ",
+          "زِ",
+          "اَ",
+          "نُ"
+        ],
+        "audioFileName": "nazinu.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "اَمَرْنَ",
+        "variants": [
+          "تَ",
+          "اَ",
+          "زَ",
+          "مَ",
+          "رْ",
+          "نَ"
+        ],
+        "audioFileName": "amarna.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "مُرِرْنَ",
+        "variants": [
+          "زَ",
+          "مُ",
+          "رِ",
+          "رْ",
+          "نَ",
+          "اَ"
+        ],
+        "audioFileName": "murirna.mp3",
+        "lessonCode": "lesson-17"
+      },
+      {
+        "correctLetter": "اَمْرَرْنَ",
+        "variants": [
+          "اَ",
+          "زَ",
+          "مْ",
+          "رَ",
+          "رْ",
+          "نَ"
+        ],
+        "audioFileName": "amrorna.mp3",
+        "lessonCode": "lesson-17"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 5,
+    "data": [
+      {
+        "correctLetter": "جَمْ",
+        "variants": [
+          "بَ",
+          "فُ",
+          "مْ",
+          "عَ",
+          "جَ",
+          "خُ"
+        ],
+        "audioFileName": "jam.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جَرْ",
+        "variants": [
+          "وَ",
+          "رْ",
+          "دَ",
+          "تُ",
+          "يَ",
+          "جَ"
+        ],
+        "audioFileName": "jar.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جِنْ",
+        "variants": [
+          "نْ",
+          "سُ",
+          "ظَ",
+          "زِ",
+          "جِ",
+          "ذَ"
+        ],
+        "audioFileName": "jin.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جُبْ",
+        "variants": [
+          "بَ",
+          "جُ",
+          "وِ",
+          "بْ",
+          "تَ",
+          "حَ"
+        ],
+        "audioFileName": "jub.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جُلْ",
+        "variants": [
+          "لْ",
+          "طَ",
+          "سُ",
+          "مَ",
+          "جُ",
+          "كُ"
+        ],
+        "audioFileName": "jul.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جَبَلُ",
+        "variants": [
+          "هِ",
+          "لُ",
+          "عِ",
+          "بَ",
+          "قَ",
+          "جَ"
+        ],
+        "audioFileName": "jabalu.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جَمَلُ",
+        "variants": [
+          "يُ",
+          "زُ",
+          "مَ",
+          "جَ",
+          "مُ",
+          "لُ"
+        ],
+        "audioFileName": "jamalu.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "أَجْرُ",
+        "variants": [
+          "أَ",
+          "حَ",
+          "جْ",
+          "ذُ",
+          "رُ",
+          "كَ"
+        ],
+        "audioFileName": "ajru.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "فَجْرُ",
+        "variants": [
+          "يَ",
+          "فَ",
+          "سُ",
+          "جْ",
+          "طَ",
+          "رُ"
+        ],
+        "audioFileName": "fajru.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "جَوْهَرُ",
+        "variants": [
+          "رُ",
+          "هَ",
+          "وْ",
+          "جَ",
+          "جِ",
+          "ذُ"
+        ],
+        "audioFileName": "jauharu.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "تَجَوْرَبَ",
+        "variants": [
+          "رَ",
+          "وْ",
+          "تَ",
+          "جَ",
+          "بَ",
+          "نَ"
+        ],
+        "audioFileName": "tajauroba.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "يَتَجَوْرَبُ",
+        "variants": [
+          "رَ",
+          "يَ",
+          "تَ",
+          "وْ",
+          "بُ",
+          "جَ"
+        ],
+        "audioFileName": "iatajaurobu.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "إِسْتَجْلَبَ",
+        "variants": [
+          "لَ",
+          "تَ",
+          "بَ",
+          "سْ",
+          "جْ",
+          "إِ"
+        ],
+        "audioFileName": "istajlaba.mp3",
+        "lessonCode": "lesson-31"
+      },
+      {
+        "correctLetter": "يَسْتَجْلِبُ",
+        "variants": [
+          "يَ",
+          "سْ",
+          "جْ",
+          "بُ",
+          "لِ",
+          "تَ"
+        ],
+        "audioFileName": "iastajlibu.mp3",
+        "lessonCode": "lesson-31"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 6,
+    "data": [
+      {
+        "correctLetter": "بِعْ",
+        "variants": [
+          "ضَ",
+          "بِ",
+          "غِ",
+          "خُ",
+          "عْ",
+          "ذَ"
+        ],
+        "audioFileName": "big.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عَنْ",
+        "variants": [
+          "عَ",
+          "صِ",
+          "يَ",
+          "نْ",
+          "ذَ",
+          "خُ"
+        ],
+        "audioFileName": "an.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "سَعْ",
+        "variants": [
+          "بُ",
+          "سَ",
+          "كُ",
+          "هُ",
+          "ذَ",
+          "عْ"
+        ],
+        "audioFileName": "sag.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "مَعَ",
+        "variants": [
+          "أَ",
+          "وِ",
+          "مَ",
+          "دْ",
+          "عَ",
+          "حَ"
+        ],
+        "audioFileName": "maga.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عَرَبُ",
+        "variants": [
+          "يَ",
+          "عَ",
+          "ذْ",
+          "بُ",
+          "مِ",
+          "رَ"
+        ],
+        "audioFileName": "arobu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عَجَبُ",
+        "variants": [
+          "عَ",
+          "خَ",
+          "جَ",
+          "طْ",
+          "بُ",
+          "مَ"
+        ],
+        "audioFileName": "ajabu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عَجَمُ",
+        "variants": [
+          "سَ",
+          "عَ",
+          "ذْ",
+          "مُ",
+          "وَ",
+          "جَ"
+        ],
+        "audioFileName": "ajamu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عَمَلُ",
+        "variants": [
+          "لُ",
+          "حُ",
+          "مَ",
+          "دَ",
+          "عَ",
+          "مَ"
+        ],
+        "audioFileName": "amalu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عِلْمُ",
+        "variants": [
+          "طَ",
+          "مُ",
+          "ثُ",
+          "لْ",
+          "هَ",
+          "عِ"
+        ],
+        "audioFileName": "yilmu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عُمْرُ",
+        "variants": [
+          "وَ",
+          "عُ",
+          "ذَ",
+          "مْ",
+          "تْ",
+          "رُ"
+        ],
+        "audioFileName": "umru.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "جَمْعُ",
+        "variants": [
+          "جَ",
+          "رَ",
+          "مْ",
+          "عَ",
+          "عُ",
+          "قِ"
+        ],
+        "audioFileName": "jamu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "جَعَلَ",
+        "variants": [
+          "ثُ",
+          "جَ",
+          "سَ",
+          "عَ",
+          "دَ",
+          "لَ"
+        ],
+        "audioFileName": "jala.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "عَيْلَمُ",
+        "variants": [
+          "لَ",
+          "يْ",
+          "مُ",
+          "عَ",
+          "نْ",
+          "زُ"
+        ],
+        "audioFileName": "ailamu.mp3",
+        "lessonCode": "lesson-35"
+      },
+      {
+        "correctLetter": "جَعْفَرُ",
+        "variants": [
+          "رُ",
+          "عْ",
+          "جَ",
+          "فَ",
+          "سُ",
+          "بَ"
+        ],
+        "audioFileName": "jafaru.mp3",
+        "lessonCode": "lesson-35"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 7,
+    "data": [
+      {
+        "correctLetter": "بَسْ",
+        "variants": [
+          "يَ",
+          "ثْ",
+          "سْ",
+          "ذَ",
+          "شَ",
+          "بَ"
+        ],
+        "audioFileName": "bas.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سَمْ",
+        "variants": [
+          "دِ",
+          "فُ",
+          "سَ",
+          "زِ",
+          "مْ",
+          "طْ"
+        ],
+        "audioFileName": "sam.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سِرْ",
+        "variants": [
+          "رْ",
+          "شِ",
+          "خُ",
+          "نْ",
+          "دَ",
+          "سِ"
+        ],
+        "audioFileName": "sir.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سِنْ",
+        "variants": [
+          "زُ",
+          "نِ",
+          "سِ",
+          "مْ",
+          "نْ",
+          "ثُ"
+        ],
+        "audioFileName": "sin.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سِلْ",
+        "variants": [
+          "شَ",
+          "سِ",
+          "طْ",
+          "ضُ",
+          "لْ",
+          "كَ"
+        ],
+        "audioFileName": "sil.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سَفَرُ",
+        "variants": [
+          "صُ",
+          "هَ",
+          "رُ",
+          "وَ",
+          "فَ",
+          "سَ"
+        ],
+        "audioFileName": "safaru.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سَقَرُ",
+        "variants": [
+          "ثُ",
+          "رُ",
+          "خِ",
+          "قَ",
+          "يَ",
+          "سَ"
+        ],
+        "audioFileName": "saqoru.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سَبَقُ",
+        "variants": [
+          "قُ",
+          "شَ",
+          "بَ",
+          "ذُ",
+          "سَ",
+          "مْ"
+        ],
+        "audioFileName": "sabaqu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سَلَفُ",
+        "variants": [
+          "هَ",
+          "سَ",
+          "طِ",
+          "لَ",
+          "فُ",
+          "ذِ"
+        ],
+        "audioFileName": "salafu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "سَمَكُ",
+        "variants": [
+          "ظُ",
+          "قِ",
+          "كُ",
+          "مَ",
+          "شُ",
+          "سَ"
+        ],
+        "audioFileName": "samaku.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "فَرَسُ",
+        "variants": [
+          "فَ",
+          "غَ",
+          "رَ",
+          "شَ",
+          "سُ",
+          "خُ"
+        ],
+        "audioFileName": "farosu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "مَسْلَكُ",
+        "variants": [
+          "سْ",
+          "لَ",
+          "كُ",
+          "مَ",
+          "طُ",
+          "دَ"
+        ],
+        "audioFileName": "maslaku.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "مَسْكَنُ",
+        "variants": [
+          "مَ",
+          "سْ",
+          "كَ",
+          "نُ",
+          "طَ",
+          "زُ"
+        ],
+        "audioFileName": "maskanu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "مُسْلِمُ",
+        "variants": [
+          "مُ",
+          "سْ",
+          "لِ",
+          "مُ",
+          "فُ",
+          "طْ"
+        ],
+        "audioFileName": "muslimu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "مُسْرِفُ",
+        "variants": [
+          "سْ",
+          "رِ",
+          "مُ",
+          "فُ",
+          "صَ",
+          "نْ"
+        ],
+        "audioFileName": "musrifu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "أَسْلَمَ",
+        "variants": [
+          "أَ",
+          "سْ",
+          "لَ",
+          "مَ",
+          "طَ",
+          "خُ"
+        ],
+        "audioFileName": "aslama.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "يُسْلِمُ",
+        "variants": [
+          "يُ",
+          "سْ",
+          "لِ",
+          "مُ",
+          "وُ",
+          "نْ"
+        ],
+        "audioFileName": "uslimu.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "إِسْتَيْسَرَ",
+        "variants": [
+          "إِ",
+          "سْ",
+          "تَ",
+          "يْ",
+          "سَ",
+          "رَ"
+        ],
+        "audioFileName": "istaisaro.mp3",
+        "lessonCode": "lesson-27"
+      },
+      {
+        "correctLetter": "يَسْتَيْسِرُ",
+        "variants": [
+          "سِ",
+          "يْ",
+          "رُ",
+          "تَ",
+          "سْ",
+          "يَ"
+        ],
+        "audioFileName": "iastaisiru.mp3",
+        "lessonCode": "lesson-27"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 8,
+    "data": [
+      {
+        "correctLetter": "اَوْ",
+        "variants": [
+          "بَ",
+          "وْ",
+          "نُ",
+          "رُ",
+          "اَ",
+          "كِ"
+        ],
+        "audioFileName": "au.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "رَوْ",
+        "variants": [
+          "يَ",
+          "نُ",
+          "وْ",
+          "خُ",
+          "رَ",
+          "ثِ"
+        ],
+        "audioFileName": "rou.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "نَوْ",
+        "variants": [
+          "زَ",
+          "وْ",
+          "هِ",
+          "مُ",
+          "ذِ",
+          "نَ"
+        ],
+        "audioFileName": "nau.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "لَوْ",
+        "variants": [
+          "وْ",
+          "ظَ",
+          "صِ",
+          "حَ",
+          "لَ",
+          "كُ"
+        ],
+        "audioFileName": "lau.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَرَمْ",
+        "variants": [
+          "زِ",
+          "وَ",
+          "بَ",
+          "رَ",
+          "دَ",
+          "مْ"
+        ],
+        "audioFileName": "uarom.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَتَرْ",
+        "variants": [
+          "تَ",
+          "سُ",
+          "رْ",
+          "فَ",
+          "عِ",
+          "وَ"
+        ],
+        "audioFileName": "uatar.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَمَنْ",
+        "variants": [
+          "لَ",
+          "نْ",
+          "رَ",
+          "مَ",
+          "ذَ",
+          "وَ"
+        ],
+        "audioFileName": "uaman.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَلَنْ",
+        "variants": [
+          "قُ",
+          "نَ",
+          "لَ",
+          "غَ",
+          "نْ",
+          "وَ"
+        ],
+        "audioFileName": "ualan.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَلَمْ",
+        "variants": [
+          "مْ",
+          "ظَ",
+          "حَ",
+          "وَ",
+          "ذِ",
+          "لَ"
+        ],
+        "audioFileName": "ualam.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَكَمْ",
+        "variants": [
+          "دَ",
+          "مْ",
+          "كَ",
+          "طَ",
+          "شُ",
+          "وَ"
+        ],
+        "audioFileName": "uakam.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "أَوْلُ",
+        "variants": [
+          "ضُ",
+          "لُ",
+          "رْ",
+          "وْ",
+          "سَ",
+          "أَ"
+        ],
+        "audioFileName": "aulu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "رَوْمُ",
+        "variants": [
+          "يَ",
+          "خُ",
+          "وْ",
+          "ذَ",
+          "رَ",
+          "مُ"
+        ],
+        "audioFileName": "roumu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "يَوْمُ",
+        "variants": [
+          "يَ",
+          "هُ",
+          "وْ",
+          "حَ",
+          "طِ",
+          "مُ"
+        ],
+        "audioFileName": "iaumu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "كَوْنُ",
+        "variants": [
+          "نُ",
+          "زَ",
+          "وْ",
+          "ضَ",
+          "يُ",
+          "كَ"
+        ],
+        "audioFileName": "kaunu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَيْلُ",
+        "variants": [
+          "رَ",
+          "خِ",
+          "وَ",
+          "قِ",
+          "يْ",
+          "لُ"
+        ],
+        "audioFileName": "uailu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "وَزْنُ",
+        "variants": [
+          "وَ",
+          "صِ",
+          "زْ",
+          "نَ",
+          "شُ",
+          "نُ"
+        ],
+        "audioFileName": "uaznu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "كَوْكَبُ",
+        "variants": [
+          "بُ",
+          "وْ",
+          "كَ",
+          "كَ",
+          "نِ",
+          "ظُ"
+        ],
+        "audioFileName": "kaukabu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "مَوْكِبُ",
+        "variants": [
+          "وْ",
+          "بُ",
+          "مَ",
+          "كِ",
+          "ذْ",
+          "ضْ"
+        ],
+        "audioFileName": "maukibu.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "أَوْلَمْتُمْ",
+        "variants": [
+          "أَ",
+          "لَ",
+          "مْ",
+          "وْ",
+          "مْ",
+          "تُ"
+        ],
+        "audioFileName": "aulamtum.mp3",
+        "lessonCode": "lesson-22"
+      },
+      {
+        "correctLetter": "أَوْتَرْتُمْ",
+        "variants": [
+          "تُ",
+          "أَ",
+          "وْ",
+          "مْ",
+          "رْ",
+          "تَ"
+        ],
+        "audioFileName": "autartum.mp3",
+        "lessonCode": "lesson-22"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 9,
+    "data": [
+      {
+        "correctLetter": "فَمْ",
+        "variants": [
+          "بَ",
+          "مْ",
+          "سِ",
+          "خُ",
+          "فَ",
+          "يَ"
+        ],
+        "audioFileName": "fam.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فَنْ",
+        "variants": [
+          "يَ",
+          "قِ",
+          "فَ",
+          "ذْ",
+          "خُ",
+          "نْ"
+        ],
+        "audioFileName": "fan.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "كَفْ",
+        "variants": [
+          "هَ",
+          "يَ",
+          "فْ",
+          "ضُ",
+          "كَ",
+          "شْ"
+        ],
+        "audioFileName": "kaf.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فَلَكُ",
+        "variants": [
+          "لَ",
+          "خِ",
+          "كُ",
+          "زْ",
+          "سِ",
+          "فَ"
+        ],
+        "audioFileName": "falaku.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "كَفَنُ",
+        "variants": [
+          "دَ",
+          "فَ",
+          "يَ",
+          "كَ",
+          "ذِ",
+          "نُ"
+        ],
+        "audioFileName": "kafanu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "نَفَرُ",
+        "variants": [
+          "وَ",
+          "رُ",
+          "سِ",
+          "فَ",
+          "قِ",
+          "نَ"
+        ],
+        "audioFileName": "nafaru.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فَوْرُ",
+        "variants": [
+          "بِ",
+          "هَ",
+          "فَ",
+          "خُ",
+          "وْ",
+          "رُ"
+        ],
+        "audioFileName": "fauru.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فَوْزُ",
+        "variants": [
+          "وْ",
+          "ذِ",
+          "زُ",
+          "يَ",
+          "ضِ",
+          "فَ"
+        ],
+        "audioFileName": "fauzu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فَـهْـمُ",
+        "variants": [
+          "رَ",
+          "فَ",
+          "قِ",
+          "ـهْـ",
+          "ذَ",
+          "مُ"
+        ],
+        "audioFileName": "fahmu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فِكْرُ",
+        "variants": [
+          "زُ",
+          "نَ",
+          "كْ",
+          "وِ",
+          "فِ",
+          "رُ"
+        ],
+        "audioFileName": "fikru.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "زِفْرُ",
+        "variants": [
+          "زِ",
+          "نْ",
+          "فْ",
+          "نَ",
+          "دُ",
+          "رُ"
+        ],
+        "audioFileName": "zifru.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "كِفْلُ",
+        "variants": [
+          "نِ",
+          "خَ",
+          "كِ",
+          "عُ",
+          "فْ",
+          "لُ"
+        ],
+        "audioFileName": "kiflu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فُلْفُلُ",
+        "variants": [
+          "غُ",
+          "فُ",
+          "تَ",
+          "لُ",
+          "لْ",
+          "فُ"
+        ],
+        "audioFileName": "fulfulu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "نَوْفَرُ",
+        "variants": [
+          "نَ",
+          "وْ",
+          "فَ",
+          "رُ",
+          "كُ",
+          "رَ"
+        ],
+        "audioFileName": "naufaru.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "نَوْفَلُ",
+        "variants": [
+          "نَ",
+          "وْ",
+          "لُ",
+          "فَ",
+          "دُ",
+          "وِ"
+        ],
+        "audioFileName": "naufalu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "فَهِمَ",
+        "variants": [
+          "نِ",
+          "خْ",
+          "فَ",
+          "هِ",
+          "زِ",
+          "مَ"
+        ],
+        "audioFileName": "fahima.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "يَفْهَمُ",
+        "variants": [
+          "يَ",
+          "فْ",
+          "هَ",
+          "مُ",
+          "ظْ",
+          "ضُ"
+        ],
+        "audioFileName": "iafhamu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "إِفْتَتَنَ",
+        "variants": [
+          "إِ",
+          "فْ",
+          "تَ",
+          "تَ",
+          "نَ",
+          "نِ"
+        ],
+        "audioFileName": "iftatana.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "يَفْتَتِنُ",
+        "variants": [
+          "نُ",
+          "تَ",
+          "تِ",
+          "يَ",
+          "فْ",
+          "خْ"
+        ],
+        "audioFileName": "iaftatinu.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "إِفْتَكَرَ",
+        "variants": [
+          "رَ",
+          "إِ",
+          "فْ",
+          "تَ",
+          "كَ",
+          "زُ"
+        ],
+        "audioFileName": "iftakaro.mp3",
+        "lessonCode": "lesson-24"
+      },
+      {
+        "correctLetter": "يَفْتَكِرُ",
+        "variants": [
+          "يَ",
+          "فْ",
+          "تَ",
+          "كِ",
+          "رُ",
+          "ظِ"
+        ],
+        "audioFileName": "iaftakiru.mp3",
+        "lessonCode": "lesson-24"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 10,
+    "data": [
+      {
+        "correctLetter": "ضَيْفُ",
+        "variants": [
+          "يْ",
+          "وِ",
+          "ضَ",
+          "مَ",
+          "كِ",
+          "فُ"
+        ],
+        "audioFileName": "doifu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "عَضْلُ",
+        "variants": [
+          "حَ",
+          "ضْ",
+          "خَ",
+          "كِ",
+          "لُ",
+          "عَ"
+        ],
+        "audioFileName": "adlu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "ضَهْلُ",
+        "variants": [
+          "ضَ",
+          "وَ",
+          "كِ",
+          "هْ",
+          "مَ",
+          "لُ"
+        ],
+        "audioFileName": "dohlu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "ضَعْفُ",
+        "variants": [
+          "هَ",
+          "ضَ",
+          "عْ",
+          "كُ",
+          "فُ",
+          "وَ"
+        ],
+        "audioFileName": "dofu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "عَرْضُ",
+        "variants": [
+          "ضُ",
+          "وُ",
+          "زَ",
+          "رْ",
+          "جَ",
+          "عَ"
+        ],
+        "audioFileName": "ardu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "مَضْرِبُ",
+        "variants": [
+          "جْ",
+          "مَ",
+          "ضْ",
+          "رِ",
+          "بُ",
+          "فَ"
+        ],
+        "audioFileName": "madribu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "مِضْرَبُ",
+        "variants": [
+          "مِ",
+          "ضْ",
+          "رَ",
+          "بُ",
+          "خُ",
+          "طَ"
+        ],
+        "audioFileName": "midrobu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "اِضْرِبْ",
+        "variants": [
+          "ضْ",
+          "بْ",
+          "اِ",
+          "رِ",
+          "لُ",
+          "رُ"
+        ],
+        "audioFileName": "idrib.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "أَضْرِبُ",
+        "variants": [
+          "أَ",
+          "رِ",
+          "ضْ",
+          "بُ",
+          "خُ",
+          "رُ"
+        ],
+        "audioFileName": "adribu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "نَضْرِبُ",
+        "variants": [
+          "نَ",
+          "ضْ",
+          "رِ",
+          "بُ",
+          "تُ",
+          "بِ"
+        ],
+        "audioFileName": "nadribu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "تَضْرِبُ",
+        "variants": [
+          "رِ",
+          "بُ",
+          "تَ",
+          "ضْ",
+          "قُ",
+          "خَ"
+        ],
+        "audioFileName": "tadribu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "إِضْطَرَبَ",
+        "variants": [
+          "رَ",
+          "بَ",
+          "إِ",
+          "ضْ",
+          "طَ",
+          "نَ"
+        ],
+        "audioFileName": "idtoroba.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "يَضْطَرِبُ",
+        "variants": [
+          "يَ",
+          "رِ",
+          "طَ",
+          "ضْ",
+          "بُ",
+          "تَ"
+        ],
+        "audioFileName": "iadtoribu.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "اِسْتَضْعَفَ",
+        "variants": [
+          "عَ",
+          "اِ",
+          "فَ",
+          "سْ",
+          "ضْ",
+          "تَ"
+        ],
+        "audioFileName": "istadgafa.mp3",
+        "lessonCode": "lesson-37"
+      },
+      {
+        "correctLetter": "يَسْتَضْعِفُ",
+        "variants": [
+          "يَ",
+          "عِ",
+          "سْ",
+          "ضْ",
+          "تَ",
+          "فُ"
+        ],
+        "audioFileName": "iastadgifu.mp3",
+        "lessonCode": "lesson-37"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 11,
+    "data": [
+      {
+        "correctLetter": "اَاِ",
+        "variants": [
+          "اِ",
+          "اُ",
+          "اَ",
+          "اَاَ",
+          "زَ",
+          "رِ"
+        ],
+        "audioFileName": "ii.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اِرْ",
+        "variants": [
+          "رَ",
+          "رِ",
+          "رْ",
+          "اَ",
+          "رُ",
+          "اِ"
+        ],
+        "audioFileName": "ir.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "رَرْ",
+        "variants": [
+          "رْ",
+          "رُ",
+          "رَ",
+          "اِ",
+          "اَ",
+          "اُ"
+        ],
+        "audioFileName": "ror.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اَرْ",
+        "variants": [
+          "اِ",
+          "اُ",
+          "اَ",
+          "رْ",
+          "رَ",
+          "زِ"
+        ],
+        "audioFileName": "ar.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "رُرْ",
+        "variants": [
+          "رِ",
+          "رَ",
+          "رُ",
+          "اِ",
+          "زْ",
+          "رْ"
+        ],
+        "audioFileName": "rur.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "رِرْ",
+        "variants": [
+          "رَ",
+          "رُ",
+          "رِ",
+          "اِ",
+          "زْ",
+          "رْ"
+        ],
+        "audioFileName": "rir.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اُرْ",
+        "variants": [
+          "اَ",
+          "اِ",
+          "اُ",
+          "رِ",
+          "زْ",
+          "رْ"
+        ],
+        "audioFileName": "ur.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اِاْ",
+        "variants": [
+          "اِ",
+          "اُ",
+          "اْ",
+          "اَ",
+          "رْ",
+          "زْ"
+        ],
+        "audioFileName": "iy.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اَاَ",
+        "variants": [
+          "اَ",
+          "اُ",
+          "اَ",
+          "اِ",
+          "رْ",
+          "زْ"
+        ],
+        "audioFileName": "aa.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اُاْ",
+        "variants": [
+          "اَ",
+          "رْ",
+          "اُ",
+          "اِ",
+          "زْ",
+          "اْ"
+        ],
+        "audioFileName": "uy.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اَزْ",
+        "variants": [
+          "اِ",
+          "اُ",
+          "زْ",
+          "رْ",
+          "زَ",
+          "اَ"
+        ],
+        "audioFileName": "az.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اِزْ",
+        "variants": [
+          "زْ",
+          "اُ",
+          "اِ",
+          "اَ",
+          "رْ",
+          "زُ"
+        ],
+        "audioFileName": "iz.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اُزْ",
+        "variants": [
+          "اَ",
+          "رْ",
+          "زْ",
+          "اِ",
+          "اُ",
+          "رَ"
+        ],
+        "audioFileName": "uz.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "زَرْ",
+        "variants": [
+          "زِ",
+          "زُ",
+          "رْ",
+          "رِ",
+          "زَ",
+          "رَ"
+        ],
+        "audioFileName": "zar.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "زِرْ",
+        "variants": [
+          "زُ",
+          "رَ",
+          "زِ",
+          "زَ",
+          "رْ",
+          "رِ"
+        ],
+        "audioFileName": "zir.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "زُرْ",
+        "variants": [
+          "رَ",
+          "رِ",
+          "زُ",
+          "زِ",
+          "رْ",
+          "زْ"
+        ],
+        "audioFileName": "zur.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "رَزْ",
+        "variants": [
+          "رِ",
+          "رُ",
+          "رَ",
+          "زَ",
+          "رْ",
+          "زْ"
+        ],
+        "audioFileName": "roz.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اَزْرُ",
+        "variants": [
+          "زُ",
+          "اُ",
+          "اَ",
+          "رُ",
+          "رْ",
+          "زْ"
+        ],
+        "audioFileName": "azru.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اِزْرُ",
+        "variants": [
+          "رْ",
+          "زُ",
+          "اِ",
+          "زْ",
+          "رِ",
+          "رُ"
+        ],
+        "audioFileName": "izru.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اُزْرُ",
+        "variants": [
+          "اُ",
+          "زُ",
+          "زْ",
+          "اِ",
+          "زَ",
+          "رُ"
+        ],
+        "audioFileName": "uzru.mp3",
+        "lessonCode": "lesson-14"
+      },
+      {
+        "correctLetter": "اُرْزُ",
+        "variants": [
+          "اَ",
+          "زُ",
+          "اُ",
+          "زْ",
+          "رْ",
+          "زٍ"
+        ],
+        "audioFileName": "urzu.mp3",
+        "lessonCode": "lesson-14"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 12,
+    "data": [
+      {
+        "correctLetter": "كَمْ",
+        "variants": [
+          "تْ",
+          "دَ",
+          "مْ",
+          "رُ",
+          "نْ",
+          "كَ"
+        ],
+        "audioFileName": "kam.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كُمْ",
+        "variants": [
+          "مْ",
+          "شَ",
+          "يَ",
+          "طُ",
+          "كُ",
+          "ذِ"
+        ],
+        "audioFileName": "kum.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كُنْ",
+        "variants": [
+          "زَ",
+          "كُ",
+          "تْ",
+          "مْ",
+          "نْ",
+          "رَ"
+        ],
+        "audioFileName": "kun.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كَيْ",
+        "variants": [
+          "ضِ",
+          "عْ",
+          "يْ",
+          "بِ",
+          "كَ",
+          "غُ"
+        ],
+        "audioFileName": "kai.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "بَكْرُ",
+        "variants": [
+          "رُ",
+          "تْ",
+          "بَ",
+          "عُ",
+          "كْ",
+          "ذِ"
+        ],
+        "audioFileName": "bakru.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "مَكْرُ",
+        "variants": [
+          "دَ",
+          "مَ",
+          "زْ",
+          "كْ",
+          "رُ",
+          "بِ"
+        ],
+        "audioFileName": "makru.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كَرْمُ",
+        "variants": [
+          "زَ",
+          "كَ",
+          "مُ",
+          "مُ",
+          "طْ",
+          "رْ"
+        ],
+        "audioFileName": "karmu.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كَنْزُ",
+        "variants": [
+          "كَ",
+          "سَ",
+          "نْ",
+          "دُ",
+          "زُ",
+          "يِ"
+        ],
+        "audioFileName": "kanzu.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "تَرْكُ",
+        "variants": [
+          "دِ",
+          "رُ",
+          "كُ",
+          "تَ",
+          "رْ",
+          "ظِ"
+        ],
+        "audioFileName": "tarku.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كَتَبَ",
+        "variants": [
+          "كَ",
+          "زْ",
+          "صَ",
+          "بَ",
+          "رُ",
+          "تَ"
+        ],
+        "audioFileName": "kataba.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "يَكْتُبُ",
+        "variants": [
+          "يَ",
+          "كْ",
+          "تُ",
+          "بُ",
+          "طُ",
+          "ضِ"
+        ],
+        "audioFileName": "iaktubu.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "تَرَكَ",
+        "variants": [
+          "كَ",
+          "طَ",
+          "تَ",
+          "ثْ",
+          "إِ",
+          "رَ"
+        ],
+        "audioFileName": "taroka.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "يَتْرُكُ",
+        "variants": [
+          "ثُ",
+          "طْ",
+          "يَ",
+          "رُ",
+          "تْ",
+          "كُ"
+        ],
+        "audioFileName": "iatruku.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كَتَبْتُمْ",
+        "variants": [
+          "تَ",
+          "غِ",
+          "كَ",
+          "بْ",
+          "تُ",
+          "مْ"
+        ],
+        "audioFileName": "katabtum.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "أَمَرَكَ",
+        "variants": [
+          "رَ",
+          "أَ",
+          "كَ",
+          "مَ",
+          "جْ",
+          "لِ"
+        ],
+        "audioFileName": "amaroka.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "أَمَرَتْكَ",
+        "variants": [
+          "كَ",
+          "تْ",
+          "أَ",
+          "مَ",
+          "رَ",
+          "سُ"
+        ],
+        "audioFileName": "amarotka.mp3",
+        "lessonCode": "lesson-20"
+      },
+      {
+        "correctLetter": "كُنْتُ",
+        "variants": [
+          "كُ",
+          "نْ",
+          "تُ",
+          "شِ",
+          "يُ",
+          "ضِ"
+        ],
+        "audioFileName": "kuntu.mp3",
+        "lessonCode": "lesson-20"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 13,
+    "data": [
+      {
+        "correctLetter": "خَبْ",
+        "variants": [
+          "عَ",
+          "خَ",
+          "رِ",
+          "بْ",
+          "تْ",
+          "ذُ"
+        ],
+        "audioFileName": "hub.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "خَلْ",
+        "variants": [
+          "خَ",
+          "طُ",
+          "بْ",
+          "لْ",
+          "حَ",
+          "وَ"
+        ],
+        "audioFileName": "hol.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "خَرَجَ",
+        "variants": [
+          "ذُ",
+          "خَ",
+          "نُ",
+          "رَ",
+          "حِ",
+          "جَ"
+        ],
+        "audioFileName": "horoja.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "خَشَبُ",
+        "variants": [
+          "خَ",
+          "رَ",
+          "شَ",
+          "بُ",
+          "سُ",
+          "ظِ"
+        ],
+        "audioFileName": "hoshabu.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "خَيْرُ",
+        "variants": [
+          "رُ",
+          "حُ",
+          "يْ",
+          "خَ",
+          "ظَ",
+          "رَ"
+        ],
+        "audioFileName": "hoiru.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "خَتْمُ",
+        "variants": [
+          "رُ",
+          "خَ",
+          "تْ",
+          "ذَ",
+          "مُ",
+          "فِ"
+        ],
+        "audioFileName": "hotmu.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "خَوْفُ",
+        "variants": [
+          "فُ",
+          "سُ",
+          "خَ",
+          "وْ",
+          "يَ",
+          "عَ"
+        ],
+        "audioFileName": "houfu.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "أَخْبَرَ",
+        "variants": [
+          "بَ",
+          "خْ",
+          "رَ",
+          "أَ",
+          "لَ",
+          "تُ"
+        ],
+        "audioFileName": "ahbaro.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "يُخْبِرُ",
+        "variants": [
+          "بِ",
+          "خْ",
+          "يُ",
+          "رُ",
+          "نَ",
+          "تَ"
+        ],
+        "audioFileName": "uhbiru.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "أَخْرَجَ",
+        "variants": [
+          "جَ",
+          "رَ",
+          "خْ",
+          "أَ",
+          "حَ",
+          "ذُ"
+        ],
+        "audioFileName": "ahroja.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "يُخْرِجُ",
+        "variants": [
+          "رِ",
+          "جُ",
+          "خْ",
+          "يُ",
+          "شَ",
+          "خُ"
+        ],
+        "audioFileName": "uhriju.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "إِسْتَخْبَرَ",
+        "variants": [
+          "خْ",
+          "بَ",
+          "إِ",
+          "رَ",
+          "سْ",
+          "تَ"
+        ],
+        "audioFileName": "istahbaro.mp3",
+        "lessonCode": "lesson-32"
+      },
+      {
+        "correctLetter": "يَسْتَخْبِرُ",
+        "variants": [
+          "خْ",
+          "تَ",
+          "سْ",
+          "رُ",
+          "يَ",
+          "بِ"
+        ],
+        "audioFileName": "iastahbiru.mp3",
+        "lessonCode": "lesson-32"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 14,
+    "data": [
+      {
+        "correctLetter": "ظَنْ",
+        "variants": [
+          "وِ",
+          "نْ",
+          "زَ",
+          "غُ",
+          "ظَ",
+          "رُ"
+        ],
+        "audioFileName": "zon.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "ظِلْ",
+        "variants": [
+          "خَ",
+          "رَ",
+          "ظِ",
+          "حُ",
+          "ذِ",
+          "لْ"
+        ],
+        "audioFileName": "zil.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "فَظْ",
+        "variants": [
+          "فَ",
+          "شُ",
+          "رِ",
+          "ظْ",
+          "طْ",
+          "مَ"
+        ],
+        "audioFileName": "faz.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "عِظَمُ",
+        "variants": [
+          "مُ",
+          "ذُ",
+          "ظَ",
+          "خَ",
+          "عِ",
+          "وِ"
+        ],
+        "audioFileName": "izomu.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "نَظْمُ",
+        "variants": [
+          "هَ",
+          "نَ",
+          "دُ",
+          "ظْ",
+          "حَ",
+          "مُ"
+        ],
+        "audioFileName": "nazmu.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "ظِلْفُ",
+        "variants": [
+          "ظِ",
+          "يَ",
+          "لْ",
+          "خِ",
+          "فُ",
+          "ذُ"
+        ],
+        "audioFileName": "zilfu.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "ظُلْمُ",
+        "variants": [
+          "رَ",
+          "ظُ",
+          "وَ",
+          "لْ",
+          "خُ",
+          "مُ"
+        ],
+        "audioFileName": "zulmu.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "ظَهَرَ",
+        "variants": [
+          "ثَ",
+          "خُ",
+          "ظَ",
+          "رَ",
+          "هَ",
+          "رَ"
+        ],
+        "audioFileName": "zoharo.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "ظُهْرُ",
+        "variants": [
+          "ظُ",
+          "دِ",
+          "هْ",
+          "رُ",
+          "تُ",
+          "مَ"
+        ],
+        "audioFileName": "zuhru.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "أَظْهَرَ",
+        "variants": [
+          "رَ",
+          "أَ",
+          "ظْ",
+          "هَ",
+          "خُ",
+          "إِ"
+        ],
+        "audioFileName": "azharo.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "يُظْهِرُ",
+        "variants": [
+          "خُ",
+          "يُ",
+          "ظْ",
+          "هِ",
+          "رُ",
+          "هَ"
+        ],
+        "audioFileName": "uzhiru.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "إِنْتَظَمَ",
+        "variants": [
+          "إِ",
+          "نْ",
+          "تَ",
+          "ظَ",
+          "مَ",
+          "نِ"
+        ],
+        "audioFileName": "intazoma.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "يَنْتَظِمُ",
+        "variants": [
+          "مُ",
+          "يَ",
+          "تَ",
+          "ظِ",
+          "نْ",
+          "بَ"
+        ],
+        "audioFileName": "iantazimu.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "إِسْتَعْظَمَ",
+        "variants": [
+          "تَ",
+          "سْ",
+          "مَ",
+          "إِ",
+          "عْ",
+          "ظَ"
+        ],
+        "audioFileName": "istazoma.mp3",
+        "lessonCode": "lesson-39"
+      },
+      {
+        "correctLetter": "يَسْتَعْظِمُ",
+        "variants": [
+          "ظِ",
+          "سْ",
+          "عْ",
+          "تَ",
+          "يَ",
+          "مُ"
+        ],
+        "audioFileName": "iastazimu.mp3",
+        "lessonCode": "lesson-39"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 15,
+    "data": [
+      {
+        "correctLetter": "أَبُ",
+        "variants": [
+          "رَ",
+          "تْ",
+          "أَ",
+          "زِ",
+          "بُ",
+          "مِ"
+        ],
+        "audioFileName": "abu.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "إِبْنُ",
+        "variants": [
+          "بَ",
+          "رِ",
+          "نُ",
+          "إِ",
+          "مَ",
+          "بْ"
+        ],
+        "audioFileName": "ibnu.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "بِنْتُ",
+        "variants": [
+          "رُ",
+          "تُ",
+          "نْ",
+          "بِ",
+          "زَ",
+          "يْ"
+        ],
+        "audioFileName": "bintu.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "بَيْتُ",
+        "variants": [
+          "أَ",
+          "نْ",
+          "بَ",
+          "رَ",
+          "يْ",
+          "تُ"
+        ],
+        "audioFileName": "baitu.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "بَيْنَ",
+        "variants": [
+          "نَ",
+          "تُ",
+          "بَ",
+          "زِ",
+          "يْ",
+          "أَ"
+        ],
+        "audioFileName": "baina.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "أَبْرَمَ",
+        "variants": [
+          "رَ",
+          "نْ",
+          "أَ",
+          "زْ",
+          "بْ",
+          "مَ"
+        ],
+        "audioFileName": "abroma.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "رَيْبُ",
+        "variants": [
+          "نَ",
+          "يْ",
+          "رَ",
+          "إِ",
+          "بُ",
+          "مِ"
+        ],
+        "audioFileName": "roibu.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "زَيْنَبُ",
+        "variants": [
+          "زَ",
+          "بُ",
+          "يْ",
+          "مُ",
+          "نَ",
+          "أُ"
+        ],
+        "audioFileName": "zainabu.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "بَرْبَرُ",
+        "variants": [
+          "زِ",
+          "رُ",
+          "رْ",
+          "بَ",
+          "بَ",
+          "تِ"
+        ],
+        "audioFileName": "barbaru.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "مِنْبَرُ",
+        "variants": [
+          "بَ",
+          "مِ",
+          "زْ",
+          "نْ",
+          "تَ",
+          "رُ"
+        ],
+        "audioFileName": "minbaru.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "بِأَمْرَيْنِ",
+        "variants": [
+          "رَ",
+          "نِ",
+          "بِ",
+          "أَ",
+          "يْ",
+          "مْ"
+        ],
+        "audioFileName": "biamroini.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "بِبَيْتَيْنِ",
+        "variants": [
+          "بِ",
+          "نِ",
+          "تَ",
+          "يْ",
+          "يْ",
+          "بَ"
+        ],
+        "audioFileName": "bibaitaini.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "مِنْبَرَيْنِ",
+        "variants": [
+          "رَ",
+          "مِ",
+          "بَ",
+          "نْ",
+          "يْ",
+          "نِ"
+        ],
+        "audioFileName": "minbaroini.mp3",
+        "lessonCode": "lesson-19"
+      },
+      {
+        "correctLetter": "زَيْنَبَيْنِ",
+        "variants": [
+          "يْ",
+          "زَ",
+          "بَ",
+          "يْ",
+          "نَ",
+          "نِ"
+        ],
+        "audioFileName": "zainabaini.mp3",
+        "lessonCode": "lesson-19"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 16,
+    "data": [
+      {
+        "correctLetter": "فَصْ",
+        "variants": [
+          "فَ",
+          "دْ",
+          "شَ",
+          "صْ",
+          "وِ",
+          "سُ"
+        ],
+        "audioFileName": "fas.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "صُمْ",
+        "variants": [
+          "ظُ",
+          "صُ",
+          "طِ",
+          "رَ",
+          "مْ",
+          "ذُ"
+        ],
+        "audioFileName": "sum.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "صِفْ",
+        "variants": [
+          "سُ",
+          "طَ",
+          "فْ",
+          "ضِ",
+          "رُ",
+          "صِ"
+        ],
+        "audioFileName": "sif.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "صَرَفَ",
+        "variants": [
+          "صَ",
+          "زَ",
+          "فَ",
+          "شَ",
+          "رَ",
+          "كُ"
+        ],
+        "audioFileName": "sorofa.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "صَبَرَ",
+        "variants": [
+          "صَ",
+          "بَ",
+          "ظْ",
+          "خَ",
+          "رَ",
+          "ذَ"
+        ],
+        "audioFileName": "sobaro.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "بَصَرَ",
+        "variants": [
+          "وَ",
+          "يَ",
+          "بَ",
+          "سُ",
+          "رَ",
+          "صَ"
+        ],
+        "audioFileName": "basoro.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "قَصَبَ",
+        "variants": [
+          "قَ",
+          "ذَ",
+          "صَ",
+          "زُ",
+          "بَ",
+          "خِ"
+        ],
+        "audioFileName": "qosoba.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "نَصَرَ",
+        "variants": [
+          "مَ",
+          "نَ",
+          "طُ",
+          "رَ",
+          "خِ",
+          "صَ"
+        ],
+        "audioFileName": "nasoro.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "يَنْصُرُ",
+        "variants": [
+          "يَ",
+          "نْ",
+          "صُ",
+          "رُ",
+          "طُ",
+          "ضَ"
+        ],
+        "audioFileName": "iansuru.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "إِسْتَبْصَرَ",
+        "variants": [
+          "رَ",
+          "إِ",
+          "صَ",
+          "سْ",
+          "تَ",
+          "بْ"
+        ],
+        "audioFileName": "istabsoro.mp3",
+        "lessonCode": "lesson-29"
+      },
+      {
+        "correctLetter": "يَسْتَبْصِرُ",
+        "variants": [
+          "يَ",
+          "سْ",
+          "صِ",
+          "تَ",
+          "بْ",
+          "رُ"
+        ],
+        "audioFileName": "iastabsiru.mp3",
+        "lessonCode": "lesson-29"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 17,
+    "data": [
+      {
+        "correctLetter": "دُمْ",
+        "variants": [
+          "دُ",
+          "وَ",
+          "ذُ",
+          "مْ",
+          "يَ",
+          "خِ"
+        ],
+        "audioFileName": "dum.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "زِدْ",
+        "variants": [
+          "وُ",
+          "زِ",
+          "نِ",
+          "هَ",
+          "دْ",
+          "لَ"
+        ],
+        "audioFileName": "zid.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "قَدْ",
+        "variants": [
+          "دْ",
+          "رِ",
+          "دَ",
+          "قَ",
+          "خِ",
+          "قِ"
+        ],
+        "audioFileName": "kod.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "دَرَسَ",
+        "variants": [
+          "ضُ",
+          "دَ",
+          "سِ",
+          "رَ",
+          "ظُ",
+          "سَ"
+        ],
+        "audioFileName": "darosa.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "دَبْغُ",
+        "variants": [
+          "دَ",
+          "عَ",
+          "بْ",
+          "طَ",
+          "غُ",
+          "كِ"
+        ],
+        "audioFileName": "dabgu.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "دَلْكُ",
+        "variants": [
+          "زَ",
+          "دَ",
+          "ذُ",
+          "لْ",
+          "خَ",
+          "كُ"
+        ],
+        "audioFileName": "dalku.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "دَهْرُ",
+        "variants": [
+          "حُ",
+          "رُ",
+          "وَ",
+          "هْ",
+          "كَ",
+          "دَ"
+        ],
+        "audioFileName": "dahru.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "دُلْدُلُ",
+        "variants": [
+          "لُ",
+          "لْ",
+          "دُ",
+          "دُ",
+          "صَ",
+          "أَ"
+        ],
+        "audioFileName": "duldulu.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "فُدْفُدُ",
+        "variants": [
+          "دْ",
+          "فُ",
+          "دُ",
+          "فُ",
+          "ضِ",
+          "مَ"
+        ],
+        "audioFileName": "fudfudu.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "هُدْهُدُ",
+        "variants": [
+          "دُ",
+          "هُ",
+          "هُ",
+          "دْ",
+          "مُ",
+          "زَ"
+        ],
+        "audioFileName": "hudhudu.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "أُشْدُدْ",
+        "variants": [
+          "دْ",
+          "دُ",
+          "شْ",
+          "أُ",
+          "ظَ",
+          "بَ"
+        ],
+        "audioFileName": "ushdud.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "إِعْتَدَلَ",
+        "variants": [
+          "تَ",
+          "إِ",
+          "عْ",
+          "لَ",
+          "دَ",
+          "ذَ"
+        ],
+        "audioFileName": "itadala.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "يَعْتَدِلُ",
+        "variants": [
+          "تَ",
+          "لُ",
+          "دِ",
+          "عْ",
+          "يَ",
+          "عَ"
+        ],
+        "audioFileName": "iatadilu.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "إِسْتَرْشَدَ",
+        "variants": [
+          "تَ",
+          "شَ",
+          "رْ",
+          "إِ",
+          "سْ",
+          "دَ"
+        ],
+        "audioFileName": "istarshada.mp3",
+        "lessonCode": "lesson-36"
+      },
+      {
+        "correctLetter": "يَسْتَرْشِدُ",
+        "variants": [
+          "دُ",
+          "يَ",
+          "سْ",
+          "تَ",
+          "رْ",
+          "شِ"
+        ],
+        "audioFileName": "iastarshidu.mp3",
+        "lessonCode": "lesson-36"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 18,
+    "data": [
+      {
+        "correctLetter": "مَتْ",
+        "variants": [
+          "مِ",
+          "مُ",
+          "مَ",
+          "تَ",
+          "تِ",
+          "تْ"
+        ],
+        "audioFileName": "mat.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "مِتْ",
+        "variants": [
+          "تْ",
+          "زُ",
+          "مِ",
+          "مَ",
+          "تَ",
+          "رْ"
+        ],
+        "audioFileName": "mit.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "مُتْ",
+        "variants": [
+          "مِ",
+          "مَ",
+          "مُ",
+          "تُ",
+          "تْ",
+          "رْ"
+        ],
+        "audioFileName": "mut.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "تَمَرْ",
+        "variants": [
+          "تَ",
+          "زُ",
+          "مَ",
+          "تُ",
+          "رْ",
+          "زْ"
+        ],
+        "audioFileName": "tamar.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "تَرِرْ",
+        "variants": [
+          "زُ",
+          "رْ",
+          "رِ",
+          "مْ",
+          "تُ",
+          "تَ"
+        ],
+        "audioFileName": "tarir.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "زُرْتَ",
+        "variants": [
+          "اُ",
+          "رْ",
+          "تَ",
+          "تِ",
+          "زَ",
+          "زُ"
+        ],
+        "audioFileName": "zurta.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "اَمَرْتِ",
+        "variants": [
+          "مَ",
+          "رْ",
+          "تِ",
+          "مِ",
+          "اَ",
+          "اُ"
+        ],
+        "audioFileName": "amarti.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "مُرِرْتُمْ",
+        "variants": [
+          "رِ",
+          "تِ",
+          "مْ",
+          "رْ",
+          "مُ",
+          "تُ"
+        ],
+        "audioFileName": "murirtum.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "مَرَرْتُ",
+        "variants": [
+          "اُ",
+          "تْ",
+          "تُ",
+          "مَ",
+          "رَ",
+          "رْ"
+        ],
+        "audioFileName": "marortu.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "اُمِرْتُ",
+        "variants": [
+          "اَ",
+          "اُ",
+          "تُ",
+          "رْ",
+          "مَ",
+          "مِ"
+        ],
+        "audioFileName": "umirtu.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "اَمَرَتْ",
+        "variants": [
+          "مَ",
+          "تُ",
+          "تْ",
+          "رَ",
+          "اِ",
+          "اَ"
+        ],
+        "audioFileName": "amarot.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "اَمَرْتُمْ",
+        "variants": [
+          "رْ",
+          "مْ",
+          "اَ",
+          "مَ",
+          "تُ",
+          "زْ"
+        ],
+        "audioFileName": "amartum.mp3",
+        "lessonCode": "lesson-16"
+      },
+      {
+        "correctLetter": "اُمِرْتُمْ",
+        "variants": [
+          "تُ",
+          "رْ",
+          "مْ",
+          "رَ",
+          "اُ",
+          "مِ"
+        ],
+        "audioFileName": "umirtum.mp3",
+        "lessonCode": "lesson-16"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 19,
+    "data": [
+      {
+        "correctLetter": "حَيْ",
+        "variants": [
+          "حَ",
+          "دَ",
+          "عُ",
+          "تْ",
+          "يْ",
+          "جْ"
+        ],
+        "audioFileName": "hai.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "حَجْ",
+        "variants": [
+          "كُ",
+          "حَ",
+          "خَ",
+          "بَ",
+          "حْ",
+          "جْ"
+        ],
+        "audioFileName": "haj.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "حَسَبُ",
+        "variants": [
+          "بُ",
+          "هِ",
+          "حَ",
+          "دُ",
+          "سَ",
+          "رَ"
+        ],
+        "audioFileName": "hasabu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "مُحْسِنُ",
+        "variants": [
+          "نُ",
+          "مُ",
+          "حْ",
+          "سِ",
+          "كُ",
+          "بَ"
+        ],
+        "audioFileName": "muhsinu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "مَحْشَرُ",
+        "variants": [
+          "مَ",
+          "رَ",
+          "حْ",
+          "حْ",
+          "شَ",
+          "رُ"
+        ],
+        "audioFileName": "mahsharu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "مَحْفَلُ",
+        "variants": [
+          "مَ",
+          "لُ",
+          "حْ",
+          "فَ",
+          "يَ",
+          "ظِ"
+        ],
+        "audioFileName": "mahfalu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "أَحْسَنَ",
+        "variants": [
+          "أَ",
+          "حْ",
+          "سَ",
+          "نَ",
+          "ثَ",
+          "كَ"
+        ],
+        "audioFileName": "ahsana.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "اِمْتَحَنَ",
+        "variants": [
+          "مْ",
+          "حَ",
+          "تَ",
+          "اِ",
+          "نَ",
+          "ثِ"
+        ],
+        "audioFileName": "imtahana.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "يَمْتَحِنُ",
+        "variants": [
+          "مْ",
+          "يَ",
+          "حِ",
+          "نُ",
+          "تَ",
+          "بْ"
+        ],
+        "audioFileName": "iamtahinu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "يَحْتَمِلُ",
+        "variants": [
+          "تَ",
+          "لُ",
+          "حْ",
+          "يَ",
+          "مِ",
+          "نَ"
+        ],
+        "audioFileName": "iahtamilu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "إِسْتَحْسَنَ",
+        "variants": [
+          "سْ",
+          "إِ",
+          "نَ",
+          "تَ",
+          "حْ",
+          "سَ"
+        ],
+        "audioFileName": "istahsana.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "يَسْتَحْسِنُ",
+        "variants": [
+          "يَ",
+          "حْ",
+          "سِ",
+          "نُ",
+          "تَ",
+          "سْ"
+        ],
+        "audioFileName": "iastahsinu.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "إِحْرَنْجَمَ",
+        "variants": [
+          "إِ",
+          "جَ",
+          "حْ",
+          "مَ",
+          "رَ",
+          "نْ"
+        ],
+        "audioFileName": "ihronjama.mp3",
+        "lessonCode": "lesson-33"
+      },
+      {
+        "correctLetter": "إِحْرَنْجَمَ",
+        "variants": [
+          "رَ",
+          "إِ",
+          "جَ",
+          "مَ",
+          "نْ",
+          "حْ"
+        ],
+        "audioFileName": "ihronjama.mp3",
+        "lessonCode": "lesson-33"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 20,
+    "data": [
+      {
+        "correctLetter": "بَثْ",
+        "variants": [
+          "زَ",
+          "بَ",
+          "يَ",
+          "ثْ",
+          "فُ",
+          "عَ"
+        ],
+        "audioFileName": "bas.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثِنْ",
+        "variants": [
+          "ثِ",
+          "ذْ",
+          "غْ",
+          "نْ",
+          "ضَ",
+          "شُ"
+        ],
+        "audioFileName": "sin.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثَمْ",
+        "variants": [
+          "دْ",
+          "عْ",
+          "مْ",
+          "يُ",
+          "ضْ",
+          "ثَ"
+        ],
+        "audioFileName": "sam.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثَمَرُ",
+        "variants": [
+          "بَ",
+          "ثَ",
+          "خْ",
+          "مَ",
+          "يَ",
+          "رُ"
+        ],
+        "audioFileName": "samaru.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثَمَنُ",
+        "variants": [
+          "ثَ",
+          "قَ",
+          "مَ",
+          "سِ",
+          "نُ",
+          "دُ"
+        ],
+        "audioFileName": "samanu.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثَوْرُ",
+        "variants": [
+          "زُ",
+          "رُ",
+          "صَ",
+          "ثَ",
+          "هَ",
+          "وْ"
+        ],
+        "audioFileName": "sauru.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثَوْبُ",
+        "variants": [
+          "بُ",
+          "ذِ",
+          "وْ",
+          "دُ",
+          "ثَ",
+          "نِ"
+        ],
+        "audioFileName": "saubu.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "ثَوَبَ",
+        "variants": [
+          "وَ",
+          "سَ",
+          "طِ",
+          "بَ",
+          "زُ",
+          "ثَ"
+        ],
+        "audioFileName": "sauaba.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "مِثْلُ",
+        "variants": [
+          "ضُ",
+          "مِ",
+          "حُ",
+          "ثْ",
+          "هِ",
+          "لُ"
+        ],
+        "audioFileName": "mislu.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "مُثْلُ",
+        "variants": [
+          "مُ",
+          "أَ",
+          "لُ",
+          "شُ",
+          "ثْ",
+          "حَ"
+        ],
+        "audioFileName": "muslu.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "مَثَلُ",
+        "variants": [
+          "مَ",
+          "ثَ",
+          "رِ",
+          "لُ",
+          "نُ",
+          "كَ"
+        ],
+        "audioFileName": "masalu.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "كَوْثَرُ",
+        "variants": [
+          "رُ",
+          "وْ",
+          "ثَ",
+          "كَ",
+          "تَ",
+          "بُ"
+        ],
+        "audioFileName": "kausaru.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "أَكْثَرَ",
+        "variants": [
+          "أَ",
+          "ثَ",
+          "كْ",
+          "رَ",
+          "دُ",
+          "نْ"
+        ],
+        "audioFileName": "aksaro.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "يُكْثِرُ",
+        "variants": [
+          "يُ",
+          "كْ",
+          "ثِ",
+          "رُ",
+          "ذَ",
+          "بُ"
+        ],
+        "audioFileName": "uksiru.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "أَثْبَتَ",
+        "variants": [
+          "أَ",
+          "ثْ",
+          "بَ",
+          "تَ",
+          "زُ",
+          "وَ"
+        ],
+        "audioFileName": "asbata.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "يُثْبِتُ",
+        "variants": [
+          "يُ",
+          "ثْ",
+          "بِ",
+          "تُ",
+          "تْ",
+          "طُ"
+        ],
+        "audioFileName": "usbitu.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "إِسْتَكْثَرَ",
+        "variants": [
+          "إِ",
+          "سْ",
+          "ثَ",
+          "كْ",
+          "تَ",
+          "رَ"
+        ],
+        "audioFileName": "istaksaro.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "يَسْتَكْثِرُ",
+        "variants": [
+          "رُ",
+          "يَ",
+          "كْ",
+          "سْ",
+          "تَ",
+          "ثِ"
+        ],
+        "audioFileName": "iastaksiru.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "إِسْتَثْقَلَ",
+        "variants": [
+          "ثْ",
+          "تَ",
+          "قَ",
+          "سْ",
+          "لَ",
+          "إِ"
+        ],
+        "audioFileName": "istasqola.mp3",
+        "lessonCode": "lesson-28"
+      },
+      {
+        "correctLetter": "يَسْتَثْقِلُ",
+        "variants": [
+          "يَ",
+          "لُ",
+          "قِ",
+          "سْ",
+          "تَ",
+          "ثْ"
+        ],
+        "audioFileName": "iastasqilu.mp3",
+        "lessonCode": "lesson-28"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 21,
+    "data": [
+      {
+        "correctLetter": "غَمْ",
+        "variants": [
+          "مْ",
+          "بْ",
+          "دَ",
+          "غَ",
+          "سِ",
+          "طُ"
+        ],
+        "audioFileName": "gom.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "غِبْ",
+        "variants": [
+          "رَ",
+          "بْ",
+          "عْ",
+          "نُ",
+          "غِ",
+          "هَ"
+        ],
+        "audioFileName": "gib.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "غِلْ",
+        "variants": [
+          "زُ",
+          "مَ",
+          "غِ",
+          "يَ",
+          "نْ",
+          "لْ"
+        ],
+        "audioFileName": "gil.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "غَيْرُ",
+        "variants": [
+          "رُ",
+          "ذَ",
+          "يْ",
+          "كَ",
+          "غَ",
+          "يُ"
+        ],
+        "audioFileName": "goiru.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "بَغْلُ",
+        "variants": [
+          "هُ",
+          "بَ",
+          "سَ",
+          "غْ",
+          "زَ",
+          "لُ"
+        ],
+        "audioFileName": "baglu.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "فَرْغُ",
+        "variants": [
+          "حَ",
+          "رُ",
+          "غُ",
+          "نَ",
+          "رْ",
+          "فَ"
+        ],
+        "audioFileName": "fargu.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "غَبْغَبُ",
+        "variants": [
+          "بُ",
+          "بْ",
+          "غَ",
+          "غَ",
+          "ظْ",
+          "يَ"
+        ],
+        "audioFileName": "gobgobu.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "مَبْلَغُ",
+        "variants": [
+          "مَ",
+          "بْ",
+          "غُ",
+          "لَ",
+          "كْ",
+          "تْ"
+        ],
+        "audioFileName": "mablagu.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "مَغْرِبُ",
+        "variants": [
+          "رِ",
+          "مَ",
+          "بُ",
+          "غْ",
+          "سَ",
+          "وَ"
+        ],
+        "audioFileName": "magribu.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "اِغْلِبْ",
+        "variants": [
+          "لِ",
+          "اِ",
+          "بْ",
+          "غْ",
+          "ظُ",
+          "رُ"
+        ],
+        "audioFileName": "iglib.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "اِغْفِرْ",
+        "variants": [
+          "رْ",
+          "فِ",
+          "غْ",
+          "اِ",
+          "جُ",
+          "ذْ"
+        ],
+        "audioFileName": "igfir.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "إِشْتَغَلَ",
+        "variants": [
+          "لَ",
+          "إِ",
+          "شْ",
+          "تَ",
+          "غَ",
+          "كَ"
+        ],
+        "audioFileName": "ishtagola.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "يَشْتَغِلُ",
+        "variants": [
+          "شْ",
+          "يَ",
+          "غِ",
+          "تَ",
+          "لُ",
+          "يَ"
+        ],
+        "audioFileName": "iashtagilu.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "إِسْتَغْفَرَ",
+        "variants": [
+          "رَ",
+          "غْ",
+          "إِ",
+          "فَ",
+          "تَ",
+          "سْ"
+        ],
+        "audioFileName": "istagfaro.mp3",
+        "lessonCode": "lesson-34"
+      },
+      {
+        "correctLetter": "يَسْتَغْفِرُ",
+        "variants": [
+          "يَ",
+          "سْ",
+          "رُ",
+          "تَ",
+          "غْ",
+          "فِ"
+        ],
+        "audioFileName": "iastagfiru.mp3",
+        "lessonCode": "lesson-34"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 22,
+    "data": [
+      {
+        "correctLetter": "أَيْ",
+        "variants": [
+          "زَ",
+          "أَ",
+          "اِ",
+          "رْ",
+          "يْ",
+          "تِ"
+        ],
+        "audioFileName": "ai.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "أَيْمُ",
+        "variants": [
+          "أَ",
+          "نْ",
+          "يْ",
+          "زُ",
+          "مَ",
+          "مُ"
+        ],
+        "audioFileName": "aimu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "زَيْتُ",
+        "variants": [
+          "زِ",
+          "تْ",
+          "يْ",
+          "أُ",
+          "زَ",
+          "تُ"
+        ],
+        "audioFileName": "zaitu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "مَيْتُ",
+        "variants": [
+          "نُ",
+          "مَ",
+          "زُ",
+          "يْ",
+          "رَ",
+          "تُ"
+        ],
+        "audioFileName": "maitu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "زَيْنُ",
+        "variants": [
+          "رَ",
+          "مَ",
+          "زَ",
+          "اَ",
+          "يْ",
+          "نُ"
+        ],
+        "audioFileName": "zainu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "رَمْيُ",
+        "variants": [
+          "رَ",
+          "تْ",
+          "مْ",
+          "إِ",
+          "يُ",
+          "زَ"
+        ],
+        "audioFileName": "romu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "يَمَنُ",
+        "variants": [
+          "زَ",
+          "يَ",
+          "تِ",
+          "رْ",
+          "مَ",
+          "نُ"
+        ],
+        "audioFileName": "iamanu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "مَرْيَمُ",
+        "variants": [
+          "يَ",
+          "تْ",
+          "مَ",
+          "رْ",
+          "أَ",
+          "مُ"
+        ],
+        "audioFileName": "mariamu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "مَيْزُ",
+        "variants": [
+          "نْ",
+          "مَ",
+          "يْ",
+          "رُ",
+          "تْ",
+          "زُ"
+        ],
+        "audioFileName": "maizu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "مَيْمَنُ",
+        "variants": [
+          "مَ",
+          "تَ",
+          "يْ",
+          "اِ",
+          "مَ",
+          "نُ"
+        ],
+        "audioFileName": "maimanu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "أَيْمَنُ",
+        "variants": [
+          "أَ",
+          "رْ",
+          "يْ",
+          "زَ",
+          "مَ",
+          "نُ"
+        ],
+        "audioFileName": "aimanu.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "أَمْرَيْنِ",
+        "variants": [
+          "نِ",
+          "زْ",
+          "يْ",
+          "أَ",
+          "مْ",
+          "رَ"
+        ],
+        "audioFileName": "amroini.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "زَيْتَيْنِ",
+        "variants": [
+          "تِ",
+          "زَ",
+          "يْ",
+          "يْ",
+          "تَ",
+          "نِ"
+        ],
+        "audioFileName": "zaitaini.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "أَيْمَيْنِ",
+        "variants": [
+          "أَ",
+          "زْ",
+          "يْ",
+          "نِ",
+          "مَ",
+          "يْ"
+        ],
+        "audioFileName": "aimaini.mp3",
+        "lessonCode": "lesson-18"
+      },
+      {
+        "correctLetter": "مَيْتَيْنِ",
+        "variants": [
+          "يْ",
+          "تَ",
+          "مَ",
+          "نِ",
+          "يْ",
+          "زَ"
+        ],
+        "audioFileName": "maitaini.mp3",
+        "lessonCode": "lesson-18"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 23,
+    "data": [
+      {
+        "correctLetter": "هَبْ",
+        "variants": [
+          "ثْ",
+          "زَ",
+          "بْ",
+          "فَ",
+          "سِ",
+          "هَ"
+        ],
+        "audioFileName": "hab.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "هَمْ",
+        "variants": [
+          "مُ",
+          "ذَ",
+          "نْ",
+          "مْ",
+          "صَ",
+          "هَ"
+        ],
+        "audioFileName": "ham.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "هَلْ",
+        "variants": [
+          "ضِ",
+          "هَ",
+          "دْ",
+          "طَ",
+          "لْ",
+          "كْ"
+        ],
+        "audioFileName": "hal.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "هُوَ",
+        "variants": [
+          "وَ",
+          "يَ",
+          "خِ",
+          "هُ",
+          "سُ",
+          "جَ"
+        ],
+        "audioFileName": "hua.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "هِىَ",
+        "variants": [
+          "صَ",
+          "مَ",
+          "ىَ",
+          "بُ",
+          "طِ",
+          "هِ"
+        ],
+        "audioFileName": "hia.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "هُمْ",
+        "variants": [
+          "دْ",
+          "ظَ",
+          "وْ",
+          "هُ",
+          "رَ",
+          "مْ"
+        ],
+        "audioFileName": "hum.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "زَهْرُ",
+        "variants": [
+          "زَ",
+          "بُ",
+          "كْ",
+          "هْ",
+          "شِ",
+          "رُ"
+        ],
+        "audioFileName": "zahru.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "أَهَمْ",
+        "variants": [
+          "رِ",
+          "هَ",
+          "حْ",
+          "أَ",
+          "جَ",
+          "مْ"
+        ],
+        "audioFileName": "aham.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "وَهَبْ",
+        "variants": [
+          "دِ",
+          "طُ",
+          "بْ",
+          "نَ",
+          "هَ",
+          "وَ"
+        ],
+        "audioFileName": "uahab.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "لَهَبْ",
+        "variants": [
+          "لَ",
+          "يَ",
+          "مْ",
+          "هَ",
+          "ثِ",
+          "بْ"
+        ],
+        "audioFileName": "lahab.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "وَهُمْ",
+        "variants": [
+          "رُ",
+          "هُ",
+          "جَ",
+          "وَ",
+          "سَ",
+          "مْ"
+        ],
+        "audioFileName": "uahum.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "بِهِمْ",
+        "variants": [
+          "حَ",
+          "شِ",
+          "بِ",
+          "طَ",
+          "هِ",
+          "مْ"
+        ],
+        "audioFileName": "bihim.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "مِنْـهُ",
+        "variants": [
+          "رِ",
+          "نْ",
+          "يَ",
+          "مِ",
+          "شَ",
+          "ـهُ"
+        ],
+        "audioFileName": "minhu.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "مِنْـهُـمْ",
+        "variants": [
+          "نْ",
+          "ـهُـ",
+          "مِ",
+          "مْ",
+          "كَ",
+          "يُ"
+        ],
+        "audioFileName": "minhum.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "اِلَيْـهِ",
+        "variants": [
+          "اِ",
+          "يْ",
+          "لَ",
+          "ـهِ",
+          "سُ",
+          "دَ"
+        ],
+        "audioFileName": "ilaihi.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "إِلَيْـهِـمْ",
+        "variants": [
+          "إِ",
+          "ـهِـ",
+          "لَ",
+          "يْ",
+          "مْ",
+          "ضُ"
+        ],
+        "audioFileName": "ilaihim.mp3",
+        "lessonCode": "lesson-23"
+      },
+      {
+        "correctLetter": "أَمْـهِـلْـهُـمْ",
+        "variants": [
+          "أَ",
+          "مْ",
+          "ـهِـ",
+          "لْ",
+          "ـهُـ",
+          "مْ"
+        ],
+        "audioFileName": "amhilhum.mp3",
+        "lessonCode": "lesson-23"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 24,
+    "data": [
+      {
+        "correctLetter": "زُقْ",
+        "variants": [
+          "تَ",
+          "غُ",
+          "زُ",
+          "هْ",
+          "ضِ",
+          "قْ"
+        ],
+        "audioFileName": "zuq.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قِنْ",
+        "variants": [
+          "خُ",
+          "قِ",
+          "فِ",
+          "ظُ",
+          "نْ",
+          "لَ"
+        ],
+        "audioFileName": "qin.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قُلْ",
+        "variants": [
+          "ضِ",
+          "عْ",
+          "قُ",
+          "هْ",
+          "زِ",
+          "لْ"
+        ],
+        "audioFileName": "qul.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قُمْ",
+        "variants": [
+          "قُ",
+          "حُ",
+          "هَ",
+          "مْ",
+          "رْ",
+          "ضِ"
+        ],
+        "audioFileName": "qum.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قِفْ",
+        "variants": [
+          "غْ",
+          "فْ",
+          "ضِ",
+          "سُ",
+          "قِ",
+          "خَ"
+        ],
+        "audioFileName": "qif.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قِـهْ",
+        "variants": [
+          "رْ",
+          "صَ",
+          "قِ",
+          "شِ",
+          "تْ",
+          "ـهْ"
+        ],
+        "audioFileName": "qih.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قَلْبُ",
+        "variants": [
+          "زَ",
+          "لْ",
+          "نَ",
+          "بُ",
+          "سُ",
+          "قَ"
+        ],
+        "audioFileName": "qolbu.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "فَوْقَ",
+        "variants": [
+          "زِ",
+          "فَ",
+          "طْ",
+          "وْ",
+          "ظِ",
+          "قَ"
+        ],
+        "audioFileName": "fauqo.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قَلَمُ",
+        "variants": [
+          "لَ",
+          "شْ",
+          "قَ",
+          "كُ",
+          "مُ",
+          "ضِ"
+        ],
+        "audioFileName": "qolamu.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قَمَرُ",
+        "variants": [
+          "قَ",
+          "مَ",
+          "زِ",
+          "رِ",
+          "رَ",
+          "رُ"
+        ],
+        "audioFileName": "qomaru.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "لَقَبُ",
+        "variants": [
+          "زِ",
+          "لَ",
+          "شُ",
+          "قَ",
+          "بُ",
+          "تِ"
+        ],
+        "audioFileName": "laqobu.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "قُمْقُمُ",
+        "variants": [
+          "قُ",
+          "مُ",
+          "مْ",
+          "قُ",
+          "ضَ",
+          "رِ"
+        ],
+        "audioFileName": "qumqumu.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "إِقْتَرَبَ",
+        "variants": [
+          "إِ",
+          "قْ",
+          "رَ",
+          "تَ",
+          "بَ",
+          "ثِ"
+        ],
+        "audioFileName": "iqtaroba.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "يَقْتَرِبُ",
+        "variants": [
+          "يَ",
+          "قْ",
+          "رِ",
+          "بُ",
+          "تَ",
+          "ثِ"
+        ],
+        "audioFileName": "iaqtaribu.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "إِنْقَلَبَ",
+        "variants": [
+          "إِ",
+          "نْ",
+          "قَ",
+          "لَ",
+          "بَ",
+          "شُ"
+        ],
+        "audioFileName": "inqolaba.mp3",
+        "lessonCode": "lesson-25"
+      },
+      {
+        "correctLetter": "يَنْقَلِبُ",
+        "variants": [
+          "لِ",
+          "قَ",
+          "نْ",
+          "بُ",
+          "يَ",
+          "ظْ"
+        ],
+        "audioFileName": "ianqolibu.mp3",
+        "lessonCode": "lesson-25"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 25,
+    "data": [
+      {
+        "correctLetter": "رَشْ",
+        "variants": [
+          "أَ",
+          "زِ",
+          "شْ",
+          "دُ",
+          "هَ",
+          "رَ"
+        ],
+        "audioFileName": "rosh.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "بُشْ",
+        "variants": [
+          "زْ",
+          "شْ",
+          "هَ",
+          "طَ",
+          "خُ",
+          "بُ"
+        ],
+        "audioFileName": "bush.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شَرْ",
+        "variants": [
+          "وَ",
+          "رْ",
+          "صُ",
+          "خَ",
+          "ظَ",
+          "شَ"
+        ],
+        "audioFileName": "shar.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شَقْ",
+        "variants": [
+          "رَ",
+          "خْ",
+          "قْ",
+          "ظَ",
+          "شَ",
+          "طُ"
+        ],
+        "audioFileName": "shaq.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شَمْ",
+        "variants": [
+          "مْ",
+          "زُ",
+          "طِ",
+          "شَ",
+          "كُ",
+          "وَ"
+        ],
+        "audioFileName": "sham.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شَكْ",
+        "variants": [
+          "غُ",
+          "كْ",
+          "طَ",
+          "جْ",
+          "شَ",
+          "رُ"
+        ],
+        "audioFileName": "shak.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "بِشْرُ",
+        "variants": [
+          "رُ",
+          "نْ",
+          "بِ",
+          "شْ",
+          "خَ",
+          "طْ"
+        ],
+        "audioFileName": "bishru.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شِرْبُ",
+        "variants": [
+          "زَ",
+          "بُ",
+          "ضُ",
+          "شِ",
+          "حَ",
+          "رْ"
+        ],
+        "audioFileName": "shirbu.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "نَشْرُ",
+        "variants": [
+          "زِ",
+          "نَ",
+          "غْ",
+          "شْ",
+          "ضِ",
+          "رُ"
+        ],
+        "audioFileName": "nashru.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شُكْرُ",
+        "variants": [
+          "ظَ",
+          "شُ",
+          "كْ",
+          "ذِ",
+          "رُ",
+          "عِ"
+        ],
+        "audioFileName": "shukru.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "شُرْبُ",
+        "variants": [
+          "رْ",
+          "سِ",
+          "دْ",
+          "بُ",
+          "شُ",
+          "مْ"
+        ],
+        "audioFileName": "shurbu.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "مَشْرَبُ",
+        "variants": [
+          "شْ",
+          "رَ",
+          "مَ",
+          "بُ",
+          "وَ",
+          "ثِ"
+        ],
+        "audioFileName": "mashrobu.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "مَشْرِبُ",
+        "variants": [
+          "زُ",
+          "رِ",
+          "مَ",
+          "شْ",
+          "بُ",
+          "نْ"
+        ],
+        "audioFileName": "mashribu.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "مَشْرِقُ",
+        "variants": [
+          "قُ",
+          "مَ",
+          "شْ",
+          "رِ",
+          "زْ",
+          "دْ"
+        ],
+        "audioFileName": "mashriqu.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "مُشْتَرَكُ",
+        "variants": [
+          "مُ",
+          "شْ",
+          "كُ",
+          "تَ",
+          "رَ",
+          "زِ"
+        ],
+        "audioFileName": "mushtaroku.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "يَشْتَـهِـرُ",
+        "variants": [
+          "يَ",
+          "شْ",
+          "رُ",
+          "ـهِـ",
+          "تَ",
+          "زَ"
+        ],
+        "audioFileName": "iashtahiru.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "إِبْرَنْشَقَ",
+        "variants": [
+          "إِ",
+          "بْ",
+          "رَ",
+          "نْ",
+          "شَ",
+          "قَ"
+        ],
+        "audioFileName": "ibronshaqo.mp3",
+        "lessonCode": "lesson-26"
+      },
+      {
+        "correctLetter": "يَبْرَنْشِقُ",
+        "variants": [
+          "يَ",
+          "بْ",
+          "قُ",
+          "رَ",
+          "شِ",
+          "نْ"
+        ],
+        "audioFileName": "iabronshiqu.mp3",
+        "lessonCode": "lesson-26"
+      }
+    ]
+  },
+  {
+    "type": "g",
+    "order": 26,
+    "data": [
+      {
+        "correctLetter": "اَمْ",
+        "variants": [
+          "اِ",
+          "مْ",
+          "اَ",
+          "رْ",
+          "رَ",
+          "اِ"
+        ],
+        "audioFileName": "am.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اِمْ",
+        "variants": [
+          "تَ",
+          "اُ",
+          "اِ",
+          "مْ",
+          "مَ",
+          "اَ"
+        ],
+        "audioFileName": "im.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اُمْ",
+        "variants": [
+          "مْ",
+          "مُ",
+          "اُ",
+          "تَ",
+          "زَ",
+          "رِ"
+        ],
+        "audioFileName": "um.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "مُرْ",
+        "variants": [
+          "زْ",
+          "رُ",
+          "رْ",
+          "مُ",
+          "اَ",
+          "اُ"
+        ],
+        "audioFileName": "mur.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "مُزْ",
+        "variants": [
+          "مُ",
+          "مْ",
+          "زْ",
+          "اَ",
+          "زَ",
+          "رُ"
+        ],
+        "audioFileName": "muz.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "رُمْ",
+        "variants": [
+          "اَ",
+          "اُ",
+          "رُ",
+          "مْ",
+          "رَ",
+          "مَ"
+        ],
+        "audioFileName": "rum.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اَمَرَ",
+        "variants": [
+          "رَ",
+          "اَ",
+          "مَ",
+          "اِ",
+          "مْ",
+          "رُ"
+        ],
+        "audioFileName": "amaro.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اُمِرَ",
+        "variants": [
+          "اََ",
+          "رُ",
+          "اُ",
+          "مُ",
+          "رَ",
+          "مِ"
+        ],
+        "audioFileName": "umiro.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اَمْرُ",
+        "variants": [
+          "اِ",
+          "مْ",
+          "اَ",
+          "مَ",
+          "زْ",
+          "رُ"
+        ],
+        "audioFileName": "amru.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اِمْرُ",
+        "variants": [
+          "مْ",
+          "اِ",
+          "رُ",
+          "رْ",
+          "مَ",
+          "زُ"
+        ],
+        "audioFileName": "imru.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "رَمْزُ",
+        "variants": [
+          "اِ",
+          "رْ",
+          "رَ",
+          "مْ",
+          "زْ",
+          "زُ"
+        ],
+        "audioFileName": "romzu.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اِرْمِ",
+        "variants": [
+          "رْ",
+          "رَ",
+          "اِ",
+          "زَ",
+          "مَ",
+          "مِ"
+        ],
+        "audioFileName": "irmi.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "مَرْمَرْ",
+        "variants": [
+          "رْ",
+          "زَ",
+          "مَ",
+          "رَ",
+          "مَ",
+          "رْ"
+        ],
+        "audioFileName": "marmar.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "رَمْرَمْ",
+        "variants": [
+          "زَ",
+          "مْ",
+          "رَ",
+          "رْ",
+          "رَ",
+          "مْ"
+        ],
+        "audioFileName": "romrom.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "زَمْزَمْ",
+        "variants": [
+          "زَ",
+          "رَ",
+          "زَ",
+          "مْ",
+          "اَ",
+          "مْ"
+        ],
+        "audioFileName": "zamzam.mp3",
+        "lessonCode": "lesson-15"
+      },
+      {
+        "correctLetter": "اَرْزَمْ",
+        "variants": [
+          "مُ",
+          "اَ",
+          "رْ",
+          "مْ",
+          "رَ",
+          "زَ"
+        ],
+        "audioFileName": "arzam.mp3",
+        "lessonCode": "lesson-15"
+      }
+    ]
+  }
+]
