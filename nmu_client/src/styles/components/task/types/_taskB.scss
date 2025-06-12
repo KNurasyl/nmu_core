@@ -23,6 +23,7 @@
 
 			@media (max-width: 768px) {
 				height: 100px;
+				padding: 5px 20px;
 			}
 
 			& .letter {
@@ -30,7 +31,7 @@
 				color: white;
 
 				@media (max-width: 768px) {
-					font-size: 60px;
+					font-size: 50px;
 				}
 			}
 		}
@@ -52,7 +53,7 @@
 		}
 
 		@media (max-width: 768px) {
-			height: 68%;
+			height: 58%;
 			grid-template-columns: repeat(2, minmax(120px, 1fr));
 			overflow-y: auto;
 			flex-direction: row !important;

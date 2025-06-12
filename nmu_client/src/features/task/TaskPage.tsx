@@ -63,6 +63,8 @@ const TaskPage = ({ taskId }: IProps) => {
 
 	const task = data?.getTaskById
 	const localizedData = task?.data?.[i18n.language] || task?.data?.ru || []
+	const localizeDesc =
+		task?.description?.[i18n.language] || task?.data?.ru || []
 
 	useEffect(() => {
 		if (localizedData && localizedData.length) {
@@ -89,8 +91,8 @@ const TaskPage = ({ taskId }: IProps) => {
 	return (
 		<Spin spinning={loading || progressLoad}>
 			<Row className='task_page'>
-				<TaskProgress percent={progress} />
-				<TaskDesc description='Описание задание' />
+				<TaskProgress percent={progress} onClose={() => router.back()} />
+				<TaskDesc description={localizeDesc} />
 				<TaskRenderer type={task?.type} onFinished={onFinishedHandler} />
 			</Row>
 		</Spin>

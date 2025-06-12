@@ -2,7 +2,10 @@ query GetTaskById($id: String!) {
 	getTaskById(id: $id) {
 		_id
 		data
-		description
+		description {
+			kk
+			ru
+		}
 		lessonCode
 		type
 	}

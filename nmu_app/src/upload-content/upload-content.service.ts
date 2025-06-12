@@ -11,6 +11,33 @@ import { LessonService } from 'src/lesson/lesson.service';
 import { TaskService } from 'src/task/task.service';
 import * as XLSX from 'xlsx';
 
+const descriptions: Record<string, { kk: string; ru: string }> = {
+  a: {
+    kk: 'Аудионы тыңдап, дұрыс мәтінді таңда.',
+    ru: 'Прослушай аудио и выбери правильный текст.',
+  },
+  b: {
+    kk: 'Бір әріп пен 4 аудио берілген. Дұрыс аудионы таңда.',
+    ru: 'Одна буква и 4 аудио. Найди подходящее аудио.',
+  },
+  c: {
+    kk: 'Аудио және екі ұқсас әріп берілген. Дұрыс әріпті таңда.',
+    ru: 'Дано аудио и две похожие буквы. Найди правильную.',
+  },
+  e: {
+    kk: 'Әріптер берілген. Оларды сөздің басы, ортасы, не соңында табыңыз.',
+    ru: 'Даны буквы. Найди, где они встречаются — в начале, середине или конце слова.',
+  },
+  f: {
+    kk: 'Әріп және үш сөз берілген. Әріп қайда кездесетінін таңда (бірнеше дұрыс жауап болуы мүмкін).',
+    ru: 'Дана буква и три варианта. Отметь, где встречается буква (может быть несколько ответов).',
+  },
+  g: {
+    kk: 'Аудионы тыңдап, берілген әріптерден сөз құрастыр.',
+    ru: 'Прослушай аудио и собери слово из данных букв.',
+  },
+};
+
 @Injectable()
 export class UploadContentService {
   private readonly logger = new Logger(UploadContentService.name);
@@ -86,9 +113,10 @@ export class UploadContentService {
       const createTaskInput = {
         type,
         lessonCode,
-        description: 'Импортировано через uploadTasksByType',
+        description: descriptions[type] || { kk: '', ru: '' },
         data: {
           kk: tasks,
+          ru: tasks,
         },
       };
 

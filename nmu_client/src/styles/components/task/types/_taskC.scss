@@ -98,7 +98,7 @@
 		}
 
 		@media (max-width: 768px) {
-			height: 68%;
+			height: 60%;
 			grid-template-columns: repeat(2, minmax(120px, 1fr));
 			overflow-y: auto;
 			flex-direction: row !important;

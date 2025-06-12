@@ -93,12 +93,8 @@
 		overflow: hidden;
 		padding: 10px;
 
-		&.long-variant {
-			grid-template-columns: 1fr !important;
-		}
-
 		@media (max-width: 768px) {
-			height: 68%;
+			height: 57%;
 			grid-template-columns: repeat(2, minmax(120px, 1fr));
 			overflow-y: auto;
 			flex-direction: row !important;
@@ -138,7 +134,7 @@
 
 		@media (max-width: 768px) {
 			width: 100%;
-			font-size: 50px;
+			font-size: 45px;
 			padding: 16px 28px;
 		}
 	}

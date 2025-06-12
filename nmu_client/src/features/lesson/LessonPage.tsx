@@ -16,7 +16,7 @@ interface IProps {
 
 const LessonPage = ({ lessonId }: IProps) => {
 	const router = useRouter()
-	const { t } = useTranslation('common')
+	const { t, i18n } = useTranslation('common')
 	const { setCurrenLessontId } = useTaskStore(state => state)
 
 	const { data, loading } = useQuery<GetLessonByIdQuery>(GET_LESSON_BY_ID, {
@@ -38,7 +38,9 @@ const LessonPage = ({ lessonId }: IProps) => {
 						<TaskCard
 							key={task?._id}
 							title={`${index + 1}-${t('task')}`}
-							description={task?.description || ''}
+							description={
+								task?.description ? task?.description?.[i18n.language] : ''
+							}
 							completed={false}
 							completedText={t('completed')}
 							inProgressText={t('inProgress')}
