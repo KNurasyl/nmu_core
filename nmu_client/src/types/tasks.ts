@@ -44,3 +44,10 @@ export interface ITaskF {
 	letter: string
 	types: string[]
 }
+
+export interface ITaskG {
+	audioFileName: string
+	correctLetter: string
+	variants: string[]
+	lessonCode: string
+}

@@ -3,7 +3,7 @@ import TaskB from './taskB/TaskB'
 import TaskC from './taskC/TaskC'
 import TaskE from './taskE/TaskE'
 import TaskF from './taskF/TaskF'
-import TaskG from './TaskG'
+import TaskG from './taskG/TaskG'
 import TaskQuran from './TaskQuran'
 import TaskTajwid from './TaskTajwid'
 

@@ -35,10 +35,8 @@ const TaskF = ({ onFinished }: IProps) => {
 
 	const [selected, setSelected] = useState<string[]>([])
 
-	console.log(task)
-
 	const checkHandle = () => {
-		if (!selected) return
+		if (!selected.length) return
 		const correctLetters = task.types
 
 		const isCorrect =
