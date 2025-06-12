@@ -5,6 +5,7 @@ import LessonVideoPlayer from '@/components/player/LessonVideoPlayer'
 import { GetLessonByIdQuery } from '@/graphql/generated/graphql'
 import { GET_LESSON_BY_ID } from '@/graphql/lesson'
 import { useTaskStore } from '@/stores/task.store'
+import { TDescription, TSupportedLang } from '@/types/enums'
 import { useQuery } from '@apollo/client'
 import { Row, Spin } from 'antd'
 import { useRouter } from 'next/navigation'
@@ -34,20 +35,28 @@ const LessonPage = ({ lessonId }: IProps) => {
 				<LessonVideoPlayer lesson={data?.getLessonById} />
 
 				<Row className='task_grid'>
-					{data?.getLessonById?.tasks?.map((task, index) => (
-						<TaskCard
-							key={task?._id}
-							title={`${index + 1}-${t('task')}`}
-							description={
-								task?.description ? task?.description?.[i18n.language] : ''
-							}
-							completed={false}
-							completedText={t('completed')}
-							inProgressText={t('inProgress')}
-							noDescText={t('noDesc')}
-							onClick={() => onClickHandler(task?._id)}
-						/>
-					))}
+					{data?.getLessonById?.tasks?.map((task, index) => {
+						const lang = (
+							i18n.language === 'kk' || i18n.language === 'ru'
+								? i18n.language
+								: 'ru'
+						) as TSupportedLang
+						const localizeDesc =
+							(task?.description as TDescription | undefined)?.[lang] || ''
+
+						return (
+							<TaskCard
+								key={task?._id}
+								title={`${index + 1}-${t('task')}`}
+								description={localizeDesc}
+								completed={false}
+								completedText={t('completed')}
+								inProgressText={t('inProgress')}
+								noDescText={t('noDesc')}
+								onClick={() => onClickHandler(task?._id)}
+							/>
+						)
+					})}
 				</Row>
 			</Row>
 		</Spin>

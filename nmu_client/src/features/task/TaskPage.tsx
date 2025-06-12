@@ -8,6 +8,7 @@ import { CREATE_USER_TASK_PROGRESS, GET_TASK_BY_ID } from '@/graphql/task'
 import { prepareTasks } from '@/lib/utils/prepareTasks'
 import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
+import { TDescription, TSupportedLang } from '@/types/enums'
 import { useMutation, useQuery } from '@apollo/client'
 import { Row, Spin } from 'antd'
 import { useRouter } from 'next/navigation'
@@ -63,8 +64,11 @@ const TaskPage = ({ taskId }: IProps) => {
 
 	const task = data?.getTaskById
 	const localizedData = task?.data?.[i18n.language] || task?.data?.ru || []
+	const lang = (
+		i18n.language === 'kk' || i18n.language === 'ru' ? i18n.language : 'ru'
+	) as TSupportedLang
 	const localizeDesc =
-		task?.description?.[i18n.language] || task?.data?.ru || []
+		(task?.description as TDescription | undefined)?.[lang] || ''
 
 	useEffect(() => {
 		if (localizedData && localizedData.length) {
