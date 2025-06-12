@@ -27,3 +27,15 @@ export interface ITaskC {
 		lessonCode: string
 	}
 }
+
+export interface ITaskE {
+	position: 'start' | 'middle' | 'end'
+	correctVariants: {
+		letter: string
+		lesson: string
+	}[]
+	inCorrectVariants: {
+		letter: string
+		lesson: string
+	}[]
+}
