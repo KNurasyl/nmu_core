@@ -90,7 +90,7 @@ services:
         entrypoint: >
             sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
                 --email k.nurasyl7788@gmail.com --agree-tos --no-eff-email
-                -d admin-nmuacademy.kz -d admin.admin-nmuacademy.kz"
+                -d nmacademy.kz -d admin.nmacademy.kz"
 
 volumes:
     db-data:
