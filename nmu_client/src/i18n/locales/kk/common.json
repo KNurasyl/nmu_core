@@ -25,5 +25,8 @@
 	"correctAttemptTxt": "дұрыс",
 	"inCorrectAttemptTxt": "қате",
 	"timeTxt": "Жалпы уақыт",
-	"finishBtnTxt": "Аяқтау"
+	"finishBtnTxt": "Аяқтау",
+	"wordStart": "Басында",
+	"wordMiddle": "Ортасында",
+	"wordEnd": "Соңында"
 }

@@ -39,3 +39,8 @@ export interface ITaskE {
 		lesson: string
 	}[]
 }
+
+export interface ITaskF {
+	letter: string
+	types: string[]
+}
