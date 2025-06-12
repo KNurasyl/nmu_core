@@ -66,9 +66,15 @@ const TaskPage = ({ taskId }: IProps) => {
 
 	useEffect(() => {
 		if (localizedData && localizedData.length) {
-			const tasks = prepareTasks(localizedData)
-			setAllTasks(tasks)
-			setCurrentTask(tasks[0] || null)
+			if (task?.type === 'e') {
+				const tasks = localizedData[0]?.quiz
+				setAllTasks(tasks)
+				setCurrentTask(tasks[0] || null)
+			} else {
+				const tasks = prepareTasks(localizedData)
+				setAllTasks(tasks)
+				setCurrentTask(tasks[0] || null)
+			}
 		}
 	}, [localizedData, setAllTasks, setCurrentTask])
 
