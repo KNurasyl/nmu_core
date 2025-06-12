@@ -25,5 +25,8 @@
 	"correctAttemptTxt": "правильно",
 	"inCorrectAttemptTxt": "неправильно",
 	"timeTxt": "Общее время",
-	"finishBtnTxt": "Завершить"
+	"finishBtnTxt": "Завершить",
+	"wordStart": "В начале",
+	"wordMiddle": "В середине",
+	"wordEnd": "В конце"
 }
