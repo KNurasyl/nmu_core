@@ -2,6 +2,11 @@
 	height: 100%;
 
 	@media (max-width: 768px) {
-		height: calc(100vh - 64px);
+		height: 100vh;
+		z-index: 9999;
+		position: fixed;
+		inset: 0;
+		padding: 0 10px;
+		background-color: aliceblue;
 	}
 }

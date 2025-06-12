@@ -1,7 +1,5 @@
-'use client'
-
 import { Row } from 'antd'
-import { SetStateAction, useEffect, useRef, useState } from 'react'
+import { SetStateAction } from 'react'
 
 interface IVariant {
 	arabicLetter: string
@@ -16,31 +14,15 @@ interface IProps {
 }
 
 const TaskVarinats = ({ variants, selected, setSelected }: IProps) => {
-	const [hasOverflow, setHasOverflow] = useState(false)
-	const variantRefs = useRef<(HTMLDivElement | null)[]>([])
-
-	useEffect(() => {
-		const overflow = variantRefs.current.some(el => {
-			if (!el) return false
-			return (
-				el.scrollWidth > el.clientWidth || el.scrollHeight > el.clientHeight
-			)
-		})
-		setHasOverflow(overflow)
-	}, [variants])
-
 	return (
 		<Row
-			className={`task_a__variants ${hasOverflow ? 'long-variant' : ''}`}
+			className={`task_a__variants long-variant`}
 			gutter={[12, 12]}
 			justify='center'
 		>
 			{variants?.map((v, i) => (
 				<div
 					key={i}
-					ref={el => {
-						variantRefs.current[i] = el
-					}}
 					className={`task_a__variant ${
 						selected === v.arabicLetter ? 'selected' : ''
 					}`}

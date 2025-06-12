@@ -37,7 +37,7 @@ const TaskE = ({ onFinished }: IProps) => {
 
 	const variants = useMemo(() => {
 		if (!task) return []
-		return task?.correctVariants.concat(task?.inCorrectVariants)
+		return task?.correctVariants?.concat(task?.inCorrectVariants)
 	}, [task])
 
 	const checkHandle = () => {

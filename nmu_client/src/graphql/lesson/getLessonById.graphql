@@ -9,7 +9,10 @@ query GetLessonById($id: String!) {
 		videoUrl
 		tasks {
 			_id
-			description
+			description {
+				kk
+				ru
+			}
 			lessonCode
 			type
 		}

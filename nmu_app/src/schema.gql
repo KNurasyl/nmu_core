@@ -182,7 +182,7 @@ input RegisterInput {
 type Task {
   _id: String!
   data: JSONObject!
-  description: String
+  description: JSONObject
   lessonCode: String!
   type: String!
 }

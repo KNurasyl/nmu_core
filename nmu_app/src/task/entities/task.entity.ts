@@ -18,9 +18,18 @@ export class Task {
     [lang: string]: Record<string, any>[];
   };
 
-  @Field({ nullable: true })
-  @Prop()
-  description?: string;
+  @Prop({
+    type: {
+      kk: { type: String },
+      ru: { type: String },
+    },
+    required: false,
+  })
+  @Field(() => GraphQLJSONObject, { nullable: true })
+  description?: {
+    kk: string;
+    ru: string;
+  };
 
   @Prop()
   @Field()
