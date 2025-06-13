@@ -98,6 +98,11 @@ A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date
 """
 scalar DateTime
 
+type Description {
+  kk: String!
+  ru: String!
+}
+
 """
 The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
 """
@@ -170,6 +175,7 @@ type Query {
   userCourseProgressByUser(userId: String!): [UserCourseProgress!]!
   userLessonProgress(id: String!): UserLessonProgress!
   userTaskProgress(id: String!): UserTaskProgress!
+  userTaskProgressOptional(userId: String!): [UserTaskProgress!]!
 }
 
 input RegisterInput {
@@ -182,7 +188,7 @@ input RegisterInput {
 type Task {
   _id: String!
   data: JSONObject!
-  description: JSONObject
+  description: Description
   lessonCode: String!
   type: String!
 }

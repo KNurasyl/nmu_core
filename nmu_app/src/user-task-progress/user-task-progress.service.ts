@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 import { TaskService } from 'src/task/task.service';
 import { UserService } from 'src/user/user.service';
 import { CreateUserTaskProgressInput } from './dto/create-user-task-progress.input';
@@ -61,6 +61,14 @@ export class UserTaskProgressService {
 
   async findAll(): Promise<UserTaskProgress[]> {
     return await this.userTaskProgressModel.find().populate('user').populate('task').exec();
+  }
+
+  async findAllOptional(userId: string): Promise<UserTaskProgress[]> {
+    return await this.userTaskProgressModel
+      .find({ user: new Types.ObjectId(userId) })
+      .populate('task')
+      .populate('user')
+      .exec();
   }
 
   async findOne(id: string): Promise<UserTaskProgress> {

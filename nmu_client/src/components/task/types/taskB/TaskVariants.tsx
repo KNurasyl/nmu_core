@@ -43,8 +43,6 @@ const TaskVariants = ({
 		setHasOverflow(overflow)
 	}, [variants])
 
-	console.log(variants)
-
 	return (
 		<Row
 			className={`task_b__variants ${hasOverflow ? 'long-variant' : ''}`}
