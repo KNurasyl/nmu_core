@@ -2,6 +2,15 @@ import { Field, ObjectType } from '@nestjs/graphql';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { GraphQLJSONObject } from 'graphql-type-json';
 
+@ObjectType()
+export class Description {
+  @Field()
+  kk: string;
+
+  @Field()
+  ru: string;
+}
+
 @Schema({ timestamps: true })
 @ObjectType()
 export class Task {
@@ -25,11 +34,8 @@ export class Task {
     },
     required: false,
   })
-  @Field(() => GraphQLJSONObject, { nullable: true })
-  description?: {
-    kk: string;
-    ru: string;
-  };
+  @Field(() => Description, { nullable: true })
+  description?: Description;
 
   @Prop()
   @Field()

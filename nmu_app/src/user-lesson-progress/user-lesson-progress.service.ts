@@ -50,6 +50,14 @@ export class UserLessonProgressService {
     return this.lessonProgressModel.find().exec();
   }
 
+  async findAllOptional(userId: string): Promise<UserLessonProgress[]> {
+    return await this.lessonProgressModel
+      .find({ user: new Types.ObjectId(userId) })
+      .populate('lesson')
+      .populate('user')
+      .exec();
+  }
+
   async findOne(id: string): Promise<UserLessonProgress> {
     const found = await this.lessonProgressModel.findById(id);
     if (!found) throw new NotFoundException(`UserLessonProgress #${id} not found`);

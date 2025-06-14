@@ -1,0 +1,13 @@
+query UserTaskProgressOptional($userId: String!) {
+	userTaskProgressOptional(userId: $userId) {
+		_id
+		completed
+		completedAt
+		score
+		task {
+			_id
+			lessonCode
+			type
+		}
+	}
+}

@@ -20,6 +20,11 @@ export class UserTaskProgressResolver {
     return this.userTaskProgressService.findAll();
   }
 
+  @Query(() => [UserTaskProgress], { name: 'userTaskProgressOptional' })
+  findAllOptional(@Args('userId') userId: string) {
+    return this.userTaskProgressService.findAllOptional(userId);
+  }
+
   @Query(() => UserTaskProgress, { name: 'userTaskProgress' })
   findOne(@Args('id') id: string) {
     return this.userTaskProgressService.findOne(id);

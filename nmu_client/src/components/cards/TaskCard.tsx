@@ -10,7 +10,8 @@ interface IProps {
 	completedText?: string
 	inProgressText?: string
 	noDescText?: string
-  onClick: VoidFunction
+	score: number | null
+	onClick: VoidFunction
 }
 
 const TaskCard = ({
@@ -20,19 +21,22 @@ const TaskCard = ({
 	completedText,
 	inProgressText,
 	noDescText,
-  onClick
+	score,
+	onClick,
 }: IProps) => {
 	return (
 		<Card
 			hoverable
-      onClick={onClick}
+			onClick={onClick}
 			className={`task_card ${completed ? 'task_card--completed' : ''}`}
 		>
 			<div className='task_card__header'>
 				<Title level={5} className='task_card__title'>
 					{title}
 				</Title>
-				{completed && <CheckCircleTwoTone twoToneColor='#52c41a' />}
+				{completed && (
+					<CheckCircleTwoTone twoToneColor='#52c41a' style={{ fontSize: 25 }} />
+				)}
 			</div>
 
 			<Paragraph className='task_card__description'>
@@ -40,7 +44,7 @@ const TaskCard = ({
 			</Paragraph>
 
 			<Tag color={completed ? 'green' : 'blue'}>
-				{completed ? completedText : inProgressText}
+				{completed ? completedText : inProgressText} - {score}%
 			</Tag>
 		</Card>
 	)
