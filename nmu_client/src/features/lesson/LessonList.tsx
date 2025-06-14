@@ -38,9 +38,6 @@ const LessonList = ({ courseId }: IProps) => {
 					userId: user?._id || '',
 					courseId: courseId,
 				},
-				onError() {
-					toast.error('Ошибка при получений прогресса')
-				},
 			}
 		)
 

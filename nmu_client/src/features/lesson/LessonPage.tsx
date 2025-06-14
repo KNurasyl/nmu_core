@@ -12,7 +12,6 @@ import { Row, Spin } from 'antd'
 import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import { toast } from 'react-toastify'
 
 interface IProps {
 	lessonId: string
@@ -33,9 +32,6 @@ const LessonPage = ({ lessonId }: IProps) => {
 		{
 			variables: {
 				userId: user?._id || '',
-			},
-			onError() {
-				toast.error('Ошибка при получений прогресса')
 			},
 		}
 	)
