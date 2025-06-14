@@ -172,8 +172,10 @@ type Query {
   getUsersPaginated(args: UserListArgs!): UserPaginated!
   userCourseAccess(id: String!): UserCourseAccess!
   userCourseProgress(id: String!): UserCourseProgress!
-  userCourseProgressByUser(userId: String!): [UserCourseProgress!]!
+  userCourseProgressByUserCourse(courseId: String, userId: String): UserCourseProgress!
+  userCourseProgressOptional(userId: String!): [UserCourseProgress!]!
   userLessonProgress(id: String!): UserLessonProgress!
+  userLessonProgressOptional(userId: String!): [UserLessonProgress!]!
   userTaskProgress(id: String!): UserTaskProgress!
   userTaskProgressOptional(userId: String!): [UserTaskProgress!]!
 }

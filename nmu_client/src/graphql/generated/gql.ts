@@ -20,6 +20,9 @@ type Documents = {
     "query GetCourseById($id: String!) {\n  getCourseById(id: $id) {\n    _id\n    courseName\n    description\n    lang\n  }\n}": typeof types.GetCourseByIdDocument,
     "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description {\n        kk\n        ru\n      }\n      lessonCode\n      type\n    }\n  }\n}": typeof types.GetLessonByIdDocument,
     "query GetLessonsByCourseId($courseId: String!) {\n  getLessonsByCourseId(courseId: $courseId) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n  }\n}": typeof types.GetLessonsByCourseIdDocument,
+    "query UserCourseProgressByUserCourse($userId: String, $courseId: String) {\n  userCourseProgressByUserCourse(userId: $userId, courseId: $courseId) {\n    _id\n    completed\n    score\n    completedAt\n    course {\n      courseName\n      description\n    }\n  }\n}": typeof types.UserCourseProgressByUserCourseDocument,
+    "query UserCourseProgressOptional($userId: String!) {\n  userCourseProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    course {\n      _id\n      courseName\n    }\n  }\n}": typeof types.UserCourseProgressOptionalDocument,
+    "query UserLessonProgressOptional($userId: String!) {\n  userLessonProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    lesson {\n      _id\n      lessonCode\n      lessonName\n    }\n  }\n}": typeof types.UserLessonProgressOptionalDocument,
     "query UserTaskProgressOptional($userId: String!) {\n  userTaskProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    task {\n      _id\n      lessonCode\n      type\n    }\n  }\n}": typeof types.UserTaskProgressOptionalDocument,
     "mutation CreateUserTaskProgress($input: CreateUserTaskProgressInput!) {\n  createUserTaskProgress(createUserTaskProgressInput: $input) {\n    _id\n    completed\n    completedAt\n    score\n  }\n}": typeof types.CreateUserTaskProgressDocument,
     "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description {\n      kk\n      ru\n    }\n    lessonCode\n    type\n  }\n}": typeof types.GetTaskByIdDocument,
@@ -34,6 +37,9 @@ const documents: Documents = {
     "query GetCourseById($id: String!) {\n  getCourseById(id: $id) {\n    _id\n    courseName\n    description\n    lang\n  }\n}": types.GetCourseByIdDocument,
     "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description {\n        kk\n        ru\n      }\n      lessonCode\n      type\n    }\n  }\n}": types.GetLessonByIdDocument,
     "query GetLessonsByCourseId($courseId: String!) {\n  getLessonsByCourseId(courseId: $courseId) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n  }\n}": types.GetLessonsByCourseIdDocument,
+    "query UserCourseProgressByUserCourse($userId: String, $courseId: String) {\n  userCourseProgressByUserCourse(userId: $userId, courseId: $courseId) {\n    _id\n    completed\n    score\n    completedAt\n    course {\n      courseName\n      description\n    }\n  }\n}": types.UserCourseProgressByUserCourseDocument,
+    "query UserCourseProgressOptional($userId: String!) {\n  userCourseProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    course {\n      _id\n      courseName\n    }\n  }\n}": types.UserCourseProgressOptionalDocument,
+    "query UserLessonProgressOptional($userId: String!) {\n  userLessonProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    lesson {\n      _id\n      lessonCode\n      lessonName\n    }\n  }\n}": types.UserLessonProgressOptionalDocument,
     "query UserTaskProgressOptional($userId: String!) {\n  userTaskProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    task {\n      _id\n      lessonCode\n      type\n    }\n  }\n}": types.UserTaskProgressOptionalDocument,
     "mutation CreateUserTaskProgress($input: CreateUserTaskProgressInput!) {\n  createUserTaskProgress(createUserTaskProgressInput: $input) {\n    _id\n    completed\n    completedAt\n    score\n  }\n}": types.CreateUserTaskProgressDocument,
     "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description {\n      kk\n      ru\n    }\n    lessonCode\n    type\n  }\n}": types.GetTaskByIdDocument,
@@ -80,6 +86,18 @@ export function graphql(source: "query GetLessonById($id: String!) {\n  getLesso
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function graphql(source: "query GetLessonsByCourseId($courseId: String!) {\n  getLessonsByCourseId(courseId: $courseId) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n  }\n}"): (typeof documents)["query GetLessonsByCourseId($courseId: String!) {\n  getLessonsByCourseId(courseId: $courseId) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n  }\n}"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "query UserCourseProgressByUserCourse($userId: String, $courseId: String) {\n  userCourseProgressByUserCourse(userId: $userId, courseId: $courseId) {\n    _id\n    completed\n    score\n    completedAt\n    course {\n      courseName\n      description\n    }\n  }\n}"): (typeof documents)["query UserCourseProgressByUserCourse($userId: String, $courseId: String) {\n  userCourseProgressByUserCourse(userId: $userId, courseId: $courseId) {\n    _id\n    completed\n    score\n    completedAt\n    course {\n      courseName\n      description\n    }\n  }\n}"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "query UserCourseProgressOptional($userId: String!) {\n  userCourseProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    course {\n      _id\n      courseName\n    }\n  }\n}"): (typeof documents)["query UserCourseProgressOptional($userId: String!) {\n  userCourseProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    course {\n      _id\n      courseName\n    }\n  }\n}"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "query UserLessonProgressOptional($userId: String!) {\n  userLessonProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    lesson {\n      _id\n      lessonCode\n      lessonName\n    }\n  }\n}"): (typeof documents)["query UserLessonProgressOptional($userId: String!) {\n  userLessonProgressOptional(userId: $userId) {\n    _id\n    completed\n    completedAt\n    score\n    lesson {\n      _id\n      lessonCode\n      lessonName\n    }\n  }\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

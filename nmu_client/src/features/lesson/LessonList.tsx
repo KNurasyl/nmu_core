@@ -2,15 +2,22 @@
 
 import LessonCard from '@/components/cards/LessonCard'
 import LessonPromo from '@/components/promo/LessonPromo'
-import { GET_COURSE_BY_ID } from '@/graphql/course'
 import {
-	GetCourseByIdQuery,
 	GetLessonsByCourseIdQuery,
+	UserCourseProgressByUserCourseQuery,
+	UserLessonProgressOptionalQuery,
 } from '@/graphql/generated/graphql'
 import { GET_LESSON_BY_COURSE } from '@/graphql/lesson'
+import {
+	USER_COURSE_PROGRESS_BY_USER_COURSE,
+	USER_LESSON_PROGRESS_OPTIONAL,
+} from '@/graphql/progress'
+import { useAuthStore } from '@/stores/auth.store'
 import { useQuery } from '@apollo/client'
 import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
+import { useMemo } from 'react'
+import { toast } from 'react-toastify'
 
 interface IProps {
 	courseId: string
@@ -21,12 +28,21 @@ const thumbnail =
 
 const LessonList = ({ courseId }: IProps) => {
 	const router = useRouter()
+	const user = useAuthStore(state => state.user)
 
-	const { data: courseData } = useQuery<GetCourseByIdQuery>(GET_COURSE_BY_ID, {
-		variables: {
-			id: courseId,
-		},
-	})
+	const { data: courseProgressData, loading: progressCourseLoad } =
+		useQuery<UserCourseProgressByUserCourseQuery>(
+			USER_COURSE_PROGRESS_BY_USER_COURSE,
+			{
+				variables: {
+					userId: user?._id || '',
+					courseId: courseId,
+				},
+				onError() {
+					toast.error('Ошибка при получений прогресса')
+				},
+			}
+		)
 
 	const { data: lessonsData, loading } = useQuery<GetLessonsByCourseIdQuery>(
 		GET_LESSON_BY_COURSE,
@@ -37,15 +53,40 @@ const LessonList = ({ courseId }: IProps) => {
 		}
 	)
 
-	const course = courseData?.getCourseById
-	const lessons = lessonsData?.getLessonsByCourseId
+	const { data: lessonProgressData, loading: progressLessonLoad } =
+		useQuery<UserLessonProgressOptionalQuery>(USER_LESSON_PROGRESS_OPTIONAL, {
+			variables: {
+				userId: user?._id || '',
+			},
+			onError() {
+				toast.error('Ошибка при получений прогресса')
+			},
+		})
+
+	const lessons = useMemo(
+		() =>
+			(lessonsData?.getLessonsByCourseId ?? []).map(lesson => {
+				const p = lessonProgressData?.userLessonProgressOptional?.find(
+					pr => pr.lesson?._id === lesson?._id
+				)
+
+				return {
+					...lesson,
+					completed: p?.completed ?? false,
+					score: p?.score ?? 0,
+				}
+			}),
+		[lessonsData, lessonProgressData]
+	)
+
+	const courseProgress = courseProgressData?.userCourseProgressByUserCourse
 
 	return (
-		<Spin spinning={loading}>
+		<Spin spinning={loading || progressCourseLoad || progressLessonLoad}>
 			<LessonPromo
-				courseName={course?.courseName}
-				description={course?.description}
-				progress={0}
+				courseName={courseProgress?.course?.courseName}
+				description={courseProgress?.course?.description}
+				progress={courseProgress?.score || 0}
 			/>
 			<div className='lesson_list'>
 				{lessons?.map(lesson => (
@@ -54,7 +95,8 @@ const LessonList = ({ courseId }: IProps) => {
 						lessonName={lesson.lessonName}
 						description={lesson.description}
 						thumbnail={thumbnail}
-						progress={0}
+						progress={lesson.score}
+						completed={lesson.completed}
 						onClick={() => router.push(`/lesson/${lesson._id}`)}
 					/>
 				))}

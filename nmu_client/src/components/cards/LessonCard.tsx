@@ -2,7 +2,6 @@ import { Card, Progress, Typography } from 'antd'
 import Image from 'next/image'
 
 const { Paragraph } = Typography
-
 const { Meta } = Card
 
 interface IProps {
@@ -11,6 +10,7 @@ interface IProps {
 	description?: string | null
 	progress: number
 	onClick: VoidFunction
+	completed: boolean
 }
 
 const LessonCard = ({
@@ -18,7 +18,8 @@ const LessonCard = ({
 	thumbnail,
 	description,
 	progress,
-	onClick
+	onClick,
+	completed,
 }: IProps) => {
 	return (
 		<Card
@@ -34,6 +35,25 @@ const LessonCard = ({
 						style={{ objectFit: 'cover' }}
 						priority
 					/>
+					{completed && (
+						<div className='lesson_card__completed-icon'>
+							<svg width='36' height='36' viewBox='0 0 24 24' fill='none'>
+								<circle
+									cx='12'
+									cy='12'
+									r='12'
+									fill='#52C41A'
+									fillOpacity='0.6'
+								/>
+								<path
+									d='M7 13l3 3 7-7'
+									stroke='#fff'
+									strokeWidth='2.2'
+									strokeLinecap='round'
+								/>
+							</svg>
+						</div>
+					)}
 				</div>
 			}
 		>

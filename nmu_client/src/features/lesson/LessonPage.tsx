@@ -45,8 +45,6 @@ const LessonPage = ({ lessonId }: IProps) => {
 		setCurrenLessontId(lessonId)
 	}
 
-	console.log(taskProgressData?.userTaskProgressOptional, '==========')
-
 	const tasks = useMemo(
 		() =>
 			(data?.getLessonById?.tasks ?? []).map(task => {

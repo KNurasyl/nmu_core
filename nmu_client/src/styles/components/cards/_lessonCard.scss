@@ -3,6 +3,7 @@
 	overflow: hidden;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 	width: 100%;
+	transition: border 0.3s, box-shadow 0.3s;
 
 	@media (max-width: 480px) {
 		& .ant-card-body {
@@ -37,5 +38,13 @@
 
 	&__progress {
 		margin-top: 8px;
+	}
+
+	&__completed-icon {
+		position: absolute;
+		top: 14px;
+		right: 14px;
+		z-index: 2;
+		pointer-events: none;
 	}
 }

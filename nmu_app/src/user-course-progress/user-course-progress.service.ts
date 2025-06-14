@@ -37,10 +37,24 @@ export class UserCourseProgressService {
     return found;
   }
 
-  async findByUser(userId: string): Promise<UserCourseProgress[]> {
-    const found = await this.courseProgressModel.find({ user: userId }).populate('user').populate('course').exec();
-    if (!found) throw new NotFoundException(`Прогресс по курсу с userId ${userId} не найден`);
+  async findByUserCourse(userId?: string, courseId?: string): Promise<UserCourseProgress> {
+    const filter: { user?: Types.ObjectId; course?: Types.ObjectId } = {};
+
+    if (userId) filter.user = new Types.ObjectId(userId);
+    if (courseId) filter.course = new Types.ObjectId(courseId);
+
+    const found = await this.courseProgressModel.findOne(filter).populate('user').populate('course').exec();
+
+    if (!found) throw new NotFoundException(`Прогресс по заданным параметрам не найден`);
     return found;
+  }
+
+  async findAllOptional(userId: string): Promise<UserCourseProgress[]> {
+    return await this.courseProgressModel
+      .find({ user: new Types.ObjectId(userId) })
+      .populate('course')
+      .populate('user')
+      .exec();
   }
 
   async update(id: string, input: UpdateUserCourseProgressInput): Promise<UserCourseProgress> {

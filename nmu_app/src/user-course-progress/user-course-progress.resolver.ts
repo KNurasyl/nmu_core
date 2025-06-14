@@ -20,9 +20,17 @@ export class UserCourseProgressResolver {
     return this.userCourseProgressService.findAll();
   }
 
-  @Query(() => [UserCourseProgress], { name: 'userCourseProgressByUser' })
-  findByUser(@Args('userId') userId: string) {
-    return this.userCourseProgressService.findByUser(userId);
+  @Query(() => UserCourseProgress, { name: 'userCourseProgressByUserCourse' })
+  findByUserCourse(
+    @Args('userId', { type: () => String, nullable: true }) userId?: string,
+    @Args('courseId', { type: () => String, nullable: true }) courseId?: string,
+  ) {
+    return this.userCourseProgressService.findByUserCourse(userId, courseId);
+  }
+
+  @Query(() => [UserCourseProgress], { name: 'userCourseProgressOptional' })
+  findAllOptional(@Args('userId') userId: string) {
+    return this.userCourseProgressService.findAllOptional(userId);
   }
 
   @Query(() => UserCourseProgress, { name: 'userCourseProgress' })

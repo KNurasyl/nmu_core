@@ -1,0 +1,12 @@
+query UserCourseProgressByUserCourse($userId: String, $courseId: String) {
+	userCourseProgressByUserCourse(userId: $userId, courseId: $courseId) {
+		_id
+		completed
+		score
+		completedAt
+		course {
+			courseName
+			description
+		}
+	}
+}

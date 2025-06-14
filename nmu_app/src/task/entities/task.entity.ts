@@ -34,7 +34,7 @@ export class Task {
     },
     required: false,
   })
-  @Field(() => Description, { nullable: true }) // вот так
+  @Field(() => Description, { nullable: true })
   description?: Description;
 
   @Prop()
