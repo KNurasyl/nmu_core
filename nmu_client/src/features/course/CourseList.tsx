@@ -56,7 +56,7 @@ const CourseList = () => {
 	}
 
 	return (
-		<Spin spinning={loading}>
+		<Spin spinning={loading || progressCourseLoad}>
 			<div className='course_list'>
 				{courseList?.map(course => (
 					<CourseCard
