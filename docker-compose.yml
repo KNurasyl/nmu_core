@@ -1,46 +1,69 @@
-version: '3.9'
-
 services:
   client:
     build: ./nmu_client
     container_name: nmu_client
-    expose: ['3000']
-    env_file: [.env]
-    networks: [app-network]
+    expose:
+      - '3000'
+    env_file:
+      - .env
+    environment:
+      SERVER_PORT: ${SERVER_PORT}
+      MONGODB_URI: ${MONGODB_URI}
+      MONGODB_DB: ${MONGODB_DB}
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: ${NODE_ENV}
+      NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+      PORT: ${PORT}
+    networks:
+      - app-network
 
   admin:
     build: ./nmu_admin
     container_name: nmu_admin
-    expose: ['3000']
-    env_file: [.env]
-    networks: [app-network]
+    expose:
+      - '3000'
+    env_file:
+      - .env
+    environment:
+      SERVER_PORT: ${SERVER_PORT}
+      MONGODB_URI: ${MONGODB_URI}
+      MONGODB_DB: ${MONGODB_DB}
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: ${NODE_ENV}
+      NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+      PORT: ${PORT}
+    networks:
+      - app-network
 
   backend:
     build: ./nmu_app
     container_name: nmu_backend
-    expose: ['5000']
-    env_file: [.env]
-    # ↓ строку подключения изменишь позже, когда заведёшь рабочего юзера
-    depends_on: [db]
-    networks: [app-network]
+    expose:
+      - '5000'
+    env_file:
+      - .env
+    environment:
+      SERVER_PORT: ${SERVER_PORT}
+      MONGODB_URI: ${MONGODB_URI}
+      MONGODB_DB: ${MONGODB_DB}
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: ${NODE_ENV}
+      NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
+      PORT: ${PORT}
+    depends_on:
+      - db
+    networks:
+      - app-network
 
   db:
     image: mongo:8
     container_name: nmu_mongo
-    restart: always
-
-    # ❌ наружу НЕ пробрасываем
-    # ports:
-    #   - "27017:27017"
-
+    ports:
+      - '27017:27017'
     volumes:
       - db-data:/data/db
-    environment:
-      # root-пользователь, который создаётся самим образом
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASS}
-      MONGO_INITDB_DATABASE: ${MONGODB_DB}
-    networks: [app-network]
+    networks:
+      - app-network
 
   nginx:
     build: ./data/nginx
@@ -51,8 +74,12 @@ services:
     volumes:
       - /opt/letsencrypt/conf:/etc/letsencrypt:ro
       - /opt/letsencrypt/www:/var/www/certbot
-    depends_on: [client, admin, backend]
-    networks: [app-network]
+    depends_on:
+      - client
+      - admin
+      - backend
+    networks:
+      - app-network
 
   certbot:
     image: certbot/certbot
@@ -62,8 +89,8 @@ services:
       - /opt/letsencrypt/www:/var/www/certbot
     entrypoint: >
       sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot
-             --email k.nurasyl7788@gmail.com --agree-tos --no-eff-email
-             -d nmacademy.kz -d admin.nmacademy.kz"
+          --email k.nurasyl7788@gmail.com --agree-tos --no-eff-email
+          -d nmacademy.kz -d admin.nmacademy.kz"
 
 volumes:
   db-data:
