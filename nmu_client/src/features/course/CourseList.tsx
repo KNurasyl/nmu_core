@@ -13,7 +13,6 @@ import { useQuery } from '@apollo/client'
 import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
-import { toast } from 'react-toastify'
 
 const CourseList = () => {
 	const router = useRouter()
@@ -28,9 +27,6 @@ const CourseList = () => {
 		useQuery<UserCourseProgressOptionalQuery>(USER_COURSE_PROGRESS_OPTIONAL, {
 			variables: {
 				userId: user?._id || '',
-			},
-			onError() {
-				toast.error('Ошибка при получений прогресса')
 			},
 		})
 
