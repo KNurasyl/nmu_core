@@ -18,10 +18,10 @@ type Documents = {
     "mutation Logout($userId: String!) {\n  logout(userId: $userId)\n}": typeof types.LogoutDocument,
     "mutation RefreshTokens {\n  refreshTokens {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n  }\n}": typeof types.RefreshTokensDocument,
     "query GetCourseById($id: String!) {\n  getCourseById(id: $id) {\n    _id\n    courseName\n    description\n    lang\n  }\n}": typeof types.GetCourseByIdDocument,
-    "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description\n      lessonCode\n      type\n    }\n  }\n}": typeof types.GetLessonByIdDocument,
+    "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description {\n        kk\n        ru\n      }\n      lessonCode\n      type\n    }\n  }\n}": typeof types.GetLessonByIdDocument,
     "query GetLessonsByCourseId($courseId: String!) {\n  getLessonsByCourseId(courseId: $courseId) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n  }\n}": typeof types.GetLessonsByCourseIdDocument,
     "mutation CreateUserTaskProgress($input: CreateUserTaskProgressInput!) {\n  createUserTaskProgress(createUserTaskProgressInput: $input) {\n    _id\n    completed\n    completedAt\n    score\n  }\n}": typeof types.CreateUserTaskProgressDocument,
-    "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description\n    lessonCode\n    type\n  }\n}": typeof types.GetTaskByIdDocument,
+    "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description {\n      kk\n      ru\n    }\n    lessonCode\n    type\n  }\n}": typeof types.GetTaskByIdDocument,
     "query GetUserById($id: String!) {\n  getUserById(id: $id) {\n    _id\n    phoneNumber\n    userName\n    userRole\n    courseAccesses {\n      _id\n      accessEndDate\n      accessStartDate\n      active\n      comment\n      course {\n        _id\n        courseName\n        description\n        lang\n      }\n    }\n  }\n}": typeof types.GetUserByIdDocument,
     "mutation UpdateUserById($input: UpdateUserInput!) {\n  updateUserById(updateUserInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.UpdateUserByIdDocument,
     "mutation UpdateUserPassword($input: UpdatePasswordInput!) {\n  updateUserPassword(updatePasswordInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.UpdateUserPasswordDocument,
@@ -31,10 +31,10 @@ const documents: Documents = {
     "mutation Logout($userId: String!) {\n  logout(userId: $userId)\n}": types.LogoutDocument,
     "mutation RefreshTokens {\n  refreshTokens {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n  }\n}": types.RefreshTokensDocument,
     "query GetCourseById($id: String!) {\n  getCourseById(id: $id) {\n    _id\n    courseName\n    description\n    lang\n  }\n}": types.GetCourseByIdDocument,
-    "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description\n      lessonCode\n      type\n    }\n  }\n}": types.GetLessonByIdDocument,
+    "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description {\n        kk\n        ru\n      }\n      lessonCode\n      type\n    }\n  }\n}": types.GetLessonByIdDocument,
     "query GetLessonsByCourseId($courseId: String!) {\n  getLessonsByCourseId(courseId: $courseId) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n  }\n}": types.GetLessonsByCourseIdDocument,
     "mutation CreateUserTaskProgress($input: CreateUserTaskProgressInput!) {\n  createUserTaskProgress(createUserTaskProgressInput: $input) {\n    _id\n    completed\n    completedAt\n    score\n  }\n}": types.CreateUserTaskProgressDocument,
-    "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description\n    lessonCode\n    type\n  }\n}": types.GetTaskByIdDocument,
+    "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description {\n      kk\n      ru\n    }\n    lessonCode\n    type\n  }\n}": types.GetTaskByIdDocument,
     "query GetUserById($id: String!) {\n  getUserById(id: $id) {\n    _id\n    phoneNumber\n    userName\n    userRole\n    courseAccesses {\n      _id\n      accessEndDate\n      accessStartDate\n      active\n      comment\n      course {\n        _id\n        courseName\n        description\n        lang\n      }\n    }\n  }\n}": types.GetUserByIdDocument,
     "mutation UpdateUserById($input: UpdateUserInput!) {\n  updateUserById(updateUserInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": types.UpdateUserByIdDocument,
     "mutation UpdateUserPassword($input: UpdatePasswordInput!) {\n  updateUserPassword(updatePasswordInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": types.UpdateUserPasswordDocument,
@@ -73,7 +73,7 @@ export function graphql(source: "query GetCourseById($id: String!) {\n  getCours
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description\n      lessonCode\n      type\n    }\n  }\n}"): (typeof documents)["query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description\n      lessonCode\n      type\n    }\n  }\n}"];
+export function graphql(source: "query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description {\n        kk\n        ru\n      }\n      lessonCode\n      type\n    }\n  }\n}"): (typeof documents)["query GetLessonById($id: String!) {\n  getLessonById(id: $id) {\n    _id\n    description\n    lang\n    lessonCode\n    lessonName\n    order\n    videoUrl\n    tasks {\n      _id\n      description {\n        kk\n        ru\n      }\n      lessonCode\n      type\n    }\n  }\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
@@ -85,7 +85,7 @@ export function graphql(source: "mutation CreateUserTaskProgress($input: CreateU
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description\n    lessonCode\n    type\n  }\n}"): (typeof documents)["query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description\n    lessonCode\n    type\n  }\n}"];
+export function graphql(source: "query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description {\n      kk\n      ru\n    }\n    lessonCode\n    type\n  }\n}"): (typeof documents)["query GetTaskById($id: String!) {\n  getTaskById(id: $id) {\n    _id\n    data\n    description {\n      kk\n      ru\n    }\n    lessonCode\n    type\n  }\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
