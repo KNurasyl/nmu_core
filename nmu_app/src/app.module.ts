@@ -61,10 +61,18 @@ import { UserModule } from './user/user.module';
     }),
     MongooseModule.forRootAsync({
       inject: [ConfigService],
-      useFactory: (configService: ConfigService) => ({
-        uri: configService.get<string>('MONGODB_URI'),
-        dbName: configService.get<string>('MONGODB_DB'),
-      }),
+      useFactory: (configService: ConfigService) => {
+        const uri = configService.get<string>('MONGODB_URI');
+        const dbName = configService.get<string>('MONGODB_DB');
+        console.log('[MongoDB] Trying to connect with URI:', uri);
+        console.log('[MongoDB] Using dbName:', dbName);
+
+        return {
+          uri,
+          dbName,
+          // (можно добавить другие опции)
+        };
+      },
     }),
     UserModule,
     CourseModule,
