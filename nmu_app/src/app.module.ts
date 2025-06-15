@@ -37,6 +37,7 @@ import { UserModule } from './user/user.module';
           autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
           sortSchema: true,
           playground: true,
+          introspection: true,
           installSubscriptionHandlers: true,
           context: ({ req, res }) => {
             const token: string | undefined = req?.headers?.authorization?.replace('Bearer ', '');
