@@ -33,6 +33,7 @@ const LessonPage = ({ lessonId }: IProps) => {
 			variables: {
 				userId: user?._id || '',
 			},
+			fetchPolicy: 'network-only',
 		}
 	)
 

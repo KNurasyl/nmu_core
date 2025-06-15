@@ -85,7 +85,7 @@
 	&__variants {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(4, minmax(120px, 1fr));
+		grid-template-columns: repeat(2, minmax(120px, 1fr));
 		justify-content: center;
 		gap: 10px;
 		margin-top: 16px;

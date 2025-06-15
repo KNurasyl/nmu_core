@@ -2,7 +2,9 @@
 
 import LessonCard from '@/components/cards/LessonCard'
 import LessonPromo from '@/components/promo/LessonPromo'
+import { GET_COURSE_BY_ID } from '@/graphql/course'
 import {
+	GetCourseByIdQuery,
 	GetLessonsByCourseIdQuery,
 	UserCourseProgressByUserCourseQuery,
 	UserLessonProgressOptionalQuery,
@@ -17,7 +19,6 @@ import { useQuery } from '@apollo/client'
 import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
-import { toast } from 'react-toastify'
 
 interface IProps {
 	courseId: string
@@ -29,6 +30,13 @@ const thumbnail =
 const LessonList = ({ courseId }: IProps) => {
 	const router = useRouter()
 	const user = useAuthStore(state => state.user)
+
+	const { data: courseData, loading: courseLoad } =
+		useQuery<GetCourseByIdQuery>(GET_COURSE_BY_ID, {
+			variables: {
+				id: courseId,
+			},
+		})
 
 	const { data: courseProgressData, loading: progressCourseLoad } =
 		useQuery<UserCourseProgressByUserCourseQuery>(
@@ -55,9 +63,6 @@ const LessonList = ({ courseId }: IProps) => {
 			variables: {
 				userId: user?._id || '',
 			},
-			onError() {
-				toast.error('Ошибка при получений прогресса')
-			},
 		})
 
 	const lessons = useMemo(
@@ -79,10 +84,14 @@ const LessonList = ({ courseId }: IProps) => {
 	const courseProgress = courseProgressData?.userCourseProgressByUserCourse
 
 	return (
-		<Spin spinning={loading || progressCourseLoad || progressLessonLoad}>
+		<Spin
+			spinning={
+				loading || progressCourseLoad || progressLessonLoad || courseLoad
+			}
+		>
 			<LessonPromo
-				courseName={courseProgress?.course?.courseName}
-				description={courseProgress?.course?.description}
+				courseName={courseData?.getCourseById?.courseName}
+				description={courseData?.getCourseById?.description}
 				progress={courseProgress?.score || 0}
 			/>
 			<div className='lesson_list'>
