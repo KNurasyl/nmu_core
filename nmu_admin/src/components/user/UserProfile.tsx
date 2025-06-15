@@ -3,6 +3,7 @@
 import { Row, Tabs } from 'antd'
 import GeneralInfo from './userTabs/GeneralInfo'
 import UserCourses from './userTabs/UserCourses'
+import UserHistory from './userTabs/UserHistory'
 
 interface IProps {
 	userId: string
@@ -19,6 +20,11 @@ const UserProfile = ({ userId }: IProps) => {
 			label: 'Курсы',
 			key: 'courses',
 			children: <UserCourses userId={userId} />,
+		},
+		{
+			label: 'История',
+			key: 'history',
+			children: <UserHistory userId={userId} />,
 		},
 	]
 

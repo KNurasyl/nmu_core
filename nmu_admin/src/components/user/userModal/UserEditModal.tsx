@@ -8,7 +8,7 @@ import { Form, Input, Modal, Select } from 'antd'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
 
-interface Props {
+interface IProps {
 	open: boolean
 	onClose: () => void
 	user?: User
@@ -21,7 +21,7 @@ interface IFieldValue {
 	password: string
 }
 
-const UserEditModal = ({ open, onClose, user }: Props) => {
+const UserEditModal = ({ open, onClose, user }: IProps) => {
 	const [form] = Form.useForm()
 	const [updateUser, { loading }] = useMutation(UPDATE_USER_BY_ID, {
 		onCompleted() {

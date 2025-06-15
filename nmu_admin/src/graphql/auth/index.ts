@@ -9,3 +9,6 @@ export const REFRESH_TOKENS = graphql(
 export const LOGOUT = graphql(
 	'mutation Logout($userId: String!) {\n  logout(userId: $userId)\n}'
 )
+export const REGISTER = graphql(
+	'mutation Register($input: RegisterInput!) {\n  register(input: $input) {\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n    accessToken\n  }\n}'
+)

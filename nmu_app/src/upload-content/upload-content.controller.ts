@@ -12,6 +12,12 @@ export class UploadContentController {
     return this.uploadContentService.uploadAndSave(file);
   }
 
+  @Post('excel-users')
+  @UseInterceptors(FileInterceptor('file'))
+  uploadExcelUsers(@UploadedFile() file: Express.Multer.File) {
+    return this.uploadContentService.uploadAndSaveUser(file);
+  }
+
   @Post('json/:type')
   @UseInterceptors(FileInterceptor('file'))
   uploadTasksJson(@Param('type') type: string, @UploadedFile() file: Express.Multer.File) {

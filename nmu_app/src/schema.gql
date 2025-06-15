@@ -45,6 +45,7 @@ input CreateUserCourseAccessInput {
   active: Boolean
   comment: String
   course: ID!
+  trialPeriod: Boolean
   user: ID!
 }
 
@@ -147,6 +148,8 @@ type Mutation {
   removeUserLessonProgress(id: String!): UserLessonProgress!
   removeUserTaskProgress(id: String!): UserTaskProgress!
   seedUsers: String!
+  setUserCourseAccessActive(active: Boolean!, id: String!): UserCourseAccess!
+  setUserCourseAccessTrialPeriod(id: String!, trialPeriod: Boolean!): UserCourseAccess!
   updateCourseById(updateCourseInput: UpdateCourseInput!): Course!
   updateLessonById(updateLessonInput: UpdateLessonInput!): Lesson!
   updateTaskById(updateTaskInput: UpdateTaskInput!): Task!
@@ -234,6 +237,7 @@ input UpdateUserCourseAccessInput {
   comment: String
   course: ID
   id: String!
+  trialPeriod: Boolean
   user: ID
 }
 
@@ -307,6 +311,7 @@ type UserCourseAccess {
   """Дополнительные примечания"""
   comment: String
   course: Course!
+  trialPeriod: Boolean!
   user: User!
 }
 
