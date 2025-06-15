@@ -44,7 +44,7 @@ const TaskCard = ({
 			</Paragraph>
 
 			<Tag color={completed ? 'green' : 'blue'}>
-				{completed ? completedText : inProgressText} - {score}%
+				{completed ? `${completedText} - ${score}%` : inProgressText}
 			</Tag>
 		</Card>
 	)

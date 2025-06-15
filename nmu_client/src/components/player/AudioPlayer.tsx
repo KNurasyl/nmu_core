@@ -15,13 +15,27 @@ const AudioPlayer = forwardRef<HTMLAudioElement, IProps>(
 
 		useImperativeHandle(ref, () => audioRef.current as HTMLAudioElement)
 
+		/**
+		 * Запускает воспроизведение аудио.
+		 * Перед этим гарантированно сбрасывает предыдущее проигрывание (pause + currentTime = 0),
+		 * чтобы избежать проблем с повторным кликом или "залипшим" состоянием.
+		 */
 		const handleClick = () => {
-			if (!audioRef.current) return
+			const audio = audioRef.current
+			if (!audio) return
 
-			audioRef.current
+			// Сброс, если вдруг уже что-то играло
+			audio.pause()
+			audio.currentTime = 0
+
+			audio
 				.play()
-				.then(() => onPlayCallback?.())
-				.catch(e => console.error('Audio play error:', e))
+				.then(() => {
+					onPlayCallback?.()
+				})
+				.catch(e => {
+					console.error('Audio play error:', e)
+				})
 		}
 
 		return (
@@ -31,6 +45,8 @@ const AudioPlayer = forwardRef<HTMLAudioElement, IProps>(
 					src={`/audio/${audioSrc}`}
 					style={{ display: 'none' }}
 					onEnded={onEndCallback}
+					onError={e => console.error('Audio file error:', e)}
+					preload='auto' // это ускоряет первый запуск на Safari/iOS
 				/>
 				<div onClick={handleClick} style={{ cursor: 'pointer' }}>
 					{children}
