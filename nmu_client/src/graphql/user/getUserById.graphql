@@ -9,6 +9,7 @@ query GetUserById($id: String!) {
 			accessEndDate
 			accessStartDate
 			active
+			trialPeriod
 			comment
 			course {
 				_id

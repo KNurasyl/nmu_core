@@ -2,7 +2,6 @@ import { Injectable, NotFoundException, UnauthorizedException } from '@nestjs/co
 import { InjectModel } from '@nestjs/mongoose';
 import * as bcrypt from 'bcryptjs';
 import { FilterQuery, Model } from 'mongoose';
-import { UserCourseProgress } from 'src/user-course-progress/entities/user-course-progress.entity';
 import { CreateUserInput } from './dto/create-user.input';
 import { UpdatePasswordInput } from './dto/update-password.input';
 import { UpdateUserInput } from './dto/update-user.input';
@@ -14,8 +13,6 @@ export class UserService {
   constructor(
     @InjectModel(User.name)
     private userModel: Model<UserDocument>,
-    @InjectModel(UserCourseProgress.name)
-    private userCourseProgressModel: Model<UserCourseProgress>,
   ) {}
 
   async create(createUserInput: CreateUserInput): Promise<User> {
@@ -42,7 +39,7 @@ export class UserService {
       ];
     }
 
-    const users = await this.userModel.find(filter).skip(skip).limit(parseInt(pageSize));
+    const users = await this.userModel.find(filter).sort({ createdAt: -1 }).skip(skip).limit(parseInt(pageSize));
     const total = await this.userModel.countDocuments(filter);
     return { total, users };
   }

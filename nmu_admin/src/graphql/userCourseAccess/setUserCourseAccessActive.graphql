@@ -1,0 +1,10 @@
+mutation SetUserCourseAccessActive($id: String!, $active: Boolean!) {
+	setUserCourseAccessActive(id: $id, active: $active) {
+		_id
+		accessEndDate
+		accessStartDate
+		active
+		trialPeriod
+		comment
+	}
+}

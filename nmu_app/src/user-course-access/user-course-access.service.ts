@@ -40,6 +40,26 @@ export class UserCourseAccessService {
     return updated;
   }
 
+  async setActive(id: string, active: boolean): Promise<UserCourseAccess> {
+    const updated = await this.accessModel.findByIdAndUpdate(
+      id,
+      { active }, // Только поле active!
+      { new: true, runValidators: true },
+    );
+    if (!updated) throw new NotFoundException(`Доступ #${id} не найден`);
+    return updated;
+  }
+
+  async setTrialPeriod(id: string, trialPeriod: boolean): Promise<UserCourseAccess> {
+    const updated = await this.accessModel.findByIdAndUpdate(
+      id,
+      { trialPeriod }, // Только поле trialPeriod!
+      { new: true, runValidators: true },
+    );
+    if (!updated) throw new NotFoundException(`Доступ #${id} не найден`);
+    return updated;
+  }
+
   async remove(id: string): Promise<UserCourseAccess> {
     const deleted = await this.accessModel.findByIdAndDelete(id);
     if (!deleted) throw new NotFoundException(`Доступ #${id} не найден`);

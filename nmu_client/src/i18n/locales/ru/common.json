@@ -28,5 +28,7 @@
 	"finishBtnTxt": "Завершить",
 	"wordStart": "В начале",
 	"wordMiddle": "В середине",
-	"wordEnd": "В конце"
+	"wordEnd": "В конце",
+	"lock": "Нет доступа",
+	"trialPeriodText": "Пробный период"
 }

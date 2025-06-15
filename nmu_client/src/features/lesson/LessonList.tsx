@@ -15,6 +15,7 @@ import {
 	USER_LESSON_PROGRESS_OPTIONAL,
 } from '@/graphql/progress'
 import { useAuthStore } from '@/stores/auth.store'
+import { useTaskStore } from '@/stores/task.store'
 import { useQuery } from '@apollo/client'
 import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
@@ -30,6 +31,7 @@ const thumbnail =
 const LessonList = ({ courseId }: IProps) => {
 	const router = useRouter()
 	const user = useAuthStore(state => state.user)
+	const trialPeriod = useTaskStore(state => state.trialPeriod)
 
 	const { data: courseData, loading: courseLoad } =
 		useQuery<GetCourseByIdQuery>(GET_COURSE_BY_ID, {
@@ -95,7 +97,7 @@ const LessonList = ({ courseId }: IProps) => {
 				progress={courseProgress?.score || 0}
 			/>
 			<div className='lesson_list'>
-				{lessons?.map(lesson => (
+				{(trialPeriod ? lessons.slice(0, 5) : lessons)?.map(lesson => (
 					<LessonCard
 						key={lesson._id}
 						lessonName={lesson.lessonName}

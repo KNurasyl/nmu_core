@@ -13,11 +13,13 @@ import { useQuery } from '@apollo/client'
 import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const CourseList = () => {
 	const router = useRouter()
+	const { t } = useTranslation('common')
 	const user = useAuthStore(state => state.user)
-	const setCurrenCourseId = useTaskStore(state => state.setCurrenCourseId)
+	const { setCurrenCourseId, setTrialPeriod } = useTaskStore(state => state)
 
 	const { data, loading } = useQuery<GetUserByIdQuery>(GET_USER_BY_ID, {
 		variables: { id: user?._id },
@@ -46,9 +48,10 @@ const CourseList = () => {
 		[courseProgressData, data]
 	)
 
-	const onClickHandler = (id?: string) => {
+	const onClickHandler = (id?: string, trialPeriod?: boolean) => {
 		router.push(`/${id}`)
 		setCurrenCourseId(id)
+		setTrialPeriod(trialPeriod || null)
 	}
 
 	return (
@@ -60,7 +63,13 @@ const CourseList = () => {
 						title={course.course.courseName}
 						description={course?.course?.description}
 						progress={course?.score}
-						onClick={() => onClickHandler(course.course._id)}
+						active={course?.active}
+						trialPeriod={course?.trialPeriod}
+						lockText={t('lock')}
+						trialPeriodText={t('trialPeriodText')}
+						onClick={() =>
+							onClickHandler(course.course._id, course?.trialPeriod)
+						}
 					/>
 				))}
 			</div>

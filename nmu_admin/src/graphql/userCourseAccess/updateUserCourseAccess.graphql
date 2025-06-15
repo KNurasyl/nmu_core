@@ -1,0 +1,9 @@
+mutation UpdateUserCourseAccess($input: UpdateUserCourseAccessInput!) {
+	updateUserCourseAccess(updateUserCourseAccessInput: $input) {
+		_id
+		accessEndDate
+		accessStartDate
+		active
+		comment
+	}
+}

@@ -14,7 +14,7 @@ import {
 	notification,
 } from 'antd'
 
-interface Props {
+interface IProps {
 	open: boolean
 	onClose: () => void
 	userId: string
@@ -33,7 +33,7 @@ const UserAddAccessCourseModal = ({
 	onClose,
 	userId,
 	refetch,
-}: Props) => {
+}: IProps) => {
 	const [form] = Form.useForm()
 
 	const { data } = useQuery<GetCoursesQuery>(GET_COURSES)

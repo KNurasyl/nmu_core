@@ -28,5 +28,7 @@
 	"finishBtnTxt": "Аяқтау",
 	"wordStart": "Басында",
 	"wordMiddle": "Ортасында",
-	"wordEnd": "Соңында"
+	"wordEnd": "Соңында",
+	"lock": "Доступ жоқ",
+	"trialPeriodText": "Сынақ мерзімі"
 }

@@ -2,7 +2,7 @@
 
 import { User } from '@/graphql/generated/graphql'
 import { ClearOutlined, SearchOutlined } from '@ant-design/icons'
-import { Button, Input, Row, TableProps } from 'antd'
+import { Button, Input, Row, TableProps, Typography } from 'antd'
 import { useRouter } from 'next/navigation'
 
 const ActionButton = ({ userId }: { userId: string }) => {
@@ -128,6 +128,9 @@ export const userTableColumns = (
 		title: 'Роль',
 		dataIndex: 'userRole',
 		key: 'userRole',
+		render: val => (
+			<Typography>{val === 'student' ? 'Студент' : 'Админ'}</Typography>
+		),
 	},
 	{
 		title: 'Действия',
