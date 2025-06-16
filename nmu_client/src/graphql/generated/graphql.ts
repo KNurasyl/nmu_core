@@ -65,6 +65,7 @@ export type CreateUserCourseAccessInput = {
   active?: InputMaybe<Scalars['Boolean']['input']>;
   comment?: InputMaybe<Scalars['String']['input']>;
   course: Scalars['ID']['input'];
+  trialPeriod?: InputMaybe<Scalars['Boolean']['input']>;
   user: Scalars['ID']['input'];
 };
 
@@ -154,6 +155,8 @@ export type Mutation = {
   removeUserLessonProgress: UserLessonProgress;
   removeUserTaskProgress: UserTaskProgress;
   seedUsers: Scalars['String']['output'];
+  setUserCourseAccessActive: UserCourseAccess;
+  setUserCourseAccessTrialPeriod: UserCourseAccess;
   updateCourseById: Course;
   updateLessonById: Lesson;
   updateTaskById: Task;
@@ -258,6 +261,18 @@ export type MutationRemoveUserLessonProgressArgs = {
 
 export type MutationRemoveUserTaskProgressArgs = {
   id: Scalars['String']['input'];
+};
+
+
+export type MutationSetUserCourseAccessActiveArgs = {
+  active: Scalars['Boolean']['input'];
+  id: Scalars['String']['input'];
+};
+
+
+export type MutationSetUserCourseAccessTrialPeriodArgs = {
+  id: Scalars['String']['input'];
+  trialPeriod: Scalars['Boolean']['input'];
 };
 
 
@@ -459,6 +474,7 @@ export type UpdateUserCourseAccessInput = {
   comment?: InputMaybe<Scalars['String']['input']>;
   course?: InputMaybe<Scalars['ID']['input']>;
   id: Scalars['String']['input'];
+  trialPeriod?: InputMaybe<Scalars['Boolean']['input']>;
   user?: InputMaybe<Scalars['ID']['input']>;
 };
 
@@ -525,6 +541,7 @@ export type UserCourseAccess = {
   /** Дополнительные примечания */
   comment?: Maybe<Scalars['String']['output']>;
   course: Course;
+  trialPeriod: Scalars['Boolean']['output'];
   user: User;
 };
 

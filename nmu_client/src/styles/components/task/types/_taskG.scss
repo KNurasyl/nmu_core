@@ -152,7 +152,7 @@
 		.task-letters-display {
 			border-radius: 10px;
 			padding: 8px 0;
-			margin-bottom: 10%;
+			margin-bottom: 5%;
 			width: 100%;
 		}
 		.display-letter {
@@ -172,7 +172,6 @@
 
 		@media (max-width: 768px) {
 			align-items: end;
-			padding-bottom: 20px;
 		}
 	}
 
