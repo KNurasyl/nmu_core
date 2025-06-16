@@ -5,7 +5,7 @@ import { useMutation } from '@apollo/client'
 import { Form, Input, Modal } from 'antd'
 import { toast } from 'react-toastify'
 
-interface Props {
+interface IProps {
 	open: boolean
 	onClose: () => void
 	userId: string
@@ -16,7 +16,7 @@ interface IFieldValue {
 	oldPassword: string
 }
 
-const UserPasswordModal = ({ open, onClose, userId }: Props) => {
+const UserPasswordModal = ({ open, onClose, userId }: IProps) => {
 	const [form] = Form.useForm()
 	const [updatePassword, { loading }] = useMutation(UPDATE_USER_PASSWORD, {
 		onCompleted() {

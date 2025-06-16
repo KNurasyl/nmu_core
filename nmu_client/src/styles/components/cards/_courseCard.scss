@@ -88,3 +88,36 @@
 		}
 	}
 }
+
+.course_card--inactive {
+	position: relative;
+	pointer-events: none; // полностью отключить клики
+
+	.course_card__lock_overlay {
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		background: rgba(40, 40, 40, 0.6);
+		border-radius: inherit;
+	}
+	.course_card__lock_icon {
+		z-index: 3;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		pointer-events: none;
+		user-select: none;
+	}
+}
+
+.course_card__trial_flag {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: 10;
+	pointer-events: none;
+}

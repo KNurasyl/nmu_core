@@ -6,11 +6,13 @@ import { useQuery } from '@apollo/client'
 import { Button, Row, Table } from 'antd'
 import { useCallback, useState } from 'react'
 import { userTableColumns } from './table/UserTableColumn'
+import UserAddModal from './userListModal/UserAddModal'
 
 const PAGE_SIZE = 20
 
 const UserList = () => {
 	const [page, setPage] = useState(1)
+	const [addUserOpen, setAddUserOpen] = useState(false)
 	const [searchValue, setSearchValue] = useState('')
 
 	const { data, loading, refetch } = useQuery<GetUsersPaginatedQuery>(
@@ -44,8 +46,16 @@ const UserList = () => {
 
 	return (
 		<Row style={{ height: '100%', width: '100%' }}>
+			<UserAddModal
+				open={addUserOpen}
+				onClose={() => setAddUserOpen(false)}
+				refetch={refetch}
+			/>
+
 			<Row style={{ height: '10%', width: '100%', justifyContent: 'end' }}>
-				<Button type='primary'>Добавить пользователя</Button>
+				<Button type='primary' onClick={() => setAddUserOpen(true)}>
+					Добавить пользователя
+				</Button>
 			</Row>
 			<Table
 				style={{ width: '100%', height: '90%', overflowY: 'scroll' }}

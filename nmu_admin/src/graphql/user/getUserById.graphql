@@ -10,6 +10,7 @@ query GetUserById($id: String!) {
 			accessStartDate
 			active
 			comment
+			trialPeriod
 			course {
 				_id
 				courseName

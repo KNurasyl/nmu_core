@@ -4,11 +4,13 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { BadRequestException, Inject, Injectable, Logger } from '@nestjs/common';
+import { AuthService } from 'src/auth/auth.service';
 import { CourseService } from 'src/course/course.service';
 import { Course } from 'src/course/entities/course.entity';
 import { Lesson } from 'src/lesson/entities/lesson.entity';
 import { LessonService } from 'src/lesson/lesson.service';
 import { TaskService } from 'src/task/task.service';
+import { User } from 'src/user/entities/user.entity';
 import * as XLSX from 'xlsx';
 
 const descriptions: Record<string, { kk: string; ru: string }> = {
@@ -49,6 +51,8 @@ export class UploadContentService {
     private readonly lessonService: LessonService,
     @Inject(TaskService)
     private readonly taskService: TaskService,
+    @Inject(AuthService)
+    private readonly authService: AuthService,
   ) {}
 
   async uploadTasksByType(file: Express.Multer.File, type: string) {
@@ -200,6 +204,49 @@ export class UploadContentService {
     return {
       message: 'Контент успешно импортирован',
       ...results,
+    };
+  }
+
+  async uploadAndSaveUser(file: Express.Multer.File) {
+    if (!file?.buffer) throw new BadRequestException('Файл отсутствует или повреждён');
+
+    const workbook = XLSX.read(file.buffer, { type: 'buffer' });
+    const firstSheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[firstSheetName];
+    const users: { userName?: string; phoneNumber?: string }[] = XLSX.utils.sheet_to_json(sheet);
+
+    function normalizePhoneNumber(raw: string | number): string {
+      let phone = String(raw).replace(/\D/g, '');
+      if (phone.length === 10) {
+        phone = '8' + phone;
+      } else if (phone.length === 11) {
+        phone = '8' + phone.slice(1);
+      }
+      return phone;
+    }
+
+    const createdUsers: User[] = [];
+    for (const user of users) {
+      if (!user.userName || !user.phoneNumber) continue;
+
+      const phoneNumber = normalizePhoneNumber(user.phoneNumber);
+
+      try {
+        const created = await this.authService.register({
+          userName: user.userName,
+          phoneNumber,
+          password: 'nmu1234',
+          userRole: 'student',
+        });
+        createdUsers.push(created.user);
+      } catch (e) {
+        console.log(e);
+      }
+    }
+
+    return {
+      message: `Добавлено ${createdUsers.length} пользователей`,
+      users: createdUsers,
     };
   }
 }

@@ -1,6 +1,10 @@
 import { GetUserByIdQuery } from '@/graphql/generated/graphql'
 import { GET_USER_BY_ID } from '@/graphql/user'
-import { useQuery } from '@apollo/client'
+import {
+	SET_USER_COURSE_ACCESS_ACTIVE,
+	SET_USER_COURSE_ACCESS_TRIAL_PERIOD,
+} from '@/graphql/userCourseAccess'
+import { useMutation, useQuery } from '@apollo/client'
 import { Button, Row, Table } from 'antd'
 import { useState } from 'react'
 import UserAddAccessCourseModal from '../userModal/UserAddAccessCourseModal'
@@ -13,11 +17,43 @@ interface IProps {
 const UserCourses = ({ userId }: IProps) => {
 	const [addAccessCourseOpen, setAddAccessCourseOpen] = useState(false)
 
-	const { data, loading, refetch } = useQuery<GetUserByIdQuery>(GET_USER_BY_ID, {
-		variables: { id: userId },
-	})
+	const { data, loading, refetch } = useQuery<GetUserByIdQuery>(
+		GET_USER_BY_ID,
+		{
+			variables: { id: userId },
+		}
+	)
+
+	const [setUserCourseAccessActive] = useMutation(SET_USER_COURSE_ACCESS_ACTIVE)
+
+	const [setUserCourseAccessTrialPeriod] = useMutation(
+		SET_USER_COURSE_ACCESS_TRIAL_PERIOD
+	)
 
 	const courseAccesses = data?.getUserById?.courseAccesses ?? []
+
+	const onHandleStatus = async (
+		id: string,
+		value: boolean,
+		status: 'active' | 'trial'
+	) => {
+		if (status === 'active') {
+			await setUserCourseAccessActive({
+				variables: {
+					id: id,
+					active: value,
+				},
+			})
+		} else {
+			await setUserCourseAccessTrialPeriod({
+				variables: {
+					id: id,
+					trialPeriod: value,
+				},
+			})
+		}
+		await refetch()
+	}
 
 	return (
 		<Row
@@ -28,7 +64,7 @@ const UserCourses = ({ userId }: IProps) => {
 				open={addAccessCourseOpen}
 				onClose={() => setAddAccessCourseOpen(false)}
 				userId={userId}
-        refetch={refetch}
+				refetch={refetch}
 			/>
 
 			<Row
@@ -42,7 +78,7 @@ const UserCourses = ({ userId }: IProps) => {
 			<Table
 				style={{ height: '88%', width: '100%' }}
 				loading={loading}
-				columns={userCoursesColumns}
+				columns={userCoursesColumns({ onHandleStatus, loading })}
 				dataSource={courseAccesses}
 				rowKey='_id'
 			/>

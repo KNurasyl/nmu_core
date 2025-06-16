@@ -30,6 +30,10 @@ export class UserCourseAccess {
   @Prop({ default: true })
   active: boolean;
 
+  @Field({ defaultValue: false })
+  @Prop({ default: false })
+  trialPeriod: boolean;
+
   @Field({ nullable: true, description: 'Дополнительные примечания' })
   @Prop()
   comment?: string;

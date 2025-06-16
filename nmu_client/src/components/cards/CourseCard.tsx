@@ -1,4 +1,5 @@
-import { Card, Progress } from 'antd'
+import { FlagOutlined, LockOutlined } from '@ant-design/icons'
+import { Card, Progress, Tag } from 'antd'
 import Image from 'next/image'
 import cardBg from '../../assets/images/Course_bg_new.png'
 
@@ -8,6 +9,10 @@ interface CourseCardProps {
 	progress: number
 	image?: string
 	onClick: VoidFunction
+	active: boolean
+	lockText: string
+	trialPeriod: boolean
+	trialPeriodText: string
 }
 
 const CourseCard = ({
@@ -15,10 +20,22 @@ const CourseCard = ({
 	description,
 	progress,
 	image,
-	onClick
+	onClick,
+	active,
+	lockText,
+	trialPeriod,
+	trialPeriodText,
 }: CourseCardProps) => (
-	<Card className='course_card' onClick={onClick}>
-		<div className='course_card__bg'>
+	<Card
+		className={`course_card${!active ? ' course_card--inactive' : ''}`}
+		onClick={active ? onClick : undefined}
+		hoverable={active}
+		style={{
+			cursor: active ? 'pointer' : 'not-allowed',
+			opacity: active ? 1 : 0.6,
+		}}
+	>
+		<div className='course_card__bg' style={{ position: 'relative' }}>
 			<Image
 				src={image || cardBg}
 				alt={title}
@@ -26,6 +43,25 @@ const CourseCard = ({
 				style={{ objectFit: 'cover' }}
 				priority
 			/>
+
+			{trialPeriod && (
+				<div className='course_card__trial_flag'>
+					<Tag color='blue' icon={<FlagOutlined />}>
+						{trialPeriodText}
+					</Tag>
+				</div>
+			)}
+
+			{!active && (
+				<>
+					<div className='course_card__lock_overlay' />
+					<div className='course_card__lock_icon'>
+						<LockOutlined style={{ fontSize: 36, color: '#fff' }} />
+						<div style={{ color: '#fff', marginTop: 8 }}>{lockText}</div>
+					</div>
+				</>
+			)}
+
 			<div className='course_card__overlay' />
 			<div className='course_card__content'>
 				<div className='course_card__title'>{title}</div>

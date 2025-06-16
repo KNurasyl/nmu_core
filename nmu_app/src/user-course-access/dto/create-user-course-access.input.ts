@@ -30,5 +30,10 @@ export class CreateUserCourseAccessInput {
 
   @Field({ nullable: true })
   @IsOptional()
+  @IsBoolean()
+  trialPeriod?: boolean;
+
+  @Field({ nullable: true })
+  @IsOptional()
   comment?: string;
 }
