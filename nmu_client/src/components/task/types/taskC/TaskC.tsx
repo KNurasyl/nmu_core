@@ -1,5 +1,6 @@
 'use client'
 
+import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskC } from '@/types/tasks'
 import { Row } from 'antd'
@@ -33,7 +34,7 @@ const TaskC = ({ onFinished }: IProps) => {
 
 	const task = currentTask as ITaskC
 
-	const audioRef = useRef<HTMLAudioElement>(null)
+	const audioRef = useRef<AudioPlayerHandle>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [selected, setSelected] = useState<string | null>(null)
 
@@ -46,11 +47,8 @@ const TaskC = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		if (!audioRef.current) return
-		audioRef.current.currentTime = 0
-
-		const playPromise = audioRef.current.play()
-		if (playPromise && playPromise.catch) playPromise.catch(() => {})
+		audioRef.current?.stop() // сбрасываем старый трек
+		audioRef.current?.play() // запускаем новый
 		setIsPlaying(true)
 	}, [task])
 
