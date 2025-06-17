@@ -3,7 +3,7 @@
 	justify-content: center;
 
 	@media (max-width: 768px) {
-		height: 96%;
+		height: 85dvh;
 		align-content: flex-start;
 	}
 
@@ -62,12 +62,12 @@
 		.task-letter-buttons {
 			width: 100%;
 			padding: 0;
-			height: 35%;
-			margin-bottom: 18% !important;
+			height: 40%;
+			margin-bottom: 15px !important;
 		}
 		.letter-btn {
-			width: 85px;
-			height: 75px;
+			width: 60px;
+			height: 60px;
 			font-size: 2rem;
 			border-radius: 12px;
 		}
@@ -86,7 +86,6 @@
 	}
 
 	& .task_a__check {
-		margin-top: 1%;
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -94,11 +93,10 @@
 
 		@media (max-width: 768px) {
 			align-items: end;
-			padding-bottom: 20px;
 		}
 	}
 
-	&__check-btn {
+	& .task_a__check-btn {
 		background-color: #444ce7;
 		color: #fff;
 		padding: 14px 40px;

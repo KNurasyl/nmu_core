@@ -19,8 +19,8 @@ const TaskLetterButtons = ({ variants, setSelected, selected }: IProps) => {
 			{variants?.map(v => (
 				<Col
 					key={v}
-					xs={8}
-					sm={8}
+					xs={6}
+					sm={6}
 					md={8}
 					lg={8}
 					xl={8}
