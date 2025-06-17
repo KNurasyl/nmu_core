@@ -21,7 +21,7 @@ const LessonPage = ({ lessonId }: IProps) => {
 	const router = useRouter()
 	const { t, i18n } = useTranslation('common')
 	const user = useAuthStore(state => state.user)
-	const { setCurrenLessontId } = useTaskStore(state => state)
+	const { setCurrenLessontId, reset } = useTaskStore(state => state)
 
 	const { data, loading } = useQuery<GetLessonByIdQuery>(GET_LESSON_BY_ID, {
 		variables: { id: lessonId },
@@ -38,6 +38,7 @@ const LessonPage = ({ lessonId }: IProps) => {
 	)
 
 	const onClickHandler = (id?: string) => {
+		reset()
 		router.push(`/task/${id}`)
 		setCurrenLessontId(lessonId)
 	}

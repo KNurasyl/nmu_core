@@ -47,8 +47,8 @@ const TaskPage = ({ taskId }: IProps) => {
 				input: {
 					completed: true,
 					completedAt: new Date(),
-					courseId: currentCourseId,
-					lessonId: currentLessonId,
+					courseId: currentCourseId || '',
+					lessonId: currentLessonId || '',
 					score: score,
 					taskId: taskId,
 					userId: user?._id || '',

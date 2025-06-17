@@ -23,14 +23,14 @@
 			width: 25%;
 			height: 50px;
 
-			& div {
+			& button {
 				width: 100%;
 			}
 
 			.audio_container {
 				position: relative;
 				width: 100%;
-				height: 100%;
+				height: 50px;
 
 				.wave {
 					position: absolute;

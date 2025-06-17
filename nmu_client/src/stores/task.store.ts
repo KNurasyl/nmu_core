@@ -6,8 +6,8 @@ interface TaskState {
 	allTasks: unknown[]
 	trialPeriod: boolean | null
 	currentTask: unknown
-	currentLessonId: string
-	currentCourseId: string
+	currentLessonId: string | null
+	currentCourseId: string | null
 	progress: number
 	correctCount: number
 	wrongCount: number
@@ -23,6 +23,7 @@ interface TaskState {
 	setCurrenLessontId: (lessonId?: string) => void
 	setCurrenCourseId: (courseId?: string) => void
 	setTrialPeriod: (trialPeriod: boolean | null) => void
+	reset: () => void
 }
 
 export const useTaskStore = create<TaskState>()(
@@ -86,6 +87,19 @@ export const useTaskStore = create<TaskState>()(
 					const score =
 						total === 0 ? 0 : Math.round((state.correctCount / total) * 100)
 					return { wrongCount, score }
+				}),
+			reset: () =>
+				set({
+					allTasks: [],
+					currentTask: null,
+					currentLessonId: null,
+					currentCourseId: null,
+					progress: 0,
+					correctCount: 0,
+					wrongCount: 0,
+					trialPeriod: null,
+					score: 0,
+					status: 'inProgress',
 				}),
 		}),
 		{ name: 'TaskStore' }
