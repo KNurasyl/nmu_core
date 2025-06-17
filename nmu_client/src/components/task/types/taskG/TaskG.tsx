@@ -1,8 +1,10 @@
 'use client'
 
+import AudioPlayer from '@/components/player/AudioPlayer'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskG } from '@/types/tasks'
 import { Row } from 'antd'
+import { Volume2 } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import TaskCheck from '../../TaskCheck'
@@ -76,14 +78,28 @@ const TaskG = ({ onFinished }: IProps) => {
 				variants={task?.variants}
 				setSelected={setSelected}
 				selected={selected}
-				isPlaying={isPlaying}
-				audioRef={audioRef}
-				handlePlay={() => setIsPlaying(true)}
-				handleEnd={() => setIsPlaying(false)}
-				audioSrc={`${task?.lessonCode}/${task?.audioFileName}`}
 			/>
 
-			<TaskCheck onClick={checkHandle} btnText={t('check')} />
+			<Row className='pagination'>
+				<TaskCheck onClick={checkHandle} btnText={t('check')} />
+				<Row className='audio_blog'>
+					<AudioPlayer
+						ref={audioRef}
+						audioSrc={`${task?.lessonCode}/${task?.audioFileName}`}
+						onPlayCallback={() => setIsPlaying(true)}
+						onEndCallback={() => setIsPlaying(false)}
+					>
+						<div className={`audio_container ${isPlaying ? 'playing' : ''}`}>
+							<div className='wave wave1' />
+							<div className='wave wave2' />
+							<div className='wave wave3' />
+							<div className='audio_button'>
+								<Volume2 className='volume_icon' color='#fff' />
+							</div>
+						</div>
+					</AudioPlayer>
+				</Row>
+			</Row>
 
 			<TaskStatusAlert
 				status={status}

@@ -8,6 +8,7 @@ import { CREATE_USER_TASK_PROGRESS, GET_TASK_BY_ID } from '@/graphql/task'
 import { prepareTasks } from '@/lib/utils/prepareTasks'
 import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
+import { ITaskE } from '@/types/tasks'
 import { useMutation, useQuery } from '@apollo/client'
 import { Row, Spin } from 'antd'
 import { useRouter } from 'next/navigation'
@@ -21,7 +22,7 @@ interface IProps {
 
 const TaskPage = ({ taskId }: IProps) => {
 	const router = useRouter()
-	const { i18n } = useTranslation('common')
+	const { i18n, t } = useTranslation('common')
 	const { user } = useAuthStore(state => state)
 	const {
 		setAllTasks,
@@ -29,6 +30,7 @@ const TaskPage = ({ taskId }: IProps) => {
 		progress,
 		currentCourseId,
 		currentLessonId,
+		currentTask,
 		score,
 	} = useTaskStore(state => state)
 
@@ -61,11 +63,26 @@ const TaskPage = ({ taskId }: IProps) => {
 		}
 	)
 
+	const getPositionDesc = (position?: string) => {
+		switch (position) {
+			case 'start':
+				return t('startWordDesc')
+			case 'middle':
+				return t('middleWordDesc')
+			case 'end':
+				return t('endWordDesc')
+			default:
+				return (
+					task?.description?.[i18n.language as 'kk' | 'ru'] ||
+					task?.description?.['ru'] ||
+					''
+				)
+		}
+	}
+
 	const task = data?.getTaskById
 	const localizedData = task?.data?.[i18n.language] || task?.data?.ru || []
-	const localizeDesc = task?.description
-		? task.description[i18n.language as 'kk' | 'ru']
-		: 'ru'
+	const localizeDesc = getPositionDesc((currentTask as ITaskE)?.position)
 
 	useEffect(() => {
 		if (localizedData && localizedData.length) {

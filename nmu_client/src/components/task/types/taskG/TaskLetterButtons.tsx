@@ -1,29 +1,13 @@
-import AudioPlayer from '@/components/player/AudioPlayer'
 import { Col, Row, Typography } from 'antd'
-import { Volume2 } from 'lucide-react'
-import { Dispatch, RefObject, SetStateAction } from 'react'
+import { Dispatch, SetStateAction } from 'react'
 
 interface IProps {
 	variants: string[]
 	setSelected: Dispatch<SetStateAction<string[]>>
 	selected: string[]
-	isPlaying: boolean
-	audioRef: RefObject<HTMLAudioElement | null>
-	handlePlay: VoidFunction
-	handleEnd: VoidFunction
-	audioSrc: string
 }
 
-const TaskLetterButtons = ({
-	variants,
-	setSelected,
-	selected,
-	isPlaying,
-	audioRef,
-	handlePlay,
-	handleEnd,
-	audioSrc,
-}: IProps) => {
+const TaskLetterButtons = ({ variants, setSelected, selected }: IProps) => {
 	return (
 		<Row
 			gutter={[16, 16]}
@@ -58,24 +42,6 @@ const TaskLetterButtons = ({
 					</Typography.Text>
 				</Col>
 			))}
-
-			<Row className='audio_blog'>
-				<AudioPlayer
-					ref={audioRef}
-					audioSrc={audioSrc}
-					onPlayCallback={handlePlay}
-					onEndCallback={handleEnd}
-				>
-					<div className={`audio_container ${isPlaying ? 'playing' : ''}`}>
-						<div className='wave wave1' />
-						<div className='wave wave2' />
-						<div className='wave wave3' />
-						<div className='audio_button'>
-							<Volume2 className='volume_icon' color='#fff' />
-						</div>
-					</div>
-				</AudioPlayer>
-			</Row>
 		</Row>
 	)
 }
