@@ -42,11 +42,11 @@ const TaskVarinats = ({ variants, selected, setSelected }: IProps) => {
 						variantRefs.current[i] = el
 					}}
 					className={`task_c__variant ${
-						selected === v.arabicLetter ? 'selected' : ''
+						selected === v?.arabicLetter ? 'selected' : ''
 					}`}
-					onClick={() => setSelected(v.arabicLetter)}
+					onClick={() => setSelected(v?.arabicLetter)}
 				>
-					{v.arabicLetter}
+					{v?.arabicLetter}
 				</div>
 			))}
 		</Row>

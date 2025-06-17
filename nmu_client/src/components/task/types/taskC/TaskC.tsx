@@ -45,8 +45,6 @@ const TaskC = ({ onFinished }: IProps) => {
 		return [correct, similar]
 	}, [task])
 
-	console.log(variants, '---------')
-
 	useEffect(() => {
 		if (!audioRef.current) return
 		audioRef.current.currentTime = 0
