@@ -1,119 +1,125 @@
 'use client'
 
+import { Howl } from 'howler'
 import {
 	ReactNode,
 	forwardRef,
+	useCallback,
 	useImperativeHandle,
 	useRef,
 	useState,
 } from 'react'
+import ReactHowler from 'react-howler'
 
-interface IProps {
-	audioSrc: string
-	onPlayCallback?: () => void
-	onEndCallback?: () => void
-	children: ReactNode
+/* ---------- public API компонента ---------- */
+export interface AudioPlayerHandle {
+	/** текущий Howl (может быть null до первой отрисовки) */
+	howl: Howl | null
+	/** программный запуск воспроизведения */
+	play: () => void
+	/** пауза, без сброса позиции */
+	pause: () => void
+	/** полная остановка и сброс таймлайна */
+	stop: () => void
 }
 
-const AudioPlayer = forwardRef<HTMLAudioElement, IProps>(
+interface AudioPlayerProps {
+	/** имя/путь файла внутри /public/audio  или абсолютный URL */
+	audioSrc: string
+	/** вызывается, когда звук реально начал играть */
+	onPlayCallback?: () => void
+	/** вызывается после полного окончания трека */
+	onEndCallback?: () => void
+	/** любой React-элемент — обычно иконка/текст кнопки */
+	children: ReactNode
+}
+/* ------------------------------------------- */
+
+const AudioPlayer = forwardRef<AudioPlayerHandle, AudioPlayerProps>(
 	({ audioSrc, onPlayCallback, onEndCallback, children }, ref) => {
-		const audioRef = useRef<HTMLAudioElement>(null)
-		const [canPlay, setCanPlay] = useState(false)
-		const [loading, setLoading] = useState(true)
+		/* Ссылка на ReactHowler-компонент,
+       у него есть публичное свойство .howler (instance Howl)  */
+		const reactHowlerRef = useRef<ReactHowler | null>(null)
+		const [playing, setPlaying] = useState(false)
 
-		useImperativeHandle(ref, () => audioRef.current as HTMLAudioElement)
+		/* ---------- imperativе API наружу ---------- */
+		useImperativeHandle<AudioPlayerHandle, AudioPlayerHandle>(
+			ref,
+			() => ({
+				howl: reactHowlerRef.current?.howler ?? null,
+				play: () => {
+					setPlaying(true)
+				},
+				pause: () => {
+					setPlaying(false)
+				},
+				stop: () => {
+					const howl = reactHowlerRef.current?.howler
+					if (howl) {
+						howl.seek(0)
+						howl.pause()
+						setPlaying(false)
+					}
+				},
+			}),
+			[]
+		)
+		/* ------------------------------------------ */
 
-		const handleClick = () => {
-			const audio = audioRef.current
-			if (!audio || !canPlay) return
+		/** внутренняя логика клика (начать заново с нуля) */
+		const handleClick = useCallback(() => {
+			const howl = reactHowlerRef.current?.howler
+			if (!howl) return
 
-			// Сброс, если вдруг уже что-то играло
-			if (!audio.paused) {
-				audio.pause()
-				audio.currentTime = 0
+			if (playing) {
+				// уже играет → перезапуск
+				howl.seek(0)
+			} else {
+				// старт с первого клика
+				setPlaying(true)
 			}
-
-			audio
-				.play()
-				.then(() => {
-					onPlayCallback?.()
-				})
-				.catch(e => {
-					console.error('Audio play error:', e)
-				})
-		}
+		}, [playing])
 
 		return (
 			<>
-				<audio
-					ref={audioRef}
-					src={`/audio/${audioSrc}`}
-					style={{ display: 'none' }}
-					onEnded={onEndCallback}
-					onError={e => {
-						console.error('Audio file error:', e)
-						setCanPlay(false)
-						setLoading(false)
-					}}
-					preload='auto'
-					onLoadedData={() => {
-						setCanPlay(true)
-						setLoading(false)
-					}}
-					onCanPlayThrough={() => {
-						setCanPlay(true)
-						setLoading(false)
-					}}
-					onLoadStart={() => setLoading(true)}
-				/>
-				<div
-					onClick={canPlay ? handleClick : undefined}
+				<div style={{ display: 'none' }}>
+					<ReactHowler
+						ref={reactHowlerRef}
+						src={`/audio/${audioSrc}`}
+						playing={playing}
+						preload={true} /* Howler сам выставит 'auto' */
+						html5 /* iOS Safari large-file fix   */
+						format={['mp3']} /* ускоряет детекцию формата   */
+						/* -------- события Howler -------- */
+						onPlay={() => {
+							onPlayCallback?.()
+						}}
+						onEnd={() => {
+							setPlaying(false)
+							onEndCallback?.()
+						}}
+						onLoadError={(_, err) => console.error('Audio load error:', err)}
+						onPlayError={(_, err) => console.error('Audio play error:', err)}
+					/>
+				</div>
+
+				<button
+					type='button'
+					onClick={handleClick}
 					style={{
-						cursor: canPlay ? 'pointer' : 'not-allowed',
-						opacity: canPlay ? 1 : 0.6,
-						position: 'relative',
+						cursor: 'pointer',
+						background: 'none',
+						border: 'none',
+						padding: 0,
+						height: 'fit-content',
 					}}
 				>
 					{children}
-					{loading && (
-						<div
-							style={{
-								position: 'absolute',
-								top: '50%',
-								left: '50%',
-								transform: 'translate(-50%, -50%)',
-								zIndex: 2,
-							}}
-						>
-							<svg width='50' height='50' viewBox='0 0 50 50'>
-								<circle
-									cx='25'
-									cy='25'
-									r='20'
-									fill='none'
-									stroke='#444ce7'
-									strokeWidth='4'
-									strokeDasharray='31.415, 31.415'
-									transform='rotate(360 25 25)'
-								>
-									<animateTransform
-										attributeName='transform'
-										type='rotate'
-										from='0 25 25'
-										to='360 25 25'
-										dur='1s'
-										repeatCount='indefinite'
-									/>
-								</circle>
-							</svg>
-						</div>
-					)}
-				</div>
+				</button>
 			</>
 		)
 	}
 )
 
 AudioPlayer.displayName = 'AudioPlayer'
-
 export default AudioPlayer

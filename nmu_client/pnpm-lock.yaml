@@ -20,6 +20,9 @@ importers:
       dotenv-flow:
         specifier: ^4.1.0
         version: 4.1.0
+      howler:
+        specifier: ^2.2.4
+        version: 2.2.4
       i18next:
         specifier: ^25.2.1
         version: 25.2.1(typescript@5.8.3)
@@ -41,6 +44,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      react-howler:
+        specifier: ^5.2.0
+        version: 5.2.0
       react-i18next:
         specifier: ^15.5.2
         version: 15.5.2(i18next@25.2.1(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
@@ -78,6 +84,9 @@ importers:
       '@parcel/watcher':
         specifier: ^2.5.1
         version: 2.5.1
+      '@types/howler':
+        specifier: ^2.2.12
+        version: 2.2.12
       '@types/lodash':
         specifier: ^4.17.17
         version: 4.17.17
@@ -90,6 +99,9 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.1.5(@types/react@19.1.6)
+      '@types/react-howler':
+        specifier: ^5.2.3
+        version: 5.2.3
       concurrently:
         specifier: ^9.1.2
         version: 9.1.2
@@ -1165,6 +1177,9 @@ packages:
   '@types/hoist-non-react-statics@3.3.6':
     resolution: {integrity: sha512-lPByRJUer/iN/xa4qpyL0qmL11DqNW81iU/IG1S3uvRUq4oKagz8VCxZjiWkumgt66YT3vOdDgZ0o32sGKtCEw==}
 
+  '@types/howler@2.2.12':
+    resolution: {integrity: sha512-hy769UICzOSdK0Kn1FBk4gN+lswcj1EKRkmiDtMkUGvFfYJzgaDXmVXkSShS2m89ERAatGIPnTUlp2HhfkVo5g==}
+
   '@types/js-yaml@4.0.9':
     resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
 
@@ -1184,6 +1199,9 @@ packages:
     resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
     peerDependencies:
       '@types/react': ^19.0.0
+
+  '@types/react-howler@5.2.3':
+    resolution: {integrity: sha512-0XJ+vHLgobVcc8G8f3jlnfIv3FVnUvEuxOyq3TwW9qNBeko7EhHDc9QYtY7mUTcrT86mPTAVCKWitY+TyzHWZw==}
 
   '@types/react@19.1.6':
     resolution: {integrity: sha512-JeG0rEWak0N6Itr6QUx+X60uQmN+5t3j9r/OVDtWzFXKaj6kD1BwJzOksD0FF6iWxZlbE1kB0q9vtnU2ekqa1Q==}
@@ -2183,6 +2201,9 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
+  howler@2.2.4:
+    resolution: {integrity: sha512-iARIBPgcQrwtEr+tALF+rapJ8qSc+Set2GJQl7xT1MQzWaVkFebdJhR3alVlSiUf5U7nAANKuj3aWpwerocD5w==}
+
   html-parse-stringify@3.0.1:
     resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
 
@@ -3068,6 +3089,9 @@ packages:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
       react: ^19.1.0
+
+  react-howler@5.2.0:
+    resolution: {integrity: sha512-oDK+zML0MHf3nVNM4lMxh+re87NDa7fHowea2WK8197yqnMiZfPVHoMXtfb/PtuoOsWLO06vmEAtovwTRWpTFg==}
 
   react-i18next@15.5.2:
     resolution: {integrity: sha512-ePODyXgmZQAOYTbZXQn5rRsSBu3Gszo69jxW6aKmlSgxKAI1fOhDwSu6bT4EKHciWPKQ7v7lPrjeiadR6Gi+1A==}
@@ -5026,6 +5050,8 @@ snapshots:
       '@types/react': 19.1.6
       hoist-non-react-statics: 3.3.2
 
+  '@types/howler@2.2.12': {}
+
   '@types/js-yaml@4.0.9': {}
 
   '@types/json-schema@7.0.15': {}
@@ -5040,6 +5066,11 @@ snapshots:
 
   '@types/react-dom@19.1.5(@types/react@19.1.6)':
     dependencies:
+      '@types/react': 19.1.6
+
+  '@types/react-howler@5.2.3':
+    dependencies:
+      '@types/howler': 2.2.12
       '@types/react': 19.1.6
 
   '@types/react@19.1.6':
@@ -6334,6 +6365,8 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
+  howler@2.2.4: {}
+
   html-parse-stringify@3.0.1:
     dependencies:
       void-elements: 3.1.0
@@ -7317,6 +7350,11 @@ snapshots:
     dependencies:
       react: 19.1.0
       scheduler: 0.26.0
+
+  react-howler@5.2.0:
+    dependencies:
+      howler: 2.2.4
+      prop-types: 15.8.1
 
   react-i18next@15.5.2(i18next@25.2.1(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3):
     dependencies:

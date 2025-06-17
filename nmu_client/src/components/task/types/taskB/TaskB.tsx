@@ -11,6 +11,7 @@ import TaskResult from '../../TaskResult'
 import TaskStatusAlert from '../../TaskStatusAlert'
 import TaskAnswer from './TaskAnswer'
 import TaskVariants from './TaskVariants'
+import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 
 interface IProps {
 	onFinished: VoidFunction
@@ -34,7 +35,7 @@ const TaskB = ({ onFinished }: IProps) => {
 
 	const task = currentTask as ITaskAB
 
-	const audioRefs = useRef<(HTMLAudioElement | null)[]>([])
+	const audioRefs = useRef<(AudioPlayerHandle | null)[]>([])
 	const [playingIndex, setPlayingIndex] = useState<number | null>(null)
 	const [selected, setSelected] = useState<string | null>(null)
 

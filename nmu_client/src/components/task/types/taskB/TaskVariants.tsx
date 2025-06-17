@@ -1,6 +1,6 @@
 'use client'
 
-import AudioPlayer from '@/components/player/AudioPlayer'
+import AudioPlayer, { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { Row } from 'antd'
 import { Volume2 } from 'lucide-react'
 import { RefObject, SetStateAction, useEffect, useRef, useState } from 'react'
@@ -18,7 +18,7 @@ interface IProps {
 	handleEnd: VoidFunction
 	handlePlay: (idx: number) => void
 	playingIndex: number | null
-	audioRefs: RefObject<(HTMLAudioElement | null)[]>
+	audioRefs: RefObject<(AudioPlayerHandle | null)[]>
 }
 
 const TaskVariants = ({

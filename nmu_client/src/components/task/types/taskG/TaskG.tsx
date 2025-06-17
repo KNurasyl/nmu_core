@@ -1,6 +1,6 @@
 'use client'
 
-import AudioPlayer from '@/components/player/AudioPlayer'
+import AudioPlayer, { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskG } from '@/types/tasks'
 import { Row } from 'antd'
@@ -35,18 +35,15 @@ const TaskG = ({ onFinished }: IProps) => {
 
 	const task = currentTask as ITaskG
 
-	const audioRef = useRef<HTMLAudioElement>(null)
+	const audioRef = useRef<AudioPlayerHandle>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [selected, setSelected] = useState<string[]>([])
-
-	useEffect(() => {
-		if (!audioRef.current) return
-		audioRef.current.currentTime = 0
-
-		const playPromise = audioRef.current.play()
-		if (playPromise && playPromise.catch) playPromise.catch(() => {})
-		setIsPlaying(true)
-	}, [task])
+	
+  useEffect(() => {
+    audioRef.current?.stop()
+    audioRef.current?.play()
+    setIsPlaying(true)
+  }, [task])
 
 	const checkHandle = () => {
 		if (!selected.length) return

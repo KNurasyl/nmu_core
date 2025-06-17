@@ -1,11 +1,11 @@
-import AudioPlayer from '@/components/player/AudioPlayer'
+import AudioPlayer, { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { Row } from 'antd'
 import { Volume2 } from 'lucide-react'
 import { RefObject } from 'react'
 
 interface IProps {
 	isPlaying: boolean
-	audioRef: RefObject<HTMLAudioElement | null>
+	audioRef: RefObject<AudioPlayerHandle | null>
 	handlePlay: VoidFunction
 	handleEnd: VoidFunction
 	audioSrc: string
