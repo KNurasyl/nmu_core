@@ -38,12 +38,11 @@ const TaskG = ({ onFinished }: IProps) => {
 	const audioRef = useRef<AudioPlayerHandle>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [selected, setSelected] = useState<string[]>([])
-	
-  useEffect(() => {
-    audioRef.current?.stop()
-    audioRef.current?.play()
-    setIsPlaying(true)
-  }, [task])
+
+	useEffect(() => {
+		audioRef.current?.play()
+		setIsPlaying(true)
+	}, [task])
 
 	const checkHandle = () => {
 		if (!selected.length) return

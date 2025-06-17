@@ -55,7 +55,6 @@ const TaskA = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		audioRef.current?.stop() // сбрасываем старый трек
 		audioRef.current?.play() // запускаем новый
 		setIsPlaying(true)
 	}, [task])
