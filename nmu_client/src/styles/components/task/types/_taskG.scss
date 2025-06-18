@@ -21,16 +21,17 @@
 
 		& .audio_blog {
 			width: 25%;
-			height: 50px;
+			height: 120%;
 
 			& button {
 				width: 100%;
+				height: 100% !important;
 			}
 
 			.audio_container {
 				position: relative;
 				width: 100%;
-				height: 50px;
+				height: 100%;
 
 				.wave {
 					position: absolute;
@@ -51,7 +52,7 @@
 					z-index: 2;
 					width: 100%;
 					height: 100%;
-					border-radius: 20px;
+					border-radius: 50%;
 					background-color: #444ce7;
 					display: flex;
 					align-items: center;
@@ -92,7 +93,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 50px !important;
+			height: 60px !important;
 			margin: 0 !important;
 		}
 

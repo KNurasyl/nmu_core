@@ -40,7 +40,7 @@ const FooterPagination = () => {
 		const handleScroll = () => {
 			const currentY = window.scrollY
 
-			if (currentY > lastScrollY.current && currentY > 40) {
+			if (currentY > lastScrollY.current && currentY > 1) {
 				setHide(true)
 			} else if (currentY < lastScrollY.current) {
 				setHide(false)
