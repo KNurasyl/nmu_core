@@ -92,12 +92,9 @@ export const useTaskStore = create<TaskState>()(
 				set({
 					allTasks: [],
 					currentTask: null,
-					currentLessonId: null,
-					currentCourseId: null,
 					progress: 0,
 					correctCount: 0,
 					wrongCount: 0,
-					trialPeriod: null,
 					score: 0,
 					status: 'inProgress',
 				}),
