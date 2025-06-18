@@ -1,3 +1,5 @@
+'use client'
+
 import { Row } from 'antd'
 import { SetStateAction } from 'react'
 
@@ -15,11 +17,7 @@ interface IProps {
 
 const TaskVarinats = ({ variants, selected, setSelected }: IProps) => {
 	return (
-		<Row
-			className={`task_a__variants long-variant`}
-			gutter={[12, 12]}
-			justify='center'
-		>
+		<Row className={`task_a__variants`} gutter={[12, 12]} justify='center'>
 			{variants?.map((v, i) => (
 				<div
 					key={i}

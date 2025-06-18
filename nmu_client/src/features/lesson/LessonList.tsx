@@ -25,9 +25,6 @@ interface IProps {
 	courseId: string
 }
 
-const thumbnail =
-	'https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1903347665-60d7ef3d9947f68dba83f0da0b4a8e093c5d09afb94a3407b0c27dceb3a607c1-d_100x75&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png'
-
 const LessonList = ({ courseId }: IProps) => {
 	const router = useRouter()
 	const user = useAuthStore(state => state.user)
@@ -102,9 +99,7 @@ const LessonList = ({ courseId }: IProps) => {
 						key={lesson._id}
 						lessonName={lesson.lessonName}
 						description={lesson.description}
-						thumbnail={thumbnail}
 						progress={lesson.score}
-						completed={lesson.completed}
 						onClick={() => router.push(`/lesson/${lesson._id}`)}
 					/>
 				))}

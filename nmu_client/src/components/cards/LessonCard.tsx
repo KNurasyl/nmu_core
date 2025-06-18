@@ -1,26 +1,18 @@
 import { Card, Progress, Typography } from 'antd'
 import Image from 'next/image'
+import lesson_icon from '../../assets/images/lesson_card_icon.png'
 
 const { Paragraph } = Typography
 const { Meta } = Card
 
 interface IProps {
 	lessonName: string
-	thumbnail: string
 	description?: string | null
 	progress: number
 	onClick: VoidFunction
-	completed: boolean
 }
 
-const LessonCard = ({
-	lessonName,
-	thumbnail,
-	description,
-	progress,
-	onClick,
-	completed,
-}: IProps) => {
+const LessonCard = ({ lessonName, description, progress, onClick }: IProps) => {
 	return (
 		<Card
 			hoverable
@@ -29,31 +21,12 @@ const LessonCard = ({
 			cover={
 				<div className='lesson_card__image-wrapper'>
 					<Image
-						src={thumbnail}
-						alt={lessonName}
-						fill
-						style={{ objectFit: 'cover' }}
-						priority
+						src={lesson_icon}
+						alt={'logo'}
+						height={200}
+						width={160}
+						style={{ cursor: 'pointer' }}
 					/>
-					{completed && (
-						<div className='lesson_card__completed-icon'>
-							<svg width='36' height='36' viewBox='0 0 24 24' fill='none'>
-								<circle
-									cx='12'
-									cy='12'
-									r='12'
-									fill='#52C41A'
-									fillOpacity='0.6'
-								/>
-								<path
-									d='M7 13l3 3 7-7'
-									stroke='#fff'
-									strokeWidth='2.2'
-									strokeLinecap='round'
-								/>
-							</svg>
-						</div>
-					)}
 				</div>
 			}
 		>
@@ -62,10 +35,7 @@ const LessonCard = ({
 					<Typography className='lesson_card__title'>{lessonName}</Typography>
 				}
 				description={
-					<Paragraph
-						className='lesson_card__description'
-						ellipsis={{ rows: 2 }}
-					>
+					<Paragraph className='lesson_card__description'>
 						{description || 'Описание отсутствует'}
 					</Paragraph>
 				}
@@ -74,7 +44,7 @@ const LessonCard = ({
 			<Progress
 				percent={progress}
 				size='small'
-				strokeColor='#1890ff'
+				strokeColor='#4a7a48'
 				className='lesson_card__progress'
 			/>
 		</Card>

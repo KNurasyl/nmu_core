@@ -70,7 +70,7 @@ const CourseCard = ({
 					<Progress
 						percent={progress}
 						showInfo={false}
-						strokeColor='#2d3eea'
+						strokeColor='#4a7a48'
 						trailColor='#5556'
 						size='small'
 					/>

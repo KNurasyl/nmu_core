@@ -1,22 +1,15 @@
 'use client'
 
 import { useAuthStore } from '@/stores/auth.store'
-import {
-	BookOutlined,
-	GlobalOutlined,
-	LogoutOutlined,
-	SettingOutlined,
-	UserOutlined,
-	VerticalAlignBottomOutlined,
-	VerticalAlignTopOutlined,
-} from '@ant-design/icons'
-import { Dropdown, MenuProps } from 'antd'
 import { Footer } from 'antd/es/layout/layout'
+import { House, Languages, LogOut, User } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { toast } from 'react-toastify'
+import AllahText from '../../../assets/images/Allah_text_logo.png'
 
 const FooterPagination = () => {
 	const [hide, setHide] = useState(false)
@@ -27,7 +20,7 @@ const FooterPagination = () => {
 	const router = useRouter()
 	const { setUser } = useAuthStore(state => state)
 
-	const handleMenuClick: MenuProps['onClick'] = useCallback(
+	const handleMenuClick = useCallback(
 		({ key }: { key: string }) => {
 			if (key === '/profile') router.push('/profile')
 			if (key === 'logout') {
@@ -59,85 +52,50 @@ const FooterPagination = () => {
 		return () => window.removeEventListener('scroll', handleScroll)
 	}, [])
 
-	const navItems = [
-		{
-			key: '/',
-			label: t('courses'),
-			icon: <BookOutlined />,
-			type: 'link',
-		},
-		{
-			key: 'settings',
-			label: t('settings'),
-			icon: <SettingOutlined />,
-			type: 'dropdown',
-		},
-	]
-
-	const menuItems: MenuProps['items'] = [
-		{
-			key: '/profile',
-			label: t('profile'),
-			icon: <UserOutlined />,
-		},
-		{
-			key: 'lang',
-			label: t('language'),
-			icon: <GlobalOutlined />,
-		},
-		{
-			key: 'logout',
-			label: t('logout'),
-			icon: <LogoutOutlined />,
-			danger: true,
-		},
-	]
-
 	return (
 		<Footer className={`footer_mobile${hide ? ' footer--hidden' : ''}`}>
-			<button
-				className={`footer-flag${hide ? ' footer-flag--only' : ''}`}
-				onClick={() => setHide(h => !h)}
-				aria-label={hide ? 'Показать меню' : 'Скрыть меню'}
-			>
-				<span
-					style={{
-						fontSize: 22,
-						display: 'block',
-					}}
-				>
-					{!hide ? (
-						<VerticalAlignBottomOutlined />
-					) : (
-						<VerticalAlignTopOutlined />
-					)}
+			<Link href='/' className={`nav-btn ${pathname === '/' ? 'active' : ''}`}>
+				<span className='nav-icon'>
+					<House size={28} />
 				</span>
-			</button>
-			{navItems.map(item =>
-				item.type === 'link' ? (
-					<Link
-						href={item.key}
-						key={item.key}
-						className={`nav-btn${pathname === item.key ? ' active' : ''}`}
-					>
-						<span className='nav-icon'>{item.icon}</span>
-						<span className='nav-label'>{item.label}</span>
-					</Link>
-				) : (
-					<Dropdown
-						key={item.key}
-						menu={{ items: menuItems, onClick: handleMenuClick }}
-						placement='top'
-						arrow
-						trigger={['click']}
-					>
-						<button className='nav-btn' type='button'>
-							<span className='nav-icon'>{item.icon}</span>
-							<span className='nav-label'>{item.label}</span>
-						</button>
-					</Dropdown>
-				)
-			)}
+			</Link>
+
+			<Link
+				href='/profile'
+				className={`nav-btn ${pathname === '/profile' ? 'active' : ''}`}
+			>
+				<span className='nav-icon'>
+					<User size={28} />
+				</span>
+			</Link>
+
+			<span className='nav-btn-logo'>
+				<Image
+					src={AllahText}
+					alt={'logo'}
+					height={65}
+					width={65}
+					style={{ cursor: 'pointer' }}
+				/>
+			</span>
+
+			<span
+				className='nav-btn'
+				onClick={() => handleMenuClick({ key: 'lang' })}
+			>
+				<span className='nav-icon'>
+					<Languages size={28} />
+				</span>
+			</span>
+
+			<span
+				className='nav-btn'
+				onClick={() => handleMenuClick({ key: 'logout' })}
+			>
+				<span className='nav-icon'>
+					<LogOut size={28} />
+				</span>
+			</span>
 		</Footer>
 	)
 }

@@ -11,7 +11,7 @@ void i18n.use(initReactI18next).init({
 		ru: { common: ru },
 		kk: { common: kk },
 	},
-	lng: 'ru',
+	lng: 'kk',
 	fallbackLng: 'ru',
 	interpolation: { escapeValue: false },
 })

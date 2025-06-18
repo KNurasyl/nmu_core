@@ -5,27 +5,61 @@
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 
 	& .ant-card-body {
-		padding: 15px;
-	}
-
-	&__header {
+		padding: 10px;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+	}
+
+	&__icon {
+		height: 100px;
+		width: 150px;
+		background-image: url('../../../assets/images/task_card_icon.png');
+		background-size: 100% 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-right: 10px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		max-width: 65% !important;
 	}
 
 	&__title {
 		margin: 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #708274 !important;
+		font-weight: 700 !important;
+		font-size: 17px !important;
 	}
 
 	&__description {
-		margin-top: 8px;
-		font-size: 14px;
-		color: #555;
+		margin: 0 !important;
+		margin-top: 5px !important;
+		font-size: 14px !important;
+		color: #95a193 !important;
+		font-weight: 600 !important;
 	}
 
 	&--completed {
-		background-color: #f6ffed; // зелёный фон
-		border: 1px solid #b7eb8f;
+		box-shadow: 0 0 6px rgba(255, 223, 100, 0.6),
+			0 0 12px rgba(255, 200, 55, 0.3);
+	}
+
+	&__score-circle {
+		width: 32px;
+		height: 32px;
+		background-color: #f6ffed;
+		border: 2px solid #52c41a;
+		border-radius: 50%;
+		color: #389e0d;
+		font-size: 11px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 10px;
 	}
 }

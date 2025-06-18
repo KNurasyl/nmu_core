@@ -76,8 +76,6 @@ const LessonPage = ({ lessonId }: IProps) => {
 								description={localizeDesc}
 								completed={task?.completed}
 								score={task?.score}
-								completedText={t('completed')}
-								inProgressText={t('inProgress')}
 								noDescText={t('noDesc')}
 								onClick={() => onClickHandler(task?._id)}
 							/>
