@@ -1,4 +1,3 @@
-import { CheckCircleTwoTone } from '@ant-design/icons'
 import { Card, Typography } from 'antd'
 
 const { Title, Paragraph } = Typography
@@ -31,12 +30,11 @@ const TaskCard = ({
 			<div className='task_card__text'>
 				<Title level={5} className='task_card__title'>
 					{title}
-{completed && (
-  <div className="task_card__score-circle">
-    <span>{score ?? 0}</span>
-  </div>
-)}
-
+					{completed && (
+						<div className='task_card__score-circle'>
+							<span>{score ?? 0}</span>
+						</div>
+					)}
 				</Title>
 
 				<Paragraph className='task_card__description'>
