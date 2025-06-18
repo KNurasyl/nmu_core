@@ -6,3 +6,12 @@
 body {
 	height: 100vh;
 }
+
+.ant-card-body {
+	padding-right: 12px !important;
+	padding-left: 12px !important;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}

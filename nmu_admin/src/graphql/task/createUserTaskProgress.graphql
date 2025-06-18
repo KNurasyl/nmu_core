@@ -1,0 +1,8 @@
+mutation CreateUserTaskProgress($input: CreateUserTaskProgressInput!) {
+	createUserTaskProgress(createUserTaskProgressInput: $input) {
+		_id
+		completed
+		completedAt
+		score
+	}
+}
