@@ -68,7 +68,7 @@ const TaskVariants = ({
 						<div className='audio_button'>
 							<Volume2
 								className='volume_icon'
-								color={selected === v.arabicLetter ? '#fff' : '#444ce7'}
+								color={selected === v.arabicLetter ? '#c27a4b' : '#5f3215'}
 							/>
 						</div>
 					</div>

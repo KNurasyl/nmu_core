@@ -3,7 +3,6 @@
 	height: fit-content;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 15px;
 
 	&__title {
 		font-size: 16px;
@@ -11,6 +10,11 @@
 		text-align: center;
 		&::first-letter {
 			text-transform: uppercase;
+		}
+
+		@media (max-width: 768px) {
+			font-weight: 800;
+			color: #572e12;
 		}
 	}
 }

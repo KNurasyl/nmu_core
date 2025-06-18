@@ -9,8 +9,12 @@ interface IProps {
 const TaskProgress = ({ percent, onClose }: IProps) => {
 	return (
 		<Row className='task_progress'>
-			<Progress percent={percent} showInfo={false} strokeColor='#444CE7' />
-			<Button icon={<CloseOutlined />} className='close_btn' onClick={onClose}/>
+			<Progress percent={percent} showInfo={false} strokeColor='#572e12' />
+			<Button
+				icon={<CloseOutlined color='#572e12' />}
+				className='close_btn'
+				onClick={onClose}
+			/>
 		</Row>
 	)
 }

@@ -68,8 +68,11 @@
 		.letter-btn {
 			width: 80px;
 			height: 60px;
-			font-size: 2rem;
 			border-radius: 12px;
+			font-size: clamp(30px, 12vw, 55px);
+			border: 3px solid #d2ab70;
+			background-color: #fef8e2;
+			color: #5f3215;
 		}
 
 		.task-letters-display {
@@ -79,9 +82,12 @@
 			width: 100%;
 		}
 		.display-letter {
-			font-size: 1.8rem;
 			padding: 6px 10px;
-			border-radius: 6px;
+			border-radius: 10px;
+			font-size: clamp(30px, 12vw, 55px);
+			border: 3px solid #d2ab70;
+			background-color: #fef8e2;
+			color: #5f3215;
 		}
 	}
 
@@ -113,6 +119,13 @@
 
 		@media (max-width: 768px) {
 			width: 100%;
+			color: #5f3215;
+			font-weight: 800;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f2cc8e;
+			border: 3px solid #d2ab70;
 		}
 
 		&:hover {

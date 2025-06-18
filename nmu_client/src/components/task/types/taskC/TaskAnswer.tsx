@@ -31,7 +31,7 @@ const TaskAnswer = ({
 					<div className='wave wave2' />
 					<div className='wave wave3' />
 					<div className='audio_button'>
-						<Volume2 className='volume_icon' color='#fff' />
+						<Volume2 className='volume_icon' color='#5f3215' />
 					</div>
 				</div>
 			</AudioPlayer>
