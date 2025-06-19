@@ -13,7 +13,6 @@ export const AuthPage = () => {
 
 	const router = useRouter()
 	const { setUser, setAccessToken } = useAuthStore(state => state)
-	const setLoading
 
 	const [login, { loading }] = useMutation(LOGIN, {
 		onCompleted(data) {
