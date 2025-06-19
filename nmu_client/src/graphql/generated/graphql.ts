@@ -101,7 +101,9 @@ export type CreateUserTaskProgressInput = {
   /** Дата выполнения */
   completedAt?: InputMaybe<Scalars['DateTime']['input']>;
   courseId: Scalars['ID']['input'];
+  elapsedTime?: InputMaybe<Scalars['String']['input']>;
   lessonId: Scalars['ID']['input'];
+  results?: InputMaybe<Scalars['JSONObject']['input']>;
   /** Оценка или процент выполнения (0–100) */
   score?: InputMaybe<Scalars['Int']['input']>;
   taskId: Scalars['ID']['input'];
@@ -513,8 +515,10 @@ export type UpdateUserTaskProgressInput = {
   /** Дата выполнения */
   completedAt?: InputMaybe<Scalars['DateTime']['input']>;
   courseId?: InputMaybe<Scalars['ID']['input']>;
+  elapsedTime?: InputMaybe<Scalars['String']['input']>;
   id: Scalars['String']['input'];
   lessonId?: InputMaybe<Scalars['ID']['input']>;
+  results?: InputMaybe<Scalars['JSONObject']['input']>;
   /** Оценка или процент выполнения (0–100) */
   score?: InputMaybe<Scalars['Int']['input']>;
   taskId?: InputMaybe<Scalars['ID']['input']>;
@@ -588,6 +592,8 @@ export type UserTaskProgress = {
   completed: Scalars['Boolean']['output'];
   /** Дата выполнения */
   completedAt?: Maybe<Scalars['DateTime']['output']>;
+  elapsedTime?: Maybe<Scalars['String']['output']>;
+  results: Scalars['JSONObject']['output'];
   /** Optional score or percent (0-100) */
   score?: Maybe<Scalars['Int']['output']>;
   task: Task;

@@ -11,7 +11,7 @@ interface IProps {
 const TaskStatusAlert = ({ status, message, btnText, onClick }: IProps) => {
 	return status !== 'inProgress' ? (
 		<>
-			<div className='backdrop' />
+			<div className='backdrop'></div>
 			<Row
 				className={`task_a__status-alert ${status}`}
 				justify='center'

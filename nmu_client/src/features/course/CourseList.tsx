@@ -8,18 +8,19 @@ import {
 import { USER_COURSE_PROGRESS_OPTIONAL } from '@/graphql/progress'
 import { GET_USER_BY_ID } from '@/graphql/user'
 import { useAuthStore } from '@/stores/auth.store'
+import { useLoadingStore } from '@/stores/load.store'
 import { useTaskStore } from '@/stores/task.store'
 import { useQuery } from '@apollo/client'
-import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const CourseList = () => {
 	const router = useRouter()
 	const { t } = useTranslation('common')
 	const user = useAuthStore(state => state.user)
-	const { setCurrenCourseId, setTrialPeriod } = useTaskStore(state => state)
+	const { setCurrentCourseId, setTrialPeriod } = useTaskStore(state => state)
+	const setLoading = useLoadingStore(state => state.setLoading)
 
 	const { data, loading } = useQuery<GetUserByIdQuery>(GET_USER_BY_ID, {
 		variables: { id: user?._id },
@@ -48,32 +49,32 @@ const CourseList = () => {
 		[courseProgressData, data]
 	)
 
+	useEffect(() => {
+		setLoading(loading || progressCourseLoad)
+	}, [loading, progressCourseLoad])
+
 	const onClickHandler = (id?: string, trialPeriod?: boolean) => {
 		router.push(`/${id}`)
-		setCurrenCourseId(id)
+		setCurrentCourseId(id)
 		setTrialPeriod(trialPeriod || null)
 	}
 
 	return (
-		<Spin spinning={loading || progressCourseLoad}>
-			<div className='course_list'>
-				{courseList?.map(course => (
-					<CourseCard
-						key={course._id}
-						title={course.course.courseName}
-						description={course?.course?.description}
-						progress={course?.score}
-						active={course?.active}
-						trialPeriod={course?.trialPeriod}
-						lockText={t('lock')}
-						trialPeriodText={t('trialPeriodText')}
-						onClick={() =>
-							onClickHandler(course.course._id, course?.trialPeriod)
-						}
-					/>
-				))}
-			</div>
-		</Spin>
+		<div className='course_list'>
+			{courseList?.map(course => (
+				<CourseCard
+					key={course._id}
+					title={course.course.courseName}
+					description={course?.course?.description}
+					progress={course?.score}
+					active={course?.active}
+					trialPeriod={course?.trialPeriod}
+					lockText={t('lock')}
+					trialPeriodText={t('trialPeriodText')}
+					onClick={() => onClickHandler(course.course._id, course?.trialPeriod)}
+				/>
+			))}
+		</div>
 	)
 }
 

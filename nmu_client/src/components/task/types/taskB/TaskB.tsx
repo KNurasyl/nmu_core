@@ -1,5 +1,6 @@
 'use client'
 
+import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { getRandomItems } from '@/lib/utils/getRandomItems'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskAB } from '@/types/tasks'
@@ -11,7 +12,6 @@ import TaskResult from '../../TaskResult'
 import TaskStatusAlert from '../../TaskStatusAlert'
 import TaskAnswer from './TaskAnswer'
 import TaskVariants from './TaskVariants'
-import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 
 interface IProps {
 	onFinished: VoidFunction
@@ -31,6 +31,7 @@ const TaskB = ({ onFinished }: IProps) => {
 		score,
 		correctCount,
 		wrongCount,
+		elapsedTime,
 	} = useTaskStore(state => state)
 
 	const task = currentTask as ITaskAB
@@ -58,10 +59,10 @@ const TaskB = ({ onFinished }: IProps) => {
 		if (!selected) return
 		if (selected === task?.correctAnswer?.arabicLetter) {
 			setStatus('success')
-			markCorrect()
+			markCorrect(task)
 		} else {
 			setStatus('error')
-			markWrong()
+			markWrong(task)
 			addErrorTask(task)
 		}
 	}
@@ -120,7 +121,7 @@ const TaskB = ({ onFinished }: IProps) => {
 				totalAttemptTxt={t('totalAttemptTxt')}
 				finishBtnTxt={t('finishBtnTxt')}
 				timeTxt={t('timeTxt')}
-				timeout={'05:00'}
+				timeout={elapsedTime}
 				onClick={onFinished}
 			/>
 		</Row>

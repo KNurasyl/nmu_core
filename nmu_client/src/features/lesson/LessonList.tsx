@@ -15,11 +15,11 @@ import {
 	USER_LESSON_PROGRESS_OPTIONAL,
 } from '@/graphql/progress'
 import { useAuthStore } from '@/stores/auth.store'
+import { useLoadingStore } from '@/stores/load.store'
 import { useTaskStore } from '@/stores/task.store'
 import { useQuery } from '@apollo/client'
-import { Spin } from 'antd'
 import { useRouter } from 'next/navigation'
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 
 interface IProps {
 	courseId: string
@@ -29,6 +29,7 @@ const LessonList = ({ courseId }: IProps) => {
 	const router = useRouter()
 	const user = useAuthStore(state => state.user)
 	const trialPeriod = useTaskStore(state => state.trialPeriod)
+	const setLoading = useLoadingStore(state => state.setLoading)
 
 	const { data: courseData, loading: courseLoad } =
 		useQuery<GetCourseByIdQuery>(GET_COURSE_BY_ID, {
@@ -64,6 +65,12 @@ const LessonList = ({ courseId }: IProps) => {
 			},
 		})
 
+	useEffect(() => {
+		setLoading(
+			loading || progressCourseLoad || progressCourseLoad || courseLoad
+		)
+	}, [loading, progressLessonLoad, progressCourseLoad, courseLoad])
+
 	const lessons = useMemo(
 		() =>
 			(lessonsData?.getLessonsByCourseId ?? []).map(lesson => {
@@ -83,11 +90,7 @@ const LessonList = ({ courseId }: IProps) => {
 	const courseProgress = courseProgressData?.userCourseProgressByUserCourse
 
 	return (
-		<Spin
-			spinning={
-				loading || progressCourseLoad || progressLessonLoad || courseLoad
-			}
-		>
+		<>
 			<LessonPromo
 				courseName={courseData?.getCourseById?.courseName}
 				description={courseData?.getCourseById?.description}
@@ -104,7 +107,7 @@ const LessonList = ({ courseId }: IProps) => {
 					/>
 				))}
 			</div>
-		</Spin>
+		</>
 	)
 }
 

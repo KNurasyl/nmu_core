@@ -1,5 +1,6 @@
 import { Field, ID, Int, ObjectType } from '@nestjs/graphql';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { GraphQLJSONObject } from 'graphql-type-json';
 import { Types } from 'mongoose';
 import { Task } from 'src/task/entities/task.entity';
 import { User } from 'src/user/entities/user.entity';
@@ -21,6 +22,18 @@ export class UserTaskProgress {
   @Field(() => Boolean)
   @Prop({ default: false })
   completed: boolean;
+
+  @Field(() => String, { nullable: true })
+  @Prop({ default: '00:00' })
+  elapsedTime: string;
+
+  @Prop({ type: Object, required: true })
+  @Field(() => GraphQLJSONObject)
+  results: {
+    taskType: string;
+    correct: Record<string, any>[];
+    inCorrect: Record<string, any>[];
+  };
 
   @Field(() => Int, { nullable: true, description: 'Optional score or percent (0-100)' })
   @Prop({ required: false })

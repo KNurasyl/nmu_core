@@ -43,8 +43,7 @@ export const LoginForm = ({
 	onFinish,
 }: IProps) => {
 	return (
-		<Spin spinning={loading}>
-			<Row className='login_form'>
+<Row className='login_form'>
 				<Col
 					xs={24}
 					sm={24}
@@ -115,6 +114,5 @@ export const LoginForm = ({
 					</div>
 				</Col>
 			</Row>
-		</Spin>
 	)
 }

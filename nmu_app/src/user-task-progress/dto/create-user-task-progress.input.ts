@@ -1,5 +1,6 @@
 import { Field, ID, InputType, Int } from '@nestjs/graphql';
-import { IsBoolean, IsDate, IsInt, IsMongoId, IsOptional } from 'class-validator';
+import { IsBoolean, IsDate, IsInt, IsMongoId, IsOptional, IsString } from 'class-validator';
+import { GraphQLJSONObject } from 'graphql-type-json';
 
 @InputType()
 export class CreateUserTaskProgressInput {
@@ -18,6 +19,18 @@ export class CreateUserTaskProgressInput {
   @Field(() => ID)
   @IsMongoId()
   courseId: string;
+
+  @Field(() => GraphQLJSONObject, { nullable: true })
+  @IsOptional()
+  results: {
+    taskType: string;
+    correct: Record<string, any>[];
+    inCorrect: Record<string, any>[];
+  };
+
+  @Field(() => String, { nullable: true })
+  @IsString()
+  elapsedTime: string;
 
   @Field(() => Boolean, { defaultValue: false })
   @IsBoolean()

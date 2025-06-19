@@ -30,6 +30,7 @@ const TaskC = ({ onFinished }: IProps) => {
 		score,
 		correctCount,
 		wrongCount,
+		elapsedTime
 	} = useTaskStore(state => state)
 
 	const task = currentTask as ITaskC
@@ -55,10 +56,10 @@ const TaskC = ({ onFinished }: IProps) => {
 		if (!selected) return
 		if (selected === task?.correctLetter?.arabicLetter) {
 			setStatus('success')
-			markCorrect()
+			markCorrect(task)
 		} else {
 			setStatus('error')
-			markWrong()
+			markWrong(task)
 			addErrorTask(task)
 		}
 	}
@@ -105,7 +106,7 @@ const TaskC = ({ onFinished }: IProps) => {
 				totalAttemptTxt={t('totalAttemptTxt')}
 				finishBtnTxt={t('finishBtnTxt')}
 				timeTxt={t('timeTxt')}
-				timeout={'05:00'}
+				timeout={elapsedTime}
 				onClick={onFinished}
 			/>
 		</Row>

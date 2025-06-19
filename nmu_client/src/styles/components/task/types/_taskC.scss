@@ -204,6 +204,10 @@
 			background-color: #5c66f5;
 			box-shadow: 0 6px 18px rgba(68, 76, 231, 0.35);
 			transform: translateY(-2px);
+
+			@media (max-width: 768px) {
+				background-color: #f2cc8e;
+			}
 		}
 
 		&:active {

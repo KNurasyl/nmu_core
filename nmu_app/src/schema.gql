@@ -86,7 +86,9 @@ input CreateUserTaskProgressInput {
   """Дата выполнения"""
   completedAt: DateTime
   courseId: ID!
+  elapsedTime: String
   lessonId: ID!
+  results: JSONObject
 
   """Оценка или процент выполнения (0–100)"""
   score: Int
@@ -281,8 +283,10 @@ input UpdateUserTaskProgressInput {
   """Дата выполнения"""
   completedAt: DateTime
   courseId: ID
+  elapsedTime: String
   id: String!
   lessonId: ID
+  results: JSONObject
 
   """Оценка или процент выполнения (0–100)"""
   score: Int
@@ -359,6 +363,8 @@ type UserTaskProgress {
 
   """Дата выполнения"""
   completedAt: DateTime
+  elapsedTime: String
+  results: JSONObject!
 
   """Optional score or percent (0-100)"""
   score: Int

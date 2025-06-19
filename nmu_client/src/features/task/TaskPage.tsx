@@ -7,10 +7,11 @@ import { GetTaskByIdQuery } from '@/graphql/generated/graphql'
 import { CREATE_USER_TASK_PROGRESS, GET_TASK_BY_ID } from '@/graphql/task'
 import { prepareTasks } from '@/lib/utils/prepareTasks'
 import { useAuthStore } from '@/stores/auth.store'
+import { useLoadingStore } from '@/stores/load.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskE } from '@/types/tasks'
 import { useMutation, useQuery } from '@apollo/client'
-import { Row, Spin } from 'antd'
+import { Row } from 'antd'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -24,14 +25,18 @@ const TaskPage = ({ taskId }: IProps) => {
 	const router = useRouter()
 	const { i18n, t } = useTranslation('common')
 	const { user } = useAuthStore(state => state)
+	const setLoading = useLoadingStore(state => state.setLoading)
 	const {
 		setAllTasks,
 		setCurrentTask,
+		setTaskType,
 		progress,
 		currentCourseId,
 		currentLessonId,
 		currentTask,
 		score,
+		elapsedTime,
+		taskHistory,
 	} = useTaskStore(state => state)
 
 	const { data, loading } = useQuery<GetTaskByIdQuery>(GET_TASK_BY_ID, {
@@ -52,6 +57,12 @@ const TaskPage = ({ taskId }: IProps) => {
 					score: score,
 					taskId: taskId,
 					userId: user?._id || '',
+					elapsedTime: elapsedTime,
+					results: {
+						taskType: taskHistory?.taskType,
+						correct: taskHistory?.correct,
+						inCorrect: taskHistory?.inCorrect,
+					},
 				},
 			},
 			onCompleted() {
@@ -99,21 +110,25 @@ const TaskPage = ({ taskId }: IProps) => {
 				setAllTasks(tasks)
 				setCurrentTask(tasks[0] || null)
 			}
+
+			setTaskType(task?.type || '')
 		}
 	}, [localizedData, setAllTasks, setCurrentTask])
+
+	useEffect(() => {
+		setLoading(loading || progressLoad)
+	}, [loading, progressLoad])
 
 	const onFinishedHandler = () => {
 		createUserTaskProgress()
 	}
 
 	return (
-		<Spin spinning={loading || progressLoad}>
-			<Row className='task_page'>
-				<TaskProgress percent={progress} onClose={() => router.back()} />
-				<TaskDesc description={localizeDesc} />
-				<TaskRenderer type={task?.type} onFinished={onFinishedHandler} />
-			</Row>
-		</Spin>
+		<Row className='task_page'>
+			<TaskProgress percent={progress} onClose={() => router.back()} />
+			<TaskDesc description={localizeDesc} />
+			<TaskRenderer type={task?.type} onFinished={onFinishedHandler} />
+		</Row>
 	)
 }
 

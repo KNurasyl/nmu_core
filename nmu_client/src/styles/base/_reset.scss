@@ -18,3 +18,28 @@ body {
 [class*=' ant-'] {
 	font-family: var(--font-inter), sans-serif !important;
 }
+
+.spinner-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 99999;
+	background: rgba(245, 235, 215, 0.6); /* светлое мягкое затемнение */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Можно добавить fade эффект */
+	transition: opacity 0.3s;
+}
+
+.spinner-img-wrapper {
+	width: 96px;
+	height: 96px;
+	position: relative;
+	animation: spinner-rotate 1.2s linear infinite;
+}
+
+@keyframes spinner-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
