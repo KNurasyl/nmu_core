@@ -49,7 +49,7 @@ const TaskVariants = ({
 			gutter={[12, 12]}
 			justify='center'
 		>
-			{variants?.map((v, i) => {
+			{variants?.map(v => {
 				const refKey = `${v.lessonCode}_${v.audioFileName}`
 				return (
 					<AudioPlayer
