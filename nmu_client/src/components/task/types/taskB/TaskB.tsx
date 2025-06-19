@@ -36,8 +36,9 @@ const TaskB = ({ onFinished }: IProps) => {
 
 	const task = currentTask as ITaskAB
 
-	const audioRefs = useRef<(AudioPlayerHandle | null)[]>([])
-	const [playingIndex, setPlayingIndex] = useState<number | null>(null)
+	// Новый объект-реф
+	const audioRefs = useRef<Record<string, AudioPlayerHandle | null>>({})
+	const [playingIndex, setPlayingIndex] = useState<string | null>(null)
 	const [selected, setSelected] = useState<string | null>(null)
 
 	const variants = useMemo(() => {
@@ -69,18 +70,20 @@ const TaskB = ({ onFinished }: IProps) => {
 
 	const nextHandler = () => {
 		setStatus('inProgress')
+		setPlayingIndex(null)
 		setSelected(null)
+		// Остановить все плееры
+		Object.values(audioRefs.current).forEach(ref => ref?.stop())
 		nextTask()
 	}
 
-	const handlePlay = (idx: number) => {
-		// Остановить всё кроме выбранного
-		audioRefs.current.forEach((audio, i) => {
-			if (audio && i !== idx) audio.pause()
+	const handlePlay = (refKey: string) => {
+		// Остановить все кроме текущего
+		Object.entries(audioRefs.current).forEach(([key, audio]) => {
+			if (audio && key !== refKey) audio.stop()
 		})
-		// Запустить выбранный
-		setPlayingIndex(idx)
-		audioRefs.current[idx]?.play()
+		setPlayingIndex(refKey)
+		audioRefs.current[refKey]?.play()
 	}
 
 	const handleEnd = () => {

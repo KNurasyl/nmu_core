@@ -7,8 +7,19 @@
 
 	& .close_btn {
 		width: 5%;
+		font-size: 25px;
+		font-weight: 900;
 		background: none;
 		border: none;
+
+		&:hover {
+			background: none !important;
+			border: none;
+		}
+
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
 	}
 
 	& .ant-progress {

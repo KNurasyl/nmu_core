@@ -1,9 +1,9 @@
 .task_e {
 	width: 100%;
 	justify-content: center;
+	height: 85dvh;
 
 	@media (max-width: 768px) {
-		height: 85dvh;
 		align-content: flex-start;
 	}
 
@@ -21,15 +21,15 @@
 		font-size: 3rem;
 		width: 100px;
 		height: 100px;
-		background: #f6f6ff;
-		border-radius: 16px;
+		background-color: #fef8e2;
+		border-radius: 12px;
 		box-shadow: 0 2px 12px rgba(80, 84, 255, 0.05);
-		border: 1.5px solid #e3e8ff;
+		border: 3px solid #d2ab70;
 		cursor: pointer;
 		user-select: none;
 		transition: all 0.16s;
 		font-weight: 600;
-		color: #2a2a2a;
+		color: #5f3215;
 	}
 
 	.task-letters-display {
@@ -46,14 +46,14 @@
 		justify-content: center;
 		font-size: 2.6rem;
 		font-weight: 700;
-		color: #2a2a2a;
-		background: #fff;
+		color: #5f3215;
+		background-color: #fef8e2;
 		border-radius: 10px;
+		border: 3px solid #d2ab70;
 		box-shadow: 0 1px 4px rgba(80, 84, 255, 0.07);
 		padding: 10px 20px;
 		margin: 0 3px;
 		cursor: pointer;
-		border: 2px solid #e3e8ff;
 		transition: 0.18s;
 		user-select: none;
 	}
@@ -68,11 +68,7 @@
 		.letter-btn {
 			width: 80px;
 			height: 60px;
-			border-radius: 12px;
 			font-size: clamp(30px, 12vw, 55px);
-			border: 3px solid #d2ab70;
-			background-color: #fef8e2;
-			color: #5f3215;
 		}
 
 		.task-letters-display {
@@ -83,11 +79,7 @@
 		}
 		.display-letter {
 			padding: 6px 10px;
-			border-radius: 10px;
 			font-size: clamp(30px, 12vw, 55px);
-			border: 3px solid #d2ab70;
-			background-color: #fef8e2;
-			color: #5f3215;
 		}
 	}
 
@@ -96,6 +88,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 20px;
 
 		@media (max-width: 768px) {
 			align-items: end;
@@ -103,11 +96,11 @@
 	}
 
 	& .task_a__check-btn {
-		background-color: #444ce7;
-		color: #fff;
+		background-color: #f2cc8e;
+		color: #5f3215;
 		padding: 14px 40px;
 		font-size: 20px;
-		border: none;
+		border: 3px solid #d2ab70;
 		border-radius: 12px;
 		cursor: pointer;
 		transition: all 0.25s ease;
@@ -116,26 +109,19 @@
 		overflow: hidden;
 		width: 250px;
 		height: 50px;
+		font-weight: 800;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		@media (max-width: 768px) {
 			width: 100%;
-			color: #5f3215;
-			font-weight: 800;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: #f2cc8e;
-			border: 3px solid #d2ab70;
 		}
 
 		&:hover {
-			background-color: #5c66f5;
+			background-color: #f2cc8e;
 			box-shadow: 0 6px 18px rgba(68, 76, 231, 0.35);
 			transform: translateY(-2px);
-
-			@media (max-width: 768px) {
-				background-color: #f2cc8e;
-			}
 		}
 
 		&:active {

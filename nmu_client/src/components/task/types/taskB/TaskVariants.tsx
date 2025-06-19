@@ -16,9 +16,9 @@ interface IProps {
 	setSelected: (value: SetStateAction<string | null>) => void
 	selected: string | null
 	handleEnd: VoidFunction
-	handlePlay: (idx: number) => void
-	playingIndex: number | null
-	audioRefs: RefObject<(AudioPlayerHandle | null)[]>
+	handlePlay: (refKey: string) => void
+	playingIndex: string | null
+	audioRefs: RefObject<Record<string, AudioPlayerHandle | null>>
 }
 
 const TaskVariants = ({
@@ -49,31 +49,34 @@ const TaskVariants = ({
 			gutter={[12, 12]}
 			justify='center'
 		>
-			{variants?.map((v, i) => (
-				<AudioPlayer
-					key={i}
-					ref={el => {
-						audioRefs.current[i] = el
-					}}
-					audioSrc={`${v.lessonCode}/${v.audioFileName}`}
-					onPlayCallback={() => handlePlay(i)}
-					onEndCallback={handleEnd}
-				>
-					<div
-						className={`task_b__variant ${
-							selected === v.arabicLetter ? 'selected' : ''
-						} ${playingIndex === i ? 'playing' : ''}`}
-						onClick={() => setSelected(v.arabicLetter)}
+			{variants?.map((v, i) => {
+				const refKey = `${v.lessonCode}_${v.audioFileName}`
+				return (
+					<AudioPlayer
+						key={refKey}
+						ref={el => {
+							audioRefs.current[refKey] = el
+						}}
+						audioSrc={`${v.lessonCode}/${v.audioFileName}`}
+						onPlayCallback={() => handlePlay(refKey)}
+						onEndCallback={handleEnd}
 					>
-						<div className='audio_button'>
-							<Volume2
-								className='volume_icon'
-								color={selected === v.arabicLetter ? '#c27a4b' : '#5f3215'}
-							/>
+						<div
+							className={`task_b__variant ${
+								selected === v.arabicLetter ? 'selected' : ''
+							} ${playingIndex === refKey ? 'playing' : ''}`}
+							onClick={() => setSelected(v.arabicLetter)}
+						>
+							<div className='audio_button'>
+								<Volume2
+									className='volume_icon'
+									color={selected === v.arabicLetter ? '#c27a4b' : '#5f3215'}
+								/>
+							</div>
 						</div>
-					</div>
-				</AudioPlayer>
-			))}
+					</AudioPlayer>
+				)
+			})}
 		</Row>
 	)
 }

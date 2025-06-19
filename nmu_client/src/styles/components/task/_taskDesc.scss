@@ -5,16 +5,18 @@
 	align-items: center;
 
 	&__title {
-		font-size: 16px;
+		font-size: 25px;
 		font-weight: 700;
 		text-align: center;
 		&::first-letter {
 			text-transform: uppercase;
 		}
 
+		font-weight: 800;
+		color: #572e12;
+
 		@media (max-width: 768px) {
-			font-weight: 800;
-			color: #572e12;
+			font-size: 16px;
 		}
 	}
 }
