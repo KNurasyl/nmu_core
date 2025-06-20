@@ -1,0 +1,3797 @@
+[
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 1,
+    "question": {
+      "item": "إِنِّى جَاعِلٌ فِى ٱلْأَرْضِ خَلِيفَةً",
+      "audioFileName": "4L-2T-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "إِنِّى جَاعِلٌ فِى ٱلْأَرْضِ خَلِيفَةْ",
+        "audioFileName": "4L-2T-1-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِنِّى جَاعِلٌ فِى ٱلْأَرْضِ خَلِيفَةً",
+        "audioFileName": "4L-2T-1-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنِّى جَاعِلٌ فِى ٱلْأَرْضِ خَلِيفَةُ",
+        "audioFileName": "4L-2T-1-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 2,
+    "question": {
+      "item": "فِی جَنَّةٍ عَالِیَةࣲ",
+      "audioFileName": "4L-2T-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "عَالِیَةَ",
+        "audioFileName": "4L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَالِیَةࣲ",
+        "audioFileName": "4L-2T-2-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَالِیَةْ",
+        "audioFileName": "4L-2T-2-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 3,
+    "question": {
+      "item": "نَارُ ٱللَّهِ ٱلۡمُوقَدَةُ",
+      "audioFileName": "4L-2T-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "نَارُ ٱللَّهِ ٱلۡمُوقَدَةْ",
+        "audioFileName": "4L-2T-3-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "نَارُ ٱللَّهِ ٱلۡمُوقَدَةٌ",
+        "audioFileName": "4L-2T-3-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَالِیَةْ",
+        "audioFileName": "4L-2T-3-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 4,
+    "question": {
+      "item": "فِی عَمَدࣲ مُّمَدَّدَةِ",
+      "audioFileName": "4L-2T-4.mp3"
+    },
+    "variants": [
+      {
+        "item": "فِی عَمَدࣲ مُّمَدَّدَةِۭ",
+        "audioFileName": "4L-2T-4-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فِی عَمَدࣲ مُّمَدَّدَةَ",
+        "audioFileName": "4L-2T-4-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فِی عَمَدࣲ مُّمَدَّدَةْ",
+        "audioFileName": "4L-2T-4-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 5,
+    "question": {
+      "item": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡقَارِعَةُ",
+      "audioFileName": "4L-2T-5.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡقَارِعَةْ",
+        "audioFileName": "4L-2T-5-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡقَارِعَةٍ",
+        "audioFileName": "4L-2T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَمَاۤ أَدۡرَىٰكَ مَا ٱلۡقَارِعَةُ",
+        "audioFileName": "4L-2T-5-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 6,
+    "question": {
+      "item": "نَارٌ حَامِیَةُۢ",
+      "audioFileName": "4L-2T-6.mp3"
+    },
+    "variants": [
+      {
+        "item": "حَامِیَةُ",
+        "audioFileName": "4L-2T-6-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "حَامِیَةِ",
+        "audioFileName": "4L-2T-6-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "حَامِیَةْ",
+        "audioFileName": "4L-2T-6-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 7,
+    "question": {
+      "item": "فِیهَا كُتُبࣱ قَیِّمَةࣱ",
+      "audioFileName": "4L-2T-7.mp3"
+    },
+    "variants": [
+      {
+        "item": "قَیِّمَةْ",
+        "audioFileName": "4L-2T-7-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "قَیِّمَةٍ",
+        "audioFileName": "4L-2T-7-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قَیِّمَةٌ",
+        "audioFileName": "4L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 8,
+    "question": {
+      "item": "نَاصِیَةࣲ كَـٰذِبَةٍ خَاطِئَةࣲ",
+      "audioFileName": "4L-2T-8.mp3"
+    },
+    "variants": [
+      {
+        "item": "خَاطِئَةٍ",
+        "audioFileName": "4L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "خَاطِئَةً",
+        "audioFileName": "4L-2T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "خَاطِئَةْ",
+        "audioFileName": "4L-2T-8-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 9,
+    "question": {
+      "item": "سَنَدۡعُ ٱلزَّبَانِیَةَ",
+      "audioFileName": "4L-2T-9.mp3"
+    },
+    "variants": [
+      {
+        "item": "ٱلزَّبَانِیَةْ",
+        "audioFileName": "4L-2T-9-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ٱلزَّبَانِیَةِ",
+        "audioFileName": "4L-2T-9-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱلزَّبَانِیَةَ",
+        "audioFileName": "4L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 10,
+    "question": {
+      "item": "یَـٰۤأَیَّتُهَا ٱلنَّفۡسُ ٱلۡمُطۡمَىِٕنَّةُ",
+      "audioFileName": "4L-2T-10.mp3"
+    },
+    "variants": [
+      {
+        "item": "ٱلۡمُطۡمَىِٕنَّةَ",
+        "audioFileName": "4L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱلۡمُطۡمَىِٕنَّةُ",
+        "audioFileName": "4L-2T-10-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱلۡمُطۡمَىِٕنَّةْ",
+        "audioFileName": "4L-2T-10-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 11,
+    "question": {
+      "item": "فَلَا ٱقۡتَحَمَ ٱلۡعَقَبَةَ",
+      "audioFileName": "4L-2T-11.mp3"
+    },
+    "variants": [
+      {
+        "item": "ٱلۡعَقَبَةٍ",
+        "audioFileName": "4L-2T-11-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱلۡعَقَبَةْ",
+        "audioFileName": "4L-2T-11-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ٱلۡعَقَبَةَ",
+        "audioFileName": "4L-2T-11-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 12,
+    "question": {
+      "item": "أُو۟لَـٰۤىِٕكَ أَصۡحَـٰبُ ٱلۡمَیۡمَنَةِ",
+      "audioFileName": "4L-2T-12.mp3"
+    },
+    "variants": [
+      {
+        "item": "ٱلۡمَیۡمَنَةْ",
+        "audioFileName": "4L-2T-12-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ٱلۡمَیۡمَنَةٍ",
+        "audioFileName": "4L-2T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱلۡمَیۡمَنَةِ",
+        "audioFileName": "4L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 13,
+    "question": {
+      "item": "عَلَیۡهِمۡ نَارࣱ مُّؤۡصَدَةُۢ",
+      "audioFileName": "4L-2T-13.mp3"
+    },
+    "variants": [
+      {
+        "item": "مُّؤۡصَدَةُ",
+        "audioFileName": "4L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مُّؤۡصَدَةٌ",
+        "audioFileName": "4L-2T-13-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مُّؤۡصَدَةْ",
+        "audioFileName": "4L-2T-13-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 14,
+    "question": {
+      "item": "تَصۡلَىٰ نَارًا حَامِیَةࣰ",
+      "audioFileName": "4L-2T-14.mp3"
+    },
+    "variants": [
+      {
+        "item": "حَامِیَةً",
+        "audioFileName": "4L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "حَامِیَةْ",
+        "audioFileName": "4L-2T-14-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "حَامِیَةٍ",
+        "audioFileName": "4L-2T-14-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-4l-2t",
+    "lessonCode": "tajvid-lesson-4",
+    "order": 15,
+    "question": {
+      "item": "فِیهَا عَیۡنࣱ جَارِیَةࣱ",
+      "audioFileName": "4L-2T-15.mp3"
+    },
+    "variants": [
+      {
+        "item": "جَارِیَةً",
+        "audioFileName": "4L-2T-15-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "جَارِیَةْ",
+        "audioFileName": "4L-2T-15-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "جَارِیَةٌ",
+        "audioFileName": "4L-2T-15-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение буквы 'та марбута' в конце слова."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 1,
+    "question": {
+      "item": "إِنَّا لَمَّا طَغَى الْمَاءُ حَمَلْنَاكُمْ فِي الْجَارِيَةِ",
+      "audioFileName": "5L-2T-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "الْمَاءُ",
+        "audioFileName": "5L-2T-1-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "الْمَا",
+        "audioFileName": "5L-2T-1-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 2,
+    "question": {
+      "item": "أَن جَآءَهُ الْأَعْمَىٰ",
+      "audioFileName": "5L-2T-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "الْأَعْمَآ",
+        "audioFileName": "5L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "الْأَعْمَىٰ",
+        "audioFileName": "5L-2T-2-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 3,
+    "question": {
+      "item": "حَافِظُوا عَلَى الصَّلَوٰاتِ وَالصَّلَاةِ الْوُسْطَىٰ",
+      "audioFileName": "5L-2T-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "الْوُسْطَىَ",
+        "audioFileName": "5L-2T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "الْوُسْطَىٰ",
+        "audioFileName": "5L-2T-3-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 4,
+    "question": {
+      "item": "وَاكْتُبْ لَنَا فِي هَذِهِ الدُّنْيَا حَسَنَةً",
+      "audioFileName": "5L-2T-4.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَاكْتُبْ",
+        "audioFileName": "5L-2T-4-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاِكْتُبْ",
+        "audioFileName": "5L-2T-4-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 5,
+    "question": {
+      "item": "إِنَّ عَذَابَ رَبِّهِمْ غَيْرُ مَأْمُونٍ",
+      "audioFileName": "5L-2T-5.mp3"
+    },
+    "variants": [
+      {
+        "item": "مَآمُونٍ",
+        "audioFileName": "5L-2T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَأْمُونٍ",
+        "audioFileName": "5L-2T-5-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 6,
+    "question": {
+      "item": "وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ",
+      "audioFileName": "5L-2T-6.mp3"
+    },
+    "variants": [
+      {
+        "item": "الذِّكْرَىٰ",
+        "audioFileName": "5L-2T-6-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "الذِّكْرِىٰ",
+        "audioFileName": "5L-2T-6-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 7,
+    "question": {
+      "item": "وَاقْتُلُوهُمْ حَيْثُ ثَقِفْتُمُوهُمْ",
+      "audioFileName": "5L-2T-7.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَاقْتُلُوهُمْ",
+        "audioFileName": "5L-2T-7-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاُقْتُلُوهُمْ",
+        "audioFileName": "5L-2T-7-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 8,
+    "question": {
+      "item": "أَيَطْمَعُ كُلُّ امْرِئٍ مِّنْهُمْ",
+      "audioFileName": "5L-2T-8.mp3"
+    },
+    "variants": [
+      {
+        "item": "اِمْرِئٍ",
+        "audioFileName": "5L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "امْرِئٍ",
+        "audioFileName": "5L-2T-8-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 9,
+    "question": {
+      "item": "قَاتِلُوا فِي سَبِيلِ اللَّهِ أَوِ ادْفَعُوا",
+      "audioFileName": "5L-2T-9.mp3"
+    },
+    "variants": [
+      {
+        "item": "ادْفَعُوا",
+        "audioFileName": "5L-2T-9-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "اَدْفَعُوا",
+        "audioFileName": "5L-2T-9-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 10,
+    "question": {
+      "item": "الَّذِي خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
+      "audioFileName": "5L-2T-10.mp3"
+    },
+    "variants": [
+      {
+        "item": "فَسَوَّآكَ",
+        "audioFileName": "5L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَسَوَّىٰكَ",
+        "audioFileName": "5L-2T-10-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 11,
+    "question": {
+      "item": "إِذْ قَالُوا لِنَبِيٍّ لَّهُمُ ابْعَثْ لَنَا",
+      "audioFileName": "5L-2T-11.mp3"
+    },
+    "variants": [
+      {
+        "item": "اُبْعَثْ",
+        "audioFileName": "5L-2T-11-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ابْعَثْ",
+        "audioFileName": "5L-2T-11-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 12,
+    "question": {
+      "item": "فَتَوَلَّىٰ بِرُكْنِهِ",
+      "audioFileName": "5L-2T-12.mp3"
+    },
+    "variants": [
+      {
+        "item": "فَتَوَلَّىٰ",
+        "audioFileName": "5L-2T-12-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَتَوَلَّىٰآ",
+        "audioFileName": "5L-2T-12-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 13,
+    "question": {
+      "item": "فَوَجَدْنَاهَا مُلِئَتْ حَرَسًا شَدِيدًا",
+      "audioFileName": "5L-2T-13.mp3"
+    },
+    "variants": [
+      {
+        "item": "مُلِئَآتْ",
+        "audioFileName": "5L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مُلِئَتْ",
+        "audioFileName": "5L-2T-13-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 14,
+    "question": {
+      "item": "أَوْ زِدْ عَلَيْهِ وَرَتِّلِ الْقُرْءَانَ تَرْتِيلًا",
+      "audioFileName": "5L-2T-14.mp3"
+    },
+    "variants": [
+      {
+        "item": "الْقُرْءَآنَ",
+        "audioFileName": "5L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "الْقُرْءَانَ",
+        "audioFileName": "5L-2T-14-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-5l-2t",
+    "lessonCode": "tajvid-lesson-5",
+    "order": 15,
+    "question": {
+      "item": "وَقَاتِلُوا فِي سَبِيلِ اللَّهِ وَاعْلَمُوا",
+      "audioFileName": "5L-2T-15.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَاعْلَمُوا",
+        "audioFileName": "5L-2T-15-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاَعْلَمُوا",
+        "audioFileName": "5L-2T-15-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное чтение, связанное с алифом и хамзой, в приведённом аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 1,
+    "question": {
+      "item": "عَلَى الْأَرَائِكِ يَنظُرُونَ",
+      "audioFileName": "6L-2T-1-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "عَلَى اَلْأَرَائِكِ يَنظُرُونَ",
+        "audioFileName": "6L-2T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَلَى الْأَرَائِكِ يَنظُرُونَ",
+        "audioFileName": "6L-2T-1-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 2,
+    "question": {
+      "item": "ثُمَّ إِنَّهُمْ لَصَالُو الْجَحِيمِ",
+      "audioFileName": "6L-2T-2-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "ثُمَّ إِنَّهُمْ لَصَالُو الْجَحِيمِ",
+        "audioFileName": "6L-2T-2-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ثُمَّ إِنَّهُمْ لَصَالُو اِلْجَحِيمِ",
+        "audioFileName": "6L-2T-2-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 3,
+    "question": {
+      "item": "عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ",
+      "audioFileName": "6L-2T-3-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ",
+        "audioFileName": "6L-2T-3-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "عَيْنًا يَشْرَبُ بِهَا اُلْمُقَرَّبُونَ",
+        "audioFileName": "6L-2T-3-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 4,
+    "question": {
+      "item": "هَلْ ثُوِّبَ الْكُفَّارُ",
+      "audioFileName": "6L-2T-4-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "هَلْ ثُوِّبَ اَلْكُفَّارُ",
+        "audioFileName": "6L-2T-4-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "هَلْ ثُوِّبَ الْكُفَّارُ",
+        "audioFileName": "6L-2T-4-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 5,
+    "question": {
+      "item": "وَالْقَمَرِ إِذَا اتَّسَقَ",
+      "audioFileName": "6L-2T-5-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَالْقَمَرِ إِذَا اتَّسَقَ",
+        "audioFileName": "6L-2T-5-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاَلْقَمَرِ إِذَا اَتَّسَقَ",
+        "audioFileName": "6L-2T-5-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 6,
+    "question": {
+      "item": "هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ",
+      "audioFileName": "6L-2T-6-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ",
+        "audioFileName": "6L-2T-6-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "هَلْ أَتَاكَ حَدِيثُ اِلْجُنُودِ",
+        "audioFileName": "6L-2T-6-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 7,
+    "question": {
+      "item": "وَمَا هُوَ بِالْهَزْلِ",
+      "audioFileName": "6L-2T-7-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَمَا هُوَ بِاُلْهَزْلِ",
+        "audioFileName": "6L-2T-7-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَمَا هُوَ بِالْهَزْلِ",
+        "audioFileName": "6L-2T-7-2.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 8,
+    "question": {
+      "item": "وَالسَّمَاءِ وَالطَّارِقِ",
+      "audioFileName": "6L-2T-8-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَاِلسَّمَاءِ وَالطَّارِقِ",
+        "audioFileName": "6L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَالسَّمَاءِ وَالطَّارِقِ",
+        "audioFileName": "6L-2T-8-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَالسَّمَاءِ وَاَلطَّارِقِ",
+        "audioFileName": "6L-2T-8-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 9,
+    "question": {
+      "item": "النَّجْمُ الثَّاقِبُ",
+      "audioFileName": "6L-2T-9-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "النَّجْمُ اِلثَّاقِبُ",
+        "audioFileName": "6L-2T-9-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "النَّجْمُ اَلثَّاقِبُ",
+        "audioFileName": "6L-2T-9-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "النَّجْمُ الثَّاقِبُ",
+        "audioFileName": "6L-2T-9-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 10,
+    "question": {
+      "item": "وَاللَّيْلِ إِذَا يَسْرِ",
+      "audioFileName": "6L-2T-10-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَاللَّيْلِ إِذَا يَسْرِ",
+        "audioFileName": "6L-2T-10-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاَللَّيْلِ إِذَا يَسْرِ",
+        "audioFileName": "6L-2T-10-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَاُللَّيْلِ إِذَا يَسْرِ",
+        "audioFileName": "6L-2T-10-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 11,
+    "question": {
+      "item": "وَالشَّمْسِ وَضُحَاهَا",
+      "audioFileName": "6L-2T-11-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَاَلشَّمْسِ وَضُحَاهَا",
+        "audioFileName": "6L-2T-11-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَالشَّمْسِ وَضُحَاهَا",
+        "audioFileName": "6L-2T-11-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاِلشَّمْسِ وَضُحَاهَا",
+        "audioFileName": "6L-2T-11-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 12,
+    "question": {
+      "item": "وَالضُّحَىٰ",
+      "audioFileName": "6L-2T-12-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَالضُّحَىٰ",
+        "audioFileName": "6L-2T-12-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَاُلضُّحَىٰ",
+        "audioFileName": "6L-2T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَاِلضُّحَىٰ",
+        "audioFileName": "6L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 13,
+    "question": {
+      "item": "وَالتِّينِ وَالزَّيْتُونِ",
+      "audioFileName": "6L-2T-13-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَالتِّينِ وَاُلزَّيْتُونِ",
+        "audioFileName": "6L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَاَلتِّينِ وَالزَّيْتُونِ",
+        "audioFileName": "6L-2T-13-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَالتِّينِ وَالزَّيْتُونِ",
+        "audioFileName": "6L-2T-13-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-6l-2t",
+    "lessonCode": "tajvid-lesson-6",
+    "order": 14,
+    "question": {
+      "item": "إِنَّ إِلَى رَبِّكَ الرُّجْعَى",
+      "audioFileName": "6L-2T-14-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "إِنَّ إِلَى رَبِّكَ اِلرُّجْعَى",
+        "audioFileName": "6L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ إِلَى رَبِّكَ اَلرُّجْعَى",
+        "audioFileName": "6L-2T-14-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ إِلَى رَبِّكَ الرُّجْعَى",
+        "audioFileName": "6L-2T-14-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Найдите правильное произношение артикля 'Аль' в данном аяте."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 1,
+    "question": {
+      "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ"
+    },
+    "variants": [
+      {
+        "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+        "audioFileName": "8L-2T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+        "audioFileName": "8L-2T-1-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+        "audioFileName": "8L-2T-1-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 2,
+    "question": {
+      "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ"
+    },
+    "variants": [
+      {
+        "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+        "audioFileName": "8L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+        "audioFileName": "8L-2T-2-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+        "audioFileName": "8L-2T-2-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 3,
+    "question": {
+      "item": "فَوَيْلٌ لِّلْمُصَلِّينَ"
+    },
+    "variants": [
+      {
+        "item": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+        "audioFileName": "8L-2T-3-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+        "audioFileName": "8L-2T-3-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+        "audioFileName": "8L-2T-3-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 4,
+    "question": {
+      "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ"
+    },
+    "variants": [
+      {
+        "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+        "audioFileName": "8L-2T-4-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+        "audioFileName": "8L-2T-4-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+        "audioFileName": "8L-2T-4-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 5,
+    "question": {
+      "item": "سَيَذَّكَّرُ مَن يَخْشَى"
+    },
+    "variants": [
+      {
+        "item": "سَيَذَّكَّرُ مَن يَخْشَى",
+        "audioFileName": "8L-2T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "سَيَذَّكَّرُ مَن يَخْشَى",
+        "audioFileName": "8L-2T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "سَيَذَّكَّرُ مَن يَخْشَى",
+        "audioFileName": "8L-2T-5-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 6,
+    "question": {
+      "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى"
+    },
+    "variants": [
+      {
+        "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+        "audioFileName": "8L-2T-6-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+        "audioFileName": "8L-2T-6-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "مِن نُّطْفَةٍ إِذَا تُمْنَى",
+        "audioFileName": "8L-2T-6-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 7,
+    "question": {
+      "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى"
+    },
+    "variants": [
+      {
+        "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+        "audioFileName": "8L-2T-7-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+        "audioFileName": "8L-2T-7-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قَالَ فَمَن رَّبُّكُمَا يَا مُوسَى",
+        "audioFileName": "8L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 8,
+    "question": {
+      "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ"
+    },
+    "variants": [
+      {
+        "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+        "audioFileName": "8L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+        "audioFileName": "8L-2T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+        "audioFileName": "8L-2T-8-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 9,
+    "question": {
+      "item": "عَبْدًا إِذَا صَلَّى"
+    },
+    "variants": [
+      {
+        "item": "عَبْدًا إِذَا صَلَّى",
+        "audioFileName": "8L-2T-9-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَبْدًا إِذَا صَلَّى",
+        "audioFileName": "8L-2T-9-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "عَبْدًا إِذَا صَلَّى",
+        "audioFileName": "8L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 10,
+    "question": {
+      "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ"
+    },
+    "variants": [
+      {
+        "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+        "audioFileName": "8L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+        "audioFileName": "8L-2T-10-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِلَّا مَنْ هُوَ صَالِ الْجَحِيمِ",
+        "audioFileName": "8L-2T-10-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 11,
+    "question": {
+      "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ"
+    },
+    "variants": [
+      {
+        "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+        "audioFileName": "8L-2T-11-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+        "audioFileName": "8L-2T-11-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+        "audioFileName": "8L-2T-11-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 12,
+    "question": {
+      "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ"
+    },
+    "variants": [
+      {
+        "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+        "audioFileName": "8L-2T-12-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+        "audioFileName": "8L-2T-12-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "قَالَ لِمَنْ حَوْلَهُ أَلَا تَسْتَمِعُونَ",
+        "audioFileName": "8L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 13,
+    "question": {
+      "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ"
+    },
+    "variants": [
+      {
+        "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+        "audioFileName": "8L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+        "audioFileName": "8L-2T-13-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ",
+        "audioFileName": "8L-2T-13-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 14,
+    "question": {
+      "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ"
+    },
+    "variants": [
+      {
+        "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+        "audioFileName": "8L-2T-14-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+        "audioFileName": "8L-2T-14-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+        "audioFileName": "8L-2T-14-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-8l-2t",
+    "lessonCode": "tajvid-lesson-8",
+    "order": 15,
+    "question": {
+      "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ"
+    },
+    "variants": [
+      {
+        "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+        "audioFileName": "8L-2T-15-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+        "audioFileName": "8L-2T-15-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ",
+        "audioFileName": "8L-2T-15-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила изгар или идгам."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 1,
+    "question": {
+      "item": "فَمَن يُؤْمِن بِرَبِّهِ"
+    },
+    "variants": [
+      {
+        "item": "فَمَن يُؤْمِن بِرَبِّهِ",
+        "audioFileName": "9L-2T-1-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَمَن يُؤْمِن بِرَبِّهِ",
+        "audioFileName": "9L-2T-1-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَمَن يُؤْمِن بِرَبِّهِ",
+        "audioFileName": "9L-2T-1-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 2,
+    "question": {
+      "item": "صُمٌّ بُكْمٌ عُمْيٌ"
+    },
+    "variants": [
+      {
+        "item": "صُمٌّ بُكْمٌ عُمْيٌ",
+        "audioFileName": "9L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "صُمٌّ بُكْمٌ عُمْيٌ",
+        "audioFileName": "9L-2T-2-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "صُمٌّ بُكْمٌ عُمْيٌ",
+        "audioFileName": "9L-2T-2-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 3,
+    "question": {
+      "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ"
+    },
+    "variants": [
+      {
+        "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+        "audioFileName": "9L-2T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+        "audioFileName": "9L-2T-3-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",
+        "audioFileName": "9L-2T-3-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 4,
+    "question": {
+      "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا"
+    },
+    "variants": [
+      {
+        "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+        "audioFileName": "9L-2T-4-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+        "audioFileName": "9L-2T-4-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِذِ ٱنبَعَثَ أَشۡقَىٰهَا",
+        "audioFileName": "9L-2T-4-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 5,
+    "question": {
+      "item": "كِرَامٍ بَرَرَةٍ"
+    },
+    "variants": [
+      {
+        "item": "كِرَامٍ بَرَرَةٍ",
+        "audioFileName": "9L-2T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "كِرَامٍ بَرَرَةٍ",
+        "audioFileName": "9L-2T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "كِرَامٍ بَرَرَةٍ",
+        "audioFileName": "9L-2T-5-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 6,
+    "question": {
+      "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ"
+    },
+    "variants": [
+      {
+        "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+        "audioFileName": "9L-2T-6-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+        "audioFileName": "9L-2T-6-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "جَزَاۤءً بِمَا كَانُوا۟ یَعۡمَلُونَ",
+        "audioFileName": "9L-2T-6-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 7,
+    "question": {
+      "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ"
+    },
+    "variants": [
+      {
+        "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+        "audioFileName": "9L-2T-7-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+        "audioFileName": "9L-2T-7-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "هَمَّازٍ مَّشَّاۤءٍ بِنَمِیمٍ",
+        "audioFileName": "9L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 8,
+    "question": {
+      "item": "مِن شَرِّ مَا خَلَقَ"
+    },
+    "variants": [
+      {
+        "item": "مِن شَرِّ مَا خَلَقَ",
+        "audioFileName": "9L-2T-8-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "مِن شَرِّ مَا خَلَقَ",
+        "audioFileName": "9L-2T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مِن شَرِّ مَا خَلَقَ",
+        "audioFileName": "9L-2T-8-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 9,
+    "question": {
+      "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ"
+    },
+    "variants": [
+      {
+        "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+        "audioFileName": "9L-2T-9-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+        "audioFileName": "9L-2T-9-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "نَاصِیَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+        "audioFileName": "9L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 10,
+    "question": {
+      "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ"
+    },
+    "variants": [
+      {
+        "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+        "audioFileName": "9L-2T-10-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+        "audioFileName": "9L-2T-10-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَوَجَدَكَ ضَاۤلًّا فَهَدَىٰ",
+        "audioFileName": "9L-2T-10-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 11,
+    "question": {
+      "item": "فِیهَا عَیۡنٌ جَارِیَةٌ"
+    },
+    "variants": [
+      {
+        "item": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+        "audioFileName": "9L-2T-11-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+        "audioFileName": "9L-2T-11-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فِیهَا عَیۡنٌ جَارِیَةٌ",
+        "audioFileName": "9L-2T-11-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 12,
+    "question": {
+      "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ"
+    },
+    "variants": [
+      {
+        "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+        "audioFileName": "9L-2T-12-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+        "audioFileName": "9L-2T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "سَنُقۡرِئُكَ فَلَا تَنسَىٰۤ",
+        "audioFileName": "9L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 13,
+    "question": {
+      "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل"
+    },
+    "variants": [
+      {
+        "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+        "audioFileName": "9L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+        "audioFileName": "9L-2T-13-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِنَّهُۥ لَقَوۡلٌ فَصۡل",
+        "audioFileName": "9L-2T-13-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-9l-2t",
+    "lessonCode": "tajvid-lesson-9",
+    "order": 14,
+    "question": {
+      "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ"
+    },
+    "variants": [
+      {
+        "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+        "audioFileName": "9L-2T-14-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+        "audioFileName": "9L-2T-14-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَلَى ٱلۡأَرَاۤىِٕكِ یَنظُرُونَ",
+        "audioFileName": "9L-2T-14-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильное произношение правила Ихфа или Иклаб."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 1,
+    "question": {
+      "item": "أَلَمۡ نَخۡلُقكُم مِّن مَّاۤءٍ مَّهِینٍ"
+    },
+    "variants": [
+      {
+        "item": "أَلَمۡ نَخۡلُقكُم مِّن مَّاۤءٍ مَّهِینٍ",
+        "audioFileName": "10L-2T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَلَمۡ نَخۡلُقكُم مِّن مَّاۤءٍ مَّهِینٍ",
+        "audioFileName": "10L-2T-1-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "أَلَمۡ نَخۡلُقكُم مِّن مَّاۤءٍ مَّهِینٍ",
+        "audioFileName": "10L-2T-1-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 2,
+    "question": {
+      "item": "قُلْ رَبِّیۤ أَعۡلَمُ"
+    },
+    "variants": [
+      {
+        "item": "قُلْ رَبِّیۤ أَعۡلَمُ",
+        "audioFileName": "10L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قُلْ رَبِّیۤ أَعۡلَمُ",
+        "audioFileName": "10L-2T-2-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قُلْ رَبِّیۤ أَعۡلَمُ",
+        "audioFileName": "10L-2T-2-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 3,
+    "question": {
+      "item": "وَقَدْ تَبَیَّنَ لَكُم"
+    },
+    "variants": [
+      {
+        "item": "وَقَدْ تَبَیَّنَ لَكُم",
+        "audioFileName": "10L-2T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَقَدْ تَبَیَّنَ لَكُم",
+        "audioFileName": "10L-2T-3-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَقَدْ تَبَیَّنَ لَكُم",
+        "audioFileName": "10L-2T-3-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 4,
+    "question": {
+      "item": "فَلَمَّاۤ أَثۡقَلَتْ دَعَوَا ٱللَّهَ"
+    },
+    "variants": [
+      {
+        "item": "فَلَمَّاۤ أَثۡقَلَتْ دَعَوَا ٱللَّهَ",
+        "audioFileName": "10L-2T-4-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَلَمَّاۤ أَثۡقَلَتْ دَعَوَا ٱللَّهَ",
+        "audioFileName": "10L-2T-4-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَلَمَّاۤ أَثۡقَلَتْ دَعَوَا ٱللَّهَ",
+        "audioFileName": "10L-2T-4-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 5,
+    "question": {
+      "item": "إِذۡ هَمَّتْ طَاۤىِٕفَتَانِ مِنكُمۡ"
+    },
+    "variants": [
+      {
+        "item": "إِذۡ هَمَّتْ طَاۤىِٕفَتَانِ مِنكُمۡ",
+        "audioFileName": "10L-2T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِذۡ هَمَّتْ طَاۤىِٕفَتَانِ مِنكُمۡ",
+        "audioFileName": "10L-2T-5-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِذۡ هَمَّتْ طَاۤىِٕفَتَانِ مِنكُمۡ",
+        "audioFileName": "10L-2T-5-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 6,
+    "question": {
+      "item": "فَقَالَ أَحَطْتُ بِمَا"
+    },
+    "variants": [
+      {
+        "item": "فَقَالَ أَحَطْتُ بِمَا",
+        "audioFileName": "10L-2T-6-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَقَالَ أَحَطْتُ بِمَا",
+        "audioFileName": "10L-2T-6-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَقَالَ أَحَطْتُ بِمَا",
+        "audioFileName": "10L-2T-6-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 7,
+    "question": {
+      "item": "إِذْ ظَلَمۡتُمۡ أَنَّكُمۡ"
+    },
+    "variants": [
+      {
+        "item": "إِذْ ظَلَمۡتُمۡ أَنَّكُمۡ",
+        "audioFileName": "10L-2T-7-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِذْ ظَلَمۡتُمۡ أَنَّكُمۡ",
+        "audioFileName": "10L-2T-7-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِذْ ظَلَمۡتُمۡ أَنَّكُمۡ",
+        "audioFileName": "10L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 8,
+    "question": {
+      "item": "أَوۡ تَتۡرُكۡهُ یَلۡهَثْ ذَ ٰ⁠لِكَ"
+    },
+    "variants": [
+      {
+        "item": "أَوۡ تَتۡرُكۡهُ یَلۡهَثْ ذَ ٰ⁠لِكَ",
+        "audioFileName": "10L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَوۡ تَتۡرُكۡهُ یَلۡهَثْ ذَ ٰ⁠لِكَ",
+        "audioFileName": "10L-2T-8-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "أَوۡ تَتۡرُكۡهُ یَلۡهَثْ ذَ ٰ⁠لِكَ",
+        "audioFileName": "10L-2T-8-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 9,
+    "question": {
+      "item": "یَـٰبُنَیَّ ٱرۡكَبْ مَعَنَا"
+    },
+    "variants": [
+      {
+        "item": "یَـٰبُنَیَّ ٱرۡكَبْ مَعَنَا",
+        "audioFileName": "10L-2T-9-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "یَـٰبُنَیَّ ٱرۡكَبْ مَعَنَا",
+        "audioFileName": "10L-2T-9-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "یَـٰبُنَیَّ ٱرۡكَبْ مَعَنَا",
+        "audioFileName": "10L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 10,
+    "question": {
+      "item": "فَمَا رَبِحَتْ تِجَـٰرَتُهُمۡ"
+    },
+    "variants": [
+      {
+        "item": "فَمَا رَبِحَتْ تِجَـٰرَتُهُمۡ",
+        "audioFileName": "10L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَمَا رَبِحَتْ تِجَـٰرَتُهُمۡ",
+        "audioFileName": "10L-2T-10-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَمَا رَبِحَتْ تِجَـٰرَتُهُمۡ",
+        "audioFileName": "10L-2T-10-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 11,
+    "question": {
+      "item": "وَٱلَّذِینَ ءَاوَوْا۟ وَنَصَرُوۤا۟"
+    },
+    "variants": [
+      {
+        "item": "وَٱلَّذِینَ ءَاوَوْا۟ وَنَصَرُوۤا۟",
+        "audioFileName": "10L-2T-11-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَٱلَّذِینَ ءَاوَوْا۟ وَنَصَرُوۤا۟",
+        "audioFileName": "10L-2T-11-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلَّذِینَ ءَاوَوْا۟ وَنَصَرُوۤا۟",
+        "audioFileName": "10L-2T-11-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 12,
+    "question": {
+      "item": "أَنِ ٱضۡرِبْ بِعَصَاكَ"
+    },
+    "variants": [
+      {
+        "item": "أَنِ ٱضۡرِبْ بِعَصَاكَ",
+        "audioFileName": "10L-2T-12-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَنِ ٱضۡرِبْ بِعَصَاكَ",
+        "audioFileName": "10L-2T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَنِ ٱضۡرِبْ بِعَصَاكَ",
+        "audioFileName": "10L-2T-12-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 13,
+    "question": {
+      "item": "ٱللَّهُ ٱلصَّمَدُ"
+    },
+    "variants": [
+      {
+        "item": "ٱللَّهُ ٱلصَّمَدُ",
+        "audioFileName": "10L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱللَّهُ ٱلصَّمَدُ",
+        "audioFileName": "10L-2T-13-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ٱللَّهُ ٱلصَّمَدُ",
+        "audioFileName": "10L-2T-13-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 14,
+    "question": {
+      "item": "مِن شَرِّ مَا خَلَقَ"
+    },
+    "variants": [
+      {
+        "item": "مِن شَرِّ مَا خَلَقَ",
+        "audioFileName": "10L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مِن شَرِّ مَا خَلَقَ",
+        "audioFileName": "10L-2T-14-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مِن شَرِّ مَا خَلَقَ",
+        "audioFileName": "10L-2T-14-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 15,
+    "question": {
+      "item": "وَٱلۡفَجۡرِ"
+    },
+    "variants": [
+      {
+        "item": "وَٱلۡفَجۡرِ",
+        "audioFileName": "10L-2T-15-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلۡفَجۡرِ",
+        "audioFileName": "10L-2T-15-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلۡفَجۡرِ",
+        "audioFileName": "10L-2T-15-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 16,
+    "question": {
+      "item": "عَبۡدًا إِذَا صَلَّىٰۤ"
+    },
+    "variants": [
+      {
+        "item": "عَبۡدًا إِذَا صَلَّىٰۤ",
+        "audioFileName": "10L-2T-16-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "عَبۡدًا إِذَا صَلَّىٰۤ",
+        "audioFileName": "10L-2T-16-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عَبۡدًا إِذَا صَلَّىٰۤ",
+        "audioFileName": "10L-2T-16-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-10l-2t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 17,
+    "question": {
+      "item": "إِنَّ بَطۡشَ رَبِّكَ لَشَدِیدٌ"
+    },
+    "variants": [
+      {
+        "item": "إِنَّ بَطۡشَ رَبِّكَ لَشَدِیدٌ",
+        "audioFileName": "10L-2T-17-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ بَطۡشَ رَبِّكَ لَشَدِیدٌ",
+        "audioFileName": "10L-2T-17-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِنَّ بَطۡشَ رَبِّكَ لَشَدِیدٌ",
+        "audioFileName": "10L-2T-17-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 1,
+    "question": {
+      "item": "لِإِیلَـٰفِ قُرَیۡشٍ"
+    },
+    "variants": [
+      {
+        "item": "لِإِیلَـٰفِ قُرَیۡشٍ",
+        "audioFileName": "11L-2T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "لِإِیلَـٰفِ قُرَیۡشٍ",
+        "audioFileName": "11L-2T-1-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "لِإِیلَـٰفِ قُرَیۡشٍ",
+        "audioFileName": "11L-2T-1-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 2,
+    "question": {
+      "item": "وَٱلۡعَصۡرِ"
+    },
+    "variants": [
+      {
+        "item": "وَٱلۡعَصۡرِ",
+        "audioFileName": "11L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلۡعَصۡرِ",
+        "audioFileName": "11L-2T-2-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَٱلۡعَصۡرِ",
+        "audioFileName": "11L-2T-2-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 3,
+    "question": {
+      "item": "ٱلۡقَارِعَةُ"
+    },
+    "variants": [
+      {
+        "item": "ٱلۡقَارِعَةُ",
+        "audioFileName": "11L-2T-3-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ٱلۡقَارِعَةُ",
+        "audioFileName": "11L-2T-3-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱلۡقَارِعَةُ",
+        "audioFileName": "11L-2T-3-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 4,
+    "question": {
+      "item": "وَلَسَوۡفَ یَرۡضَىٰ"
+    },
+    "variants": [
+      {
+        "item": "وَلَسَوۡفَ یَرۡضَىٰ",
+        "audioFileName": "11L-2T-4-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَلَسَوۡفَ یَرۡضَىٰ",
+        "audioFileName": "11L-2T-4-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَلَسَوۡفَ یَرۡضَىٰ",
+        "audioFileName": "11L-2T-4-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 5,
+    "question": {
+      "item": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا"
+    },
+    "variants": [
+      {
+        "item": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+        "audioFileName": "11L-2T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+        "audioFileName": "11L-2T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+        "audioFileName": "11L-2T-5-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 6,
+    "question": {
+      "item": "ٱرۡجِعِیۤ إِلَىٰ رَبِّكِ"
+    },
+    "variants": [
+      {
+        "item": "ٱرۡجِعِیۤ إِلَىٰ رَبِّكِ",
+        "audioFileName": "11L-2T-6-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ٱرۡجِعِیۤ إِلَىٰ رَبِّكِ",
+        "audioFileName": "11L-2T-6-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ٱرۡجِعِیۤ إِلَىٰ رَبِّكِ",
+        "audioFileName": "11L-2T-6-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 7,
+    "question": {
+      "item": "فَكُّ رَقَبَةٍ"
+    },
+    "variants": [
+      {
+        "item": "فَكُّ رَقَبَةٍ",
+        "audioFileName": "11L-2T-7-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَكُّ رَقَبَةٍ",
+        "audioFileName": "11L-2T-7-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَكُّ رَقَبَةٍ",
+        "audioFileName": "11L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 8,
+    "question": {
+      "item": "إِنَّ جَهَنَّمَ كَانَتۡ مِرۡصَادًا"
+    },
+    "variants": [
+      {
+        "item": "إِنَّ جَهَنَّمَ كَانَتۡ مِرۡصَادًا",
+        "audioFileName": "11L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ جَهَنَّمَ كَانَتۡ مِرۡصَادًا",
+        "audioFileName": "11L-2T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ جَهَنَّمَ كَانَتۡ مِرۡصَادًا",
+        "audioFileName": "11L-2T-8-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 9,
+    "question": {
+      "item": "وَتَوَاصَوۡا۟ بِٱلصَّبۡرِ"
+    },
+    "variants": [
+      {
+        "item": "وَتَوَاصَوۡا۟ بِٱلصَّبۡرِ",
+        "audioFileName": "11L-2T-9-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَتَوَاصَوۡا۟ بِٱلصَّبۡرِ",
+        "audioFileName": "11L-2T-9-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَتَوَاصَوۡا۟ بِٱلصَّبۡرِ",
+        "audioFileName": "11L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 10,
+    "question": {
+      "item": "هَلۡ فِی ذَ ٰ⁠لِكَ قَسَمُ لِّذِی حِجۡرٍ"
+    },
+    "variants": [
+      {
+        "item": "هَلۡ فِی ذَ ٰ⁠لِكَ قَسَمُ لِّذِی حِجۡرٍ",
+        "audioFileName": "11L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "هَلۡ فِی ذَ ٰ⁠لِكَ قَسَمُ لِّذِی حِجۡرٍ",
+        "audioFileName": "11L-2T-10-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "هَلۡ فِی ذَ ٰ⁠لِكَ قَسَمُ لِّذِی حِجۡرٍ",
+        "audioFileName": "11L-2T-10-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 11,
+    "question": {
+      "item": "أَلَاۤ إِنَّ نَصۡرَ ٱللَّهِ قَرِیبٌ"
+    },
+    "variants": [
+      {
+        "item": "أَلَاۤ إِنَّ نَصۡرَ ٱللَّهِ قَرِیبٌ",
+        "audioFileName": "11L-2T-11-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "أَلَاۤ إِنَّ نَصۡرَ ٱللَّهِ قَرِیبٌ",
+        "audioFileName": "11L-2T-11-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَلَاۤ إِنَّ نَصۡرَ ٱللَّهِ قَرِیبٌ",
+        "audioFileName": "11L-2T-11-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 12,
+    "question": {
+      "item": "یُدۡعَوۡنَ إِلَىٰ كِتَـٰبِ ٱللَّهِ"
+    },
+    "variants": [
+      {
+        "item": "یُدۡعَوۡنَ إِلَىٰ كِتَـٰبِ ٱللَّهِ",
+        "audioFileName": "11L-2T-12-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "یُدۡعَوۡنَ إِلَىٰ كِتَـٰبِ ٱللَّهِ",
+        "audioFileName": "11L-2T-12-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "یُدۡعَوۡنَ إِلَىٰ كِتَـٰبِ ٱللَّهِ",
+        "audioFileName": "11L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 13,
+    "question": {
+      "item": "فَقَالَ لَهُمۡ رَسُولُ ٱللَّهِ"
+    },
+    "variants": [
+      {
+        "item": "فَقَالَ لَهُمۡ رَسُولُ ٱللَّهِ",
+        "audioFileName": "11L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَقَالَ لَهُمۡ رَسُولُ ٱللَّهِ",
+        "audioFileName": "11L-2T-13-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَقَالَ لَهُمۡ رَسُولُ ٱللَّهِ",
+        "audioFileName": "11L-2T-13-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-11l-2t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 14,
+    "question": {
+      "item": "أَنَّمَاۤ أُنزِلَ بِعِلۡمِ ٱللَّهِ"
+    },
+    "variants": [
+      {
+        "item": "أَنَّمَاۤ أُنزِلَ بِعِلۡمِ ٱللَّهِ",
+        "audioFileName": "11L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَنَّمَاۤ أُنزِلَ بِعِلۡمِ ٱللَّهِ",
+        "audioFileName": "11L-2T-14-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "أَنَّمَاۤ أُنزِلَ بِعِلۡمِ ٱللَّهِ",
+        "audioFileName": "11L-2T-14-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 1,
+    "question": {
+      "item": "وَرَأَیۡتَ ٱلنَّاسَ"
+    },
+    "variants": [
+      {
+        "item": "وَرَأَیۡتَ ٱلنَّاسَ",
+        "audioFileName": "12L-2T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَرَأَیۡتَ ٱلنَّاسَ",
+        "audioFileName": "12L-2T-1-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَرَأَیۡتَ ٱلنَّاسَ",
+        "audioFileName": "12L-2T-1-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 2,
+    "question": {
+      "item": "لَكُمۡ دِینُكُمۡ"
+    },
+    "variants": [
+      {
+        "item": "لَكُمۡ دِینُكُمۡ",
+        "audioFileName": "12L-2T-2-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "لَكُمۡ دِینُكُمۡ",
+        "audioFileName": "12L-2T-2-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "لَكُمۡ دِینُكُمۡ",
+        "audioFileName": "12L-2T-2-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 3,
+    "question": {
+      "item": "قُلۡ أَعُوذُ"
+    },
+    "variants": [
+      {
+        "item": "قُلۡ أَعُوذُ",
+        "audioFileName": "12L-2T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قُلۡ أَعُوذُ",
+        "audioFileName": "12L-2T-3-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قُلۡ أَعُوذُ",
+        "audioFileName": "12L-2T-3-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 4,
+    "question": {
+      "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ"
+    },
+    "variants": [
+      {
+        "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+        "audioFileName": "12L-2T-4-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+        "audioFileName": "12L-2T-4-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ءَامَنَ ٱلسُّفَهَاۤءُۗ",
+        "audioFileName": "12L-2T-4-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 5,
+    "question": {
+      "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ"
+    },
+    "variants": [
+      {
+        "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+        "audioFileName": "12L-2T-5-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+        "audioFileName": "12L-2T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلۡإِیمَـانَ مِن قَبۡلِهِمۡ",
+        "audioFileName": "12L-2T-5-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 6,
+    "question": {
+      "item": "مِمَّاۤ أُوتُوا۟"
+    },
+    "variants": [
+      {
+        "item": "مِمَّاۤ أُوتُوا۟",
+        "audioFileName": "12L-2T-6-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مِمَّاۤ أُوتُوا۟",
+        "audioFileName": "12L-2T-6-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مِمَّاۤ أُوتُوا۟",
+        "audioFileName": "12L-2T-6-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 7,
+    "question": {
+      "item": "وَٱلۡجِبَالَ أَوۡتَادًا"
+    },
+    "variants": [
+      {
+        "item": "وَٱلۡجِبَالَ أَوۡتَادًا",
+        "audioFileName": "12L-2T-7-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلۡجِبَالَ أَوۡتَادًا",
+        "audioFileName": "12L-2T-7-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَٱلۡجِبَالَ أَوۡتَادًا",
+        "audioFileName": "12L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 8,
+    "question": {
+      "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا"
+    },
+    "variants": [
+      {
+        "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+        "audioFileName": "12L-2T-8-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+        "audioFileName": "12L-2T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَخَلَقۡنَـٰكُمۡ أَزۡوَ ٰ⁠جًا",
+        "audioFileName": "12L-2T-8-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 9,
+    "question": {
+      "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا"
+    },
+    "variants": [
+      {
+        "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+        "audioFileName": "12L-2T-9-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+        "audioFileName": "12L-2T-9-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتًا",
+        "audioFileName": "12L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 10,
+    "question": {
+      "item": "إِلَی طَعَامِهِے أَنَّا"
+    },
+    "variants": [
+      {
+        "item": "إِلَی طَعَامِهِے أَنَّا",
+        "audioFileName": "12L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِلَی طَعَامِهِے أَنَّا",
+        "audioFileName": "12L-2T-10-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِلَی طَعَامِهِے أَنَّا",
+        "audioFileName": "12L-2T-10-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 11,
+    "question": {
+      "item": "مَالَەُوٓ أَخْلَدَە"
+    },
+    "variants": [
+      {
+        "item": "مَالَەُوٓ أَخْلَدَە",
+        "audioFileName": "12L-2T-11-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَالَەُوٓ أَخْلَدَە",
+        "audioFileName": "12L-2T-11-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَالَەُوٓ أَخْلَدَە",
+        "audioFileName": "12L-2T-11-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 12,
+    "question": {
+      "item": "أَنْزَلَهُ إِلَيْكُمْ"
+    },
+    "variants": [
+      {
+        "item": "أَنْزَلَهُ إِلَيْكُمْ",
+        "audioFileName": "12L-2T-12-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "أَنْزَلَهُ إِلَيْكُمْ",
+        "audioFileName": "12L-2T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَنْزَلَهُ إِلَيْكُمْ",
+        "audioFileName": "12L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 13,
+    "question": {
+      "item": "فَإِنَّهُ يَسْلُكُ"
+    },
+    "variants": [
+      {
+        "item": "فَإِنَّهُ يَسْلُكُ",
+        "audioFileName": "12L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَإِنَّهُ يَسْلُكُ",
+        "audioFileName": "12L-2T-13-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَإِنَّهُ يَسْلُكُ",
+        "audioFileName": "12L-2T-13-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 14,
+    "question": {
+      "item": "إِلَى رَبِّهِ سَبِيلًا"
+    },
+    "variants": [
+      {
+        "item": "إِلَى رَبِّهِ سَبِيلًا",
+        "audioFileName": "12L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِلَى رَبِّهِ سَبِيلًا",
+        "audioFileName": "12L-2T-14-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِلَى رَبِّهِ سَبِيلًا",
+        "audioFileName": "12L-2T-14-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-12l-2t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 15,
+    "question": {
+      "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ"
+    },
+    "variants": [
+      {
+        "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+        "audioFileName": "12L-2T-15-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+        "audioFileName": "12L-2T-15-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+        "audioFileName": "12L-2T-15-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте несколько вариантов и выберите правильное произношение."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 1,
+    "question": {
+      "item": "تَبَّتۡ یَدَاۤ أَبِی"
+    },
+    "variants": [
+      {
+        "item": "تَبَّتۡ یَدَاۤ أَبِی",
+        "audioFileName": "13L-2T-1-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "تَبَّتۡ یَدَاۤ أَبِی",
+        "audioFileName": "13L-2T-1-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "تَبَّتۡ یَدَاۤ أَبِی",
+        "audioFileName": "13L-2T-1-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 2,
+    "question": {
+      "item": "لَاۤ أَعۡبُدُ مَا تَعۡبُدُونَ"
+    },
+    "variants": [
+      {
+        "item": "لَاۤ أَعۡبُدُ مَا تَعۡبُدُونَ",
+        "audioFileName": "13L-2T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "لَاۤ أَعۡبُدُ مَا تَعۡبُدُونَ",
+        "audioFileName": "13L-2T-2-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "لَاۤ أَعۡبُدُ مَا تَعۡبُدُونَ",
+        "audioFileName": "13L-2T-2-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 3,
+    "question": {
+      "item": "إِنَّاۤ أَعۡطَیۡنَـٰكَ"
+    },
+    "variants": [
+      {
+        "item": "إِنَّاۤ أَعۡطَیۡنَـٰكَ",
+        "audioFileName": "13L-2T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّاۤ أَعۡطَیۡنَـٰكَ",
+        "audioFileName": "13L-2T-3-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِنَّاۤ أَعۡطَیۡنَـٰكَ",
+        "audioFileName": "13L-2T-3-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 4,
+    "question": {
+      "item": "مَلِكِ ٱلنَّاسِ"
+    },
+    "variants": [
+      {
+        "item": "مَلِكِ ٱلنَّاسِ",
+        "audioFileName": "13L-2T-4-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "مَلِكِ ٱلنَّاسِ",
+        "audioFileName": "13L-2T-4-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَلِكِ ٱلنَّاسِ",
+        "audioFileName": "13L-2T-4-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 5,
+    "question": {
+      "item": "فَوَیۡلٌ لِّلۡمُصَلِّینَ"
+    },
+    "variants": [
+      {
+        "item": "فَوَیۡلٌ لِّلۡمُصَلِّینَ",
+        "audioFileName": "13L-2T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَوَیۡلٌ لِّلۡمُصَلِّینَ",
+        "audioFileName": "13L-2T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَوَیۡلٌ لِّلۡمُصَلِّینَ",
+        "audioFileName": "13L-2T-5-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 6,
+    "question": {
+      "item": "وَٱلۡیَوۡمِ ٱلۡمَوۡعُودِ"
+    },
+    "variants": [
+      {
+        "item": "وَٱلۡیَوۡمِ ٱلۡمَوۡعُودِ",
+        "audioFileName": "13L-2T-6-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَٱلۡیَوۡمِ ٱلۡمَوۡعُودِ",
+        "audioFileName": "13L-2T-6-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَٱلۡیَوۡمِ ٱلۡمَوۡعُودِ",
+        "audioFileName": "13L-2T-6-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 7,
+    "question": {
+      "item": "فَلۡیَعۡبُدُوا۟ رَبَّ هَـٰذَا ٱلۡبَیۡتِ"
+    },
+    "variants": [
+      {
+        "item": "فَلۡیَعۡبُدُوا۟ رَبَّ هَـٰذَا ٱلۡبَیۡتِ",
+        "audioFileName": "13L-2T-7-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَلۡیَعۡبُدُوا۟ رَبَّ هَـٰذَا ٱلۡبَیۡتِ",
+        "audioFileName": "13L-2T-7-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "فَلۡیَعۡبُدُوا۟ رَبَّ هَـٰذَا ٱلۡبَیۡتِ",
+        "audioFileName": "13L-2T-7-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 8,
+    "question": {
+      "item": "وَءَامَنَهُم مِّنۡ خَوۡفِۭ"
+    },
+    "variants": [
+      {
+        "item": "وَءَامَنَهُم مِّنۡ خَوۡفِۭ",
+        "audioFileName": "13L-2T-8-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَءَامَنَهُم مِّنۡ خَوۡفِۭ",
+        "audioFileName": "13L-2T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَءَامَنَهُم مِّنۡ خَوۡفِۭ",
+        "audioFileName": "13L-2T-8-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 9,
+    "question": {
+      "item": "وَجَآءَ رَبُّكَ"
+    },
+    "variants": [
+      {
+        "item": "وَجَآءَ رَبُّكَ",
+        "audioFileName": "13L-2T-9-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَجَآءَ رَبُّكَ",
+        "audioFileName": "13L-2T-9-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَجَآءَ رَبُّكَ",
+        "audioFileName": "13L-2T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 10,
+    "question": {
+      "item": "إِلَّا ابْتِغَآءَ وَجْهِ"
+    },
+    "variants": [
+      {
+        "item": "إِلَّا ابْتِغَآءَ وَجْهِ",
+        "audioFileName": "13L-2T-10-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِلَّا ابْتِغَآءَ وَجْهِ",
+        "audioFileName": "13L-2T-10-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِلَّا ابْتِغَآءَ وَجْهِ",
+        "audioFileName": "13L-2T-10-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 11,
+    "question": {
+      "item": "وَإِلَى السَّمَآءِ كَيْفَ"
+    },
+    "variants": [
+      {
+        "item": "وَإِلَى السَّمَآءِ كَيْفَ",
+        "audioFileName": "13L-2T-11-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَإِلَى السَّمَآءِ كَيْفَ",
+        "audioFileName": "13L-2T-11-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَإِلَى السَّمَآءِ كَيْفَ",
+        "audioFileName": "13L-2T-11-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 12,
+    "question": {
+      "item": "لْحَآقَّةُ"
+    },
+    "variants": [
+      {
+        "item": "لْحَآقَّةُ",
+        "audioFileName": "13L-2T-12-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "لْحَآقَّةُ",
+        "audioFileName": "13L-2T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "لْحَآقَّةُ",
+        "audioFileName": "13L-2T-12-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 13,
+    "question": {
+      "item": "تُشَىٰٓقُّونَ فِيهِمْ"
+    },
+    "variants": [
+      {
+        "item": "تُشَىٰٓقُّونَ فِيهِمْ",
+        "audioFileName": "13L-2T-13-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "تُشَىٰٓقُّونَ فِيهِمْ",
+        "audioFileName": "13L-2T-13-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "تُشَىٰٓقُّونَ فِيهِمْ",
+        "audioFileName": "13L-2T-13-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 14,
+    "question": {
+      "item": "إِنَّ شَرَّ الدَّوَآبِّ"
+    },
+    "variants": [
+      {
+        "item": "إِنَّ شَرَّ الدَّوَآبِّ",
+        "audioFileName": "13L-2T-14-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "إِنَّ شَرَّ الدَّوَآبِّ",
+        "audioFileName": "13L-2T-14-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "إِنَّ شَرَّ الدَّوَآبِّ",
+        "audioFileName": "13L-2T-14-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-13l-2t",
+    "lessonCode": "tajvid-lesson-13",
+    "order": 15,
+    "question": {
+      "item": "حمٓ"
+    },
+    "variants": [
+      {
+        "item": "حمٓ",
+        "audioFileName": "13L-2T-15-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "حمٓ",
+        "audioFileName": "13L-2T-15-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "حمٓ",
+        "audioFileName": "13L-2T-15-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант чтения."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 1,
+    "question": {
+      "item": "يَسْمَعُونَ ۘ وَالْمَوْتَى"
+    },
+    "variants": [
+      {
+        "item": "يَسْمَعُونَ ۘ وَالْمَوْتَى",
+        "audioFileName": "14L-1T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "يَسْمَعُونَ ۘ وَالْمَوْتَى",
+        "audioFileName": "14L-1T-1-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "يَسْمَعُونَ ۘ وَالْمَوْتَى",
+        "audioFileName": "14L-1T-1-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 2,
+    "question": {
+      "item": "طَيِّبِينَ ۙ يَقُولُونَ"
+    },
+    "variants": [
+      {
+        "item": "طَيِّبِينَ ۙ يَقُولُونَ",
+        "audioFileName": "14L-1T-2-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "طَيِّبِينَ ۙ يَقُولُونَ",
+        "audioFileName": "14L-1T-2-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "طَيِّبِينَ ۙ يَقُولُونَ",
+        "audioFileName": "14L-1T-2-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 3,
+    "question": {
+      "item": "طَيِّبِينَ ۙ يَقُولُونَ"
+    },
+    "variants": [
+      {
+        "item": "نَبَأَهُمْ بِالْحَقِّ ۚ إِنَّهُمْ",
+        "audioFileName": "14L-1T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "نَبَأَهُمْ بِالْحَقِّ ۚ إِنَّهُمْ",
+        "audioFileName": "14L-1T-3-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "نَبَأَهُمْ بِالْحَقِّ ۚ إِنَّهُمْ",
+        "audioFileName": "14L-1T-3-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 4,
+    "question": {
+      "item": "فَلا كَاشِفَ لَهُ إِلاَّ هُوَ ۖ وَإِنْ يَمْسَسْكَ"
+    },
+    "variants": [
+      {
+        "item": "فَلا كَاشِفَ لَهُ إِلاَّ هُوَ ۖ وَإِنْ يَمْسَسْكَ",
+        "audioFileName": "14L-1T-4-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَلا كَاشِفَ لَهُ إِلاَّ هُوَ ۖ وَإِنْ يَمْسَسْكَ",
+        "audioFileName": "14L-1T-4-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "فَلا كَاشِفَ لَهُ إِلاَّ هُوَ ۖ وَإِنْ يَمْسَسْكَ",
+        "audioFileName": "14L-1T-4-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 5,
+    "question": {
+      "item": "مَا يَعْلَمُهُمْ إِلاَّ قَلِيلٌ ۗ فَلَا تُمَارِ فِيهِمْ"
+    },
+    "variants": [
+      {
+        "item": "مَا يَعْلَمُهُمْ إِلاَّ قَلِيلٌ ۗ فَلَا تُمَارِ فِيهِمْ",
+        "audioFileName": "14L-1T-5-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "مَا يَعْلَمُهُمْ إِلاَّ قَلِيلٌ ۗ فَلَا تُمَارِ فِيهِمْ",
+        "audioFileName": "14L-1T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَا يَعْلَمُهُمْ إِلاَّ قَلِيلٌ ۗ فَلَا تُمَارِ فِيهِمْ",
+        "audioFileName": "14L-1T-5-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 6,
+    "question": {
+      "item": "ذَلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِلْمُتَّقِينَ"
+    },
+    "variants": [
+      {
+        "item": "ذَلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِلْمُتَّقِينَ",
+        "audioFileName": "14L-1T-6-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ذَلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِلْمُتَّقِينَ",
+        "audioFileName": "14L-1T-6-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ذَلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِلْمُتَّقِينَ",
+        "audioFileName": "14L-1T-6-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 7,
+    "question": {
+      "item": "مَن بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَذَا مَا "
+    },
+    "variants": [
+      {
+        "item": "مَن بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَذَا مَا",
+        "audioFileName": "14L-1T-7-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَن بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَذَا مَا",
+        "audioFileName": "14L-1T-7-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَن بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَذَا مَا",
+        "audioFileName": "14L-1T-7-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 8,
+    "question": {
+      "item": "وَقِيلَ مَنْ ۜ رَاقٍ"
+    },
+    "variants": [
+      {
+        "item": "وَقِيلَ مَنْ ۜ رَاقٍ",
+        "audioFileName": "14L-1T-8-1.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَقِيلَ مَنْ ۜ رَاقٍ",
+        "audioFileName": "14L-1T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَقِيلَ مَنْ ۜ رَاقٍ",
+        "audioFileName": "14L-1T-8-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  },
+  {
+    "type": "tajvidC",
+    "subType": "tajvid-14l-1t",
+    "lessonCode": "tajvid-lesson-14",
+    "order": 9,
+    "question": {
+      "item": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَى قُلُوبِهِم"
+    },
+    "variants": [
+      {
+        "item": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَى قُلُوبِهِم",
+        "audioFileName": "14L-1T-9-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَى قُلُوبِهِم",
+        "audioFileName": "14L-1T-9-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَى قُلُوبِهِم",
+        "audioFileName": "14L-1T-9-3.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный вариант чтения согласно правилу вакф или сакта."
+  }
+]

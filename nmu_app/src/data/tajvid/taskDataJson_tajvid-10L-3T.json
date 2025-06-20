@@ -1,0 +1,89 @@
+[
+  {
+    "type": "tajvid-10l-3t",
+    "order": 1,
+    "lessonCode": "tajvid-lesson-10",
+    "data": [
+      {
+        "variants": [
+          {
+            "item": "ٱقْرَأْ",
+            "audioFileName": "10L-1T-14-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "تَلۡفَحُ",
+            "audioFileName": "10L-1T-14-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "خَفَّتۡ",
+            "audioFileName": "10L-1T-14-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Қалқала ережесін дұрыс табыңыз?"
+      },
+      {
+        "variants": [
+          {
+            "item": "أَنفُسَهُمۡ",
+            "audioFileName": "10L-1T-15-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "نَطْوِي",
+            "audioFileName": "10L-1T-15-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "خَسِرُوۤا۟",
+            "audioFileName": "10L-1T-15-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Қалқала ережесін дұрыс табыңыз?"
+      },
+      {
+        "variants": [
+          {
+            "item": "وَرَاۤىِٕهِمْ",
+            "audioFileName": "10L-1T-17-1.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "أَشَدُّ",
+            "audioFileName": "10L-1T-17-2.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "قَاۤىِٕلُهَا",
+            "audioFileName": "10L-1T-17-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Қалқала ережесін дұрыс табыңыз?"
+      },
+      {
+        "variants": [
+          {
+            "item": "بُرُوجٍ",
+            "audioFileName": "10L-1T-18-1.mp3",
+            "isCorrect": true
+          },
+          {
+            "item": "تَرَكۡتُۚ",
+            "audioFileName": "10L-1T-18-2.mp3",
+            "isCorrect": false
+          },
+          {
+            "item": "بَرۡزَخٌ",
+            "audioFileName": "10L-1T-18-3.mp3",
+            "isCorrect": false
+          }
+        ],
+        "description": "Қалқала ережесін дұрыс табыңыз?"
+      }
+    ]
+  }
+]

@@ -22,15 +22,16 @@ export class CreateUserTaskProgressInput {
 
   @Field(() => GraphQLJSONObject, { nullable: true })
   @IsOptional()
-  results: {
+  results?: {
     taskType: string;
     correct: Record<string, any>[];
     inCorrect: Record<string, any>[];
   };
 
   @Field(() => String, { nullable: true })
+  @IsOptional()
   @IsString()
-  elapsedTime: string;
+  elapsedTime?: string;
 
   @Field(() => Boolean, { defaultValue: false })
   @IsBoolean()

@@ -55,36 +55,38 @@ export class UploadContentService {
     private readonly authService: AuthService,
   ) {}
 
-  async uploadTasksByType(file: Express.Multer.File, type: string) {
-    if (!file?.buffer) {
-      throw new Error('Файл отсутствует или повреждён');
+  async uploadTasksByType(files: Express.Multer.File[], type: string) {
+    if (!files?.length || files.length < 2) {
+      throw new Error('Необходимо загрузить два файла: ru и kk');
     }
 
-    let parsedJson: any[];
+    // Определяем какой файл для какого языка по имени файла (например, ..._kk.json или ..._ru.json)
+    const langs = ['ru', 'kk'];
+    const dataByLang: Record<'ru' | 'kk', any[]> = { ru: [], kk: [] };
 
-    try {
-      parsedJson = JSON.parse(file.buffer.toString('utf-8'));
-      if (!Array.isArray(parsedJson)) throw new Error('Ожидался массив задач');
-    } catch (err: any) {
-      throw new Error('Ошибка при парсинге JSON: ' + err.message);
+    for (const file of files) {
+      let lang: 'ru' | 'kk' | undefined;
+      if (file.originalname.includes('_kk') || file.originalname.endsWith('kk.json')) lang = 'kk';
+      else if (file.originalname.includes('_ru') || file.originalname.endsWith('ru.json')) lang = 'ru';
+
+      if (!lang) throw new Error('Файл должен иметь суффикс _ru или _kk');
+
+      try {
+        const parsedJson = JSON.parse(file.buffer.toString('utf-8'));
+        if (!Array.isArray(parsedJson)) throw new Error('Ожидался массив задач');
+        dataByLang[lang] = parsedJson;
+      } catch (err: any) {
+        throw new Error('Ошибка при парсинге JSON: ' + err.message);
+      }
     }
 
-    const allowedTypes = [
-      'a',
-      'b',
-      'c',
-      'e',
-      'f',
-      'g',
-      ...Array.from({ length: 14 }, (_, i) => [`tajvid-${i + 1}l-1t`, `tajvid-${i + 1}l-2t`]).flat(),
-    ];
-
+    const allowedTypes = ['a', 'b', 'c', 'e', 'f', 'g', 'tajvidA', 'tajvidB', 'tajvidC', 'tajvidD'];
     if (!allowedTypes.includes(type)) {
       throw new Error(`Недопустимый тип задачи: ${type}`);
     }
 
-    // Хелпер-функция для извлечения lessonCode
-    const extractLessonCode = (task: any): string | undefined => {
+    // --- Собираем по lessonCode ---
+    function extractLessonCode(task: any): string | undefined {
       if (task.lessonCode) return task.lessonCode;
       if (task.correctAnswer?.lessonCode) return task.correctAnswer.lessonCode;
       if (task.correctLetter?.lessonCode) return task.correctLetter.lessonCode;
@@ -94,37 +96,31 @@ export class UploadContentService {
         return found?.lessonCode;
       }
       return undefined;
-    };
-
-    const tasksByLessonCode: Record<string, any[]> = {};
-
-    for (const task of parsedJson) {
-      const lessonCode = extractLessonCode(task);
-      if (!lessonCode) {
-        console.warn('❗ Пропущен task без lessonCode:', task);
-        continue;
-      }
-
-      if (!tasksByLessonCode[lessonCode]) {
-        tasksByLessonCode[lessonCode] = [];
-      }
-      tasksByLessonCode[lessonCode].push(task);
     }
 
+    const tasksByLessonCode: Record<string, { ru: any[]; kk: any[] }> = {};
+
+    // Для каждого языка раскладываем задачи по lessonCode
+    for (const lang of langs) {
+      for (const task of dataByLang[lang]) {
+        const lessonCode = extractLessonCode(task);
+        if (!lessonCode) continue;
+        if (!tasksByLessonCode[lessonCode]) tasksByLessonCode[lessonCode] = { ru: [], kk: [] };
+        tasksByLessonCode[lessonCode][lang].push(task);
+      }
+    }
+
+    // --- Сохраняем в БД ---
     const created: { lessonCode: string; id: string }[] = [];
 
-    for (const [lessonCode, tasks] of Object.entries(tasksByLessonCode)) {
+    for (const [lessonCode, data] of Object.entries(tasksByLessonCode)) {
       const createTaskInput = {
         type,
         lessonCode,
         description: descriptions[type] || { kk: '', ru: '' },
-        data: {
-          kk: tasks,
-          ru: tasks,
-        },
+        data,
       };
-
-      const result = await this.taskService.create(createTaskInput as any); // Приведение к any если нет строгого DTO
+      const result = await this.taskService.create(createTaskInput as any);
       created.push({ lessonCode, id: result._id });
     }
 

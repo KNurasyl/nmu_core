@@ -27,7 +27,7 @@ export class UserTaskProgress {
   @Prop({ default: '00:00' })
   elapsedTime: string;
 
-  @Prop({ type: Object, required: true })
+  @Prop({ type: Object, nullable: true })
   @Field(() => GraphQLJSONObject)
   results: {
     taskType: string;

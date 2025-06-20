@@ -1,0 +1,1743 @@
+[
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 1,
+    "question": {
+      "audioFileName": "2L-1T-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "مَالٍ",
+        "audioFileName": "2L-1T-1-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَالًا",
+        "audioFileName": "2L-1T-1-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَالٌ",
+        "audioFileName": "2L-1T-1.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 2,
+    "question": {
+      "audioFileName": "2L-1T-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "قَلَمٍ",
+        "audioFileName": "2L-1T-2-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "قَلَمٌ",
+        "audioFileName": "2L-1T-2.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "قَلَمًا",
+        "audioFileName": "2L-1T-2-2.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 3,
+    "question": {
+      "audioFileName": "2L-1T-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "كُتُبٍ",
+        "audioFileName": "2L-1T-3-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "كُتُبًا",
+        "audioFileName": "2L-1T-3-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "كُتُبٌ",
+        "audioFileName": "2L-1T-3.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 4,
+    "question": {
+      "audioFileName": "2L-1T-4.mp3"
+    },
+    "variants": [
+      {
+        "item": "حَافِظٌ",
+        "audioFileName": "2L-1T-4.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "حَافِظٍ",
+        "audioFileName": "2L-1T-4-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "حَافِظًا",
+        "audioFileName": "2L-1T-4-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 5,
+    "question": {
+      "audioFileName": "2L-1T-5.mp3"
+    },
+    "variants": [
+      {
+        "item": "أَرْضٍ",
+        "audioFileName": "2L-1T-5-1.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَرْضًا",
+        "audioFileName": "2L-1T-5-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَرْضٌ",
+        "audioFileName": "2L-1T-5.mp3",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 6,
+    "question": {
+      "audioFileName": "2L-1T-6.mp3"
+    },
+    "variants": [
+      {
+        "item": "مَالٍ",
+        "audioFileName": "2L-1T-6.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "مَالًا",
+        "audioFileName": "2L-1T-6-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَالٌ",
+        "audioFileName": "2L-1T-6-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 7,
+    "question": {
+      "audioFileName": "2L-1T-7.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَلَدٍ",
+        "audioFileName": "2L-1T-7.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَلَدًا",
+        "audioFileName": "2L-1T-7-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَلَدٌ",
+        "audioFileName": "2L-1T-7-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 8,
+    "question": {
+      "audioFileName": "2L-1T-8.mp3"
+    },
+    "variants": [
+      {
+        "item": "عِلْمٍ",
+        "audioFileName": "2L-1T-8.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "عِلْمٌ",
+        "audioFileName": "2L-1T-8-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "عِلْمًا",
+        "audioFileName": "2L-1T-8-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 9,
+    "question": {
+      "audioFileName": "2L-1T-9.mp3"
+    },
+    "variants": [
+      {
+        "item": "رِزْقٍ",
+        "audioFileName": "2L-1T-9.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "رِزْقًا",
+        "audioFileName": "2L-1T-9-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "رِزْقٌ",
+        "audioFileName": "2L-1T-9-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 10,
+    "question": {
+      "audioFileName": "2L-1T-10.mp3"
+    },
+    "variants": [
+      {
+        "item": "وَسَطٍ",
+        "audioFileName": "2L-1T-10.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "وَسَطًا",
+        "audioFileName": "2L-1T-10-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "وَسَطٌ",
+        "audioFileName": "2L-1T-10-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 11,
+    "question": {
+      "audioFileName": "2L-1T-11.mp3"
+    },
+    "variants": [
+      {
+        "item": "مَالًا",
+        "audioFileName": "2L-1T-11.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "مَالٌ",
+        "audioFileName": "2L-1T-11-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "مَالٍ",
+        "audioFileName": "2L-1T-11-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 12,
+    "question": {
+      "audioFileName": "2L-1T-12.mp3"
+    },
+    "variants": [
+      {
+        "item": "ثَمَنًا",
+        "audioFileName": "2L-1T-12.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "ثَمَنٍ",
+        "audioFileName": "2L-1T-12-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "ثَمَنٌ",
+        "audioFileName": "2L-1T-12-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 13,
+    "question": {
+      "audioFileName": "2L-1T-13.mp3"
+    },
+    "variants": [
+      {
+        "item": "جَمْعًا",
+        "audioFileName": "2L-1T-13.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "جَمْعٌ",
+        "audioFileName": "2L-1T-13-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "جَمْعٍ",
+        "audioFileName": "2L-1T-13-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 14,
+    "question": {
+      "audioFileName": "2L-1T-14.mp3"
+    },
+    "variants": [
+      {
+        "item": "خَلْقًا",
+        "audioFileName": "2L-1T-14.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "خَلْقٌ",
+        "audioFileName": "2L-1T-14-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "خَلْقٍ",
+        "audioFileName": "2L-1T-14-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-1t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 15,
+    "question": {
+      "audioFileName": "2L-1T-15.mp3"
+    },
+    "variants": [
+      {
+        "item": "أَرْضًا",
+        "audioFileName": "2L-1T-15.mp3",
+        "isCorrect": true
+      },
+      {
+        "item": "أَرْضٍ",
+        "audioFileName": "2L-1T-15-2.mp3",
+        "isCorrect": false
+      },
+      {
+        "item": "أَرْضٌ",
+        "audioFileName": "2L-1T-15-1.mp3",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильный вариант."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 1,
+    "question": {
+      "item": "وَلَمْ يَكُنْ لَّهُ كُفُو…ا أَحَدٌ",
+      "audioFileName": "2L-2T-1.mp3",
+      "correctAnswer": "وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ"
+    },
+    "variants": [
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      },
+      {
+        "item": "фатха",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 2,
+    "question": {
+      "item": "فَإِنَّ مَعَ العُسْرِ يُسْر…ا",
+      "audioFileName": "2L-2T-2.mp3",
+      "correctAnswer": "فَإِنَّ مَعَ العُسْرِ يُسْرًا"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": true
+      },
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 3,
+    "question": {
+      "item": "عَبْد…ا إِذَا صَلَّى",
+      "audioFileName": "2L-2T-3.mp3",
+      "correctAnswer": "عَبْدًا إِذَا صَلَّى"
+    },
+    "variants": [
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      },
+      {
+        "item": "фатха",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 4,
+    "question": {
+      "item": "وَلِسَان…ا وَشَفَتَيْنِ",
+      "audioFileName": "2L-2T-4.mp3",
+      "correctAnswer": "وَلِسَانًا وَشَفَتَيْنِ"
+    },
+    "variants": [
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "фатха",
+        "isCorrect": true
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 5,
+    "question": {
+      "item": "وَتُحِبُّونَ الْمَالَ حُبّ…ا جَمًّا",
+      "audioFileName": "2L-2T-5.mp3",
+      "correctAnswer": "وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": true
+      },
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 6,
+    "question": {
+      "item": "وَمِن شَرِّ غَاسِق... إِذَا وَقَبَ",
+      "audioFileName": "2L-2T-6.mp3",
+      "correctAnswer": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": true
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 7,
+    "question": {
+      "item": "تَبَّتۡ یَدَاۤ أَبِی لَهَب... وَتَبَّ",
+      "audioFileName": "2L-2T-7.mp3",
+      "correctAnswer": "تَبَّتۡ یَدَاۤ أَبِی لَهَبٍ وَتَبَّ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": true
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 8,
+    "question": {
+      "item": "…لِإيلَفِ قُرَيْش",
+      "audioFileName": "2L-2T-8.mp3",
+      "correctAnswer": "لِإِیلَـٰفِ قُرَیۡشٍ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": true
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 9,
+    "question": {
+      "item": "فَجَعَلَهُمۡ كَعَصۡف... مَّأۡكُولِۭ",
+      "audioFileName": "2L-2T-9.mp3",
+      "correctAnswer": "فَجَعَلَهُمۡ كَعَصۡفٍ مَّأۡكُولِ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": true
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 10,
+    "question": {
+      "item": "ثُمَّ لَتُسۡـَٔلُنَّ یَوۡمَىِٕذ... عَنِ ٱلنَّعِیمِ",
+      "audioFileName": "2L-2T-10.mp3",
+      "correctAnswer": "ثُمَّ لَتُسۡـَٔلُنَّ یَوۡمَىِٕذٍ عَنِ ٱلنَّعِیمِ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": true
+      },
+      {
+        "item": "домма",
+        "isCorrect": false
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 11,
+    "question": {
+      "item": "نَار... حَامِیَةُۢ",
+      "audioFileName": "2L-2T-11.mp3",
+      "correctAnswer": "نَارٌ حَامِیَةُ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 12,
+    "question": {
+      "item": "وَأَنتَ حِلّ... بِهَـٰذَا ٱلۡبَلَدِ",
+      "audioFileName": "2L-2T-13.mp3",
+      "correctAnswer": "وَأَنتَ حِلٌّ بِهَـٰذَا ٱلۡبَلَدِ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 13,
+    "question": {
+      "item": "فِیهَا عَیۡن... جَارِیَةٌ",
+      "audioFileName": "2L-2T-14.mp3",
+      "correctAnswer": "فِیهَا عَیۡنٌ جَارِیَةٌ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-2l-2t",
+    "lessonCode": "tajvid-lesson-2",
+    "order": 14,
+    "question": {
+      "item": "فِیهَا سُرُر... مَّرۡفُوعَةٌ",
+      "audioFileName": "2L-2T-15.mp3",
+      "correctAnswer": "فِیهَا سُرُرٌ مَّرۡفُوعَةٌ"
+    },
+    "variants": [
+      {
+        "item": "фатха",
+        "isCorrect": false
+      },
+      {
+        "item": "касра",
+        "isCorrect": false
+      },
+      {
+        "item": "домма",
+        "isCorrect": true
+      }
+    ],
+    "description": "Выберите правильный тануин (фатха, касра или домма), который нужно вставить в пропущенное место."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 1,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "هَلْ لَكُمْ",
+      "audioFileName": "10L-1T-1.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 2,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "تَسْطِعْ عَلَيْهِ",
+      "audioFileName": "10L-1T-2.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 3,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "ٱذْهَبْ بِكِتَابِي",
+      "audioFileName": "10L-1T-3.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 4,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "وَقَدْ دَخَلُوا",
+      "audioFileName": "10L-1T-4.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 5,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "مَا كَانَتْ تَعْبُدُ",
+      "audioFileName": "10L-1T-5.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 6,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "وَ قَالَتْ طَائِفَةٌ",
+      "audioFileName": "10L-1T-6.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 7,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "وَجَدْتُمْ",
+      "audioFileName": "10L-1T-7.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 8,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "أَثْقَلَتْ دَعَوَا ٱﷲَ",
+      "audioFileName": "10L-1T-8.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 9,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "إِذْ ظَلَمُوا",
+      "audioFileName": "10L-1T-9.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 10,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "يَلْهَثْ ذَلِكَ",
+      "audioFileName": "10L-1T-10.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 11,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "ٱرْكَبْ مَعَنَا",
+      "audioFileName": "10L-1T-11.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 12,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "قُلْ رِبِّ",
+      "audioFileName": "10L-1T-12.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-10l-1t",
+    "lessonCode": "tajvid-lesson-10",
+    "order": 13,
+    "variants": [
+      {
+        "item": "Идғам мутәжәнисәйн",
+        "isCorrect": false
+      },
+      {
+        "item": "Идғам мутәқарибәйн",
+        "isCorrect": true
+      },
+      {
+        "item": "Идғам мисләйн",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аудио и выберите правильное правило таджвида.",
+    "question": {
+      "item": "بَلْ رَفَعَهُ ٱللهُ",
+      "audioFileName": "10L-1T-13.mp3"
+    }
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 1,
+    "question": {
+      "item": "قُرَیۡشٍ",
+      "audioFileName": "11L-1T-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 2,
+    "question": {
+      "item": "یَرۡضَىٰ",
+      "audioFileName": "11L-1T-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 3,
+    "question": {
+      "item": "رَقَبَة",
+      "audioFileName": "11L-1T-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 4,
+    "question": {
+      "item": "مِرۡصَادًا",
+      "audioFileName": "11L-1T-4.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 5,
+    "question": {
+      "item": "ٱرۡجِعِیۤ",
+      "audioFileName": "11L-1T-5.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 6,
+    "question": {
+      "item": "رَسُولُ ٱللَّهِ",
+      "audioFileName": "11L-1T-6.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 7,
+    "question": {
+      "item": "إِنَّ نَصۡرَ ٱللَّهِ",
+      "audioFileName": "11L-1T-7.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": true
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 8,
+    "question": {
+      "item": "ٱلۡقَارِعَةُ",
+      "audioFileName": "11L-1T-8.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 9,
+    "question": {
+      "item": "وَٱلنَّهَارِ",
+      "audioFileName": "11L-1T-9.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 10,
+    "question": {
+      "item": "وَٱلۡعَصۡرِ",
+      "audioFileName": "11L-1T-10.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 11,
+    "question": {
+      "item": "بِٱلصَّبۡرِ",
+      "audioFileName": "11L-1T-11.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 12,
+    "question": {
+      "item": "حِجۡرٍ",
+      "audioFileName": "11L-1T-12.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 13,
+    "question": {
+      "item": "بِعِلۡمِ ٱللَّهِ",
+      "audioFileName": "11L-1T-13.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-11l-1t",
+    "lessonCode": "tajvid-lesson-11",
+    "order": 14,
+    "question": {
+      "item": "إِلَىٰ كِتَـٰبِ ٱللَّهِ",
+      "audioFileName": "11L-1T-14.mp3"
+    },
+    "variants": [
+      {
+        "item": "Тафхим (твердые)",
+        "isCorrect": false
+      },
+      {
+        "item": "Таркик (мягкие)",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте слово и выберите, применяется ли правило Тафхим (твердость) или Таркик (мягкость)."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 1,
+    "question": {
+      "item": "ٱلَّذِی یُوَسۡوِسُ",
+      "audioFileName": "12L-1T-1.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 2,
+    "question": {
+      "item": "فَكَانَتۡ",
+      "audioFileName": "12L-1T-2.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 3,
+    "question": {
+      "item": "لَمَجۡمُوعُونَ",
+      "audioFileName": "12L-1T-3.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 4,
+    "question": {
+      "item": "ءَامَنَ",
+      "audioFileName": "12L-1T-4.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 5,
+    "question": {
+      "item": "إِيمَانٌ",
+      "audioFileName": "12L-1T-5.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 6,
+    "question": {
+      "item": "أُوتُوا",
+      "audioFileName": "12L-1T-6.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 7,
+    "question": {
+      "item": "أَوْتَادًا",
+      "audioFileName": "12L-1T-7.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 8,
+    "question": {
+      "item": "أَزْوَاجًا",
+      "audioFileName": "12L-1T-8.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 9,
+    "question": {
+      "item": "سُبَاتًا",
+      "audioFileName": "12L-1T-9.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": true
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 10,
+    "question": {
+      "item": "إِنَّ هَـٰذِهِۦ تَذْكِرَةٌ",
+      "audioFileName": "12L-1T-10.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 11,
+    "question": {
+      "item": "فَهُمۡ لَهُۥ مُنكِرُونَ",
+      "audioFileName": "12L-1T-11.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 12,
+    "question": {
+      "item": "وَإِنَّ هَـٰذِهِۦۤ أُمَّتُكُمۡ",
+      "audioFileName": "12L-1T-12.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  },
+  {
+    "type": "tajvidB",
+    "subType": "tajvid-12l-1t",
+    "lessonCode": "tajvid-lesson-12",
+    "order": 13,
+    "question": {
+      "item": "وَأُمَّهُۥۤ ءَایَةً",
+      "audioFileName": "12L-1T-13.mp3"
+    },
+    "variants": [
+      {
+        "item": "Мәд сыйлә",
+        "isCorrect": true
+      },
+      {
+        "item": "Мәд бәдәл",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд ғиуад",
+        "isCorrect": false
+      },
+      {
+        "item": "Мәд табиғи",
+        "isCorrect": false
+      }
+    ],
+    "description": "Прослушайте аят и выберите правильное правило мадда."
+  }
+]

@@ -9,15 +9,15 @@
         "correctAnswer": "وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ",
         "variants": [
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           },
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": true
           }
         ],
@@ -29,15 +29,15 @@
         "correctAnswer": "فَإِنَّ مَعَ العُسْرِ يُسْرًا",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": true
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -49,15 +49,15 @@
         "correctAnswer": "عَبْدًا إِذَا صَلَّى",
         "variants": [
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           },
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": true
           }
         ],
@@ -69,15 +69,15 @@
         "correctAnswer": "وَلِسَانًا وَشَفَتَيْنِ",
         "variants": [
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": true
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -89,15 +89,15 @@
         "correctAnswer": "وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": true
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -109,15 +109,15 @@
         "correctAnswer": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": true
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -129,15 +129,15 @@
         "correctAnswer": "تَبَّتۡ یَدَاۤ أَبِی لَهَبٍ وَتَبَّ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": true
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -149,15 +149,15 @@
         "correctAnswer": "لِإِیلَـٰفِ قُرَیۡشٍ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": true
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -169,15 +169,15 @@
         "correctAnswer": "فَجَعَلَهُمۡ كَعَصۡفٍ مَّأۡكُولِ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": true
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -189,15 +189,15 @@
         "correctAnswer": "ثُمَّ لَتُسۡـَٔلُنَّ یَوۡمَىِٕذٍ عَنِ ٱلنَّعِیمِ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": true
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": false
           }
         ],
@@ -209,15 +209,15 @@
         "correctAnswer": "نَارٌ حَامِیَةُ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": true
           }
         ],
@@ -229,15 +229,15 @@
         "correctAnswer": "وَأَنتَ حِلٌّ بِهَـٰذَا ٱلۡبَلَدِ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": true
           }
         ],
@@ -249,15 +249,15 @@
         "correctAnswer": "فِیهَا عَیۡنٌ جَارِیَةٌ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": true
           }
         ],
@@ -269,15 +269,15 @@
         "correctAnswer": "فِیهَا سُرُرٌ مَّرۡفُوعَةٌ",
         "variants": [
           {
-            "variant": "фатха",
+            "item": "фатха",
             "isCorrect": false
           },
           {
-            "variant": "касра",
+            "item": "касра",
             "isCorrect": false
           },
           {
-            "variant": "домма",
+            "item": "домма",
             "isCorrect": true
           }
         ],
