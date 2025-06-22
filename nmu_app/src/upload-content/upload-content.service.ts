@@ -61,11 +61,11 @@ export class UploadContentService {
     }
 
     // Определяем какой файл для какого языка по имени файла (например, ..._kk.json или ..._ru.json)
-    const langs = ['ru', 'kk'];
-    const dataByLang: Record<'ru' | 'kk', any[]> = { ru: [], kk: [] };
+    const langs = ['ru', 'kk'] as const;
+    const dataByLang: Record<(typeof langs)[number], any[]> = { ru: [], kk: [] };
 
     for (const file of files) {
-      let lang: 'ru' | 'kk' | undefined;
+      let lang: (typeof langs)[number] | undefined;
       if (file.originalname.includes('_kk') || file.originalname.endsWith('kk.json')) lang = 'kk';
       else if (file.originalname.includes('_ru') || file.originalname.endsWith('ru.json')) lang = 'ru';
 
@@ -85,47 +85,45 @@ export class UploadContentService {
       throw new Error(`Недопустимый тип задачи: ${type}`);
     }
 
-    // --- Собираем по lessonCode ---
-    function extractLessonCode(task: any): string | undefined {
-      if (task.lessonCode) return task.lessonCode;
-      if (task.correctAnswer?.lessonCode) return task.correctAnswer.lessonCode;
-      if (task.correctLetter?.lessonCode) return task.correctLetter.lessonCode;
-      if (task.data?.lessonCode) return task.data.lessonCode;
-      if (Array.isArray(task.data)) {
-        const found = task.data.find((d: any) => d.lessonCode);
-        return found?.lessonCode;
-      }
-      return undefined;
+    // --- Группировка по subType ---
+    type Lang = (typeof langs)[number];
+    interface GroupedTasks {
+      [subType: string]: Record<Lang, any[]>;
     }
+    const tasksBySubType: GroupedTasks = {};
 
-    const tasksByLessonCode: Record<string, { ru: any[]; kk: any[] }> = {};
-
-    // Для каждого языка раскладываем задачи по lessonCode
     for (const lang of langs) {
       for (const task of dataByLang[lang]) {
-        const lessonCode = extractLessonCode(task);
-        if (!lessonCode) continue;
-        if (!tasksByLessonCode[lessonCode]) tasksByLessonCode[lessonCode] = { ru: [], kk: [] };
-        tasksByLessonCode[lessonCode][lang].push(task);
+        const subType = task.subType || 'default';
+        if (!tasksBySubType[subType]) {
+          tasksBySubType[subType] = { ru: [], kk: [] };
+        }
+        tasksBySubType[subType][lang].push(task);
       }
     }
 
     // --- Сохраняем в БД ---
-    const created: { lessonCode: string; id: string }[] = [];
+    const created: { subType: string; id: string }[] = [];
+    for (const [subType, data] of Object.entries(tasksBySubType)) {
+      // lessonCode берём из первой задачи (по всем языкам одинаковый)
+      const lessonCode = data.kk[0]?.lessonCode || data.ru[0]?.lessonCode || '';
 
-    for (const [lessonCode, data] of Object.entries(tasksByLessonCode)) {
       const createTaskInput = {
         type,
+        subType,
         lessonCode,
-        description: descriptions[type] || { kk: '', ru: '' },
+        description: {
+          kk: data.kk[0]?.description || '',
+          ru: data.ru[0]?.description || '',
+        },
         data,
       };
       const result = await this.taskService.create(createTaskInput as any);
-      created.push({ lessonCode, id: result._id });
+      created.push({ subType, id: result._id });
     }
 
     return {
-      message: `✅ Создано ${created.length} задач(и) для типа "${type}"`,
+      message: `✅ Создано ${created.length} задач(и) для типа "${type}" (группировка по subType)`,
       created,
     };
   }

@@ -51,3 +51,34 @@ export interface ITaskG {
 	variants: string[]
 	lessonCode: string
 }
+
+export interface ITajvidA {
+	type: 'tajvidA'
+	subType:
+		| 'tajvid-1l-1t'
+		| 'tajvid-1l-2t'
+		| 'tajvid-3l-1t'
+		| 'tajvid-3l-2t'
+		| 'tajvid-4l-1t'
+		| 'tajvid-5l-1t'
+	order: number
+	lessonCode:
+		| 'tajvid-lesson-1'
+		| 'tajvid-lesson-3'
+		| 'tajvid-lesson-4'
+		| 'tajvid-lesson-5'
+	description: string
+	question: {
+		item: string
+		audioFileName?: string
+	}
+	correctVariant: {
+		item: string
+		correctAnswer?: string
+		audioFileName?: string
+	}
+	variants: {
+		item: string
+		audioFileName?: string
+	}[]
+}

@@ -57,6 +57,8 @@ export interface ITaskTajvid {
   data: unknown[];
 }
 
+// tajvid-1l-1t, tajvid-1l-2t, tajvid-3l-1t, tajvid-3l-2t, tajvid-4l-1t, tajvid-5l-1t
+
 export interface ITajvid1l1t {
   type: 'tajvid-1l-1t';
   order: number;

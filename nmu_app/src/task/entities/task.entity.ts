@@ -21,6 +21,10 @@ export class Task {
   @Field()
   type: string;
 
+  @Prop()
+  @Field({ nullable: true })
+  subType?: string;
+
   @Prop({ type: Object, required: true })
   @Field(() => GraphQLJSONObject)
   data: {

@@ -41,6 +41,27 @@
 		gap: 18px;
 	}
 
+	& .correctVariant {
+		box-shadow: 0 0 6px rgba(255, 223, 100, 0.6),
+			0 0 12px rgba(255, 200, 55, 0.3);
+		border-radius: 10px;
+		border: 3px solid #34c759;
+		background-color: #95ebab;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px 5px;
+
+		&__letter {
+			font-size: clamp(20px, 10vw, 30px);
+			line-height: 1.2;
+			font-weight: 700;
+			color: #424242;
+			text-align: center;
+		}
+	}
+
 	.task_a__status-alert-icon {
 		margin-right: 15px;
 		font-size: 25px;

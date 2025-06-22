@@ -9,6 +9,10 @@ export class CreateTaskInput {
   type: string;
 
   @Field()
+  @IsOptional()
+  subType?: string;
+
+  @Field()
   @IsString({ message: 'Lesson code name must be string' })
   lessonCode: string;
 

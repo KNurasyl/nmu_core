@@ -56,6 +56,7 @@ export type CreateTaskInput = {
   data?: InputMaybe<Scalars['JSONObject']['input']>;
   description: Scalars['String']['input'];
   lessonCode: Scalars['String']['input'];
+  subType: Scalars['String']['input'];
   type: Scalars['String']['input'];
 };
 
@@ -434,6 +435,7 @@ export type Task = {
   data: Scalars['JSONObject']['output'];
   description?: Maybe<Description>;
   lessonCode: Scalars['String']['output'];
+  subType?: Maybe<Scalars['String']['output']>;
   type: Scalars['String']['output'];
 };
 
@@ -466,6 +468,7 @@ export type UpdateTaskInput = {
   description?: InputMaybe<Scalars['String']['input']>;
   id: Scalars['String']['input'];
   lessonCode?: InputMaybe<Scalars['String']['input']>;
+  subType?: InputMaybe<Scalars['String']['input']>;
   type?: InputMaybe<Scalars['String']['input']>;
 };
 

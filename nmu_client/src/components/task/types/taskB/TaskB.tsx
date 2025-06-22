@@ -72,8 +72,8 @@ const TaskB = ({ onFinished }: IProps) => {
 		setStatus('inProgress')
 		setPlayingIndex(null)
 		setSelected(null)
-		// Остановить все плееры
 		Object.values(audioRefs.current).forEach(ref => ref?.stop())
+		audioRefs.current = {}
 		nextTask()
 	}
 
