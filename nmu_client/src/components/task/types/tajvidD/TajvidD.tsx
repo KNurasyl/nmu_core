@@ -2,6 +2,7 @@
 
 import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { getRandomItems } from '@/lib/utils/getRandomItems'
+import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITajvidD } from '@/types/tasks'
 import { Row } from 'antd'
@@ -39,6 +40,8 @@ const TajvidD = ({ onFinished }: IProps) => {
 		elapsedTime,
 	} = useTaskStore(state => state)
 
+	const devMode = useAuthStore(state => state.devMode)
+
 	const task = currentTask as ITajvidD
 
 	const statusAudioRef = useRef<AudioPlayerHandle>(null) // для алерта
@@ -55,12 +58,11 @@ const TajvidD = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		// Автостарт алерта
 		if (status !== 'inProgress' && selected?.audioFileName) {
 			setIsPlaying(true)
 			statusAudioRef.current?.play()
 		}
-		// Стоп алерта когда ушли с алерта
+
 		if (status === 'inProgress') {
 			setIsPlaying(false)
 			statusAudioRef.current?.stop()
@@ -100,8 +102,6 @@ const TajvidD = ({ onFinished }: IProps) => {
 		setPlayingIndex(null)
 	}
 
-	console.log(task)
-
 	return (
 		<Row className='tajvid_d'>
 			<TajvidVarinats
@@ -114,6 +114,10 @@ const TajvidD = ({ onFinished }: IProps) => {
 				playingIndex={playingIndex}
 				audioRefs={audioRefs}
 				isAudioFileName={true}
+				devMode={devMode}
+				correctItem={
+					task?.variants?.find(v => v.isCorrect === true)?.item || ''
+				}
 			/>
 
 			<TaskCheck onClick={checkHandle} btnText={t('check')} />

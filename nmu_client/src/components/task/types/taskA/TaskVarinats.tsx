@@ -13,9 +13,17 @@ interface IProps {
 	variants: IVariant[]
 	setSelected: (value: SetStateAction<string | null>) => void
 	selected: string | null
+	devMode: boolean
+	correctItem: string
 }
 
-const TaskVarinats = ({ variants, selected, setSelected }: IProps) => {
+const TaskVarinats = ({
+	variants,
+	selected,
+	correctItem,
+	devMode,
+	setSelected,
+}: IProps) => {
 	return (
 		<Row className={`task_a__variants`} gutter={[12, 12]} justify='center'>
 			{variants?.map((v, i) => (
@@ -23,7 +31,7 @@ const TaskVarinats = ({ variants, selected, setSelected }: IProps) => {
 					key={i}
 					className={`task_a__variant ${
 						selected === v.arabicLetter ? 'selected' : ''
-					}`}
+					} ${devMode && correctItem === v?.arabicLetter ? 'devMode' : ''}`}
 					onClick={() => setSelected(v.arabicLetter)}
 				>
 					{v.arabicLetter}

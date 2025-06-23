@@ -2,6 +2,7 @@
 
 import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { getRandomItems } from '@/lib/utils/getRandomItems'
+import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskAB } from '@/types/tasks'
 import { Row } from 'antd'
@@ -33,6 +34,8 @@ const TaskA = ({ onFinished }: IProps) => {
 		wrongCount,
 		elapsedTime,
 	} = useTaskStore(state => state)
+
+	const devMode = useAuthStore(state => state.devMode)
 
 	const task = currentTask as ITaskAB
 
@@ -92,6 +95,8 @@ const TaskA = ({ onFinished }: IProps) => {
 				variants={variants}
 				setSelected={setSelected}
 				selected={selected}
+				devMode={devMode}
+				correctItem={task?.correctAnswer?.arabicLetter}
 			/>
 
 			<TaskCheck onClick={checkHandle} btnText={t('check')} />

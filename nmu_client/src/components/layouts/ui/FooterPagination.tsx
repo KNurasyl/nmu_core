@@ -18,7 +18,7 @@ const FooterPagination = () => {
 	const { t, i18n } = useTranslation('common')
 	const pathname = usePathname()
 	const router = useRouter()
-	const { setUser } = useAuthStore(state => state)
+	const { setUser, user, setDevMode, devMode } = useAuthStore(state => state)
 
 	const handleMenuClick = useCallback(
 		({ key }: { key: string }) => {
@@ -52,6 +52,13 @@ const FooterPagination = () => {
 		return () => window.removeEventListener('scroll', handleScroll)
 	}, [])
 
+	const onDevClick = () => {
+		if (user?.userRole === 'developer') {
+			setDevMode(!devMode)
+			toast.success(`Dev Mode: ${!devMode ? 'ON' : 'OFF'}`)
+		}
+	}
+
 	return (
 		<Footer className={`footer_mobile${hide ? ' footer--hidden' : ''}`}>
 			<Link href='/' className={`nav-btn ${pathname === '/' ? 'active' : ''}`}>
@@ -69,7 +76,7 @@ const FooterPagination = () => {
 				</span>
 			</Link>
 
-			<span className='nav-btn-logo'>
+			<span className='nav-btn-logo' onClick={onDevClick}>
 				<Image
 					src={AllahText}
 					alt={'logo'}

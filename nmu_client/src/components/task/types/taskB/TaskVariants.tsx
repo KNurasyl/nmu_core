@@ -19,6 +19,8 @@ interface IProps {
 	handlePlay: (refKey: string) => void
 	playingIndex: string | null
 	audioRefs: RefObject<Record<string, AudioPlayerHandle | null>>
+	correctItem: string
+	devMode: boolean
 }
 
 const TaskVariants = ({
@@ -29,6 +31,8 @@ const TaskVariants = ({
 	handlePlay,
 	playingIndex,
 	audioRefs,
+	devMode,
+	correctItem
 }: IProps) => {
 	const [hasOverflow, setHasOverflow] = useState(false)
 	const variantRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -64,7 +68,7 @@ const TaskVariants = ({
 						<div
 							className={`task_b__variant ${
 								selected === v.arabicLetter ? 'selected' : ''
-							} ${playingIndex === refKey ? 'playing' : ''}`}
+							} ${playingIndex === refKey ? 'playing' : ''} ${devMode && correctItem === v?.arabicLetter ? 'devMode' : ''}`}
 							onClick={() => setSelected(v.arabicLetter)}
 						>
 							<div className='audio_button'>
