@@ -21,6 +21,8 @@ interface IProps {
 	playingIndex: string | null
 	audioRefs: RefObject<Record<string, AudioPlayerHandle | null>>
 	isAudioFileName: boolean
+	devMode: boolean
+	correctItem: string
 }
 
 const TajvidVarinats = ({
@@ -33,6 +35,8 @@ const TajvidVarinats = ({
 	audioRefs,
 	lessonCode,
 	isAudioFileName,
+	correctItem,
+	devMode,
 }: IProps) => {
 	const isTwo = variants.length === 2
 
@@ -58,7 +62,9 @@ const TajvidVarinats = ({
 						<div
 							className={`tajvid_d__variant ${
 								selected?.audioFileName === v.audioFileName ? 'selected' : ''
-							} ${playingIndex === refKey ? 'playing' : ''}`}
+							} ${playingIndex === refKey ? 'playing' : ''} ${
+								devMode && correctItem === v?.item ? 'devMode' : ''
+							}`}
 							onClick={() => setSelected(v)}
 						>
 							{v.item}

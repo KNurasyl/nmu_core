@@ -1,6 +1,7 @@
 'use client'
 
 import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
+import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskC } from '@/types/tasks'
 import { Row } from 'antd'
@@ -30,8 +31,10 @@ const TaskC = ({ onFinished }: IProps) => {
 		score,
 		correctCount,
 		wrongCount,
-		elapsedTime
+		elapsedTime,
 	} = useTaskStore(state => state)
+
+	const devMode = useAuthStore(state => state.devMode)
 
 	const task = currentTask as ITaskC
 
@@ -48,7 +51,7 @@ const TaskC = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		audioRef.current?.play() // запускаем новый
+		audioRef.current?.play()
 		setIsPlaying(true)
 	}, [task])
 
@@ -84,6 +87,8 @@ const TaskC = ({ onFinished }: IProps) => {
 				variants={variants}
 				setSelected={setSelected}
 				selected={selected}
+				devMode={devMode}
+				correctItem={task?.correctLetter.arabicLetter || ''}
 			/>
 
 			<TaskCheck onClick={checkHandle} btnText={t('check')} />

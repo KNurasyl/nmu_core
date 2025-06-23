@@ -20,6 +20,8 @@ interface IProps {
 	playingIndex: string | null
 	audioRefs: RefObject<Record<string, AudioPlayerHandle | null>>
 	lessonCode: string
+	devMode: boolean
+	correctItem: string
 }
 
 const TaskVariants = ({
@@ -31,6 +33,8 @@ const TaskVariants = ({
 	playingIndex,
 	audioRefs,
 	lessonCode,
+	devMode,
+	correctItem,
 }: IProps) => {
 	const variantsCount = variants.length
 	let variantsClass = ''
@@ -73,7 +77,9 @@ const TaskVariants = ({
 						<div
 							className={`tajvid_c__variant ${
 								selected?.item === v.item ? 'selected' : ''
-							} ${playingIndex === refKey ? 'playing' : ''}`}
+							} ${playingIndex === refKey ? 'playing' : ''} ${
+								devMode && correctItem === v?.item ? 'devMode' : ''
+							}}`}
 							onClick={() => setSelected(v)}
 						>
 							<div className='audio_button'>

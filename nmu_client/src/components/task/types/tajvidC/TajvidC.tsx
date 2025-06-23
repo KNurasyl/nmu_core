@@ -2,6 +2,7 @@
 
 import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { getRandomItems } from '@/lib/utils/getRandomItems'
+import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITajvidC } from '@/types/tasks'
 import { Row } from 'antd'
@@ -34,10 +35,12 @@ const TajvidC = ({ onFinished }: IProps) => {
 		elapsedTime,
 	} = useTaskStore(state => state)
 
+	const devMode = useAuthStore(state => state.devMode)
+
 	const task = currentTask as ITajvidC
 
-	const audioRef = useRef<AudioPlayerHandle>(null) // для вопроса
-	const statusAudioRef = useRef<AudioPlayerHandle>(null) // для алерта
+	const audioRef = useRef<AudioPlayerHandle>(null)
+	const statusAudioRef = useRef<AudioPlayerHandle>(null)
 	const audioRefs = useRef<Record<string, AudioPlayerHandle | null>>({})
 	const [playingIndex, setPlayingIndex] = useState<string | null>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
@@ -50,13 +53,12 @@ const TajvidC = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		// Автостарт алерта
 		if (status !== 'inProgress' && task?.question?.audioFileName) {
 			statusAudioRef.current?.play()
 			audioRef.current?.stop()
 			setIsPlaying(true)
 		}
-		// Стоп алерта когда ушли с алерта
+
 		if (status === 'inProgress') {
 			statusAudioRef.current?.stop()
 			setIsPlaying(false)
@@ -109,6 +111,10 @@ const TajvidC = ({ onFinished }: IProps) => {
 				handlePlay={handlePlay}
 				playingIndex={playingIndex}
 				audioRefs={audioRefs}
+				devMode={devMode}
+				correctItem={
+					task?.variants?.find(v => v.isCorrect === true)?.item || ''
+				}
 			/>
 
 			<TaskCheck onClick={checkHandle} btnText={t('check')} />

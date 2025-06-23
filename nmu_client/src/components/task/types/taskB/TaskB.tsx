@@ -12,6 +12,7 @@ import TaskResult from '../../TaskResult'
 import TaskStatusAlert from '../../TaskStatusAlert'
 import TaskAnswer from './TaskAnswer'
 import TaskVariants from './TaskVariants'
+import { useAuthStore } from '@/stores/auth.store'
 
 interface IProps {
 	onFinished: VoidFunction
@@ -34,9 +35,10 @@ const TaskB = ({ onFinished }: IProps) => {
 		elapsedTime,
 	} = useTaskStore(state => state)
 
+	const devMode = useAuthStore(state => state.devMode)
+
 	const task = currentTask as ITaskAB
 
-	// Новый объект-реф
 	const audioRefs = useRef<Record<string, AudioPlayerHandle | null>>({})
 	const [playingIndex, setPlayingIndex] = useState<string | null>(null)
 	const [selected, setSelected] = useState<string | null>(null)
@@ -78,7 +80,6 @@ const TaskB = ({ onFinished }: IProps) => {
 	}
 
 	const handlePlay = (refKey: string) => {
-		// Остановить все кроме текущего
 		Object.entries(audioRefs.current).forEach(([key, audio]) => {
 			if (audio && key !== refKey) audio.stop()
 		})
@@ -102,6 +103,8 @@ const TaskB = ({ onFinished }: IProps) => {
 				handlePlay={handlePlay}
 				playingIndex={playingIndex}
 				audioRefs={audioRefs}
+				devMode={devMode}
+				correctItem={task?.correctAnswer?.arabicLetter}
 			/>
 
 			<TaskCheck onClick={checkHandle} btnText={t('check')} />

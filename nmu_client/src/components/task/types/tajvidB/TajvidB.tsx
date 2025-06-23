@@ -2,6 +2,7 @@
 
 import AudioPlayer, { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { getRandomItems } from '@/lib/utils/getRandomItems'
+import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITajvidB } from '@/types/tasks'
 import { Row } from 'antd'
@@ -41,10 +42,12 @@ const TajvidB = ({ onFinished }: IProps) => {
 		elapsedTime,
 	} = useTaskStore(state => state)
 
+	const devMode = useAuthStore(state => state.devMode)
+
 	const task = currentTask as ITajvidB
 
 	const audioRef = useRef<AudioPlayerHandle>(null)
-	const statusAudioRef = useRef<AudioPlayerHandle>(null) // для алерта
+	const statusAudioRef = useRef<AudioPlayerHandle>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [selected, setSelected] = useState<IVariant | null>(null)
 
@@ -61,12 +64,11 @@ const TajvidB = ({ onFinished }: IProps) => {
 			statusAudioRef.current?.stop()
 		}
 
-		// Автостарт алерта
 		if (status !== 'inProgress' && task?.question?.audioFileName) {
 			setIsPlaying(true)
 			statusAudioRef.current?.play()
 		}
-		// Стоп алерта когда ушли с алерта
+
 		if (status === 'inProgress') {
 			setIsPlaying(false)
 			statusAudioRef.current?.stop()
@@ -111,6 +113,8 @@ const TajvidB = ({ onFinished }: IProps) => {
 				setSelected={setSelected}
 				selected={selected}
 				task={task}
+				devMode={devMode}
+				correctItem={task?.variants.find(v => v.isCorrect === true)?.item || ''}
 			/>
 
 			<Row className={`pagination ${!isWithAudio ? 'without-audio' : ''}`}>

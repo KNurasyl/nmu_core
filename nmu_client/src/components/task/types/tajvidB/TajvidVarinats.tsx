@@ -15,6 +15,8 @@ interface IProps {
 	setSelected: (value: SetStateAction<IVariant | null>) => void
 	selected: IVariant | null
 	task: ITajvidB
+	devMode: boolean
+	correctItem: string
 }
 
 const getCode = (item: string) => {
@@ -30,7 +32,7 @@ const getCode = (item: string) => {
 	}
 }
 
-const TajvidVarinats = ({ variants, selected, setSelected, task }: IProps) => {
+const TajvidVarinats = ({ variants, selected, setSelected, task, devMode, correctItem }: IProps) => {
 	const isThree = variants.length === 3
 	const isSpecLetters =
 		task?.subType === 'tajvid-10l-1t' || task?.subType === 'tajvid-11l-1t'
@@ -48,7 +50,9 @@ const TajvidVarinats = ({ variants, selected, setSelected, task }: IProps) => {
 					key={v?.item}
 					className={`tajvid_b__variant ${
 						selected?.item === v.item ? 'selected' : ''
-					} ${isSpecLetters ? 'specLetter' : ''}`}
+					} ${isSpecLetters ? 'specLetter' : ''} ${
+								devMode && correctItem === v?.item ? 'devMode' : ''
+							}`}
 					onClick={() => setSelected(v || null)}
 				>
 					{getCode(v.item)}

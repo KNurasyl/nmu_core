@@ -2,6 +2,7 @@
 
 import AudioPlayer, { AudioPlayerHandle } from '@/components/player/AudioPlayer'
 import { getRandomItems } from '@/lib/utils/getRandomItems'
+import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITajvidA } from '@/types/tasks'
 import { Row } from 'antd'
@@ -35,10 +36,12 @@ const TajvidA = ({ onFinished }: IProps) => {
 		elapsedTime,
 	} = useTaskStore(state => state)
 
+	const devMode = useAuthStore(state => state.devMode)
+
 	const task = currentTask as ITajvidA
 
-	const audioRef = useRef<AudioPlayerHandle>(null) // для вопроса
-	const statusAudioRef = useRef<AudioPlayerHandle>(null) // для алерта
+	const audioRef = useRef<AudioPlayerHandle>(null)
+	const statusAudioRef = useRef<AudioPlayerHandle>(null)
 	const audioRefs = useRef<Record<string, AudioPlayerHandle | null>>({})
 	const [playingIndex, setPlayingIndex] = useState<string | null>(null)
 	const [isPlaying, setIsPlaying] = useState(false)
@@ -51,13 +54,12 @@ const TajvidA = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		// Автостарт вопроса
 		if (task && status === 'inProgress' && task?.question?.audioFileName) {
 			audioRef.current?.play()
 			setIsPlaying(true)
 			statusAudioRef.current?.stop()
 		}
-		// Автостарт алерта
+
 		if (
 			status !== 'inProgress' &&
 			(task?.correctVariant?.audioFileName || task?.question?.audioFileName)
@@ -65,10 +67,8 @@ const TajvidA = ({ onFinished }: IProps) => {
 			statusAudioRef.current?.play()
 			audioRef.current?.stop()
 		}
-		// Стоп алерта когда ушли с алерта
-		if (status === 'inProgress') {
-			statusAudioRef.current?.stop()
-		}
+
+		if (status === 'inProgress') statusAudioRef.current?.stop()
 	}, [task, status])
 
 	const checkHandle = () => {
@@ -118,6 +118,8 @@ const TajvidA = ({ onFinished }: IProps) => {
 				playingIndex={playingIndex}
 				audioRefs={audioRefs}
 				isAudioFileName={!task?.question?.audioFileName}
+				correctItem={task?.correctVariant?.item}
+				devMode={devMode}
 			/>
 
 			<Row
