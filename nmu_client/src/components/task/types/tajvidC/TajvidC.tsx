@@ -54,10 +54,12 @@ const TajvidC = ({ onFinished }: IProps) => {
 		if (status !== 'inProgress' && task?.question?.audioFileName) {
 			statusAudioRef.current?.play()
 			audioRef.current?.stop()
+			setIsPlaying(true)
 		}
 		// Стоп алерта когда ушли с алерта
 		if (status === 'inProgress') {
 			statusAudioRef.current?.stop()
+			setIsPlaying(false)
 		}
 	}, [task, status])
 

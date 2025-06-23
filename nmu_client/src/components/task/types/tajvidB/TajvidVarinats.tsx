@@ -45,6 +45,7 @@ const TajvidVarinats = ({ variants, selected, setSelected, task }: IProps) => {
 		>
 			{variants?.map(v => (
 				<div
+					key={v?.item}
 					className={`tajvid_b__variant ${
 						selected?.item === v.item ? 'selected' : ''
 					} ${isSpecLetters ? 'specLetter' : ''}`}
