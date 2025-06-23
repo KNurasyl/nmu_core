@@ -66,7 +66,7 @@ const TaskPage = ({ taskId }: IProps) => {
 				},
 			},
 			onCompleted() {
-				router.push(`/lesson/${currentLessonId}`)
+				router.back()
 			},
 			onError() {
 				toast.error('Ошибка при завершений')

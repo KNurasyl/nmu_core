@@ -1,4 +1,7 @@
 import TajvidA from './tajvidA/TajvidA'
+import TajvidB from './tajvidB/TajvidB'
+import TajvidC from './tajvidC/TajvidC'
+import TajvidD from './tajvidD/TajvidD'
 import TaskA from './taskA/TaskA'
 import TaskB from './taskB/TaskB'
 import TaskC from './taskC/TaskC'
@@ -19,5 +22,8 @@ export const taskRegistry: Record<string, React.FC<IProps>> = {
 	f: TaskF,
 	g: TaskG,
 	tajvidA: TajvidA,
+	tajvidB: TajvidB,
+	tajvidC: TajvidC,
+	tajvidD: TajvidD,
 	quran: TaskQuran,
 }

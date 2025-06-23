@@ -82,3 +82,93 @@ export interface ITajvidA {
 		audioFileName?: string
 	}[]
 }
+
+export interface ITajvidB {
+	type: 'tajvidB'
+	subType:
+		| 'tajvid-2l-1t'
+		| 'tajvid-2l-2t'
+		| 'tajvid-10l-1t'
+		| 'tajvid-11l-1t'
+		| 'tajvid-12l-1t'
+	order: number
+	lessonCode:
+		| 'tajvid-lesson-2'
+		| 'tajvid-lesson-10'
+		| 'tajvid-lesson-11'
+		| 'tajvid-lesson-12'
+	description: string
+	question: {
+		item: string
+		audioFileName?: string
+		correctAnswer?: string
+	}
+	variants: {
+		item: string
+		audioFileName?: string
+		isCorrect?: boolean
+	}[]
+}
+
+export interface ITajvidC {
+	type: 'tajvidC'
+	subType:
+		| 'tajvid-4l-2t'
+		| 'tajvid-5l-2t'
+		| 'tajvid-6l-2t'
+		| 'tajvid-8l-2t'
+		| 'tajvid-9l-2t'
+		| 'tajvid-10l-2t'
+		| 'tajvid-11l-2t'
+		| 'tajvid-12l-2t'
+		| 'tajvid-13l-2t'
+		| 'tajvid-14l-1t'
+	order: number
+	lessonCode:
+		| 'tajvid-lesson-4'
+		| 'tajvid-lesson-5'
+		| 'tajvid-lesson-6'
+		| 'tajvid-lesson-8'
+		| 'tajvid-lesson-9'
+		| 'tajvid-lesson-10'
+		| 'tajvid-lesson-11'
+		| 'tajvid-lesson-12'
+		| 'tajvid-lesson-13'
+		| 'tajvid-lesson-14'
+	description: string
+	question: {
+		item: string
+		audioFileName?: string
+	}
+	variants: {
+		item: string
+		audioFileName?: string
+		isCorrect?: boolean
+	}[]
+}
+
+export interface ITajvidD {
+	type: 'tajvidD'
+	subType:
+		| 'tajvid-6l-1t'
+		| 'tajvid-7l-1t'
+		| 'tajvid-7l-2t'
+		| 'tajvid-8l-1t'
+		| 'tajvid-9l-1t'
+		| 'tajvid-10l-3t'
+		| 'tajvid-13l-1t'
+	order: number
+	lessonCode:
+		| 'tajvid-lesson-6'
+		| 'tajvid-lesson-7'
+		| 'tajvid-lesson-8'
+		| 'tajvid-lesson-9'
+		| 'tajvid-lesson-10'
+		| 'tajvid-lesson-13'
+	description: string
+	variants: {
+		item: string
+		audioFileName?: string
+		isCorrect?: boolean
+	}[]
+}

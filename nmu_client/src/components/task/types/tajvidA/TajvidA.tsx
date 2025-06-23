@@ -46,7 +46,7 @@ const TajvidA = ({ onFinished }: IProps) => {
 
 	const variants = useMemo(() => {
 		if (!task) return []
-		const randoms = getRandomItems(task?.variants, 3)
+		const randoms = getRandomItems(task?.variants, 4)
 		return getRandomItems(randoms, 4)
 	}, [task])
 
@@ -146,6 +146,7 @@ const TajvidA = ({ onFinished }: IProps) => {
 					</Row>
 				)}
 			</Row>
+
 			<TaskStatusAlert
 				status={status}
 				message={status === 'success' ? t('successMsg') : t('errorMsg')}
