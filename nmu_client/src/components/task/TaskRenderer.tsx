@@ -10,7 +10,7 @@ const TaskRenderer = ({ type, onFinished }: IProps) => {
 
 	if (!Component) return <div>Неизвестный тип задачи: {type}</div>
 
-	return <Component onFinished={onFinished}/>
+	return <Component onFinished={onFinished} />
 }
 
 export default TaskRenderer

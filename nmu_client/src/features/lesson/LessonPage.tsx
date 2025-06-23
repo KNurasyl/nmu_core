@@ -8,8 +8,9 @@ import { USER_TASK_PROGRESS_OPTIONAL } from '@/graphql/progress'
 import { useAuthStore } from '@/stores/auth.store'
 import { useLoadingStore } from '@/stores/load.store'
 import { useTaskStore } from '@/stores/task.store'
+import { LeftOutlined } from '@ant-design/icons'
 import { useQuery } from '@apollo/client'
-import { Row } from 'antd'
+import { Button, Row } from 'antd'
 import { useRouter } from 'next/navigation'
 import { useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -66,6 +67,10 @@ const LessonPage = ({ lessonId }: IProps) => {
 
 	return (
 		<Row className='lesson_container'>
+			<Row className='left_back'>
+				<Button icon={<LeftOutlined />} onClick={() => router.back()} />
+			</Row>
+
 			<LessonVideoPlayer lesson={data?.getLessonById} />
 
 			<Row className='task_grid'>

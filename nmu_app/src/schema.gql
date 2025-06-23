@@ -36,6 +36,7 @@ input CreateTaskInput {
   data: JSONObject
   description: String!
   lessonCode: String!
+  subType: String!
   type: String!
 }
 
@@ -197,6 +198,7 @@ type Task {
   data: JSONObject!
   description: Description
   lessonCode: String!
+  subType: String
   type: String!
 }
 
@@ -229,6 +231,7 @@ input UpdateTaskInput {
   description: String
   id: String!
   lessonCode: String
+  subType: String
   type: String
 }
 
