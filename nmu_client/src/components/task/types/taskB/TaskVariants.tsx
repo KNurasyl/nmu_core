@@ -32,7 +32,7 @@ const TaskVariants = ({
 	playingIndex,
 	audioRefs,
 	devMode,
-	correctItem
+	correctItem,
 }: IProps) => {
 	const [hasOverflow, setHasOverflow] = useState(false)
 	const variantRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -68,7 +68,9 @@ const TaskVariants = ({
 						<div
 							className={`task_b__variant ${
 								selected === v.arabicLetter ? 'selected' : ''
-							} ${playingIndex === refKey ? 'playing' : ''} ${devMode && correctItem === v?.arabicLetter ? 'devMode' : ''}`}
+							} ${playingIndex === refKey ? 'playing' : ''} ${
+								devMode && correctItem === v?.arabicLetter ? 'devMode' : ''
+							}`}
 							onClick={() => setSelected(v.arabicLetter)}
 						>
 							<div className='audio_button'>
