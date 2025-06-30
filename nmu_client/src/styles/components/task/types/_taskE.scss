@@ -63,12 +63,11 @@
 			width: 100%;
 			padding: 0;
 			height: 40%;
-			margin-bottom: 15px !important;
 		}
 		.letter-btn {
-			width: 80px;
+			width: 60px;
 			height: 60px;
-			font-size: clamp(30px, 12vw, 55px);
+			font-size: clamp(30px, 10vw, 40px);
 		}
 
 		.task-letters-display {
@@ -78,8 +77,9 @@
 			width: 100%;
 		}
 		.display-letter {
-			padding: 6px 10px;
-			font-size: clamp(30px, 12vw, 55px);
+			padding: 0px 10px;
+			font-size: clamp(30px, 10vw, 40px);
+			margin: 0;
 		}
 	}
 
