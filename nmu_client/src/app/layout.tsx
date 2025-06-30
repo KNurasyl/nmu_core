@@ -36,7 +36,7 @@ export default function RootLayout({
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta name='google' content='notranslate' />
 			</head>
-			<body>
+			<body className={`${inter.className} ${inter.variable}`}>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
