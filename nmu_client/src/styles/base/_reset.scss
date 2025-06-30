@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'PlayfairDisplay'; /* любое уникальное имя */
+	src: url('/fonts/PlayfairDisplay') format('woff2');
+	font-weight: 400; /* при необходимости добавляйте другие веса */
+	font-style: normal;
+	font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -17,6 +25,14 @@ body {
 [class^='ant-'],
 [class*=' ant-'] {
 	font-family: var(--font-inter), sans-serif !important;
+}
+
+.arab_letter {
+	font-family: 'PlayfairDisplay', sans-serif !important; /* основной + fallback */
+	direction: rtl; /* текст идёт справа налево  */
+	unicode-bidi: isolate; /* надёжная изоляция RTL-последовательности */
+	/* Дополнительно ↓ */
+	font-size: inherit; /* наследуем размер от родителя */
 }
 
 .spinner-overlay {

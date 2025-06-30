@@ -30,7 +30,7 @@ const TaskLetterButtons = ({ variants, setSelected, selected }: IProps) => {
 					style={{ display: 'flex', justifyContent: 'center' }}
 				>
 					<Typography.Text
-						className='letter-btn'
+						className='letter-btn arab_letter'
 						onClick={() =>
 							selected.length < 9 &&
 							setSelected(prev =>

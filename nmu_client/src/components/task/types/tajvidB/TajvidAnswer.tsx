@@ -45,7 +45,9 @@ const TaskAnswer = ({
 				</AudioPlayer>
 			) : (
 				<Row className='letter_block'>
-					<Typography className={`letter ${isLong ? 'longLetter' : ''}`}>
+					<Typography
+						className={`letter arab_letter ${isLong ? 'longLetter' : ''}`}
+					>
 						{task?.question?.item}
 					</Typography>
 				</Row>

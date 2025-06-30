@@ -8,7 +8,7 @@ const TaskAnswer = ({ arabicLetter }: IProps) => {
 	return (
 		<Row className='task_f__answer'>
 			<Row className='letter_block'>
-				<Typography className='letter'>{arabicLetter}</Typography>
+				<Typography className='letter arab_letter'>{arabicLetter}</Typography>
 			</Row>
 		</Row>
 	)

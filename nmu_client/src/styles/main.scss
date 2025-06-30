@@ -1,3 +1,4 @@
+@use 'base/reset';
 @use 'components/forms/auth';
 @use 'components/layouts/mainLayout';
 @use 'components/cards/courseCard';
@@ -23,4 +24,3 @@
 @use 'components/task/types/tajvidB';
 @use 'components/task/types/tajvidС';
 @use 'components/task/types/tajvidD';
-@use 'base/reset';

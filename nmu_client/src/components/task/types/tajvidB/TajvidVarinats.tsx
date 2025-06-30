@@ -32,14 +32,21 @@ const getCode = (item: string) => {
 	}
 }
 
-const TajvidVarinats = ({ variants, selected, setSelected, task, devMode, correctItem }: IProps) => {
+const TajvidVarinats = ({
+	variants,
+	selected,
+	setSelected,
+	task,
+	devMode,
+	correctItem,
+}: IProps) => {
 	const isThree = variants.length === 3
 	const isSpecLetters =
 		task?.subType === 'tajvid-10l-1t' || task?.subType === 'tajvid-11l-1t'
 
 	return (
 		<Row
-			className={`tajvid_b__variants${isThree ? ' three' : ''} ${
+			className={`tajvid_b__variants ${isThree ? ' three' : ''} ${
 				isSpecLetters ? 'specVariants' : ''
 			}`}
 			gutter={[12, 12]}
@@ -48,11 +55,11 @@ const TajvidVarinats = ({ variants, selected, setSelected, task, devMode, correc
 			{variants?.map(v => (
 				<div
 					key={v?.item}
-					className={`tajvid_b__variant ${
+					className={`tajvid_b__variant arab_letter ${
 						selected?.item === v.item ? 'selected' : ''
 					} ${isSpecLetters ? 'specLetter' : ''} ${
-								devMode && correctItem === v?.item ? 'devMode' : ''
-							}`}
+						devMode && correctItem === v?.item ? 'devMode' : ''
+					}`}
 					onClick={() => setSelected(v || null)}
 				>
 					{getCode(v.item)}

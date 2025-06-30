@@ -10,7 +10,9 @@ const TaskAnswer = ({ arabicLetter }: IProps) => {
 	return (
 		<Row className='tajvid_c__answer'>
 			<Row className='letter_block'>
-				<Typography className={`letter ${isLong ? 'longLetter' : ''}`}>
+				<Typography
+					className={`letter arab_letter ${isLong ? 'longLetter' : ''}`}
+				>
 					{arabicLetter}
 				</Typography>
 			</Row>

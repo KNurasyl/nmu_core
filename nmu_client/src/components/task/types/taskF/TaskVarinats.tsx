@@ -25,7 +25,7 @@ const TaskVarinats = ({ selected, setSelected }: IProps) => {
 			{variants?.map((v, i) => (
 				<div
 					key={i}
-					className={`task_f__variant${
+					className={`task_f__variant arab_letter ${
 						selected.includes(v) ? ' selected' : ''
 					}`}
 					onClick={() => handleSelect(v)}

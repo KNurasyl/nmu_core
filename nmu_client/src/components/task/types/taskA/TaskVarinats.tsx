@@ -29,7 +29,7 @@ const TaskVarinats = ({
 			{variants?.map((v, i) => (
 				<div
 					key={i}
-					className={`task_a__variant ${
+					className={`task_a__variant arab_letter ${
 						selected === v.arabicLetter ? 'selected' : ''
 					} ${devMode && correctItem === v?.arabicLetter ? 'devMode' : ''}`}
 					onClick={() => setSelected(v.arabicLetter)}

@@ -17,7 +17,13 @@ interface IProps {
 	correctItem: string
 }
 
-const TaskVarinats = ({ variants, selected, setSelected, devMode, correctItem }: IProps) => {
+const TaskVarinats = ({
+	variants,
+	selected,
+	setSelected,
+	devMode,
+	correctItem,
+}: IProps) => {
 	const [hasOverflow, setHasOverflow] = useState(false)
 	const variantRefs = useRef<(HTMLDivElement | null)[]>([])
 
@@ -43,7 +49,7 @@ const TaskVarinats = ({ variants, selected, setSelected, devMode, correctItem }:
 					ref={el => {
 						variantRefs.current[i] = el
 					}}
-					className={`task_c__variant ${
+					className={`task_c__variant arab_letter ${
 						selected === v?.arabicLetter ? 'selected' : ''
 					} ${devMode && correctItem === v?.arabicLetter ? 'devMode' : ''}`}
 					onClick={() => setSelected(v?.arabicLetter)}

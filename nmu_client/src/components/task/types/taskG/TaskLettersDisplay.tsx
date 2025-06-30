@@ -6,7 +6,7 @@ import { Dispatch, SetStateAction } from 'react'
 
 interface IProps {
 	letters: string[]
-  setSelected: Dispatch<SetStateAction<string[]>>
+	setSelected: Dispatch<SetStateAction<string[]>>
 }
 
 const TaskLettersDisplay = ({ letters, setSelected }: IProps) => {
@@ -18,12 +18,19 @@ const TaskLettersDisplay = ({ letters, setSelected }: IProps) => {
 			align='middle'
 		>
 			{letters.length > 0 ? (
-				<Typography.Text className='display-letter' title='Удалить букву'>
+				<Typography.Text
+					className='display-letter arab_letter'
+					title='Удалить букву'
+				>
 					{letters?.join('')}
 				</Typography.Text>
 			) : null}
 
-			<Button className='clear_btn' icon={<ClearOutlined />} onClick={() => setSelected([])}/>
+			<Button
+				className='clear_btn'
+				icon={<ClearOutlined />}
+				onClick={() => setSelected([])}
+			/>
 		</Row>
 	)
 }

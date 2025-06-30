@@ -59,7 +59,7 @@ const TajvidVarinats = ({
 						onEndCallback={handleEnd}
 					>
 						<div
-							className={`tajvid_a__variant ${
+							className={`tajvid_a__variant arab_letter ${
 								selected === v.item ? 'selected' : ''
 							} ${playingIndex === refKey ? 'playing' : ''} ${
 								devMode && correctItem === v?.item ? 'devMode' : ''
