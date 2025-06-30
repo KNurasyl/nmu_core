@@ -62,7 +62,8 @@
 		.task-letter-buttons {
 			width: 100%;
 			padding: 0;
-			height: 40%;
+			height: fit-content;
+			row-gap: 7px !important;
 		}
 		.letter-btn {
 			width: 60px;
@@ -72,8 +73,9 @@
 
 		.task-letters-display {
 			border-radius: 10px;
-			padding: 8px 0;
-			margin-bottom: 5%;
+			padding: 3px 0;
+			row-gap: 5px !important;
+			margin-bottom: 3%;
 			width: 100%;
 		}
 		.display-letter {
@@ -92,6 +94,7 @@
 
 		@media (max-width: 768px) {
 			align-items: end;
+			margin-top: 15px;
 		}
 	}
 
