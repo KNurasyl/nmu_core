@@ -6,7 +6,7 @@ import '../styles/main.scss'
 const inter = localFont({
 	src: [
 		{
-			path: '../assets/fonts/Inter-fonts.ttf',
+			path: '../assets/fonts/Inter-fonts.woff2',
 			weight: '100 900',
 			style: 'normal',
 		},
