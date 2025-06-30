@@ -41,13 +41,20 @@ const TaskE = ({ onFinished }: IProps) => {
 		return task?.correctVariants?.concat(task?.inCorrectVariants)
 	}, [task])
 
+	const haveSameLetters = (a: string[], b: string[]) => {
+		if (a.length !== b.length) return false
+
+		const sortedA = [...a].sort()
+		const sortedB = [...b].sort()
+
+		return sortedA.every((letter, idx) => letter === sortedB[idx])
+	}
+
 	const checkHandle = () => {
 		if (!selected.length) return
 		const correctLetters = task.correctVariants.map(v => v.letter)
 
-		const isCorrect =
-			selected.length === correctLetters.length &&
-			selected.every((letter, idx) => letter === correctLetters[idx])
+		const isCorrect = haveSameLetters(selected, correctLetters)
 
 		if (isCorrect) {
 			markCorrect(task)

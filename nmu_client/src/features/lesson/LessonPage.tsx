@@ -12,7 +12,7 @@ import { LeftOutlined } from '@ant-design/icons'
 import { useQuery } from '@apollo/client'
 import { Button, Row } from 'antd'
 import { useRouter } from 'next/navigation'
-import { useEffect, useMemo } from 'react'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 interface IProps {
@@ -50,20 +50,16 @@ const LessonPage = ({ lessonId }: IProps) => {
 		setLoading(loading || progressLoad)
 	}, [progressLoad, loading])
 
-	const tasks = useMemo(
-		() =>
-			(data?.getLessonById?.tasks ?? []).map(task => {
-				const p = taskProgressData?.userTaskProgressOptional?.find(
-					pr => pr.task?._id === task?._id
-				)
-				return {
-					...task,
-					completed: p?.completed ?? false,
-					score: p?.score ?? null,
-				}
-			}),
-		[data, taskProgressData]
-	)
+	const tasks = (data?.getLessonById?.tasks ?? []).map(task => {
+		const p = taskProgressData?.userTaskProgressOptional?.find(
+			pr => pr.task?._id === task?._id
+		)
+		return {
+			...task,
+			completed: p?.completed ?? false,
+			score: p?.score ?? null,
+		}
+	})
 
 	return (
 		<Row className='lesson_container'>
