@@ -13,6 +13,7 @@ const inter = localFont({
 	],
 	variable: '--font-inter',
 	display: 'swap',
+	fallback: ['system-ui', 'sans-serif'],
 })
 
 export const metadata: Metadata = {
@@ -30,12 +31,12 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='en' className={`${inter.variable} font-sans`}>
 			<head>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta name='google' content='notranslate' />
 			</head>
-			<body className={inter.variable}>
+			<body>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
