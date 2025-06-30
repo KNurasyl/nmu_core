@@ -4,6 +4,10 @@ import TaskDesc from '@/components/task/TaskDesc'
 import TaskProgress from '@/components/task/TaskProgress'
 import TaskRenderer from '@/components/task/TaskRenderer'
 import { GetTaskByIdQuery } from '@/graphql/generated/graphql'
+import {
+	USER_LESSON_PROGRESS_OPTIONAL,
+	USER_TASK_PROGRESS_OPTIONAL,
+} from '@/graphql/progress'
 import { CREATE_USER_TASK_PROGRESS, GET_TASK_BY_ID } from '@/graphql/task'
 import { prepareTasks } from '@/lib/utils/prepareTasks'
 import { useAuthStore } from '@/stores/auth.store'
@@ -65,6 +69,17 @@ const TaskPage = ({ taskId }: IProps) => {
 					},
 				},
 			},
+			refetchQueries: [
+				{
+					query: USER_TASK_PROGRESS_OPTIONAL,
+					variables: { userId: user?._id },
+				},
+				{
+					query: USER_LESSON_PROGRESS_OPTIONAL,
+					variables: { userId: user?._id },
+				},
+			],
+			awaitRefetchQueries: true,
 			onCompleted() {
 				router.back()
 			},

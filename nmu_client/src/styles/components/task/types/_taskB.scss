@@ -24,8 +24,9 @@
 				0 0 12px rgba(255, 200, 55, 0.3);
 
 			@media (max-width: 768px) {
-				height: 120px;
+				height: 125px;
 				padding: 5px 20px;
+				padding-bottom: 35px !important;
 			}
 
 			& .letter {
@@ -91,7 +92,7 @@
 		}
 
 		@media (max-width: 768px) {
-			height: 120px;
+			height: 130px;
 		}
 
 		.audio_button {
