@@ -25,8 +25,8 @@
 
 			@media (max-width: 768px) {
 				height: 135px;
-				padding: 5px 20px;
-				padding-bottom: 35px !important;
+				padding: 5px;
+				padding-bottom: 20px !important;
 			}
 
 			& .letter {
@@ -34,7 +34,7 @@
 				color: #5f3215;
 
 				@media (max-width: 768px) {
-					font-size: clamp(50px, 20vw, 100px);
+					font-size: clamp(50px, 15vw, 60px);
 				}
 			}
 		}
