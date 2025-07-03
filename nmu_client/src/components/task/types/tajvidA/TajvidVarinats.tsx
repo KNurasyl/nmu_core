@@ -46,7 +46,7 @@ const TajvidVarinats = ({
 			justify='center'
 		>
 			{variants?.map(v => {
-				const refKey = v.item
+				const refKey = `${v.audioFileName}-${v.item}`
 
 				return (
 					<AudioPlayer

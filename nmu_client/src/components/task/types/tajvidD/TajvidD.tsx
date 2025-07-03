@@ -44,7 +44,7 @@ const TajvidD = ({ onFinished }: IProps) => {
 
 	const task = currentTask as ITajvidD
 
-	const statusAudioRef = useRef<AudioPlayerHandle>(null) // для алерта
+	const statusAudioRef = useRef<AudioPlayerHandle>(null)
 	const audioRefs = useRef<Record<string, AudioPlayerHandle | null>>({})
 	const [playingIndex, setPlayingIndex] = useState<string | null>(null)
 
