@@ -29,8 +29,8 @@ body {
 
 .arab_letter {
 	font-family: 'PlayfairDisplay', sans-serif !important; /* основной + fallback */
-	direction: rtl; /* текст идёт справа налево  */
-	unicode-bidi: isolate; /* надёжная изоляция RTL-последовательности */
+	// direction: rtl; /* текст идёт справа налево  */
+	// unicode-bidi: isolate; /* надёжная изоляция RTL-последовательности */
 	/* Дополнительно ↓ */
 	font-size: inherit; /* наследуем размер от родителя */
 }

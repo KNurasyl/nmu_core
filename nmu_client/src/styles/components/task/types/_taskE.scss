@@ -1,7 +1,8 @@
 .task_e {
 	width: 100%;
 	justify-content: center;
-	height: 100dvh;
+	height: fit-content;
+	align-content: flex-start;
 
 	@media (max-width: 768px) {
 		align-content: flex-start;

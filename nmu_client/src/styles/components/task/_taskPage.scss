@@ -8,6 +8,7 @@
 	background-size: 105% 115%;
 	background-position: center -50px;
 	background-repeat: no-repeat;
+	align-content: flex-start;
 
 	@media (max-width: 768px) {
 		background-image: url('./../../../assets/images/task_bg.jpg');
