@@ -11,7 +11,8 @@
 
 	@media (max-width: 768px) {
 		background-image: url('./../../../assets/images/task_bg.jpg');
-		background-size: 100% 120%;
+		background-size: 100% 135%;
 		background-position: center -120px;
+		overflow-y: scroll;
 	}
 }
