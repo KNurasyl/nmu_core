@@ -41,7 +41,7 @@
 
 			& .longLetter {
 				@media (max-width: 768px) {
-					font-size: clamp(25px, 10vw, 30px);
+					font-size: clamp(30px, 15vw, 40px) !important;
 					line-height: 1.4;
 				}
 			}
