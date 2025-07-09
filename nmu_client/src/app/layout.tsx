@@ -1,5 +1,6 @@
 import { Providers } from '@/providers/Providers'
 import type { Metadata } from 'next'
+import { Noto_Naskh_Arabic } from 'next/font/google'
 import localFont from 'next/font/local'
 import '../styles/main.scss'
 
@@ -16,6 +17,14 @@ const inter = localFont({
 	fallback: ['system-ui', 'sans-serif'],
 })
 
+const arabic = Noto_Naskh_Arabic({
+	subsets: ['arabic'],
+	weight: ['400', '700'],
+	variable: '--font-arabic',
+	display: 'swap',
+	fallback: ['Amiri', 'serif'],
+})
+
 export const metadata: Metadata = {
 	title: 'Nur-Mubarak Online Academy',
 	description: 'Нур-Мубарак онлайн академия',
@@ -27,11 +36,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode
-}>) {
+}) {
 	return (
-		<html lang='en' className={`${inter.className} ${inter.variable}`}>
+		<html lang='en' className={`${inter.variable} ${arabic.variable}`}>
 			<head>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta name='google' content='notranslate' />
@@ -50,7 +59,9 @@ export default function RootLayout({
 					crossOrigin='anonymous'
 				/>
 			</head>
-			<body className={`${inter.className} ${inter.variable}`}>
+
+			{/* применяем оба класса, чтобы браузер сразу отрисовал нужные glyph-ы */}
+			<body className={`${inter.className} ${arabic.className}`}>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
