@@ -1,10 +1,12 @@
 @font-face {
 	font-family: 'PlayfairDisplay'; /* любое уникальное имя */
-	src: url('/fonts/PlayfairDisplay') format('woff2');
+	src: url('/fonts/PlayfairDisplay.woff2') format('woff2');
 	font-weight: 400; /* при необходимости добавляйте другие веса */
 	font-style: normal;
 	font-display: swap;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
 
 *,
 *::before,
@@ -28,10 +30,13 @@ body {
 }
 
 .arab_letter {
-	font-family: 'PlayfairDisplay', sans-serif !important; /* основной + fallback */
-	// direction: rtl; /* текст идёт справа налево  */
-	// unicode-bidi: isolate; /* надёжная изоляция RTL-последовательности */
-	/* Дополнительно ↓ */
+	font-family: 'Noto Naskh Arabic', serif !important;
+	font-optical-sizing: auto;
+	direction: rtl;
+	unicode-bidi: isolate; /* не смешивать с LTR-текстом */
+	display: inline-block;
+	white-space: nowrap; /* не переносить внутри слова */
+	text-align: center;
 	font-size: inherit; /* наследуем размер от родителя */
 }
 
