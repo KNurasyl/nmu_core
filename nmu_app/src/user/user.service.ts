@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, UnauthorizedException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import * as bcrypt from 'bcryptjs';
 import { FilterQuery, Model } from 'mongoose';
@@ -83,9 +83,7 @@ export class UserService {
     if (!user) throw new NotFoundException('Пользователь не найден');
 
     const isMatch = await bcrypt.compare(oldPassword, user.password);
-    console.log(isMatch);
-
-    // if (!isMatch) throw new UnauthorizedException('Старый пароль неверен');
+    if (!isMatch) throw new UnauthorizedException('Старый пароль неверен');
 
     const hashed = await bcrypt.hash(newPassword, 10);
     user.password = hashed;
