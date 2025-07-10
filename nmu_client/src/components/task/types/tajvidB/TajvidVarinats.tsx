@@ -42,7 +42,9 @@ const TajvidVarinats = ({
 }: IProps) => {
 	const isThree = variants.length === 3
 	const isSpecLetters =
-		task?.subType === 'tajvid-10l-1t' || task?.subType === 'tajvid-11l-1t'
+		task?.subType === 'tajvid-10l-1t' ||
+		task?.subType === 'tajvid-11l-1t' ||
+		task?.subType === 'tajvid-12l-1t'
 
 	return (
 		<Row

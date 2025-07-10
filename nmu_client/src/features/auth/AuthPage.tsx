@@ -28,7 +28,7 @@ export const AuthPage = () => {
 	const onFinish = async (values: ILoginFieldValues) => {
 		const trimmedValues: ILoginFieldValues = {
 			phoneNumber: values.phoneNumber.replace(/\s+/g, ''),
-			password: values.password.trim(), // можно также .replace(/\s+/g, '') если нужно убрать ВСЕ пробелы
+			password: values.password.trim(),
 		}
 
 		await login({

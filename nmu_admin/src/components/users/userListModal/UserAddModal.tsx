@@ -44,8 +44,8 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 		await register({
 			variables: {
 				input: {
-					password: values.password,
-					phoneNumber: values.phoneNumber,
+					password: values.password.trim(),
+					phoneNumber: values.phoneNumber.replace(/\s+/g, ''),
 					userName: values.userName,
 					userRole: values.userRole,
 				},
