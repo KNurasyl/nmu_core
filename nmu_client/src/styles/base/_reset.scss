@@ -22,7 +22,7 @@ body {
 }
 
 .arab_letter {
-	// font-family: 'Noto Naskh Arabic', serif !important;
+	font-family: var(--font-arabic), serif !important;
 	font-optical-sizing: auto;
 	direction: rtl;
 	unicode-bidi: isolate; /* не смешивать с LTR-текстом */
