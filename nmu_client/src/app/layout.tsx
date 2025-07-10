@@ -1,17 +1,11 @@
 import { Providers } from '@/providers/Providers'
 import type { Metadata } from 'next'
-import { Noto_Naskh_Arabic } from 'next/font/google'
-import localFont from 'next/font/local'
+import { Inter, Noto_Naskh_Arabic } from 'next/font/google'
 import '../styles/main.scss'
 
-const inter = localFont({
-	src: [
-		{
-			path: '../assets/fonts/Inter-fonts.woff2',
-			weight: '100 900',
-			style: 'normal',
-		},
-	],
+const inter = Inter({
+	subsets: ['latin'],
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 	variable: '--font-inter',
 	display: 'swap',
 	fallback: ['system-ui', 'sans-serif'],
@@ -44,23 +38,7 @@ export default function RootLayout({
 			<head>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta name='google' content='notranslate' />
-				<link
-					rel='preload'
-					href='/fonts/PlayfairDisplay.woff2'
-					as='font'
-					type='font/woff2'
-					crossOrigin='anonymous'
-				/>
-				<link
-					rel='preload'
-					href='/fonts/Inter-fonts.woff2'
-					as='font'
-					type='font/woff2'
-					crossOrigin='anonymous'
-				/>
 			</head>
-
-			{/* применяем оба класса, чтобы браузер сразу отрисовал нужные glyph-ы */}
 			<body className={`${inter.className} ${arabic.className}`}>
 				<Providers>{children}</Providers>
 			</body>

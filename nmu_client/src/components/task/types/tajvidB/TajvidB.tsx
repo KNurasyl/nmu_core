@@ -57,8 +57,6 @@ const TajvidB = ({ onFinished }: IProps) => {
 		return getRandomItems(randoms, 4)
 	}, [task])
 
-	console.log(task)
-
 	useEffect(() => {
 		if (task && status === 'inProgress' && task?.question?.audioFileName) {
 			audioRef.current?.play()
@@ -96,10 +94,9 @@ const TajvidB = ({ onFinished }: IProps) => {
 	}
 
 	const isWithAudio =
-		task?.subType === 'tajvid-2l-2t' ||
-		'tajvid-10l-1t' ||
-		task?.subType === 'tajvid-12l-1t'
-	const isSpecResult = task?.subType === 'tajvid-12l-1t'
+		task?.subType === 'tajvid-2l-2t' || task?.subType === 'tajvid-10l-1t'
+	const isSpecResult =
+		task?.subType === 'tajvid-12l-1t' || task?.subType === 'tajvid-11l-1t'
 
 	return (
 		<Row className='tajvid_b'>
