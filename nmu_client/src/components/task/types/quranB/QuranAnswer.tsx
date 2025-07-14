@@ -6,8 +6,8 @@ import { Row, Typography } from 'antd'
 interface Props {
 	task?: IQuranB
 	extractWordsBySura: (
-		sura: any[] | undefined,
-		words: any[] | undefined
+		sura: { step?: number; text?: string }[] | undefined,
+		words: { text?: string; start?: number; end?: number }[] | undefined
 	) => {
 		step?: number
 		text?: string
