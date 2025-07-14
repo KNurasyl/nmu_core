@@ -172,3 +172,34 @@ export interface ITajvidD {
 		isCorrect?: boolean
 	}[]
 }
+
+export interface IQuranA {
+	audioFileName?: string
+	text?: string
+	audio_duration?: number
+	taskType?: 'quran-type-1'
+	lessonCode?: string
+	taskCount?: string
+	words?: {
+		text?: string
+		start?: number
+		end?: number
+	}[]
+}
+
+export interface IQuranB {
+	audioFileName?: string
+	audio_duration?: number
+	taskType?: 'quran-type-2'
+	lessonCode?: string
+	taskCount?: string
+	sura?: {
+		step?: number
+		text?: string
+	}[]
+	words?: {
+		text?: string
+		start?: number
+		end?: number
+	}[]
+}

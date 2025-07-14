@@ -13,32 +13,32 @@ import { TaskService } from 'src/task/task.service';
 import { User } from 'src/user/entities/user.entity';
 import * as XLSX from 'xlsx';
 
-const descriptions: Record<string, { kk: string; ru: string }> = {
-  a: {
-    kk: 'Аудионы тыңдап, дұрыс мәтінді таңда.',
-    ru: 'Прослушай аудио и выбери правильный текст.',
-  },
-  b: {
-    kk: 'Бір әріп пен 4 аудио берілген. Дұрыс аудионы таңда.',
-    ru: 'Одна буква и 4 аудио. Найди подходящее аудио.',
-  },
-  c: {
-    kk: 'Аудио және екі ұқсас әріп берілген. Дұрыс әріпті таңда.',
-    ru: 'Дано аудио и две похожие буквы. Найди правильную.',
-  },
-  e: {
-    kk: 'Әріптер берілген. Оларды сөздің басы, ортасы, не соңында табыңыз.',
-    ru: 'Даны буквы. Найди, где они встречаются — в начале, середине или конце слова.',
-  },
-  f: {
-    kk: 'Әріп және үш сөз берілген. Әріп қайда кездесетінін таңда (бірнеше дұрыс жауап болуы мүмкін).',
-    ru: 'Дана буква и три варианта. Отметь, где встречается буква (может быть несколько ответов).',
-  },
-  g: {
-    kk: 'Аудионы тыңдап, берілген әріптерден сөз құрастыр.',
-    ru: 'Прослушай аудио и собери слово из данных букв.',
-  },
-};
+// const descriptions: Record<string, { kk: string; ru: string }> = {
+//   a: {
+//     kk: 'Аудионы тыңдап, дұрыс мәтінді таңда.',
+//     ru: 'Прослушай аудио и выбери правильный текст.',
+//   },
+//   b: {
+//     kk: 'Бір әріп пен 4 аудио берілген. Дұрыс аудионы таңда.',
+//     ru: 'Одна буква и 4 аудио. Найди подходящее аудио.',
+//   },
+//   c: {
+//     kk: 'Аудио және екі ұқсас әріп берілген. Дұрыс әріпті таңда.',
+//     ru: 'Дано аудио и две похожие буквы. Найди правильную.',
+//   },
+//   e: {
+//     kk: 'Әріптер берілген. Оларды сөздің басы, ортасы, не соңында табыңыз.',
+//     ru: 'Даны буквы. Найди, где они встречаются — в начале, середине или конце слова.',
+//   },
+//   f: {
+//     kk: 'Әріп және үш сөз берілген. Әріп қайда кездесетінін таңда (бірнеше дұрыс жауап болуы мүмкін).',
+//     ru: 'Дана буква и три варианта. Отметь, где встречается буква (может быть несколько ответов).',
+//   },
+//   g: {
+//     kk: 'Аудионы тыңдап, берілген әріптерден сөз құрастыр.',
+//     ru: 'Прослушай аудио и собери слово из данных букв.',
+//   },
+// };
 
 @Injectable()
 export class UploadContentService {
@@ -198,6 +198,56 @@ export class UploadContentService {
     return {
       message: 'Контент успешно импортирован',
       ...results,
+    };
+  }
+
+  async uploadQuranJson(file: Express.Multer.File) {
+    if (!file?.buffer) {
+      throw new BadRequestException('Файл отсутствует или повреждён');
+    }
+
+    let raw: Record<string, any[]>;
+    try {
+      raw = JSON.parse(file.buffer.toString('utf-8'));
+    } catch (e: any) {
+      throw new BadRequestException('Неверный JSON: ' + e.message);
+    }
+
+    const HARD_DESCRIPTION = 'Дұрыс оқуды үйрену үшін айтылу мен мәтінді сәйкестендіру маңызды.';
+    const created: { lessonCode: string; taskType: string; id: string }[] = [];
+
+    for (const [lessonKey, tasks] of Object.entries(raw)) {
+      if (!Array.isArray(tasks) || tasks.length === 0) continue;
+
+      const lessonCode = lessonKey.replace('quran-', 'koran-');
+
+      const byType: Record<string, any[]> = {};
+      for (const t of tasks) {
+        if (!t.taskType) {
+          this.logger.warn(`taskType не указан в задаче ${lessonKey}`);
+          continue;
+        }
+        (byType[t.taskType] ??= []).push(t);
+      }
+
+      for (const [taskType, list] of Object.entries(byType)) {
+        const listWithCode = list.map((t) => ({ ...t, lessonCode }));
+
+        const input = {
+          type: taskType,
+          data: { kk: listWithCode, ru: listWithCode },
+          description: { kk: HARD_DESCRIPTION, ru: HARD_DESCRIPTION },
+          lessonCode,
+        };
+
+        const saved = await this.taskService.create(input as any);
+        created.push({ lessonCode, taskType, id: saved._id });
+      }
+    }
+
+    return {
+      message: `✅ Создано ${created.length} заданий из файла Quran`,
+      created,
     };
   }
 

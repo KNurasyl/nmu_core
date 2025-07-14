@@ -59,7 +59,7 @@ const TaskA = ({ onFinished }: IProps) => {
 	}, [task])
 
 	useEffect(() => {
-		audioRef.current?.play() // запускаем новый
+		audioRef.current?.play()
 		setIsPlaying(true)
 	}, [task])
 

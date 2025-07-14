@@ -23,4 +23,10 @@ export class UploadContentController {
   uploadTasksJson(@Param('type') type: string, @UploadedFiles() files: Express.Multer.File[]) {
     return this.uploadContentService.uploadTasksByType(files, type);
   }
+
+  @Post('quranJson')
+  @UseInterceptors(FileInterceptor('file'))
+  uploadQuranTasksJson(@UploadedFile() file: Express.Multer.File) {
+    return this.uploadContentService.uploadQuranJson(file);
+  }
 }

@@ -1,3 +1,5 @@
+import TaskQuranA from './quranA/QuranA'
+import TaskQuranB from './quranB/QuranB'
 import TajvidA from './tajvidA/TajvidA'
 import TajvidB from './tajvidB/TajvidB'
 import TajvidC from './tajvidC/TajvidC'
@@ -8,7 +10,6 @@ import TaskC from './taskC/TaskC'
 import TaskE from './taskE/TaskE'
 import TaskF from './taskF/TaskF'
 import TaskG from './taskG/TaskG'
-import TaskQuran from './TaskQuran'
 
 interface IProps {
 	onFinished: VoidFunction
@@ -25,5 +26,6 @@ export const taskRegistry: Record<string, React.FC<IProps>> = {
 	tajvidB: TajvidB,
 	tajvidC: TajvidC,
 	tajvidD: TajvidD,
-	quran: TaskQuran,
+	'quran-type-1': TaskQuranA,
+	'quran-type-2': TaskQuranB,
 }
