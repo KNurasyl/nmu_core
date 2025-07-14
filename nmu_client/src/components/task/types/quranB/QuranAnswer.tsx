@@ -25,8 +25,6 @@ const QuranAnswer = ({ task, extractWordsBySura, getWordStyle }: Props) => {
 		? [...task.words].sort((a, b) => (a.start ?? 0) - (b.start ?? 0))
 		: []
 
-	console.log(wordsSorted)
-
 	return (
 		<Row className='quran_b__answer'>
 			{extractWordsBySura(task?.sura, wordsSorted).map((ayah, ayahIdx) => (

@@ -20,7 +20,7 @@ const QuranAnswer = ({ task, getWordStyle }: IProps) => {
 		: []
 
 	return (
-		<Row className='quran__answer'>
+		<Row className='quran_a__answer'>
 			<Row className='letter_block' style={{ direction: 'rtl' }}>
 				{words.map((word, idx) => (
 					<Typography

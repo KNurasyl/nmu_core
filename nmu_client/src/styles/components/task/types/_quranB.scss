@@ -17,7 +17,7 @@
 			margin-bottom: 5px;
 		}
 
-		.ayah-line {
+		& .ayah-line {
 			direction: rtl; /* арабское направление */
 			display: flex;
 			flex-direction: row-reverse; /* слова справа налево */
@@ -30,7 +30,7 @@
 				line-height: 1.4;
 			}
 
-			.letter {
+			& .letter {
 				font-size: 40px;
 				color: #5f3215;
 				text-shadow: 0 0 4px rgba(95, 50, 21, 0.25);

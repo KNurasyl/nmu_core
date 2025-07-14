@@ -65,8 +65,6 @@ const LessonPage = ({ lessonId }: IProps) => {
 		[data, taskProgressData]
 	)
 
-	console.log(tasks)
-
 	return (
 		<Row className='lesson_container'>
 			<Row className='left_back'>
