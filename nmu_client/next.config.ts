@@ -1,9 +1,14 @@
 import type { NextConfig } from 'next'
-import { i18nConfig } from './src/i18n/config'
+import path from 'path'
 
 const nextConfig: NextConfig = {
 	reactStrictMode: true,
-	...i18nConfig,
+	i18n: {
+		defaultLocale: 'kk',
+		locales: ['ru', 'kk'],
+		localeDetection: false,
+	},
+	localePath: path.resolve('./src/i18n/locales'),
 	env: {
 		NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
 	},
