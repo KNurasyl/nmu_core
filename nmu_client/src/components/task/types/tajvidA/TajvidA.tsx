@@ -104,6 +104,15 @@ const TajvidA = ({ onFinished }: IProps) => {
 		setPlayingIndex(null)
 	}
 
+	const isAudioFileName =
+		task.subType === 'tajvid-3l-2t' ? false : !task?.question?.audioFileName
+	const isWithoutAudio =
+		task.subType === 'tajvid-3l-2t' ? false : !task?.question?.audioFileName
+	const audioFileName =
+		task.subType === 'tajvid-3l-2t'
+			? task?.correctVariant?.audioFileName
+			: task?.question?.audioFileName
+
 	return (
 		<Row className='tajvid_a'>
 			<TaskAnswer arabicLetter={task?.question?.item} />
@@ -117,22 +126,18 @@ const TajvidA = ({ onFinished }: IProps) => {
 				handlePlay={handlePlay}
 				playingIndex={playingIndex}
 				audioRefs={audioRefs}
-				isAudioFileName={!task?.question?.audioFileName}
+				isAudioFileName={isAudioFileName}
 				correctItem={task?.correctVariant?.item}
 				devMode={devMode}
 			/>
 
-			<Row
-				className={`pagination ${
-					!task?.question?.audioFileName ? 'without-audio' : ''
-				}`}
-			>
+			<Row className={`pagination ${isWithoutAudio ? 'without-audio' : ''}`}>
 				<TaskCheck onClick={checkHandle} btnText={t('check')} />
-				{task?.question?.audioFileName && (
+				{audioFileName && (
 					<Row className='audio_blog'>
 						<AudioPlayer
 							ref={audioRef}
-							audioSrc={`${task?.lessonCode}/${task?.question?.audioFileName}`}
+							audioSrc={`${task?.lessonCode}/${audioFileName}`}
 							onPlayCallback={() => setIsPlaying(true)}
 							onEndCallback={() => setIsPlaying(false)}
 						>

@@ -98,6 +98,8 @@ const TajvidC = ({ onFinished }: IProps) => {
 		setPlayingIndex(null)
 	}
 
+	console.log(variants)
+
 	return (
 		<Row className='tajvid_c'>
 			<TaskAnswer arabicLetter={task?.question?.item} />
