@@ -1,5 +1,5 @@
 import { Field, InputType } from '@nestjs/graphql';
-import { IsString } from 'class-validator';
+import { IsMongoId, IsOptional, IsString } from 'class-validator';
 
 @InputType()
 export class RegisterInput {
@@ -18,4 +18,9 @@ export class RegisterInput {
   @Field()
   @IsString({ message: 'Role name must be string' })
   userRole: string;
+
+  @Field({ nullable: true })
+  @IsOptional()
+  @IsMongoId()
+  mentorId?: string;
 }

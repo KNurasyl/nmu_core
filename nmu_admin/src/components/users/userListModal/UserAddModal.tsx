@@ -1,6 +1,7 @@
 'use client'
 
 import { REGISTER } from '@/graphql/auth'
+import { useAuthStore } from '@/stores/auth.store'
 import { UserRole } from '@/types/enums'
 import { useMutation } from '@apollo/client'
 import { Form, Input, Modal, notification, Select } from 'antd'
@@ -20,6 +21,8 @@ interface IFormValues {
 
 const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 	const [form] = Form.useForm()
+
+	const { user } = useAuthStore(state => state)
 
 	const [register, { loading }] = useMutation(REGISTER, {
 		onCompleted: () => {
@@ -48,6 +51,7 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 					phoneNumber: values.phoneNumber.replace(/\s+/g, ''),
 					userName: values.userName,
 					userRole: values.userRole,
+					mentorId: user?._id,
 				},
 			},
 		})

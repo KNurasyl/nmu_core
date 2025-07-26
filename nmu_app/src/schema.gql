@@ -63,6 +63,7 @@ input CreateUserCourseProgressInput {
 }
 
 input CreateUserInput {
+  mentorId: String
   password: String!
   phoneNumber: String!
   userName: String!
@@ -187,6 +188,7 @@ type Query {
 }
 
 input RegisterInput {
+  mentorId: String
   password: String!
   phoneNumber: String!
   userName: String!
@@ -261,6 +263,7 @@ input UpdateUserCourseProgressInput {
 
 input UpdateUserInput {
   id: String!
+  mentorId: String
   password: String
   phoneNumber: String
   userName: String
@@ -300,6 +303,7 @@ input UpdateUserTaskProgressInput {
 type User {
   _id: ID!
   courseAccesses: [UserCourseAccess!]
+  mentorId: String
   phoneNumber: String!
   userName: String!
   userRole: String!

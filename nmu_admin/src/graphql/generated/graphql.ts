@@ -81,6 +81,7 @@ export type CreateUserCourseProgressInput = {
 };
 
 export type CreateUserInput = {
+  mentorId?: InputMaybe<Scalars['String']['input']>;
   password: Scalars['String']['input'];
   phoneNumber: Scalars['String']['input'];
   userName: Scalars['String']['input'];
@@ -423,6 +424,7 @@ export type QueryUserTaskProgressOptionalArgs = {
 };
 
 export type RegisterInput = {
+  mentorId?: InputMaybe<Scalars['String']['input']>;
   password: Scalars['String']['input'];
   phoneNumber: Scalars['String']['input'];
   userName: Scalars['String']['input'];
@@ -496,6 +498,7 @@ export type UpdateUserCourseProgressInput = {
 
 export type UpdateUserInput = {
   id: Scalars['String']['input'];
+  mentorId?: InputMaybe<Scalars['String']['input']>;
   password?: InputMaybe<Scalars['String']['input']>;
   phoneNumber?: InputMaybe<Scalars['String']['input']>;
   userName?: InputMaybe<Scalars['String']['input']>;
@@ -532,6 +535,7 @@ export type User = {
   __typename?: 'User';
   _id: Scalars['ID']['output'];
   courseAccesses?: Maybe<Array<UserCourseAccess>>;
+  mentorId?: Maybe<Scalars['String']['output']>;
   phoneNumber: Scalars['String']['output'];
   userName: Scalars['String']['output'];
   userRole: Scalars['String']['output'];

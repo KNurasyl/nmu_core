@@ -17,6 +17,10 @@ export class User {
   @Prop()
   userRole: string;
 
+  @Field({ nullable: true })
+  @Prop({ default: null })
+  mentorId: string;
+
   @Field()
   @Prop()
   phoneNumber: string;
