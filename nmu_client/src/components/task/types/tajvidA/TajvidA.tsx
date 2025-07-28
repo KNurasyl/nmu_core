@@ -105,11 +105,11 @@ const TajvidA = ({ onFinished }: IProps) => {
 	}
 
 	const isAudioFileName =
-		task.subType === 'tajvid-3l-2t' ? false : !task?.question?.audioFileName
+		task?.subType === 'tajvid-3l-2t' ? false : !task?.question?.audioFileName
 	const isWithoutAudio =
-		task.subType === 'tajvid-3l-2t' ? false : !task?.question?.audioFileName
+		task?.subType === 'tajvid-3l-2t' ? false : !task?.question?.audioFileName
 	const audioFileName =
-		task.subType === 'tajvid-3l-2t'
+		task?.subType === 'tajvid-3l-2t'
 			? task?.correctVariant?.audioFileName
 			: task?.question?.audioFileName
 
