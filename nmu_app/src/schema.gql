@@ -16,6 +16,14 @@ type Course {
   lessons: [Lesson]
 }
 
+type CourseInfoDto {
+  accessEndDate: DateTime
+  accessStartDate: DateTime
+  courseId: String!
+  courseName: String!
+  trialPeriod: Boolean!
+}
+
 input CreateCourseInput {
   courseName: String!
   description: String!
@@ -130,6 +138,20 @@ input LoginInput {
   phoneNumber: String!
 }
 
+type MonitoringDto {
+  _id: String!
+  availableCourses: [CourseInfoDto!]!
+  completedCourses: [CourseInfoDto!]!
+  inactive: Boolean!
+  lastActiveDate: DateTime
+  lastActiveDays: Int
+  lastActiveLesson: String
+  mentorName: String
+  phoneNumber: String!
+  userName: String!
+  userRole: String!
+}
+
 type Mutation {
   createCourse(createCourseInput: CreateCourseInput!): Course!
   createLesson(createLessonInput: CreateLessonInput!): Lesson!
@@ -172,6 +194,7 @@ type Query {
   getLessonById(id: String!): Lesson!
   getLessons: [Lesson!]!
   getLessonsByCourseId(courseId: String!): [Lesson!]!
+  getMonitoring(args: UserMonitoringArgs!): UserMonitoringPaginated!
   getTaskById(id: String!): Task!
   getTasksByLesson(lessonId: String!): [Task!]!
   getUserById(id: String!): User!
@@ -357,6 +380,22 @@ input UserListArgs {
   pageSize: Int
   roles: [String!]
   search: String
+}
+
+input UserMonitoringArgs {
+  courseId: String
+  idle: Boolean
+  page: Int
+  pageSize: Int
+  plan: String
+  search: String
+  status: String
+  todayOnly: Boolean
+}
+
+type UserMonitoringPaginated {
+  items: [MonitoringDto!]!
+  total: Int!
 }
 
 type UserPaginated {

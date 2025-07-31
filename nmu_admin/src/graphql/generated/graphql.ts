@@ -36,6 +36,15 @@ export type Course = {
   lessons?: Maybe<Array<Maybe<Lesson>>>;
 };
 
+export type CourseInfoDto = {
+  __typename?: 'CourseInfoDto';
+  accessEndDate?: Maybe<Scalars['DateTime']['output']>;
+  accessStartDate?: Maybe<Scalars['DateTime']['output']>;
+  courseId: Scalars['String']['output'];
+  courseName: Scalars['String']['output'];
+  trialPeriod: Scalars['Boolean']['output'];
+};
+
 export type CreateCourseInput = {
   courseName: Scalars['String']['input'];
   description: Scalars['String']['input'];
@@ -134,6 +143,21 @@ export type Lesson = {
 export type LoginInput = {
   password: Scalars['String']['input'];
   phoneNumber: Scalars['String']['input'];
+};
+
+export type MonitoringDto = {
+  __typename?: 'MonitoringDto';
+  _id: Scalars['String']['output'];
+  availableCourses: Array<CourseInfoDto>;
+  completedCourses: Array<CourseInfoDto>;
+  inactive: Scalars['Boolean']['output'];
+  lastActiveDate?: Maybe<Scalars['DateTime']['output']>;
+  lastActiveDays?: Maybe<Scalars['Int']['output']>;
+  lastActiveLesson?: Maybe<Scalars['String']['output']>;
+  mentorName?: Maybe<Scalars['String']['output']>;
+  phoneNumber: Scalars['String']['output'];
+  userName: Scalars['String']['output'];
+  userRole: Scalars['String']['output'];
 };
 
 export type Mutation = {
@@ -332,6 +356,7 @@ export type Query = {
   getLessonById: Lesson;
   getLessons: Array<Lesson>;
   getLessonsByCourseId: Array<Lesson>;
+  getMonitoring: UserMonitoringPaginated;
   getTaskById: Task;
   getTasksByLesson: Array<Task>;
   getUserById: User;
@@ -360,6 +385,11 @@ export type QueryGetLessonByIdArgs = {
 
 export type QueryGetLessonsByCourseIdArgs = {
   courseId: Scalars['String']['input'];
+};
+
+
+export type QueryGetMonitoringArgs = {
+  args: UserMonitoringArgs;
 };
 
 
@@ -587,6 +617,22 @@ export type UserListArgs = {
   search?: InputMaybe<Scalars['String']['input']>;
 };
 
+export type UserMonitoringArgs = {
+  idle?: InputMaybe<Scalars['Boolean']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  pageSize?: InputMaybe<Scalars['Int']['input']>;
+  plan?: InputMaybe<Scalars['String']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  status?: InputMaybe<Scalars['String']['input']>;
+  todayOnly?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+export type UserMonitoringPaginated = {
+  __typename?: 'UserMonitoringPaginated';
+  items: Array<MonitoringDto>;
+  total: Scalars['Int']['output'];
+};
+
 export type UserPaginated = {
   __typename?: 'UserPaginated';
   total: Scalars['Int']['output'];
@@ -701,6 +747,13 @@ export type GetUserByIdQueryVariables = Exact<{
 
 export type GetUserByIdQuery = { __typename?: 'Query', getUserById: { __typename?: 'User', _id: string, phoneNumber: string, userName: string, userRole: string, courseAccesses?: Array<{ __typename?: 'UserCourseAccess', _id: string, accessEndDate?: any | null, accessStartDate?: any | null, active: boolean, comment?: string | null, trialPeriod: boolean, course: { __typename?: 'Course', _id: string, courseName: string, description?: string | null, lang: string } }> | null } };
 
+export type GetMonitoringQueryVariables = Exact<{
+  args: UserMonitoringArgs;
+}>;
+
+
+export type GetMonitoringQuery = { __typename?: 'Query', getMonitoring: { __typename?: 'UserMonitoringPaginated', total: number, items: Array<{ __typename?: 'MonitoringDto', _id: string, inactive: boolean, lastActiveDate?: any | null, lastActiveDays?: number | null, lastActiveLesson?: string | null, phoneNumber: string, userName: string, userRole: string, mentorName?: string | null, availableCourses: Array<{ __typename?: 'CourseInfoDto', accessEndDate?: any | null, accessStartDate?: any | null, courseId: string, courseName: string, trialPeriod: boolean }>, completedCourses: Array<{ __typename?: 'CourseInfoDto', accessEndDate?: any | null, accessStartDate?: any | null, courseId: string, courseName: string, trialPeriod: boolean }> }> } };
+
 export type GetUsersPaginatedQueryVariables = Exact<{
   args: UserListArgs;
 }>;
@@ -765,6 +818,7 @@ export const CreateUserTaskProgressDocument = {"kind":"Document","definitions":[
 export const GetTaskByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetTaskById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"id"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getTaskById"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"id"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"data"}},{"kind":"Field","name":{"kind":"Name","value":"description"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"kk"}},{"kind":"Field","name":{"kind":"Name","value":"ru"}}]}},{"kind":"Field","name":{"kind":"Name","value":"lessonCode"}},{"kind":"Field","name":{"kind":"Name","value":"type"}}]}}]}}]} as unknown as DocumentNode<GetTaskByIdQuery, GetTaskByIdQueryVariables>;
 export const CreateUserCourseAccessDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"CreateUserCourseAccess"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"input"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"CreateUserCourseAccessInput"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"createUserCourseAccess"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"createUserCourseAccessInput"},"value":{"kind":"Variable","name":{"kind":"Name","value":"input"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"accessStartDate"}},{"kind":"Field","name":{"kind":"Name","value":"accessEndDate"}},{"kind":"Field","name":{"kind":"Name","value":"active"}},{"kind":"Field","name":{"kind":"Name","value":"comment"}}]}}]}}]} as unknown as DocumentNode<CreateUserCourseAccessMutation, CreateUserCourseAccessMutationVariables>;
 export const GetUserByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetUserById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"id"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getUserById"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"id"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}},{"kind":"Field","name":{"kind":"Name","value":"courseAccesses"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"accessEndDate"}},{"kind":"Field","name":{"kind":"Name","value":"accessStartDate"}},{"kind":"Field","name":{"kind":"Name","value":"active"}},{"kind":"Field","name":{"kind":"Name","value":"comment"}},{"kind":"Field","name":{"kind":"Name","value":"trialPeriod"}},{"kind":"Field","name":{"kind":"Name","value":"course"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"courseName"}},{"kind":"Field","name":{"kind":"Name","value":"description"}},{"kind":"Field","name":{"kind":"Name","value":"lang"}}]}}]}}]}}]}}]} as unknown as DocumentNode<GetUserByIdQuery, GetUserByIdQueryVariables>;
+export const GetMonitoringDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetMonitoring"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"args"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"UserMonitoringArgs"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getMonitoring"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"args"},"value":{"kind":"Variable","name":{"kind":"Name","value":"args"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","name":{"kind":"Name","value":"items"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"inactive"}},{"kind":"Field","name":{"kind":"Name","value":"lastActiveDate"}},{"kind":"Field","name":{"kind":"Name","value":"lastActiveDays"}},{"kind":"Field","name":{"kind":"Name","value":"lastActiveLesson"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}},{"kind":"Field","name":{"kind":"Name","value":"mentorName"}},{"kind":"Field","name":{"kind":"Name","value":"availableCourses"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"accessEndDate"}},{"kind":"Field","name":{"kind":"Name","value":"accessStartDate"}},{"kind":"Field","name":{"kind":"Name","value":"courseId"}},{"kind":"Field","name":{"kind":"Name","value":"courseName"}},{"kind":"Field","name":{"kind":"Name","value":"trialPeriod"}}]}},{"kind":"Field","name":{"kind":"Name","value":"completedCourses"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"accessEndDate"}},{"kind":"Field","name":{"kind":"Name","value":"accessStartDate"}},{"kind":"Field","name":{"kind":"Name","value":"courseId"}},{"kind":"Field","name":{"kind":"Name","value":"courseName"}},{"kind":"Field","name":{"kind":"Name","value":"trialPeriod"}}]}}]}}]}}]}}]} as unknown as DocumentNode<GetMonitoringQuery, GetMonitoringQueryVariables>;
 export const GetUsersPaginatedDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetUsersPaginated"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"args"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"UserListArgs"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getUsersPaginated"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"args"},"value":{"kind":"Variable","name":{"kind":"Name","value":"args"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","name":{"kind":"Name","value":"users"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]}}]} as unknown as DocumentNode<GetUsersPaginatedQuery, GetUsersPaginatedQueryVariables>;
 export const GetUsersDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetUsers"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getUsers"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]} as unknown as DocumentNode<GetUsersQuery, GetUsersQueryVariables>;
 export const UpdateUserByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"UpdateUserById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"input"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"UpdateUserInput"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"updateUserById"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"updateUserInput"},"value":{"kind":"Variable","name":{"kind":"Name","value":"input"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]} as unknown as DocumentNode<UpdateUserByIdMutation, UpdateUserByIdMutationVariables>;

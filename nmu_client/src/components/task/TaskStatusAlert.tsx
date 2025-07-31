@@ -61,7 +61,7 @@ const TaskStatusAlert = ({
 								onEndCallback={handleEnd}
 							>
 								<Typography
-									className={`correctVariant__letter ${
+									className={`correctVariant__letter arab_letter ${
 										isPlaying ? 'playing' : ''
 									}`}
 								>

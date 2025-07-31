@@ -15,6 +15,7 @@ const Breadcrumbs = () => {
 			courses: 'Курсы',
 			user: 'Пользователь',
 			profile: 'Профиль',
+			monitoring: 'Мониторинг',
 		}
 
 		return [

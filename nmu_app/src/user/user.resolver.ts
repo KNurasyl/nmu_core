@@ -2,9 +2,10 @@ import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { CreateUserInput } from './dto/create-user.input';
 import { UpdatePasswordInput } from './dto/update-password.input';
 import { UpdateUserInput } from './dto/update-user.input';
-import { UserPaginated } from './dto/user-list';
-import { UserListArgs } from './dto/user-list.args';
+import { UserMonitoringPaginated, UserPaginated } from './dto/user-list';
+import { UserListArgs, UserMonitoringArgs } from './dto/user-list.args';
 import { User } from './entities/user.entity';
+import { UserMonitoringService } from './monitoring.service';
 import { UserSeeder } from './user-seeder';
 import { UserService } from './user.service';
 
@@ -12,6 +13,7 @@ import { UserService } from './user.service';
 export class UserResolver {
   constructor(
     private readonly userService: UserService,
+    private readonly monitoringService: UserMonitoringService,
     private readonly userSeeder: UserSeeder,
   ) {}
 
@@ -23,6 +25,11 @@ export class UserResolver {
   @Query(() => [User], { name: 'getUsers' })
   findAll() {
     return this.userService.findAll();
+  }
+
+  @Query(() => UserMonitoringPaginated, { name: 'getMonitoring' })
+  getMonitoring(@Args('args') args: UserMonitoringArgs) {
+    return this.monitoringService.getMonitoring(args);
   }
 
   @Query(() => UserPaginated)

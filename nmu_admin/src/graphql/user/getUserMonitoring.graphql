@@ -1,0 +1,30 @@
+query GetMonitoring($args: UserMonitoringArgs!) {
+	getMonitoring(args: $args) {
+		total
+		items {
+			_id
+			inactive
+			lastActiveDate
+			lastActiveDays
+			lastActiveLesson
+			phoneNumber
+			userName
+			userRole
+			mentorName
+			availableCourses {
+				accessEndDate
+				accessStartDate
+				courseId
+				courseName
+				trialPeriod
+			}
+			completedCourses {
+				accessEndDate
+				accessStartDate
+				courseId
+				courseName
+				trialPeriod
+			}
+		}
+	}
+}

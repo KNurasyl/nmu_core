@@ -7,6 +7,7 @@ import {
 	LogoutOutlined,
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
+	SlidersOutlined,
 	UserOutlined,
 } from '@ant-design/icons'
 import { useMutation } from '@apollo/client'
@@ -29,10 +30,15 @@ import Breadcrumbs from '../ui/Breadcrumb'
 const { Header, Sider, Content } = Layout
 
 const items: MenuProps['items'] = [
+	// {
+	// 	key: '/',
+	// 	icon: <UserOutlined />,
+	// 	label: 'Пользователи',
+	// },
 	{
 		key: '/',
-		icon: <UserOutlined />,
-		label: 'Пользователи',
+		icon: <SlidersOutlined />,
+		label: 'Мониторинг',
 	},
 	{
 		key: '/courses',

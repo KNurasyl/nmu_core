@@ -36,6 +36,15 @@ export type Course = {
   lessons?: Maybe<Array<Maybe<Lesson>>>;
 };
 
+export type CourseInfoDto = {
+  __typename?: 'CourseInfoDto';
+  accessEndDate?: Maybe<Scalars['DateTime']['output']>;
+  accessStartDate?: Maybe<Scalars['DateTime']['output']>;
+  courseId: Scalars['String']['output'];
+  courseName: Scalars['String']['output'];
+  trialPeriod: Scalars['Boolean']['output'];
+};
+
 export type CreateCourseInput = {
   courseName: Scalars['String']['input'];
   description: Scalars['String']['input'];
@@ -134,6 +143,21 @@ export type Lesson = {
 export type LoginInput = {
   password: Scalars['String']['input'];
   phoneNumber: Scalars['String']['input'];
+};
+
+export type MonitoringDto = {
+  __typename?: 'MonitoringDto';
+  _id: Scalars['String']['output'];
+  availableCourses: Array<CourseInfoDto>;
+  completedCourses: Array<CourseInfoDto>;
+  inactive: Scalars['Boolean']['output'];
+  lastActiveDate?: Maybe<Scalars['DateTime']['output']>;
+  lastActiveDays?: Maybe<Scalars['Int']['output']>;
+  lastActiveLesson?: Maybe<Scalars['String']['output']>;
+  mentorName?: Maybe<Scalars['String']['output']>;
+  phoneNumber: Scalars['String']['output'];
+  userName: Scalars['String']['output'];
+  userRole: Scalars['String']['output'];
 };
 
 export type Mutation = {
@@ -332,6 +356,7 @@ export type Query = {
   getLessonById: Lesson;
   getLessons: Array<Lesson>;
   getLessonsByCourseId: Array<Lesson>;
+  getMonitoring: UserMonitoringPaginated;
   getTaskById: Task;
   getTasksByLesson: Array<Task>;
   getUserById: User;
@@ -360,6 +385,11 @@ export type QueryGetLessonByIdArgs = {
 
 export type QueryGetLessonsByCourseIdArgs = {
   courseId: Scalars['String']['input'];
+};
+
+
+export type QueryGetMonitoringArgs = {
+  args: UserMonitoringArgs;
 };
 
 
@@ -585,6 +615,23 @@ export type UserListArgs = {
   pageSize?: InputMaybe<Scalars['Int']['input']>;
   roles?: InputMaybe<Array<Scalars['String']['input']>>;
   search?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type UserMonitoringArgs = {
+  courseId?: InputMaybe<Scalars['String']['input']>;
+  idle?: InputMaybe<Scalars['Boolean']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  pageSize?: InputMaybe<Scalars['Int']['input']>;
+  plan?: InputMaybe<Scalars['String']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  status?: InputMaybe<Scalars['String']['input']>;
+  todayOnly?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+export type UserMonitoringPaginated = {
+  __typename?: 'UserMonitoringPaginated';
+  items: Array<MonitoringDto>;
+  total: Scalars['Int']['output'];
 };
 
 export type UserPaginated = {
