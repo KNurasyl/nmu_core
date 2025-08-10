@@ -1,6 +1,7 @@
 'use client'
 
 import { AudioPlayerHandle } from '@/components/player/AudioPlayer'
+import { shuffleArray } from '@/lib/utils/getRandomItems'
 import { useAuthStore } from '@/stores/auth.store'
 import { useTaskStore } from '@/stores/task.store'
 import { ITaskC } from '@/types/tasks'
@@ -47,7 +48,7 @@ const TaskC = ({ onFinished }: IProps) => {
 		const correct = task.correctLetter
 		const similar = task.similarLetter
 
-		return [correct, similar]
+		return shuffleArray([correct, similar])
 	}, [task])
 
 	useEffect(() => {

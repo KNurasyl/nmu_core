@@ -29,7 +29,7 @@ const TaskF = ({ onFinished }: IProps) => {
 		score,
 		correctCount,
 		wrongCount,
-		elapsedTime
+		elapsedTime,
 	} = useTaskStore(state => state)
 
 	const task = currentTask as ITaskF

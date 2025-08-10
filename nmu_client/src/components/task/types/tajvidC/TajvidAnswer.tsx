@@ -5,7 +5,7 @@ interface IProps {
 }
 
 const TaskAnswer = ({ arabicLetter }: IProps) => {
-	const isLong = arabicLetter?.length > 10
+	const isLong = arabicLetter?.length > 5
 
 	return (
 		<Row className='tajvid_c__answer'>

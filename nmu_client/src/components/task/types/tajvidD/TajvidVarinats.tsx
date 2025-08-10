@@ -42,7 +42,7 @@ const TajvidVarinats = ({
 
 	return (
 		<Row
-			className={`tajvid_d__variants${isTwo ? ' two' : ''}`}
+			className={`tajvid_d__variants ${isTwo ? ' two' : ''}`}
 			gutter={[12, 12]}
 			justify='center'
 		>
@@ -61,7 +61,7 @@ const TajvidVarinats = ({
 					>
 						<div
 							className={`tajvid_d__variant arab_letter ${
-								selected?.audioFileName === v.audioFileName ? 'selected' : ''
+								selected?.audioFileName === v?.audioFileName ? 'selected' : ''
 							} ${playingIndex === refKey ? 'playing' : ''} ${
 								devMode && correctItem === v?.item ? 'devMode' : ''
 							}`}

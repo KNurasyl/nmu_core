@@ -76,7 +76,7 @@ const TaskVariants = ({
 					>
 						<div
 							className={`tajvid_c__variant ${
-								selected?.item === v.item ? 'selected' : ''
+								selected?.audioFileName === v?.audioFileName ? 'selected' : ''
 							} ${playingIndex === refKey ? 'playing' : ''} ${
 								devMode && correctItem === v?.item ? 'devMode' : ''
 							}}`}

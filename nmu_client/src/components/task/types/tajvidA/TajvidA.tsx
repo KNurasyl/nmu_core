@@ -113,9 +113,6 @@ const TajvidA = ({ onFinished }: IProps) => {
 			? task?.correctVariant?.audioFileName
 			: task?.question?.audioFileName
 
-	console.log(task)
-	console.log(variants)
-
 	return (
 		<Row className='tajvid_a'>
 			<TaskAnswer arabicLetter={task?.question?.item} />

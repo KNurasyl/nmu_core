@@ -41,7 +41,7 @@
 
 			& .longLetter {
 				@media (max-width: 768px) {
-					font-size: clamp(25px, 10vw, 40px);
+					font-size: 25px;
 					line-height: 1.4;
 				}
 			}
@@ -97,10 +97,6 @@
 			position: absolute;
 			bottom: 3px;
 			right: 3px;
-		}
-
-		&:hover {
-			border-color: #929292;
 		}
 
 		&.selected {

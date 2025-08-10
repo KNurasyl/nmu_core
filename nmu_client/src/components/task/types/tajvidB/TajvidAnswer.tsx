@@ -21,7 +21,7 @@ const TaskAnswer = ({
 	audioSrc,
 	task,
 }: IProps) => {
-	const isLong = task?.question?.item?.length > 10
+	const isLong = task?.question?.item?.length > 5
 	const isAudioType =
 		task?.subType === 'tajvid-2l-1t' || task?.subType === 'tajvid-12l-1t'
 

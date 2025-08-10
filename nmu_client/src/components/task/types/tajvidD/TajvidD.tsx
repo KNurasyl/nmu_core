@@ -51,27 +51,54 @@ const TajvidD = ({ onFinished }: IProps) => {
 	const [isPlaying, setIsPlaying] = useState(false)
 	const [selected, setSelected] = useState<IVariant | null>(null)
 
-	const variants = useMemo(() => {
-		if (!task) return []
-		const randoms = getRandomItems(task?.variants, 4)
-		return getRandomItems(randoms, 4)
+	const correctVariant = useMemo<IVariant | null>(() => {
+		const list = task?.variants ?? []
+		return list.find(v => v.isCorrect === true) ?? null
 	}, [task])
+
+	const variants = useMemo<IVariant[]>(() => {
+		if (!task) return []
+		const all = task.variants ?? []
+
+		if (all.length <= 4) return getRandomItems(all, all.length)
+		if (!correctVariant) return getRandomItems(all, 4)
+
+		const incorrect = all.filter(v => {
+			const sameItem = v.item === correctVariant.item
+			const sameAudio =
+				(v.audioFileName ?? '') === (correctVariant.audioFileName ?? '')
+			return !(sameItem && sameAudio) && v.isCorrect !== true
+		})
+
+		const sampledIncorrect = getRandomItems(
+			incorrect,
+			Math.min(3, incorrect.length)
+		)
+		const merged = [correctVariant, ...sampledIncorrect]
+
+		return getRandomItems(merged, merged.length)
+	}, [task, correctVariant])
 
 	useEffect(() => {
 		if (status !== 'inProgress' && selected?.audioFileName) {
 			setIsPlaying(true)
 			statusAudioRef.current?.play()
 		}
-
 		if (status === 'inProgress') {
 			setIsPlaying(false)
 			statusAudioRef.current?.stop()
 		}
-	}, [task, status])
+	}, [status, selected?.audioFileName])
 
 	const checkHandle = () => {
-		if (selected === null) return
-		if (selected?.isCorrect) {
+		if (!selected) return
+
+		const isSelectedCorrect =
+			!!correctVariant &&
+			selected.item === correctVariant.item &&
+			(selected.audioFileName ?? '') === (correctVariant.audioFileName ?? '')
+
+		if (isSelectedCorrect) {
 			setStatus('success')
 			markCorrect(task)
 		} else {
@@ -115,12 +142,11 @@ const TajvidD = ({ onFinished }: IProps) => {
 				audioRefs={audioRefs}
 				isAudioFileName={true}
 				devMode={devMode}
-				correctItem={
-					task?.variants?.find(v => v.isCorrect === true)?.item || ''
-				}
+				correctItem={correctVariant?.item || ''}
 			/>
 
 			<TaskCheck onClick={checkHandle} btnText={t('check')} />
+
 			<TaskStatusAlert
 				status={status}
 				message={status === 'success' ? t('successMsg') : t('errorMsg')}
