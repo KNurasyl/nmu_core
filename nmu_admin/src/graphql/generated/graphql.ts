@@ -618,6 +618,7 @@ export type UserListArgs = {
 };
 
 export type UserMonitoringArgs = {
+  courseId?: InputMaybe<Scalars['String']['input']>;
   idle?: InputMaybe<Scalars['Boolean']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
   pageSize?: InputMaybe<Scalars['Int']['input']>;

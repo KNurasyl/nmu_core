@@ -8,12 +8,17 @@ import {
 import { GET_USER_MONITORING } from '@/graphql/user'
 import { useQuery } from '@apollo/client'
 import { Row, Table } from 'antd'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import MonitoringFilter from './monitoringFilter/MonitoringFilter'
 import UserAddModal from './monitoringModal/UserAddModal'
 import { monitoringTableColumn } from './table/MonitoringTableColumn'
 
 const PAGE_SIZE = 10
+const BOTTOM_THRESHOLD_PX = 120
+
+type MonitoringItem = NonNullable<
+	GetMonitoringQuery['getMonitoring']
+>['items'][number]
 
 const MonitoringList = () => {
 	const [page, setPage] = useState(1)
@@ -24,9 +29,12 @@ const MonitoringList = () => {
 	const [planFilter, setPlanFilter] = useState('all')
 	const [courseFilter, setCourseFilter] = useState('all')
 	const [addUserOpen, setAddUserOpen] = useState(false)
+	const [items, setItems] = useState<MonitoringItem[]>([])
+	const containerRef = useRef<HTMLDivElement | null>(null)
 
 	useEffect(() => {
 		setPage(1)
+		setItems([])
 	}, [search, idle, todayOnly, statusFilter, planFilter, courseFilter])
 
 	const variables = useMemo(() => {
@@ -43,20 +51,58 @@ const MonitoringList = () => {
 		return { args }
 	}, [page, search, idle, todayOnly, statusFilter, planFilter, courseFilter])
 
-	const { data, loading, refetch } = useQuery<GetMonitoringQuery>(
-		GET_USER_MONITORING,
-		{ variables, fetchPolicy: 'network-only' }
-	)
+	const { data, loading, refetch, networkStatus } =
+		useQuery<GetMonitoringQuery>(GET_USER_MONITORING, {
+			variables,
+			fetchPolicy: 'network-only',
+			notifyOnNetworkStatusChange: true,
+		})
 
 	const { data: coursesData } = useQuery<GetCoursesQuery>(GET_COURSES)
-
 	const courseItems = coursesData?.getCourses?.map(c => ({
 		label: c?.courseName,
 		value: c?._id,
 	}))
 
+	const total = data?.getMonitoring?.total ?? 0
+	const pageItems = data?.getMonitoring?.items ?? []
+
+	useEffect(() => {
+		if (!data) return
+		setItems(prev => {
+			if (page === 1) return pageItems as MonitoringItem[]
+
+			const map = new Map<string, MonitoringItem>()
+			prev.forEach(it => it?._id && map.set(it._id, it))
+			pageItems.forEach(it => it?._id && map.set(it._id, it as MonitoringItem))
+			return Array.from(map.values())
+		})
+	}, [data, page])
+
+	const canLoadMore = items.length < total
+	const isFetchingInitial = loading && page === 1
+	const isFetchingMore = loading && page > 1
+
+	useEffect(() => {
+		const el = containerRef.current
+		if (!el) return
+
+		const onScroll = () => {
+			const { scrollTop, scrollHeight, clientHeight } = el
+			const nearBottom =
+				scrollTop + clientHeight >= scrollHeight - BOTTOM_THRESHOLD_PX
+
+			if (nearBottom && !loading && canLoadMore) {
+				setPage(p => p + 1)
+			}
+		}
+
+		el.addEventListener('scroll', onScroll)
+		return () => el.removeEventListener('scroll', onScroll)
+	}, [loading, canLoadMore])
+
 	return (
-		<Row style={{ width: '100%', height: '100%' }}>
+		<Row style={{ width: '100%', height: '100%', flexDirection: 'column' }}>
 			<UserAddModal
 				open={addUserOpen}
 				onClose={() => setAddUserOpen(false)}
@@ -80,22 +126,30 @@ const MonitoringList = () => {
 				courseItems={courseItems}
 			/>
 
-			<Table
-				style={{ width: '100%', height: '88%', overflowY: 'scroll' }}
-				columns={monitoringTableColumn()}
-				dataSource={data?.getMonitoring?.items ?? []}
-				loading={loading}
-				rowKey='_id'
-				scroll={{ x: 1400 }}
-				pagination={{
-					current: page,
-					pageSize: PAGE_SIZE,
-					total: data?.getMonitoring?.total ?? 0,
-					showSizeChanger: false,
-					showTotal: (t, [from, to]) => `${from}-${to} из ${t}`,
-					onChange: setPage,
+			<div
+				ref={containerRef}
+				style={{
+					width: '100%',
+					height: '88%',
+					overflowY: 'auto',
+					display: 'flex',
+					flexDirection: 'column',
 				}}
-			/>
+			>
+				<Table
+					columns={monitoringTableColumn()}
+					dataSource={items}
+					loading={isFetchingInitial}
+					rowKey='_id'
+					scroll={{ x: 1400 }}
+					pagination={false}
+				/>
+
+				<div style={{ padding: 12, textAlign: 'center' }}>
+					{isFetchingMore && 'Загружаем ещё...'}
+					{!isFetchingMore && !canLoadMore && total > 0 && 'Больше данных нет'}
+				</div>
+			</div>
 		</Row>
 	)
 }

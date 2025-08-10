@@ -15,3 +15,17 @@ body {
 ::-webkit-scrollbar {
 	display: none;
 }
+
+.top-scrollbar {
+	position: sticky;
+	top: 0; /* всегда на виду */
+	z-index: 3;
+	height: 14px; /* можно подогнать */
+	overflow-x: auto;
+	overflow-y: hidden;
+	background: var(--ant-color-bg-container, #fff);
+	border-bottom: 1px solid var(--ant-color-border, #f0f0f0);
+}
+.top-scrollbar__spacer {
+	height: 1px;
+} /* ширина задаётся из JS */
