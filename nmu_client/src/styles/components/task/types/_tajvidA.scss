@@ -40,6 +40,8 @@
 			}
 
 			& .longLetter {
+				font-size: 45px !important;
+
 				@media (max-width: 768px) {
 					font-size: 23px !important;
 					line-height: 1.4;
