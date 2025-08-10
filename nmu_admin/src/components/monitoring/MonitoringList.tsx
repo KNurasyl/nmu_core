@@ -51,12 +51,14 @@ const MonitoringList = () => {
 		return { args }
 	}, [page, search, idle, todayOnly, statusFilter, planFilter, courseFilter])
 
-	const { data, loading, refetch, networkStatus } =
-		useQuery<GetMonitoringQuery>(GET_USER_MONITORING, {
+	const { data, loading, refetch } = useQuery<GetMonitoringQuery>(
+		GET_USER_MONITORING,
+		{
 			variables,
 			fetchPolicy: 'network-only',
 			notifyOnNetworkStatusChange: true,
-		})
+		}
+	)
 
 	const { data: coursesData } = useQuery<GetCoursesQuery>(GET_COURSES)
 	const courseItems = coursesData?.getCourses?.map(c => ({
