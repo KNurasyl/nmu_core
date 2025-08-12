@@ -129,6 +129,10 @@ const TajvidD = ({ onFinished }: IProps) => {
 		setPlayingIndex(null)
 	}
 
+	console.log(task)
+
+	console.log(variants)
+
 	return (
 		<Row className='tajvid_d'>
 			<TajvidVarinats
