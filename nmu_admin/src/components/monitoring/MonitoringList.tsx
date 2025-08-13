@@ -104,7 +104,7 @@ const MonitoringList = () => {
 	}, [loading, canLoadMore])
 
 	return (
-		<Row style={{ width: '100%', height: '100%', flexDirection: 'column' }}>
+		<Row style={{ width: '100%', height: '100%' }}>
 			<UserAddModal
 				open={addUserOpen}
 				onClose={() => setAddUserOpen(false)}
@@ -134,6 +134,7 @@ const MonitoringList = () => {
 					width: '100%',
 					height: '88%',
 					overflowY: 'auto',
+					overflowX: 'auto',
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -143,7 +144,7 @@ const MonitoringList = () => {
 					dataSource={items}
 					loading={isFetchingInitial}
 					rowKey='_id'
-					scroll={{ x: 1400 }}
+					scroll={{ x: 'max-content' }}
 					pagination={false}
 				/>
 
