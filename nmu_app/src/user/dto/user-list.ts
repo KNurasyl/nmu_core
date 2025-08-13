@@ -29,6 +29,24 @@ export class CourseInfoDto {
 }
 
 @ObjectType()
+export class CourseProgressDto {
+  @Field()
+  courseId: string;
+
+  @Field()
+  courseName: string;
+
+  @Field(() => Int)
+  completedLessons: number;
+
+  @Field(() => Int)
+  totalLessons: number;
+
+  @Field()
+  label: string;
+}
+
+@ObjectType()
 export class MonitoringDto {
   @Field()
   _id: string;
@@ -53,6 +71,9 @@ export class MonitoringDto {
 
   @Field(() => [CourseInfoDto])
   completedCourses: CourseInfoDto[];
+
+  @Field(() => [CourseProgressDto])
+  coursesProgress: CourseProgressDto[];
 
   @Field()
   inactive: boolean;

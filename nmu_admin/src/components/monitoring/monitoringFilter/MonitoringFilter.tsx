@@ -97,8 +97,12 @@ const MonitoringFilter = ({
 				</Checkbox>
 			</Space>
 
-			<Button type='primary' onClick={() => setAddUserOpen(true)}>
-				Добавить пользователя
+			<Button
+				type='primary'
+				style={{ width: '80px' }}
+				onClick={() => setAddUserOpen(true)}
+			>
+				+ Студент
 			</Button>
 		</Row>
 	)

@@ -23,12 +23,14 @@ export class UserMonitoringService {
     };
     if (args.search?.trim()) {
       const regex = new RegExp(args.search.trim(), 'i');
-      matchStage.$or = [{ phoneNumber: regex }, { userName: regex }];
+      (matchStage as { $or?: Array<Record<string, unknown>> }).$or = [{ phoneNumber: regex }, { userName: regex }];
     }
 
     const pipeline: PipelineStage[] = [
       { $match: matchStage },
       { $sort: { createdAt: -1 } },
+
+      /* Последнее действие по времени (как было) */
       {
         $lookup: {
           from: 'usertaskprogresses',
@@ -38,32 +40,11 @@ export class UserMonitoringService {
             { $project: { task: 1, completedAt: 1 } },
             { $sort: { completedAt: -1 } },
             { $limit: 1 },
-            {
-              $lookup: {
-                from: 'tasks',
-                localField: 'task',
-                foreignField: '_id',
-                as: 'task',
-              },
-            },
+            { $lookup: { from: 'tasks', localField: 'task', foreignField: '_id', as: 'task' } },
             { $unwind: { path: '$task', preserveNullAndEmptyArrays: true } },
-            {
-              $lookup: {
-                from: 'lessons',
-                localField: 'task.lessonCode',
-                foreignField: 'lessonCode',
-                as: 'lesson',
-              },
-            },
+            { $lookup: { from: 'lessons', localField: 'task.lessonCode', foreignField: 'lessonCode', as: 'lesson' } },
             { $unwind: { path: '$lesson', preserveNullAndEmptyArrays: true } },
-            {
-              $lookup: {
-                from: 'courses',
-                localField: 'lesson.course',
-                foreignField: '_id',
-                as: 'course',
-              },
-            },
+            { $lookup: { from: 'courses', localField: 'lesson.course', foreignField: '_id', as: 'course' } },
             { $unwind: { path: '$course', preserveNullAndEmptyArrays: true } },
             {
               $project: {
@@ -76,6 +57,8 @@ export class UserMonitoringService {
           as: 'lastTask',
         },
       },
+
+      /* Доступные курсы + считаем totalLessons для каждого курса */
       {
         $lookup: {
           from: 'usercourseaccesses',
@@ -98,21 +81,27 @@ export class UserMonitoringService {
               },
             },
             { $project: { course: 1, trialPeriod: { $ifNull: ['$trialPeriod', false] }, accessStartDate: 1 } },
+            { $lookup: { from: 'courses', localField: 'course', foreignField: '_id', as: 'course' } },
+            { $unwind: '$course' },
+
+            /* считаем число уроков в курсе */
             {
               $lookup: {
-                from: 'courses',
-                localField: 'course',
-                foreignField: '_id',
-                as: 'course',
+                from: 'lessons',
+                let: { cId: '$course._id' },
+                pipeline: [{ $match: { $expr: { $eq: ['$course', '$$cId'] } } }, { $count: 'cnt' }],
+                as: 'lessonsCnt',
               },
             },
-            { $unwind: '$course' },
+            { $addFields: { totalLessons: { $ifNull: [{ $arrayElemAt: ['$lessonsCnt.cnt', 0] }, 0] } } },
+
             {
               $group: {
                 _id: '$course._id',
                 courseName: { $first: '$course.courseName' },
                 trialPeriod: { $first: '$trialPeriod' },
                 accessStartDate: { $min: '$accessStartDate' },
+                totalLessons: { $first: '$totalLessons' },
               },
             },
             {
@@ -122,6 +111,7 @@ export class UserMonitoringService {
                 courseName: 1,
                 trialPeriod: 1,
                 accessStartDate: 1,
+                totalLessons: 1,
               },
             },
           ],
@@ -129,27 +119,17 @@ export class UserMonitoringService {
         },
       },
 
-      ...(args.courseId
-        ? [
-            {
-              $match: { 'availableCourses.courseId': new Types.ObjectId(args.courseId) },
-            },
-          ]
-        : []),
+      /* Фильтр по конкретному курсу */
+      ...(args.courseId ? [{ $match: { 'availableCourses.courseId': new Types.ObjectId(args.courseId) } }] : []),
+
+      /* Пройденные курсы (как было) */
       {
         $lookup: {
           from: 'usercourseprogresses',
           let: { userId: '$_id' },
           pipeline: [
             { $match: { $expr: { $and: [{ $eq: ['$user', '$$userId'] }, { $eq: ['$completed', true] }] } } },
-            {
-              $lookup: {
-                from: 'courses',
-                localField: 'course',
-                foreignField: '_id',
-                as: 'course',
-              },
-            },
+            { $lookup: { from: 'courses', localField: 'course', foreignField: '_id', as: 'course' } },
             { $unwind: '$course' },
             {
               $project: {
@@ -163,6 +143,30 @@ export class UserMonitoringService {
           as: 'completedCourses',
         },
       },
+
+      /* Агрегат: кол-во уникальных уроков, завершённых пользователем, по каждому курсу */
+      {
+        $lookup: {
+          from: 'usertaskprogresses',
+          let: { userId: '$_id' },
+          pipeline: [
+            { $match: { $expr: { $and: [{ $eq: ['$user', '$$userId'] }, { $eq: ['$completed', true] }] } } },
+            { $project: { task: 1 } },
+            { $lookup: { from: 'tasks', localField: 'task', foreignField: '_id', as: 'task' } },
+            { $unwind: '$task' },
+            { $lookup: { from: 'lessons', localField: 'task.lessonCode', foreignField: 'lessonCode', as: 'lesson' } },
+            { $unwind: '$lesson' },
+
+            /* distinct lesson per course */
+            { $group: { _id: { course: '$lesson.course', lesson: '$lesson._id' } } },
+            /* count lessons per course */
+            { $group: { _id: '$_id.course', completedLessons: { $sum: 1 } } },
+          ],
+          as: 'completedLessonsAgg',
+        },
+      },
+
+      /* Ментор (как было) */
       {
         $addFields: {
           mentorObjId: {
@@ -170,14 +174,9 @@ export class UserMonitoringService {
           },
         },
       },
-      {
-        $lookup: {
-          from: 'users',
-          localField: 'mentorObjId',
-          foreignField: '_id',
-          as: 'mentor',
-        },
-      },
+      { $lookup: { from: 'users', localField: 'mentorObjId', foreignField: '_id', as: 'mentor' } },
+
+      /* Вычисляем поля + формируем coursesProgress */
       {
         $addFields: {
           lastActiveDate: { $arrayElemAt: ['$lastTask.completedAt', 0] },
@@ -187,25 +186,23 @@ export class UserMonitoringService {
                 c: { $arrayElemAt: ['$lastTask.courseName', 0] },
                 l: { $arrayElemAt: ['$lastTask.lessonName', 0] },
               },
-              in: {
-                $cond: [{ $and: ['$$c', '$$l'] }, { $concat: ['$$c', ' – ', '$$l'] }, '$$l'],
-              },
+              in: { $cond: [{ $and: ['$$c', '$$l'] }, { $concat: ['$$c', ' – ', '$$l'] }, '$$l'] },
             },
           },
-
           lastActiveDays: {
             $cond: [
               { $gt: [{ $size: '$lastTask' }, 0] },
               {
                 $round: [
-                  { $divide: [{ $subtract: ['$$NOW', { $arrayElemAt: ['$lastTask.completedAt', 0] }] }, 86_400_000] },
+                  {
+                    $divide: [{ $subtract: ['$$NOW', { $arrayElemAt: ['$lastTask.completedAt', 0] }] }, 86_400_000],
+                  },
                   0,
                 ],
               },
               null,
             ],
           },
-
           inactive: {
             $cond: [
               {
@@ -225,23 +222,83 @@ export class UserMonitoringService {
               false,
             ],
           },
-
           mentorName: { $arrayElemAt: ['$mentor.userName', 0] },
+
+          /* Новый массив с прогрессом по всем доступным курсам */
+          coursesProgress: {
+            $map: {
+              input: { $ifNull: ['$availableCourses', []] },
+              as: 'ac',
+              in: {
+                courseId: '$$ac.courseId',
+                courseName: '$$ac.courseName',
+                totalLessons: { $ifNull: ['$$ac.totalLessons', 0] },
+                completedLessons: {
+                  $let: {
+                    vars: {
+                      m: {
+                        $first: {
+                          $filter: {
+                            input: { $ifNull: ['$completedLessonsAgg', []] },
+                            as: 'ca',
+                            cond: { $eq: ['$$ca._id', '$$ac.courseId'] },
+                          },
+                        },
+                      },
+                    },
+                    in: { $ifNull: ['$$m.completedLessons', 0] },
+                  },
+                },
+                label: {
+                  $let: {
+                    vars: {
+                      comp: {
+                        $let: {
+                          vars: {
+                            m: {
+                              $first: {
+                                $filter: {
+                                  input: { $ifNull: ['$completedLessonsAgg', []] },
+                                  as: 'ca',
+                                  cond: { $eq: ['$$ca._id', '$$ac.courseId'] },
+                                },
+                              },
+                            },
+                          },
+                          in: { $ifNull: ['$$m.completedLessons', 0] },
+                        },
+                      },
+                    },
+                    in: {
+                      $concat: [
+                        { $toString: '$$comp' },
+                        ' из ',
+                        { $toString: { $ifNull: ['$$ac.totalLessons', 0] } },
+                        ' уроков ',
+                        '$$ac.courseName',
+                      ],
+                    },
+                  },
+                },
+              },
+            },
+          },
         },
       },
     ];
 
+    /* Пост-фильтры (как было) */
     const postMatch: Record<string, unknown> = {};
     if (args.idle) postMatch.lastActiveDays = { $gt: 5 };
     if (args.todayOnly) postMatch.lastActiveDays = 0;
     if (args.status === 'active') postMatch.inactive = false;
     if (args.status === 'stop') postMatch.inactive = true;
     if (args.plan) postMatch['availableCourses.trialPeriod'] = args.plan === 'trial';
-
     if (Object.keys(postMatch).length) pipeline.push({ $match: postMatch });
 
+    /* Проекция и пагинация */
     pipeline.push(
-      { $project: { password: 0, refreshToken: 0, mentor: 0, mentorObjId: 0 } },
+      { $project: { password: 0, refreshToken: 0, mentor: 0, mentorObjId: 0, lessonsCnt: 0, lastTask: 0 } },
       { $skip: skip },
       { $limit: pageSize },
     );

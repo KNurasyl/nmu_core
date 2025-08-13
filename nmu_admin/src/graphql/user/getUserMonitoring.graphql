@@ -25,6 +25,13 @@ query GetMonitoring($args: UserMonitoringArgs!) {
 				courseName
 				trialPeriod
 			}
+			coursesProgress {
+				courseId
+				courseName
+				completedLessons
+				totalLessons
+				label
+			}
 		}
 	}
 }

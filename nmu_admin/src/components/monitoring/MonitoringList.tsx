@@ -103,6 +103,8 @@ const MonitoringList = () => {
 		return () => el.removeEventListener('scroll', onScroll)
 	}, [loading, canLoadMore])
 
+	console.log(items)
+
 	return (
 		<Row style={{ width: '100%', height: '100%' }}>
 			<UserAddModal

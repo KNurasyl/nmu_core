@@ -24,6 +24,14 @@ type CourseInfoDto {
   trialPeriod: Boolean!
 }
 
+type CourseProgressDto {
+  completedLessons: Int!
+  courseId: String!
+  courseName: String!
+  label: String!
+  totalLessons: Int!
+}
+
 input CreateCourseInput {
   courseName: String!
   description: String!
@@ -142,6 +150,7 @@ type MonitoringDto {
   _id: String!
   availableCourses: [CourseInfoDto!]!
   completedCourses: [CourseInfoDto!]!
+  coursesProgress: [CourseProgressDto!]!
   inactive: Boolean!
   lastActiveDate: DateTime
   lastActiveDays: Int
