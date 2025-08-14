@@ -14,7 +14,7 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Learn more about it here: https://the-guild.dev/graphql/codegen/plugins/presets/preset-client#reducing-bundle-size
  */
 type Documents = {
-    "mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      isFrozen\n      freezes {\n        endDate\n      }\n    }\n  }\n}": typeof types.LoginDocument,
+    "mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      hasMentorSupport\n      isFrozen\n      freezes {\n        startDate\n        endDate\n      }\n    }\n  }\n}": typeof types.LoginDocument,
     "mutation Logout($userId: String!) {\n  logout(userId: $userId)\n}": typeof types.LogoutDocument,
     "mutation RefreshTokens {\n  refreshTokens {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n  }\n}": typeof types.RefreshTokensDocument,
     "query GetCourseById($id: String!) {\n  getCourseById(id: $id) {\n    _id\n    courseName\n    description\n    lang\n  }\n}": typeof types.GetCourseByIdDocument,
@@ -31,7 +31,7 @@ type Documents = {
     "mutation UpdateUserPassword($input: UpdatePasswordInput!) {\n  updateUserPassword(updatePasswordInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.UpdateUserPasswordDocument,
 };
 const documents: Documents = {
-    "mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      isFrozen\n      freezes {\n        endDate\n      }\n    }\n  }\n}": types.LoginDocument,
+    "mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      hasMentorSupport\n      isFrozen\n      freezes {\n        startDate\n        endDate\n      }\n    }\n  }\n}": types.LoginDocument,
     "mutation Logout($userId: String!) {\n  logout(userId: $userId)\n}": types.LogoutDocument,
     "mutation RefreshTokens {\n  refreshTokens {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n  }\n}": types.RefreshTokensDocument,
     "query GetCourseById($id: String!) {\n  getCourseById(id: $id) {\n    _id\n    courseName\n    description\n    lang\n  }\n}": types.GetCourseByIdDocument,
@@ -65,7 +65,7 @@ export function graphql(source: string): unknown;
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      isFrozen\n      freezes {\n        endDate\n      }\n    }\n  }\n}"): (typeof documents)["mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      isFrozen\n      freezes {\n        endDate\n      }\n    }\n  }\n}"];
+export function graphql(source: "mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      hasMentorSupport\n      isFrozen\n      freezes {\n        startDate\n        endDate\n      }\n    }\n  }\n}"): (typeof documents)["mutation Login($input: LoginInput!) {\n  login(input: $input) {\n    accessToken\n    user {\n      _id\n      phoneNumber\n      userName\n      userRole\n      hasMentorSupport\n      isFrozen\n      freezes {\n        startDate\n        endDate\n      }\n    }\n  }\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

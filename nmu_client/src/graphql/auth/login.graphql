@@ -6,8 +6,10 @@ mutation Login($input: LoginInput!) {
 			phoneNumber
 			userName
 			userRole
+			hasMentorSupport
 			isFrozen
 			freezes {
+				startDate
 				endDate
 			}
 		}
