@@ -1,0 +1,6 @@
+mutation StartUserMentorSupport($userId: String!) {
+	startUserMentorSupport(userId: $userId) {
+		_id
+		hasMentorSupport
+	}
+}

@@ -1,0 +1,10 @@
+mutation FreezeUser($input: FreezeUserInput!) {
+	freezeUser(input: $input) {
+		_id
+		isFrozen
+		freezes {
+			startDate
+			endDate
+		}
+	}
+}

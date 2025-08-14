@@ -12,6 +12,7 @@ import {
 } from 'src/user-lesson-progress/entities/user-lesson-progress.entity';
 import { UserTaskProgress, UserTaskProgressSchema } from 'src/user-task-progress/entities/user-task-progress.entity';
 import { User, UserSchema } from './entities/user.entity';
+import { FreezeCleanupService } from './freeze-cleanup.service';
 import { UserMonitoringService } from './monitoring.service';
 import { UserSeeder } from './user-seeder';
 import { UserResolver } from './user.resolver';
@@ -29,7 +30,7 @@ import { UserService } from './user.service';
       { name: Lesson.name, schema: LessonSchema },
     ]),
   ],
-  providers: [UserResolver, UserService, UserMonitoringService, UserSeeder],
+  providers: [UserResolver, UserService, UserMonitoringService, UserSeeder, FreezeCleanupService],
   exports: [UserService, UserMonitoringService],
 })
 export class UserModule {}

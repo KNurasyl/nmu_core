@@ -45,6 +45,15 @@ export type CourseInfoDto = {
   trialPeriod: Scalars['Boolean']['output'];
 };
 
+export type CourseProgressDto = {
+  __typename?: 'CourseProgressDto';
+  completedLessons: Scalars['Int']['output'];
+  courseId: Scalars['String']['output'];
+  courseName: Scalars['String']['output'];
+  label: Scalars['String']['output'];
+  totalLessons: Scalars['Int']['output'];
+};
+
 export type CreateCourseInput = {
   courseName: Scalars['String']['input'];
   description: Scalars['String']['input'];
@@ -127,6 +136,26 @@ export type Description = {
   ru: Scalars['String']['output'];
 };
 
+export type FreezeDto = {
+  __typename?: 'FreezeDto';
+  endDate: Scalars['DateTime']['output'];
+  startDate: Scalars['DateTime']['output'];
+};
+
+export type FreezePeriod = {
+  __typename?: 'FreezePeriod';
+  endDate: Scalars['DateTime']['output'];
+  reason?: Maybe<Scalars['String']['output']>;
+  startDate: Scalars['DateTime']['output'];
+};
+
+export type FreezeUserInput = {
+  endDate: Scalars['String']['input'];
+  reason?: InputMaybe<Scalars['String']['input']>;
+  startDate: Scalars['String']['input'];
+  userId: Scalars['String']['input'];
+};
+
 export type Lesson = {
   __typename?: 'Lesson';
   _id: Scalars['ID']['output'];
@@ -149,12 +178,13 @@ export type MonitoringDto = {
   __typename?: 'MonitoringDto';
   _id: Scalars['String']['output'];
   availableCourses: Array<CourseInfoDto>;
-  completedCourses: Array<CourseInfoDto>;
-  inactive: Scalars['Boolean']['output'];
+  coursesProgress: Array<CourseProgressDto>;
+  freezes?: Maybe<Array<FreezeDto>>;
+  hasMentorSupport: Scalars['Boolean']['output'];
+  isFrozen?: Maybe<Scalars['Boolean']['output']>;
   lastActiveDate?: Maybe<Scalars['DateTime']['output']>;
   lastActiveDays?: Maybe<Scalars['Int']['output']>;
   lastActiveLesson?: Maybe<Scalars['String']['output']>;
-  mentorName?: Maybe<Scalars['String']['output']>;
   phoneNumber: Scalars['String']['output'];
   userName: Scalars['String']['output'];
   userRole: Scalars['String']['output'];
@@ -170,6 +200,7 @@ export type Mutation = {
   createUserCourseProgress: UserCourseProgress;
   createUserLessonProgress: UserLessonProgress;
   createUserTaskProgress: UserTaskProgress;
+  freezeUser: User;
   login: AuthResponse;
   logout: Scalars['Boolean']['output'];
   refreshTokens: AuthResponse;
@@ -185,6 +216,10 @@ export type Mutation = {
   seedUsers: Scalars['String']['output'];
   setUserCourseAccessActive: UserCourseAccess;
   setUserCourseAccessTrialPeriod: UserCourseAccess;
+  setUserMentorSupport: User;
+  startUserMentorSupport: User;
+  stopUserMentorSupport: User;
+  unfreezeUser: User;
   updateCourseById: Course;
   updateLessonById: Lesson;
   updateTaskById: Task;
@@ -234,6 +269,11 @@ export type MutationCreateUserLessonProgressArgs = {
 
 export type MutationCreateUserTaskProgressArgs = {
   createUserTaskProgressInput: CreateUserTaskProgressInput;
+};
+
+
+export type MutationFreezeUserArgs = {
+  input: FreezeUserInput;
 };
 
 
@@ -301,6 +341,27 @@ export type MutationSetUserCourseAccessActiveArgs = {
 export type MutationSetUserCourseAccessTrialPeriodArgs = {
   id: Scalars['String']['input'];
   trialPeriod: Scalars['Boolean']['input'];
+};
+
+
+export type MutationSetUserMentorSupportArgs = {
+  enabled: Scalars['Boolean']['input'];
+  userId: Scalars['String']['input'];
+};
+
+
+export type MutationStartUserMentorSupportArgs = {
+  userId: Scalars['String']['input'];
+};
+
+
+export type MutationStopUserMentorSupportArgs = {
+  userId: Scalars['String']['input'];
+};
+
+
+export type MutationUnfreezeUserArgs = {
+  userId: Scalars['String']['input'];
 };
 
 
@@ -565,6 +626,9 @@ export type User = {
   __typename?: 'User';
   _id: Scalars['ID']['output'];
   courseAccesses?: Maybe<Array<UserCourseAccess>>;
+  freezes?: Maybe<Array<FreezePeriod>>;
+  hasMentorSupport?: Maybe<Scalars['Boolean']['output']>;
+  isFrozen?: Maybe<Scalars['Boolean']['output']>;
   mentorId?: Maybe<Scalars['String']['output']>;
   phoneNumber: Scalars['String']['output'];
   userName: Scalars['String']['output'];
@@ -659,7 +723,7 @@ export type LoginMutationVariables = Exact<{
 }>;
 
 
-export type LoginMutation = { __typename?: 'Mutation', login: { __typename?: 'AuthResponse', accessToken: string, user: { __typename?: 'User', _id: string, phoneNumber: string, userName: string, userRole: string } } };
+export type LoginMutation = { __typename?: 'Mutation', login: { __typename?: 'AuthResponse', accessToken: string, user: { __typename?: 'User', _id: string, phoneNumber: string, userName: string, userRole: string, isFrozen?: boolean | null, freezes?: Array<{ __typename?: 'FreezePeriod', endDate: any }> | null } } };
 
 export type LogoutMutationVariables = Exact<{
   userId: Scalars['String']['input'];
@@ -759,7 +823,7 @@ export type UpdateUserPasswordMutationVariables = Exact<{
 export type UpdateUserPasswordMutation = { __typename?: 'Mutation', updateUserPassword: { __typename?: 'User', _id: string, phoneNumber: string, userName: string, userRole: string } };
 
 
-export const LoginDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"Login"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"input"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LoginInput"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"login"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"input"},"value":{"kind":"Variable","name":{"kind":"Name","value":"input"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"accessToken"}},{"kind":"Field","name":{"kind":"Name","value":"user"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]}}]} as unknown as DocumentNode<LoginMutation, LoginMutationVariables>;
+export const LoginDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"Login"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"input"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LoginInput"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"login"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"input"},"value":{"kind":"Variable","name":{"kind":"Name","value":"input"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"accessToken"}},{"kind":"Field","name":{"kind":"Name","value":"user"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}},{"kind":"Field","name":{"kind":"Name","value":"isFrozen"}},{"kind":"Field","name":{"kind":"Name","value":"freezes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"endDate"}}]}}]}}]}}]}}]} as unknown as DocumentNode<LoginMutation, LoginMutationVariables>;
 export const LogoutDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"Logout"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"userId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"logout"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"userId"},"value":{"kind":"Variable","name":{"kind":"Name","value":"userId"}}}]}]}}]} as unknown as DocumentNode<LogoutMutation, LogoutMutationVariables>;
 export const RefreshTokensDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"RefreshTokens"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"refreshTokens"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"accessToken"}},{"kind":"Field","name":{"kind":"Name","value":"user"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]}}]} as unknown as DocumentNode<RefreshTokensMutation, RefreshTokensMutationVariables>;
 export const GetCourseByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetCourseById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"id"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getCourseById"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"id"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"courseName"}},{"kind":"Field","name":{"kind":"Name","value":"description"}},{"kind":"Field","name":{"kind":"Name","value":"lang"}}]}}]}}]} as unknown as DocumentNode<GetCourseByIdQuery, GetCourseByIdQueryVariables>;

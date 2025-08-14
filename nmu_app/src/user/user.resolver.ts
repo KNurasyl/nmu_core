@@ -1,5 +1,6 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { CreateUserInput } from './dto/create-user.input';
+import { FreezeUserInput } from './dto/freeze-user.input';
 import { UpdatePasswordInput } from './dto/update-password.input';
 import { UpdateUserInput } from './dto/update-user.input';
 import { UserMonitoringPaginated, UserPaginated } from './dto/user-list';
@@ -60,5 +61,33 @@ export class UserResolver {
   @Mutation(() => String)
   async seedUsers(): Promise<string> {
     return await this.userSeeder.seedUsers(1000);
+  }
+
+  @Mutation(() => User)
+  setUserMentorSupport(
+    @Args('userId', { type: () => String }) userId: string,
+    @Args('enabled', { type: () => Boolean }) enabled: boolean,
+  ) {
+    return this.userService.setMentorSupport(userId, enabled);
+  }
+
+  @Mutation(() => User)
+  stopUserMentorSupport(@Args('userId', { type: () => String }) userId: string) {
+    return this.userService.stopMentorSupport(userId);
+  }
+
+  @Mutation(() => User)
+  startUserMentorSupport(@Args('userId', { type: () => String }) userId: string) {
+    return this.userService.startMentorSupport(userId);
+  }
+
+  @Mutation(() => User)
+  freezeUser(@Args('input') input: FreezeUserInput) {
+    return this.userService.freezeUser(input);
+  }
+
+  @Mutation(() => User)
+  unfreezeUser(@Args('userId', { type: () => String }) userId: string) {
+    return this.userService.unfreezeUser(userId);
   }
 }

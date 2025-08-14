@@ -1,0 +1,6 @@
+mutation StopUserMentorSupport($userId: String!) {
+	stopUserMentorSupport(userId: $userId) {
+		_id
+		hasMentorSupport
+	}
+}

@@ -18,19 +18,22 @@ import { useTranslation } from 'react-i18next'
 const CourseList = () => {
 	const router = useRouter()
 	const { t } = useTranslation('common')
-	const user = useAuthStore(state => state.user)
+
+	const authUser = useAuthStore(state => state.user)
+	const isFrozen = Boolean(authUser?.isFrozen)
+
 	const { setCurrentCourseId, setTrialPeriod } = useTaskStore(state => state)
 	const setLoading = useLoadingStore(state => state.setLoading)
 
 	const { data, loading } = useQuery<GetUserByIdQuery>(GET_USER_BY_ID, {
-		variables: { id: user?._id },
+		variables: { id: authUser?._id },
+		skip: !authUser?._id,
 	})
 
 	const { data: courseProgressData, loading: progressCourseLoad } =
 		useQuery<UserCourseProgressOptionalQuery>(USER_COURSE_PROGRESS_OPTIONAL, {
-			variables: {
-				userId: user?._id || '',
-			},
+			variables: { userId: authUser?._id || '' },
+			skip: !authUser?._id,
 		})
 
 	const courseList = useMemo(
@@ -42,16 +45,17 @@ const CourseList = () => {
 
 				return {
 					...courseAccess,
+					active: Boolean(courseAccess?.active) && !isFrozen,
 					completed: p?.completed ?? false,
 					score: p?.score ?? 0,
 				}
 			}),
-		[courseProgressData, data]
+		[courseProgressData, data, isFrozen]
 	)
 
 	useEffect(() => {
 		setLoading(loading || progressCourseLoad)
-	}, [loading, progressCourseLoad])
+	}, [loading, progressCourseLoad, setLoading])
 
 	const onClickHandler = (id?: string, trialPeriod?: boolean) => {
 		router.push(`/${id}`)

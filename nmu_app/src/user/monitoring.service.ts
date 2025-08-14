@@ -9,6 +9,12 @@ interface CountDoc {
   cnt: number;
 }
 
+interface MongoFilter {
+  [key: string]: unknown;
+  $and?: MongoFilter[];
+  $or?: MongoFilter[];
+}
+
 @Injectable()
 export class UserMonitoringService {
   constructor(@InjectModel(User.name) private readonly userModel: Model<UserDocument>) {}
@@ -29,8 +35,6 @@ export class UserMonitoringService {
     const pipeline: PipelineStage[] = [
       { $match: matchStage },
       { $sort: { createdAt: -1 } },
-
-      /* Последнее действие по времени (как было) */
       {
         $lookup: {
           from: 'usertaskprogresses',
@@ -57,8 +61,6 @@ export class UserMonitoringService {
           as: 'lastTask',
         },
       },
-
-      /* Доступные курсы + считаем totalLessons для каждого курса */
       {
         $lookup: {
           from: 'usercourseaccesses',
@@ -83,8 +85,6 @@ export class UserMonitoringService {
             { $project: { course: 1, trialPeriod: { $ifNull: ['$trialPeriod', false] }, accessStartDate: 1 } },
             { $lookup: { from: 'courses', localField: 'course', foreignField: '_id', as: 'course' } },
             { $unwind: '$course' },
-
-            /* считаем число уроков в курсе */
             {
               $lookup: {
                 from: 'lessons',
@@ -94,7 +94,6 @@ export class UserMonitoringService {
               },
             },
             { $addFields: { totalLessons: { $ifNull: [{ $arrayElemAt: ['$lessonsCnt.cnt', 0] }, 0] } } },
-
             {
               $group: {
                 _id: '$course._id',
@@ -118,33 +117,7 @@ export class UserMonitoringService {
           as: 'availableCourses',
         },
       },
-
-      /* Фильтр по конкретному курсу */
       ...(args.courseId ? [{ $match: { 'availableCourses.courseId': new Types.ObjectId(args.courseId) } }] : []),
-
-      /* Пройденные курсы (как было) */
-      {
-        $lookup: {
-          from: 'usercourseprogresses',
-          let: { userId: '$_id' },
-          pipeline: [
-            { $match: { $expr: { $and: [{ $eq: ['$user', '$$userId'] }, { $eq: ['$completed', true] }] } } },
-            { $lookup: { from: 'courses', localField: 'course', foreignField: '_id', as: 'course' } },
-            { $unwind: '$course' },
-            {
-              $project: {
-                _id: 0,
-                courseId: '$course._id',
-                courseName: '$course.courseName',
-                trialPeriod: { $literal: false },
-              },
-            },
-          ],
-          as: 'completedCourses',
-        },
-      },
-
-      /* Агрегат: кол-во уникальных уроков, завершённых пользователем, по каждому курсу */
       {
         $lookup: {
           from: 'usertaskprogresses',
@@ -156,29 +129,16 @@ export class UserMonitoringService {
             { $unwind: '$task' },
             { $lookup: { from: 'lessons', localField: 'task.lessonCode', foreignField: 'lessonCode', as: 'lesson' } },
             { $unwind: '$lesson' },
-
-            /* distinct lesson per course */
             { $group: { _id: { course: '$lesson.course', lesson: '$lesson._id' } } },
-            /* count lessons per course */
             { $group: { _id: '$_id.course', completedLessons: { $sum: 1 } } },
           ],
           as: 'completedLessonsAgg',
         },
       },
-
-      /* Ментор (как было) */
       {
         $addFields: {
-          mentorObjId: {
-            $cond: [{ $eq: [{ $type: '$mentorId' }, 'string'] }, { $toObjectId: '$mentorId' }, '$mentorId'],
-          },
-        },
-      },
-      { $lookup: { from: 'users', localField: 'mentorObjId', foreignField: '_id', as: 'mentor' } },
+          hasMentorSupport: { $ifNull: ['$hasMentorSupport', true] },
 
-      /* Вычисляем поля + формируем coursesProgress */
-      {
-        $addFields: {
           lastActiveDate: { $arrayElemAt: ['$lastTask.completedAt', 0] },
           lastActiveLesson: {
             $let: {
@@ -203,28 +163,22 @@ export class UserMonitoringService {
               null,
             ],
           },
-          inactive: {
-            $cond: [
+          isFrozen: {
+            $gt: [
               {
-                $or: [
-                  { $eq: [{ $size: '$lastTask' }, 0] },
-                  {
-                    $gt: [
-                      {
-                        $divide: [{ $subtract: ['$$NOW', { $arrayElemAt: ['$lastTask.completedAt', 0] }] }, 86_400_000],
-                      },
-                      5,
-                    ],
+                $size: {
+                  $filter: {
+                    input: { $ifNull: ['$freezes', []] },
+                    as: 'f',
+                    cond: {
+                      $and: [{ $lte: ['$$f.startDate', '$$NOW'] }, { $gte: ['$$f.endDate', '$$NOW'] }],
+                    },
                   },
-                ],
+                },
               },
-              true,
-              false,
+              0,
             ],
           },
-          mentorName: { $arrayElemAt: ['$mentor.userName', 0] },
-
-          /* Новый массив с прогрессом по всем доступным курсам */
           coursesProgress: {
             $map: {
               input: { $ifNull: ['$availableCourses', []] },
@@ -287,18 +241,56 @@ export class UserMonitoringService {
       },
     ];
 
-    /* Пост-фильтры (как было) */
-    const postMatch: Record<string, unknown> = {};
-    if (args.idle) postMatch.lastActiveDays = { $gt: 5 };
-    if (args.todayOnly) postMatch.lastActiveDays = 0;
-    if (args.status === 'active') postMatch.inactive = false;
-    if (args.status === 'stop') postMatch.inactive = true;
-    if (args.plan) postMatch['availableCourses.trialPeriod'] = args.plan === 'trial';
-    if (Object.keys(postMatch).length) pipeline.push({ $match: postMatch });
+    const postMatch: MongoFilter = {};
+    if (args.idle) {
+      postMatch.lastActiveDays = { $gt: 5 };
+    }
+    if (args.todayOnly) {
+      postMatch.lastActiveDays = 0;
+    }
+    if (args.status === 'active') {
+      postMatch.$and = [{ lastActiveDays: { $ne: null } }, { lastActiveDays: { $lte: 5 } }];
+    }
+    if (args.status === 'stop') {
+      postMatch.$or = [{ lastActiveDays: null }, { lastActiveDays: { $gt: 5 } }];
+    }
+    if (args.plan) {
+      postMatch['availableCourses.trialPeriod'] = args.plan === 'trial';
+    }
+    if (Object.keys(postMatch).length) {
+      pipeline.push({ $match: postMatch });
+    }
 
-    /* Проекция и пагинация */
     pipeline.push(
-      { $project: { password: 0, refreshToken: 0, mentor: 0, mentorObjId: 0, lessonsCnt: 0, lastTask: 0 } },
+      {
+        $project: {
+          _id: 1,
+          userName: 1,
+          userRole: 1,
+          phoneNumber: 1,
+
+          hasMentorSupport: 1,
+          isFrozen: 1,
+
+          lastActiveDate: 1,
+          lastActiveLesson: 1,
+          lastActiveDays: 1,
+
+          availableCourses: 1,
+          coursesProgress: 1,
+
+          freezes: {
+            $map: {
+              input: { $ifNull: ['$freezes', []] },
+              as: 'f',
+              in: {
+                startDate: '$$f.startDate',
+                endDate: '$$f.endDate',
+              },
+            },
+          },
+        },
+      },
       { $skip: skip },
       { $limit: pageSize },
     );

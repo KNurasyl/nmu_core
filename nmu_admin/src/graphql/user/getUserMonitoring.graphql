@@ -3,22 +3,19 @@ query GetMonitoring($args: UserMonitoringArgs!) {
 		total
 		items {
 			_id
-			inactive
 			lastActiveDate
 			lastActiveDays
 			lastActiveLesson
 			phoneNumber
 			userName
 			userRole
-			mentorName
-			availableCourses {
-				accessEndDate
-				accessStartDate
-				courseId
-				courseName
-				trialPeriod
+			hasMentorSupport
+			isFrozen
+			freezes {
+				startDate
+				endDate
 			}
-			completedCourses {
+			availableCourses {
 				accessEndDate
 				accessStartDate
 				courseId

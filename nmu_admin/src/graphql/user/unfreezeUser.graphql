@@ -1,0 +1,10 @@
+mutation UnfreezeUser($userId: String!) {
+	unfreezeUser(userId: $userId) {
+		_id
+		isFrozen
+		freezes {
+			startDate
+			endDate
+		}
+	}
+}

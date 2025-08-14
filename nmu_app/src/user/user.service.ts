@@ -3,6 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import * as bcrypt from 'bcryptjs';
 import { FilterQuery, Model } from 'mongoose';
 import { CreateUserInput } from './dto/create-user.input';
+import { FreezeUserInput } from './dto/freeze-user.input';
 import { UpdatePasswordInput } from './dto/update-password.input';
 import { UpdateUserInput } from './dto/update-user.input';
 import { UserListArgs } from './dto/user-list.args';
@@ -98,5 +99,66 @@ export class UserService {
 
   async updateRefreshToken(userId: string, refreshToken: string | null) {
     return this.userModel.findByIdAndUpdate(userId, { refreshToken }, { new: true });
+  }
+
+  async setMentorSupport(userId: string, enabled: boolean): Promise<User> {
+    const user = await this.userModel.findByIdAndUpdate(
+      userId,
+      { $set: { hasMentorSupport: enabled } },
+      { new: true, runValidators: true },
+    );
+    if (!user) throw new NotFoundException(`User #${userId} not found`);
+    return user;
+  }
+
+  async stopMentorSupport(userId: string): Promise<User> {
+    return this.setMentorSupport(userId, false);
+  }
+
+  async startMentorSupport(userId: string): Promise<User> {
+    return this.setMentorSupport(userId, true);
+  }
+
+  async freezeUser(input: FreezeUserInput): Promise<User> {
+    const { userId, startDate, endDate, reason } = input;
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    if (
+      !(start instanceof Date) ||
+      !(end instanceof Date) ||
+      Number.isNaN(+start) ||
+      Number.isNaN(+end) ||
+      start > end
+    ) {
+      throw new Error('Некорректные даты заморозки');
+    }
+
+    const user = await this.userModel.findById(userId);
+    if (!user) throw new NotFoundException(`User #${userId} not found`);
+
+    user.freezes = user.freezes ?? [];
+    user.freezes.push({ startDate: start, endDate: end, reason });
+    await user.save();
+    return user;
+  }
+
+  async unfreezeUser(userId: string): Promise<User> {
+    const user = await this.userModel.findById(userId);
+    if (!user) throw new NotFoundException(`User #${userId} not found`);
+
+    const now = new Date();
+    let changed = false;
+    user.freezes = (user.freezes ?? []).map((f) => {
+      if (f.startDate <= now && now <= f.endDate) {
+        changed = true;
+        return { ...f, endDate: now };
+      }
+      return f;
+    });
+
+    if (changed) {
+      await user.save();
+    }
+    return user;
   }
 }

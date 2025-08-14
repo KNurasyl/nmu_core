@@ -1,21 +1,22 @@
 import { Button, Checkbox, Input, Row, Select, Space } from 'antd'
-import { Dispatch, SetStateAction } from 'react'
 
 const { Option } = Select
 
+type Setter<T> = (value: T) => void
+
 interface IProps {
 	search: string
-	setSearch: Dispatch<SetStateAction<string>>
+	setSearch: Setter<string>
 	idle: boolean
-	setIdle: Dispatch<SetStateAction<boolean>>
+	setIdle: Setter<boolean>
 	todayOnly: boolean
-	setTodayOnly: Dispatch<SetStateAction<boolean>>
+	setTodayOnly: Setter<boolean>
 	statusFilter: string
-	setStatusFilter: Dispatch<SetStateAction<string>>
+	setStatusFilter: Setter<string>
 	planFilter: string
-	setPlanFilter: Dispatch<SetStateAction<string>>
-	setAddUserOpen: Dispatch<SetStateAction<boolean>>
-	setCourseFilter: Dispatch<SetStateAction<string>>
+	setPlanFilter: Setter<string>
+	setAddUserOpen: Setter<boolean>
+	setCourseFilter: Setter<string>
 	courseFilter: string
 	courseItems:
 		| {
@@ -44,8 +45,8 @@ const MonitoringFilter = ({
 	return (
 		<Row
 			style={{ width: '100%', marginBottom: '15px' }}
-			align={'middle'}
-			justify={'space-between'}
+			align='middle'
+			justify='space-between'
 		>
 			<Space wrap>
 				<Input
@@ -55,6 +56,7 @@ const MonitoringFilter = ({
 					value={search}
 					onChange={e => setSearch(e.target.value)}
 				/>
+
 				<Select
 					value={planFilter}
 					onChange={setPlanFilter}
@@ -64,6 +66,7 @@ const MonitoringFilter = ({
 					<Option value='fullPeriod'>Полный</Option>
 					<Option value='trialPeriod'>Пробный</Option>
 				</Select>
+
 				<Select
 					value={statusFilter}
 					onChange={setStatusFilter}
@@ -73,25 +76,27 @@ const MonitoringFilter = ({
 					<Option value='active'>Активные</Option>
 					<Option value='stop'>Сервис остановлен</Option>
 				</Select>
+
 				<Select
 					value={courseFilter}
 					onChange={setCourseFilter}
 					style={{ width: 160 }}
 				>
 					<Option value='all'>Все курсы</Option>
-
 					{courseItems?.map(item => (
 						<Option key={item?.value} value={item?.value}>
 							{item?.label}
 						</Option>
 					))}
 				</Select>
+
 				<Checkbox
 					checked={todayOnly}
 					onChange={e => setTodayOnly(e.target.checked)}
 				>
 					Работали сегодня
 				</Checkbox>
+
 				<Checkbox checked={idle} onChange={e => setIdle(e.target.checked)}>
 					Неактивные {'>'} 5 дн.
 				</Checkbox>

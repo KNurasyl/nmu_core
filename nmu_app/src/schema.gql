@@ -124,6 +124,24 @@ type Description {
   ru: String!
 }
 
+type FreezeDto {
+  endDate: DateTime!
+  startDate: DateTime!
+}
+
+type FreezePeriod {
+  endDate: DateTime!
+  reason: String
+  startDate: DateTime!
+}
+
+input FreezeUserInput {
+  endDate: String!
+  reason: String
+  startDate: String!
+  userId: String!
+}
+
 """
 The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
 """
@@ -149,13 +167,13 @@ input LoginInput {
 type MonitoringDto {
   _id: String!
   availableCourses: [CourseInfoDto!]!
-  completedCourses: [CourseInfoDto!]!
   coursesProgress: [CourseProgressDto!]!
-  inactive: Boolean!
+  freezes: [FreezeDto!]
+  hasMentorSupport: Boolean!
+  isFrozen: Boolean
   lastActiveDate: DateTime
   lastActiveDays: Int
   lastActiveLesson: String
-  mentorName: String
   phoneNumber: String!
   userName: String!
   userRole: String!
@@ -170,6 +188,7 @@ type Mutation {
   createUserCourseProgress(createUserCourseProgressInput: CreateUserCourseProgressInput!): UserCourseProgress!
   createUserLessonProgress(createUserLessonProgressInput: CreateUserLessonProgressInput!): UserLessonProgress!
   createUserTaskProgress(createUserTaskProgressInput: CreateUserTaskProgressInput!): UserTaskProgress!
+  freezeUser(input: FreezeUserInput!): User!
   login(input: LoginInput!): AuthResponse!
   logout(userId: String!): Boolean!
   refreshTokens: AuthResponse!
@@ -185,6 +204,10 @@ type Mutation {
   seedUsers: String!
   setUserCourseAccessActive(active: Boolean!, id: String!): UserCourseAccess!
   setUserCourseAccessTrialPeriod(id: String!, trialPeriod: Boolean!): UserCourseAccess!
+  setUserMentorSupport(enabled: Boolean!, userId: String!): User!
+  startUserMentorSupport(userId: String!): User!
+  stopUserMentorSupport(userId: String!): User!
+  unfreezeUser(userId: String!): User!
   updateCourseById(updateCourseInput: UpdateCourseInput!): Course!
   updateLessonById(updateLessonInput: UpdateLessonInput!): Lesson!
   updateTaskById(updateTaskInput: UpdateTaskInput!): Task!
@@ -335,6 +358,9 @@ input UpdateUserTaskProgressInput {
 type User {
   _id: ID!
   courseAccesses: [UserCourseAccess!]
+  freezes: [FreezePeriod!]
+  hasMentorSupport: Boolean
+  isFrozen: Boolean
   mentorId: String
   phoneNumber: String!
   userName: String!

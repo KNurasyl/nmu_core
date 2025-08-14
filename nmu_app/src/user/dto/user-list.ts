@@ -46,6 +46,16 @@ export class CourseProgressDto {
   label: string;
 }
 
+/** Период заморозки (только даты: от/до) */
+@ObjectType()
+export class FreezeDto {
+  @Field()
+  startDate: Date;
+
+  @Field()
+  endDate: Date;
+}
+
 @ObjectType()
 export class MonitoringDto {
   @Field()
@@ -56,6 +66,15 @@ export class MonitoringDto {
 
   @Field()
   userRole: string;
+
+  @Field()
+  hasMentorSupport?: boolean;
+
+  @Field({ nullable: true })
+  isFrozen?: boolean;
+
+  @Field(() => [FreezeDto], { nullable: true })
+  freezes?: FreezeDto[];
 
   @Field({ nullable: true })
   lastActiveDate?: Date;
@@ -69,20 +88,11 @@ export class MonitoringDto {
   @Field(() => [CourseInfoDto])
   availableCourses: CourseInfoDto[];
 
-  @Field(() => [CourseInfoDto])
-  completedCourses: CourseInfoDto[];
-
   @Field(() => [CourseProgressDto])
   coursesProgress: CourseProgressDto[];
 
   @Field()
-  inactive: boolean;
-
-  @Field()
   phoneNumber: string;
-
-  @Field({ nullable: true })
-  mentorName?: string;
 }
 
 @ObjectType()
