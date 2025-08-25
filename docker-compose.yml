@@ -14,7 +14,6 @@ services:
       NODE_ENV: ${NODE_ENV}
       NEXT_PUBLIC_GRAPHQL_API: ${NEXT_PUBLIC_GRAPHQL_API}
       PORT: ${PORT}
-      NODE_OPTIONS: --max-old-space-size=2048
     networks:
       - app-network
 
