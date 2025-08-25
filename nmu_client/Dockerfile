@@ -1,22 +1,31 @@
-ARG NODE_VERSION=20.18.0
+# Stage 1: build
+FROM node:20-alpine AS builder
 
-FROM node:${NODE_VERSION}-alpine AS builder
 WORKDIR /app
 
+# Оптимально: сначала пакеты
 COPY package*.json ./
-RUN npm install --frozen-lockfile
+RUN npm ci
 
+# Копируем весь проект
 COPY . .
+
+# Собираем next
 RUN npm run build
 
-FROM node:${NODE_VERSION}-alpine AS runner
-WORKDIR /app
-ENV NODE_ENV=production
+# Stage 2: runtime
+FROM node:20-alpine AS runner
 
+WORKDIR /app
+
+ENV NODE_ENV=production
+ENV PORT=3000
+ENV NODE_OPTIONS="--max-old-space-size=2048"
+
+# Копируем нужные артефакты
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
