@@ -24,12 +24,22 @@ type CourseInfoDto {
   trialPeriod: Boolean!
 }
 
+type CourseMiniType {
+  courseName: String!
+  id: String!
+}
+
 type CourseProgressDto {
   completedLessons: Int!
   courseId: String!
   courseName: String!
   label: String!
   totalLessons: Int!
+}
+
+type CourseStatisticsType {
+  count: Int!
+  course: CourseMiniType!
 }
 
 input CreateCourseInput {
@@ -232,6 +242,7 @@ type Query {
   getUserById(id: String!): User!
   getUsers: [User!]!
   getUsersPaginated(args: UserListArgs!): UserPaginated!
+  studentStatistics: StudentStatisticsType!
   userCourseAccess(id: String!): UserCourseAccess!
   userCourseProgress(id: String!): UserCourseProgress!
   userCourseProgressByUserCourse(courseId: String, userId: String): UserCourseProgress!
@@ -248,6 +259,14 @@ input RegisterInput {
   phoneNumber: String!
   userName: String!
   userRole: String!
+}
+
+type StudentStatisticsType {
+  activeStudents: Int!
+  courseStudents: [CourseStatisticsType!]!
+  frozenStudents: Int!
+  noMentorStudents: Int!
+  totalStudents: Int!
 }
 
 type Task {

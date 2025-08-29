@@ -1,12 +1,14 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { CreateUserInput } from './dto/create-user.input';
 import { FreezeUserInput } from './dto/freeze-user.input';
+import { StudentStatisticsType } from './dto/student-statistics.dto';
 import { UpdatePasswordInput } from './dto/update-password.input';
 import { UpdateUserInput } from './dto/update-user.input';
 import { UserMonitoringPaginated, UserPaginated } from './dto/user-list';
 import { UserListArgs, UserMonitoringArgs } from './dto/user-list.args';
 import { User } from './entities/user.entity';
 import { UserMonitoringService } from './monitoring.service';
+import { StudentStatisticsService } from './stats.service';
 import { UserSeeder } from './user-seeder';
 import { UserService } from './user.service';
 
@@ -16,6 +18,7 @@ export class UserResolver {
     private readonly userService: UserService,
     private readonly monitoringService: UserMonitoringService,
     private readonly userSeeder: UserSeeder,
+    private readonly studentStatisticsService: StudentStatisticsService,
   ) {}
 
   @Mutation(() => User)
@@ -84,6 +87,11 @@ export class UserResolver {
   @Mutation(() => User)
   freezeUser(@Args('input') input: FreezeUserInput) {
     return this.userService.freezeUser(input);
+  }
+
+  @Query(() => StudentStatisticsType, { name: 'studentStatistics' })
+  studentStatistics() {
+    return this.studentStatisticsService.getStatistics();
   }
 
   @Mutation(() => User)

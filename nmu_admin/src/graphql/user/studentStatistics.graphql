@@ -1,0 +1,15 @@
+query StudentStatistics {
+	studentStatistics {
+		activeStudents
+		frozenStudents
+		noMentorStudents
+		totalStudents
+		courseStudents {
+			count
+			course {
+				courseName
+				id
+			}
+		}
+	}
+}

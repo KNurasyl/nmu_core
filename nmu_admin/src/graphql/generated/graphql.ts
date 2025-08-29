@@ -45,6 +45,12 @@ export type CourseInfoDto = {
   trialPeriod: Scalars['Boolean']['output'];
 };
 
+export type CourseMiniType = {
+  __typename?: 'CourseMiniType';
+  courseName: Scalars['String']['output'];
+  id: Scalars['String']['output'];
+};
+
 export type CourseProgressDto = {
   __typename?: 'CourseProgressDto';
   completedLessons: Scalars['Int']['output'];
@@ -52,6 +58,12 @@ export type CourseProgressDto = {
   courseName: Scalars['String']['output'];
   label: Scalars['String']['output'];
   totalLessons: Scalars['Int']['output'];
+};
+
+export type CourseStatisticsType = {
+  __typename?: 'CourseStatisticsType';
+  count: Scalars['Int']['output'];
+  course: CourseMiniType;
 };
 
 export type CreateCourseInput = {
@@ -423,6 +435,7 @@ export type Query = {
   getUserById: User;
   getUsers: Array<User>;
   getUsersPaginated: UserPaginated;
+  studentStatistics: StudentStatisticsType;
   userCourseAccess: UserCourseAccess;
   userCourseProgress: UserCourseProgress;
   userCourseProgressByUserCourse: UserCourseProgress;
@@ -520,6 +533,15 @@ export type RegisterInput = {
   phoneNumber: Scalars['String']['input'];
   userName: Scalars['String']['input'];
   userRole: Scalars['String']['input'];
+};
+
+export type StudentStatisticsType = {
+  __typename?: 'StudentStatisticsType';
+  activeStudents: Scalars['Int']['output'];
+  courseStudents: Array<CourseStatisticsType>;
+  frozenStudents: Scalars['Int']['output'];
+  noMentorStudents: Scalars['Int']['output'];
+  totalStudents: Scalars['Int']['output'];
 };
 
 export type Task = {
@@ -852,6 +874,11 @@ export type StopUserMentorSupportMutationVariables = Exact<{
 
 export type StopUserMentorSupportMutation = { __typename?: 'Mutation', stopUserMentorSupport: { __typename?: 'User', _id: string, hasMentorSupport?: boolean | null } };
 
+export type StudentStatisticsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type StudentStatisticsQuery = { __typename?: 'Query', studentStatistics: { __typename?: 'StudentStatisticsType', activeStudents: number, frozenStudents: number, noMentorStudents: number, totalStudents: number, courseStudents: Array<{ __typename?: 'CourseStatisticsType', count: number, course: { __typename?: 'CourseMiniType', courseName: string, id: string } }> } };
+
 export type UnfreezeUserMutationVariables = Exact<{
   userId: Scalars['String']['input'];
 }>;
@@ -917,6 +944,7 @@ export const GetUsersPaginatedDocument = {"kind":"Document","definitions":[{"kin
 export const GetUsersDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetUsers"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"getUsers"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]} as unknown as DocumentNode<GetUsersQuery, GetUsersQueryVariables>;
 export const StartUserMentorSupportDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"StartUserMentorSupport"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"userId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"startUserMentorSupport"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"userId"},"value":{"kind":"Variable","name":{"kind":"Name","value":"userId"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"hasMentorSupport"}}]}}]}}]} as unknown as DocumentNode<StartUserMentorSupportMutation, StartUserMentorSupportMutationVariables>;
 export const StopUserMentorSupportDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"StopUserMentorSupport"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"userId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"stopUserMentorSupport"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"userId"},"value":{"kind":"Variable","name":{"kind":"Name","value":"userId"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"hasMentorSupport"}}]}}]}}]} as unknown as DocumentNode<StopUserMentorSupportMutation, StopUserMentorSupportMutationVariables>;
+export const StudentStatisticsDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"StudentStatistics"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"studentStatistics"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"activeStudents"}},{"kind":"Field","name":{"kind":"Name","value":"frozenStudents"}},{"kind":"Field","name":{"kind":"Name","value":"noMentorStudents"}},{"kind":"Field","name":{"kind":"Name","value":"totalStudents"}},{"kind":"Field","name":{"kind":"Name","value":"courseStudents"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"count"}},{"kind":"Field","name":{"kind":"Name","value":"course"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"courseName"}},{"kind":"Field","name":{"kind":"Name","value":"id"}}]}}]}}]}}]}}]} as unknown as DocumentNode<StudentStatisticsQuery, StudentStatisticsQueryVariables>;
 export const UnfreezeUserDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"UnfreezeUser"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"userId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"unfreezeUser"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"userId"},"value":{"kind":"Variable","name":{"kind":"Name","value":"userId"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"isFrozen"}},{"kind":"Field","name":{"kind":"Name","value":"freezes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"startDate"}},{"kind":"Field","name":{"kind":"Name","value":"endDate"}}]}}]}}]}}]} as unknown as DocumentNode<UnfreezeUserMutation, UnfreezeUserMutationVariables>;
 export const UpdateUserByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"UpdateUserById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"input"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"UpdateUserInput"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"updateUserById"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"updateUserInput"},"value":{"kind":"Variable","name":{"kind":"Name","value":"input"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]} as unknown as DocumentNode<UpdateUserByIdMutation, UpdateUserByIdMutationVariables>;
 export const UpdateUserPasswordDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"UpdateUserPassword"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"input"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"UpdatePasswordInput"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"updateUserPassword"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"updatePasswordInput"},"value":{"kind":"Variable","name":{"kind":"Name","value":"input"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_id"}},{"kind":"Field","name":{"kind":"Name","value":"phoneNumber"}},{"kind":"Field","name":{"kind":"Name","value":"userName"}},{"kind":"Field","name":{"kind":"Name","value":"userRole"}}]}}]}}]} as unknown as DocumentNode<UpdateUserPasswordMutation, UpdateUserPasswordMutationVariables>;

@@ -34,6 +34,7 @@ type Documents = {
     "query GetUsers {\n  getUsers {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.GetUsersDocument,
     "mutation StartUserMentorSupport($userId: String!) {\n  startUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": typeof types.StartUserMentorSupportDocument,
     "mutation StopUserMentorSupport($userId: String!) {\n  stopUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": typeof types.StopUserMentorSupportDocument,
+    "query StudentStatistics {\n  studentStatistics {\n    activeStudents\n    frozenStudents\n    noMentorStudents\n    totalStudents\n    courseStudents {\n      count\n      course {\n        courseName\n        id\n      }\n    }\n  }\n}": typeof types.StudentStatisticsDocument,
     "mutation UnfreezeUser($userId: String!) {\n  unfreezeUser(userId: $userId) {\n    _id\n    isFrozen\n    freezes {\n      startDate\n      endDate\n    }\n  }\n}": typeof types.UnfreezeUserDocument,
     "mutation UpdateUserById($input: UpdateUserInput!) {\n  updateUserById(updateUserInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.UpdateUserByIdDocument,
     "mutation UpdateUserPassword($input: UpdatePasswordInput!) {\n  updateUserPassword(updatePasswordInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.UpdateUserPasswordDocument,
@@ -62,6 +63,7 @@ const documents: Documents = {
     "query GetUsers {\n  getUsers {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": types.GetUsersDocument,
     "mutation StartUserMentorSupport($userId: String!) {\n  startUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": types.StartUserMentorSupportDocument,
     "mutation StopUserMentorSupport($userId: String!) {\n  stopUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": types.StopUserMentorSupportDocument,
+    "query StudentStatistics {\n  studentStatistics {\n    activeStudents\n    frozenStudents\n    noMentorStudents\n    totalStudents\n    courseStudents {\n      count\n      course {\n        courseName\n        id\n      }\n    }\n  }\n}": types.StudentStatisticsDocument,
     "mutation UnfreezeUser($userId: String!) {\n  unfreezeUser(userId: $userId) {\n    _id\n    isFrozen\n    freezes {\n      startDate\n      endDate\n    }\n  }\n}": types.UnfreezeUserDocument,
     "mutation UpdateUserById($input: UpdateUserInput!) {\n  updateUserById(updateUserInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": types.UpdateUserByIdDocument,
     "mutation UpdateUserPassword($input: UpdatePasswordInput!) {\n  updateUserPassword(updatePasswordInput: $input) {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": types.UpdateUserPasswordDocument,
@@ -164,6 +166,10 @@ export function graphql(source: "mutation StartUserMentorSupport($userId: String
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function graphql(source: "mutation StopUserMentorSupport($userId: String!) {\n  stopUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}"): (typeof documents)["mutation StopUserMentorSupport($userId: String!) {\n  stopUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "query StudentStatistics {\n  studentStatistics {\n    activeStudents\n    frozenStudents\n    noMentorStudents\n    totalStudents\n    courseStudents {\n      count\n      course {\n        courseName\n        id\n      }\n    }\n  }\n}"): (typeof documents)["query StudentStatistics {\n  studentStatistics {\n    activeStudents\n    frozenStudents\n    noMentorStudents\n    totalStudents\n    courseStudents {\n      count\n      course {\n        courseName\n        id\n      }\n    }\n  }\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

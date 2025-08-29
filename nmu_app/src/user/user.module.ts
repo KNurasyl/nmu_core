@@ -14,6 +14,7 @@ import { UserTaskProgress, UserTaskProgressSchema } from 'src/user-task-progress
 import { User, UserSchema } from './entities/user.entity';
 import { FreezeCleanupService } from './freeze-cleanup.service';
 import { UserMonitoringService } from './monitoring.service';
+import { StudentStatisticsService } from './stats.service';
 import { UserSeeder } from './user-seeder';
 import { UserResolver } from './user.resolver';
 import { UserService } from './user.service';
@@ -30,7 +31,14 @@ import { UserService } from './user.service';
       { name: Lesson.name, schema: LessonSchema },
     ]),
   ],
-  providers: [UserResolver, UserService, UserMonitoringService, UserSeeder, FreezeCleanupService],
+  providers: [
+    UserResolver,
+    UserService,
+    UserMonitoringService,
+    UserSeeder,
+    FreezeCleanupService,
+    StudentStatisticsService,
+  ],
   exports: [UserService, UserMonitoringService],
 })
 export class UserModule {}

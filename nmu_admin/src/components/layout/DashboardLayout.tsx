@@ -7,6 +7,7 @@ import {
 	LogoutOutlined,
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
+	PieChartOutlined,
 	SlidersOutlined,
 	UserOutlined,
 } from '@ant-design/icons'
@@ -30,15 +31,15 @@ import Breadcrumbs from '../ui/Breadcrumb'
 const { Header, Sider, Content } = Layout
 
 const items: MenuProps['items'] = [
-	// {
-	// 	key: '/',
-	// 	icon: <UserOutlined />,
-	// 	label: 'Пользователи',
-	// },
 	{
 		key: '/',
 		icon: <SlidersOutlined />,
 		label: 'Мониторинг',
+	},
+	{
+		key: '/stats',
+		icon: <PieChartOutlined />,
+		label: 'Статистика',
 	},
 	{
 		key: '/courses',
