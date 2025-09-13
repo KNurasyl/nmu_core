@@ -22,7 +22,7 @@ export default function Stats() {
 	const courseRows: CourseRow[] = useMemo(() => {
 		if (!stats?.courseStudents) return []
 		const active = Math.max(stats.activeStudents || 0, 0)
-		return stats.courseStudents.map(({ course, count }: any) => ({
+		return stats.courseStudents.map(({ course, count }) => ({
 			key: course.id,
 			courseName: course.courseName,
 			count,
