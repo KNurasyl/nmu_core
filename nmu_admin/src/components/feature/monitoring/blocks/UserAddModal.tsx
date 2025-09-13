@@ -4,7 +4,8 @@ import { REGISTER } from '@/graphql/auth'
 import { useAuthStore } from '@/stores/auth.store'
 import { UserRole } from '@/types/enums'
 import { useMutation } from '@apollo/client'
-import { Form, Input, Modal, notification, Select } from 'antd'
+import { Form, Input, Modal, Select } from 'antd'
+import { toast } from 'react-toastify'
 
 interface IProps {
 	open: boolean
@@ -15,30 +16,27 @@ interface IProps {
 interface IFormValues {
 	password: string
 	phoneNumber: string
-	userName: boolean
+	userName: string // <-- было boolean, должно быть string
 	userRole: UserRole
 }
 
 const UserAddModal = ({ open, onClose, refetch }: IProps) => {
-	const [form] = Form.useForm()
-
+	const [form] = Form.useForm<IFormValues>()
 	const { user } = useAuthStore(state => state)
 
 	const [register, { loading }] = useMutation(REGISTER, {
 		onCompleted: () => {
-			notification.success({
-				message: 'Пользователь успешно добавлен',
-				placement: 'topRight',
-			})
+			toast.success('Пользователь успешно добавлен')
 			form.resetFields()
 			refetch()
 			onClose()
 		},
-		onError: () => {
-			notification.error({
-				message: 'Ошибка при добавлений пользователя',
-				placement: 'topRight',
-			})
+		onError: error => {
+			const msg =
+				error?.graphQLErrors?.[0]?.message ||
+				error?.message ||
+				'Ошибка при добавлении пользователя'
+			toast.error(msg)
 		},
 	})
 
@@ -48,7 +46,7 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 			variables: {
 				input: {
 					password: values.password.trim(),
-					phoneNumber: values.phoneNumber.replace(/\s+/g, ''),
+					phoneNumber: values.phoneNumber.replace(/\s+/g, ''), // нормализация как на бэке
 					userName: values.userName,
 					userRole: values.userRole,
 					mentorId: user?._id,
@@ -58,14 +56,8 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 	}
 
 	const roleOptions = [
-		{
-			value: UserRole.Admin,
-			label: 'Админ',
-		},
-		{
-			value: UserRole.Student,
-			label: 'Студент',
-		},
+		{ value: UserRole.Admin, label: 'Админ' },
+		{ value: UserRole.Student, label: 'Студент' },
 	]
 
 	return (
@@ -86,6 +78,7 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 				>
 					<Input placeholder='Имя пользователя' />
 				</Form.Item>
+
 				<Form.Item<IFormValues>
 					name='phoneNumber'
 					label='Номер'
@@ -93,6 +86,7 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 				>
 					<Input placeholder='Номер телефона' />
 				</Form.Item>
+
 				<Form.Item<IFormValues>
 					name='userRole'
 					label='Роль'
@@ -100,10 +94,11 @@ const UserAddModal = ({ open, onClose, refetch }: IProps) => {
 				>
 					<Select options={roleOptions} placeholder='Выберите роль' />
 				</Form.Item>
+
 				<Form.Item<IFormValues>
 					name='password'
 					label='Пароль'
-					rules={[{ required: true, message: 'Введите номер пароль' }]}
+					rules={[{ required: true, message: 'Введите пароль' }]}
 				>
 					<Input.Password placeholder='Пароль' />
 				</Form.Item>

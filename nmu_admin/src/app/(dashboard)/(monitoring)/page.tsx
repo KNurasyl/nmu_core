@@ -1,4 +1,4 @@
-import MonitoringList from '@/components/monitoring/MonitoringList'
+import MonitoringList from '@/components/feature/monitoring/blocks/MonitoringList'
 
 const page = () => {
 	return <MonitoringList />

@@ -1,5 +1,10 @@
 'use client'
 
+import { useMutation, useQuery } from '@apollo/client'
+import dayjs from 'dayjs'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+
+import UserAddAccessCourseModal from '@/components/user/userModal/UserAddAccessCourseModal'
 import { GET_COURSES } from '@/graphql/course'
 import {
 	GetCoursesQuery,
@@ -8,6 +13,7 @@ import {
 import {
 	FREEZE_USER,
 	GET_USER_MONITORING,
+	REMOVE_USER_BY_ID,
 	START_USER_MENTOR,
 	STOP_USER_MENTOR,
 	UNFREEZE_USER,
@@ -17,25 +23,20 @@ import {
 	CourseFilter,
 	DEFAULT_FILTERS,
 	FiltersState,
-	MonitoringItem,
 	PAGE_SIZE,
 	PlanFilter,
 	StatusFilter,
 } from '@/types/monitoring'
-import { useMutation, useQuery } from '@apollo/client'
-import { Row, Table, Typography } from 'antd'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import UserAddAccessCourseModal from '../user/userModal/UserAddAccessCourseModal'
-import MonitoringFilter from './monitoringFilter/MonitoringFilter'
-import UserAddModal from './monitoringModal/UserAddModal'
-import {
-	monitoringTableColumn,
-	MonitoringTableHandlers,
-} from './table/MonitoringTableColumn'
-
-const { Text } = Typography
+import { MonitoringItem, MonitoringTableHandlers } from '@/types/types'
+import { notification } from 'antd' // для тостов, у вас уже используется
+import MonitoringCard from '../ui/MonitoringCard'
+import MonitoringLegend from '../ui/MonitoringLegend'
+import MonitoringTable from '../ui/MonitoringTable'
+import MonitoringFilters from './MonitoringFilters'
+import UserAddModal from './UserAddModal'
 
 const MonitoringList = () => {
+	// ------ state ------
 	const [hydrated, setHydrated] = useState(false)
 	const [filters, setFilters] = useState<FiltersState>(DEFAULT_FILTERS)
 	const { search, idle, todayOnly, statusFilter, planFilter, courseFilter } =
@@ -46,14 +47,18 @@ const MonitoringList = () => {
 	const [addUserOpen, setAddUserOpen] = useState(false)
 	const [selectUserId, setSelectUserId] = useState('')
 	const [addAccessCourseOpen, setAddAccessCourseOpen] = useState(false)
-	const containerRef = useRef<HTMLDivElement | null>(null)
+
+	const scrollRef = useRef<HTMLDivElement | null>(null)
 	const sentinelRef = useRef<HTMLDivElement | null>(null)
 
+	// ------ mutations ------
 	const [startMentor] = useMutation(START_USER_MENTOR)
 	const [stopMentor] = useMutation(STOP_USER_MENTOR)
 	const [freezeUser] = useMutation(FREEZE_USER)
 	const [unfreezeUser] = useMutation(UNFREEZE_USER)
+	const [removeUser] = useMutation(REMOVE_USER_BY_ID) // ⬅️ новое
 
+	// ------ hydrate filters ------
 	useEffect(() => {
 		setFilters(loadFilters())
 		setHydrated(true)
@@ -78,34 +83,27 @@ const MonitoringList = () => {
 		saveFilters(filters)
 	}, [hydrated, filters])
 
-	const setSearchSafe = useCallback(
-		(v: string) => setFilters(prev => ({ ...prev, search: v })),
-		[]
-	)
-	const setIdleSafe = useCallback(
-		(v: boolean) => setFilters(prev => ({ ...prev, idle: v })),
-		[]
-	)
-	const setTodayOnlySafe = useCallback(
-		(v: boolean) => setFilters(prev => ({ ...prev, todayOnly: v })),
-		[]
-	)
-	const setStatusFilterSafe = useCallback(
-		(v: string) =>
-			setFilters(prev => ({ ...prev, statusFilter: v as StatusFilter })),
-		[]
-	)
-	const setPlanFilterSafe = useCallback(
-		(v: string) =>
-			setFilters(prev => ({ ...prev, planFilter: v as PlanFilter })),
-		[]
-	)
-	const setCourseFilterSafe = useCallback(
-		(v: string) =>
-			setFilters(prev => ({ ...prev, courseFilter: v as CourseFilter })),
-		[]
-	)
+	// сеттеры
+	const setSearchSafe = useCallback((v: string) => {
+		setFilters(prev => ({ ...prev, search: v }))
+	}, [])
+	const setIdleSafe = useCallback((v: boolean) => {
+		setFilters(prev => ({ ...prev, idle: v }))
+	}, [])
+	const setTodayOnlySafe = useCallback((v: boolean) => {
+		setFilters(prev => ({ ...prev, todayOnly: v }))
+	}, [])
+	const setStatusFilterSafe = useCallback((v: string) => {
+		setFilters(prev => ({ ...prev, statusFilter: v as StatusFilter }))
+	}, [])
+	const setPlanFilterSafe = useCallback((v: string) => {
+		setFilters(prev => ({ ...prev, planFilter: v as PlanFilter }))
+	}, [])
+	const setCourseFilterSafe = useCallback((v: string) => {
+		setFilters(prev => ({ ...prev, courseFilter: v as CourseFilter }))
+	}, [])
 
+	// ------ variables for query ------
 	const variables = useMemo(() => {
 		const args: Record<string, unknown> = { page, pageSize: PAGE_SIZE }
 		const planArg = mapPlanToArg(planFilter)
@@ -118,6 +116,7 @@ const MonitoringList = () => {
 		return { args }
 	}, [page, search, idle, todayOnly, statusFilter, planFilter, courseFilter])
 
+	// ------ queries ------
 	const { data, loading, refetch } = useQuery<GetMonitoringQuery>(
 		GET_USER_MONITORING,
 		{
@@ -131,15 +130,17 @@ const MonitoringList = () => {
 	const { data: coursesData } = useQuery<GetCoursesQuery>(GET_COURSES, {
 		skip: !hydrated,
 	})
+
 	const courseItems =
 		coursesData?.getCourses?.map(c => ({
-			label: c?.courseName,
-			value: c?._id,
+			label: c?.courseName ?? '',
+			value: c?._id ?? '',
 		})) ?? []
 
 	const total = data?.getMonitoring?.total ?? 0
 	const pageItems = (data?.getMonitoring?.items ?? []) as MonitoringItem[]
 
+	// аккумулируем страницы
 	useEffect(() => {
 		if (!data) return
 		setItems(prev => {
@@ -155,14 +156,14 @@ const MonitoringList = () => {
 	const isFetchingInitial = loading && page === 1
 	const isFetchingMore = loading && page > 1
 
+	// инфинит-скролл
 	useEffect(() => {
-		const root = containerRef.current
+		const root = scrollRef.current
 		const target = sentinelRef.current
 		if (!root || !target) return
 		const io = new IntersectionObserver(
 			entries => {
-				const e = entries[0]
-				if (e.isIntersecting && !loading && canLoadMore) {
+				if (entries[0].isIntersecting && !loading && canLoadMore) {
 					setPage(p => p + 1)
 				}
 			},
@@ -172,6 +173,7 @@ const MonitoringList = () => {
 		return () => io.disconnect()
 	}, [loading, canLoadMore])
 
+	// ------ handlers ------
 	const handleOpenCourse = useCallback((userId: string) => {
 		setSelectUserId(userId)
 		setAddAccessCourseOpen(true)
@@ -185,11 +187,8 @@ const MonitoringList = () => {
 				)
 			)
 			try {
-				if (enabled) {
-					await startMentor({ variables: { userId } })
-				} else {
-					await stopMentor({ variables: { userId } })
-				}
+				if (enabled) await startMentor({ variables: { userId } })
+				else await stopMentor({ variables: { userId } })
 			} catch {
 				setItems(prev =>
 					prev.map(i =>
@@ -243,29 +242,59 @@ const MonitoringList = () => {
 		[unfreezeUser, refetch]
 	)
 
+	// ⬇️ УДАЛЕНИЕ
+	const handleDelete = useCallback(
+		async (userId: string, userName?: string) => {
+			// оптимистично скрываем из списка
+			setItems(prev => prev.filter(i => i._id !== userId))
+			try {
+				await removeUser({ variables: { id: userId } })
+				notification.success({
+					message: 'Пользователь удалён',
+					description: userName ? `Удалён: ${userName}` : undefined,
+					placement: 'topRight',
+				})
+			} catch (e) {
+				// откатим локально и покажем ошибку
+				await refetch()
+				notification.error({
+					message: 'Не удалось удалить',
+					description: 'Попробуйте ещё раз',
+					placement: 'topRight',
+				})
+			} finally {
+				// синхронизируем общее количество и список
+				refetch()
+			}
+		},
+		[removeUser, refetch]
+	)
+
 	const tableHandlers: MonitoringTableHandlers = useMemo(
 		() => ({
 			onOpenCourse: handleOpenCourse,
 			onToggleSupport: handleToggleSupport,
 			onFreeze: handleFreeze,
 			onUnfreeze: handleUnfreeze,
+			onDelete: handleDelete, // ⬅️ новое
 		}),
-		[handleOpenCourse, handleToggleSupport, handleFreeze, handleUnfreeze]
+		[
+			handleOpenCourse,
+			handleToggleSupport,
+			handleFreeze,
+			handleUnfreeze,
+			handleDelete,
+		]
 	)
 
-	const columns = useMemo(
-		() => monitoringTableColumn(tableHandlers),
-		[tableHandlers]
-	)
-
+	// ------ render ------
 	return (
-		<Row style={{ width: '100%', height: '100%' }}>
+		<div className='flex h-full w-full flex-col text-gray-900'>
 			<UserAddModal
 				open={addUserOpen}
 				onClose={() => setAddUserOpen(false)}
 				refetch={refetch}
 			/>
-
 			<UserAddAccessCourseModal
 				open={addAccessCourseOpen}
 				onClose={() => setAddAccessCourseOpen(false)}
@@ -273,7 +302,7 @@ const MonitoringList = () => {
 				refetch={refetch}
 			/>
 
-			<MonitoringFilter
+			<MonitoringFilters
 				search={search}
 				setSearch={setSearchSafe}
 				idle={idle}
@@ -290,91 +319,55 @@ const MonitoringList = () => {
 				courseItems={courseItems}
 			/>
 
-			<div style={{ position: 'relative', width: '100%', height: '88%' }}>
-				<div
-					style={{
-						position: 'absolute',
-						top: -120,
-						right: 12,
-						display: 'flex',
-						gap: 16,
-						alignItems: 'center',
-						zIndex: 10,
-						pointerEvents: 'none',
-					}}
-				>
-					<span
-						style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}
-					>
-						<i
-							style={{
-								width: 14,
-								height: 14,
-								background: '#fff1f0',
-								border: '1px solid #ffa39e',
-								borderRadius: 4,
-								display: 'inline-block',
-							}}
-						/>
-						<Text type='secondary'>Сервис остановлен</Text>
-					</span>
-					<span
-						style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}
-					>
-						<i
-							style={{
-								width: 14,
-								height: 14,
-								background: '#e6f7ff',
-								border: '1px solid #91d5ff',
-								borderRadius: 4,
-								display: 'inline-block',
-							}}
-						/>
-						<Text type='secondary'>Заморожен</Text>
-					</span>
-				</div>
+			<MonitoringLegend />
 
-				<div
-					ref={containerRef}
-					style={{
-						width: '100%',
-						height: '100%',
-						overflow: 'auto',
-						display: 'flex',
-						flexDirection: 'column',
-					}}
-				>
-					<Table
-						columns={columns}
-						dataSource={items}
+			<div
+				ref={scrollRef}
+				className='relative flex-1 overflow-y-auto no-scrollbar'
+			>
+				{/* Desktop */}
+				<div className='hidden md:block'>
+					<MonitoringTable
+						items={items}
 						loading={isFetchingInitial || !hydrated}
-						rowKey='_id'
-						scroll={{ x: 'max-content' }}
-						pagination={false}
-						onRow={record => {
-							const r = record as MonitoringItem
+						handlers={tableHandlers}
+						rowClassName={r => {
 							const has = r.hasMentorSupport ?? true
 							const frozen = !!r.isFrozen
-							return {
-								style: {
-									background: !has ? '#fff1f0' : frozen ? '#e6f7ff' : undefined,
-								},
-							}
+							return !has ? 'bg-red-50' : frozen ? 'bg-blue/5' : ''
 						}}
+						formatDate={d => (d ? dayjs(d).format('DD.MM.YY HH:mm') : '—')}
 					/>
+				</div>
 
-					<div ref={sentinelRef} />
-					<div style={{ padding: 12, textAlign: 'center' }}>
-						{isFetchingMore && 'Загружаем ещё...'}
-						{!isFetchingMore &&
-							!canLoadMore &&
-							total > 0 &&
-							'Больше данных нет'}
-					</div>
+				{/* Mobile — карточки */}
+				<div className='md:hidden grid gap-3'>
+					{items.map(u => (
+						<MonitoringCard
+							key={u._id}
+							user={u}
+							handlers={tableHandlers}
+							formatDate={d => (d ? dayjs(d).format('DD.MM.YY HH:mm') : '—')}
+						/>
+					))}
+
+					{(isFetchingInitial || !hydrated) && (
+						<div className='py-4 text-center text-sm text-gray-500'>
+							Загружаем…
+						</div>
+					)}
+				</div>
+
+				<div ref={sentinelRef} />
+				<div className='py-3 text-center text-sm text-gray-500'>
+					{isFetchingMore && 'Загружаем ещё…'}
+					{!isFetchingMore &&
+						items.length >= total &&
+						total > 0 &&
+						'Больше данных нет'}
 				</div>
 			</div>
-		</Row>
+		</div>
 	)
 }
 

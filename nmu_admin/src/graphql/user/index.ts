@@ -36,3 +36,6 @@ export const FREEZE_USER = graphql(
 export const UNFREEZE_USER = graphql(
 	'mutation UnfreezeUser($userId: String!) {\n  unfreezeUser(userId: $userId) {\n    _id\n    isFrozen\n    freezes {\n      startDate\n      endDate\n    }\n  }\n}'
 )
+export const REMOVE_USER_BY_ID = graphql(
+	'mutation RemoveUserById($id: String!) {\n  removeUserById(id: $id) {\n    _id\n  }\n}'
+)

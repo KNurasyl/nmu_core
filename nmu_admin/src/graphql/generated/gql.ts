@@ -32,6 +32,7 @@ type Documents = {
     "query GetMonitoring($args: UserMonitoringArgs!) {\n  getMonitoring(args: $args) {\n    total\n    items {\n      _id\n      lastActiveDate\n      lastActiveDays\n      lastActiveLesson\n      phoneNumber\n      userName\n      userRole\n      hasMentorSupport\n      isFrozen\n      freezes {\n        startDate\n        endDate\n      }\n      availableCourses {\n        accessEndDate\n        accessStartDate\n        courseId\n        courseName\n        trialPeriod\n      }\n      coursesProgress {\n        courseId\n        courseName\n        completedLessons\n        totalLessons\n        label\n      }\n    }\n  }\n}": typeof types.GetMonitoringDocument,
     "query GetUsersPaginated($args: UserListArgs!) {\n  getUsersPaginated(args: $args) {\n    total\n    users {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n  }\n}": typeof types.GetUsersPaginatedDocument,
     "query GetUsers {\n  getUsers {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": typeof types.GetUsersDocument,
+    "mutation RemoveUserById($id: String!) {\n  removeUserById(id: $id) {\n    _id\n  }\n}": typeof types.RemoveUserByIdDocument,
     "mutation StartUserMentorSupport($userId: String!) {\n  startUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": typeof types.StartUserMentorSupportDocument,
     "mutation StopUserMentorSupport($userId: String!) {\n  stopUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": typeof types.StopUserMentorSupportDocument,
     "query StudentStatistics {\n  studentStatistics {\n    activeStudents\n    frozenStudents\n    noMentorStudents\n    totalStudents\n    courseStudents {\n      count\n      course {\n        courseName\n        id\n      }\n    }\n  }\n}": typeof types.StudentStatisticsDocument,
@@ -61,6 +62,7 @@ const documents: Documents = {
     "query GetMonitoring($args: UserMonitoringArgs!) {\n  getMonitoring(args: $args) {\n    total\n    items {\n      _id\n      lastActiveDate\n      lastActiveDays\n      lastActiveLesson\n      phoneNumber\n      userName\n      userRole\n      hasMentorSupport\n      isFrozen\n      freezes {\n        startDate\n        endDate\n      }\n      availableCourses {\n        accessEndDate\n        accessStartDate\n        courseId\n        courseName\n        trialPeriod\n      }\n      coursesProgress {\n        courseId\n        courseName\n        completedLessons\n        totalLessons\n        label\n      }\n    }\n  }\n}": types.GetMonitoringDocument,
     "query GetUsersPaginated($args: UserListArgs!) {\n  getUsersPaginated(args: $args) {\n    total\n    users {\n      _id\n      phoneNumber\n      userName\n      userRole\n    }\n  }\n}": types.GetUsersPaginatedDocument,
     "query GetUsers {\n  getUsers {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}": types.GetUsersDocument,
+    "mutation RemoveUserById($id: String!) {\n  removeUserById(id: $id) {\n    _id\n  }\n}": types.RemoveUserByIdDocument,
     "mutation StartUserMentorSupport($userId: String!) {\n  startUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": types.StartUserMentorSupportDocument,
     "mutation StopUserMentorSupport($userId: String!) {\n  stopUserMentorSupport(userId: $userId) {\n    _id\n    hasMentorSupport\n  }\n}": types.StopUserMentorSupportDocument,
     "query StudentStatistics {\n  studentStatistics {\n    activeStudents\n    frozenStudents\n    noMentorStudents\n    totalStudents\n    courseStudents {\n      count\n      course {\n        courseName\n        id\n      }\n    }\n  }\n}": types.StudentStatisticsDocument,
@@ -158,6 +160,10 @@ export function graphql(source: "query GetUsersPaginated($args: UserListArgs!) {
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function graphql(source: "query GetUsers {\n  getUsers {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}"): (typeof documents)["query GetUsers {\n  getUsers {\n    _id\n    phoneNumber\n    userName\n    userRole\n  }\n}"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "mutation RemoveUserById($id: String!) {\n  removeUserById(id: $id) {\n    _id\n  }\n}"): (typeof documents)["mutation RemoveUserById($id: String!) {\n  removeUserById(id: $id) {\n    _id\n  }\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
