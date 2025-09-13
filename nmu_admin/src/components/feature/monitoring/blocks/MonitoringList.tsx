@@ -254,7 +254,7 @@ const MonitoringList = () => {
 					description: userName ? `Удалён: ${userName}` : undefined,
 					placement: 'topRight',
 				})
-			} catch (e) {
+			} catch {
 				// откатим локально и покажем ошибку
 				await refetch()
 				notification.error({
