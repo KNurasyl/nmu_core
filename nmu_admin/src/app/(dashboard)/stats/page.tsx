@@ -1,7 +1,7 @@
-import StatsPage from '@/components/stats/StatsPage'
+import Stats from '@/components/feature/stats/blocks/Stats'
 
 const page = () => {
-	return <StatsPage />
+	return <Stats />
 }
 
 export default page

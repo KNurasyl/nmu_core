@@ -1,10 +1,16 @@
 import { Providers } from '@/providers/Providers'
 import type { Metadata } from 'next'
-import { Outfit } from 'next/font/google'
+import { Geist, Geist_Mono } from 'next/font/google'
 import 'react-toastify/dist/ReactToastify.css'
-import '../styles/globals.scss'
+import '../styles/globals.css'
 
-const outfit = Outfit({
+const geistSans = Geist({
+	variable: '--font-geist-sans',
+	subsets: ['latin'],
+})
+
+const geistMono = Geist_Mono({
+	variable: '--font-geist-mono',
 	subsets: ['latin'],
 })
 
@@ -24,7 +30,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ru'>
-			<body className={`${outfit.className}`}>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
 				<Providers>{children}</Providers>
 			</body>
 		</html>

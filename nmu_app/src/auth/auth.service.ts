@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { BadRequestException, Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcryptjs';
 import { plainToInstance } from 'class-transformer';
@@ -18,6 +18,17 @@ export class AuthService {
   ) {}
 
   async register(input: RegisterInput): Promise<AuthResponse> {
+    const phone = input.phoneNumber.replace(/\s+/g, '');
+
+    let exists: User | null = null;
+    try {
+      exists = await this.userService.findByPhone(phone);
+    } catch {
+      exists = null;
+    }
+    if (exists) {
+      throw new BadRequestException('Пользователь с таким номером уже существует');
+    }
     const hashedPassword = await bcrypt.hash(input.password, 10);
 
     const createUserInput = plainToInstance(CreateUserInput, {

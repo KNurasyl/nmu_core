@@ -1,0 +1,5 @@
+mutation RemoveUserById($id: String!) {
+	removeUserById(id: $id) {
+		_id
+	}
+}
