@@ -58,13 +58,13 @@ export default function FreezeDialog({ open, onClose, onConfirm }: Props) {
 
 				<div className='mt-4 flex justify-end gap-2'>
 					<button
-						className='rounded-xl border border-border px-3 py-2 text-sm text-gray-900'
+						className='rounded-xl border border-border px-3 py-2 text-sm text-gray-900 cursor-pointer'
 						onClick={onClose}
 					>
 						Отмена
 					</button>
 					<button
-						className='rounded-xl bg-blue px-3 py-2 text-sm text-white hover:opacity-90'
+						className='rounded-xl bg-blue border border-border  px-3 py-2 text-sm text-gray-900 hover:opacity-90 cursor-pointer'
 						onClick={handleOk}
 					>
 						Сохранить
