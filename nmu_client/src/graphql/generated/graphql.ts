@@ -45,6 +45,12 @@ export type CourseInfoDto = {
   trialPeriod: Scalars['Boolean']['output'];
 };
 
+export type CourseMiniType = {
+  __typename?: 'CourseMiniType';
+  courseName: Scalars['String']['output'];
+  id: Scalars['String']['output'];
+};
+
 export type CourseProgressDto = {
   __typename?: 'CourseProgressDto';
   completedLessons: Scalars['Int']['output'];
@@ -52,6 +58,12 @@ export type CourseProgressDto = {
   courseName: Scalars['String']['output'];
   label: Scalars['String']['output'];
   totalLessons: Scalars['Int']['output'];
+};
+
+export type CourseStatisticsType = {
+  __typename?: 'CourseStatisticsType';
+  count: Scalars['Int']['output'];
+  course: CourseMiniType;
 };
 
 export type CreateCourseInput = {
@@ -423,6 +435,7 @@ export type Query = {
   getUserById: User;
   getUsers: Array<User>;
   getUsersPaginated: UserPaginated;
+  studentStatistics: StudentStatisticsType;
   userCourseAccess: UserCourseAccess;
   userCourseProgress: UserCourseProgress;
   userCourseProgressByUserCourse: UserCourseProgress;
@@ -520,6 +533,15 @@ export type RegisterInput = {
   phoneNumber: Scalars['String']['input'];
   userName: Scalars['String']['input'];
   userRole: Scalars['String']['input'];
+};
+
+export type StudentStatisticsType = {
+  __typename?: 'StudentStatisticsType';
+  activeStudents: Scalars['Int']['output'];
+  courseStudents: Array<CourseStatisticsType>;
+  frozenStudents: Scalars['Int']['output'];
+  noMentorStudents: Scalars['Int']['output'];
+  totalStudents: Scalars['Int']['output'];
 };
 
 export type Task = {
